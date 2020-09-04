@@ -14,7 +14,15 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-      { test: /\.js$/, loader: "source-map-loader" }
+      { test: /\.js$/, loader: "source-map-loader" },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader', // Creates `style` nodes from JS strings
+          'css-loader', // Translates CSS into CommonJS
+          'sass-loader', // Compiles Sass to CSS
+        ],
+      },
     ]
   }
 };
