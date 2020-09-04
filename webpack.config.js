@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -13,10 +14,22 @@ module.exports = {
     open: true
   },
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js"] // If multiple files share the same name but have different extensions, webpack will resolve the one with the extension listed first in the array and skip the rest.
   },
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          publicPath: 'assets', // Reference location (doesn't work when only using 'outputPath')
+          outputPath: 'assets', // Export location
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
       { test: /\.js$/, loader: "source-map-loader" },
       {
@@ -28,5 +41,6 @@ module.exports = {
         ],
       },
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })]
 };
