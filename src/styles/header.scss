@@ -1,0 +1,25 @@
+
+.header {
+  background-color: $dull-primary-color;
+  padding-left: 80px;
+  display: flex;
+  height: 67px;
+  justify-content: flex-start;
+  align-items: center;
+
+  * {
+    display: inline;
+  }
+
+  .header__title {
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    align-self: flex-end;
+  }
+}

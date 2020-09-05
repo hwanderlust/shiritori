@@ -8,27 +8,35 @@
 </head>
 
 <body>
-  <div class="menu-closed">
-    <div class="menu-closed__btn"></div>
+  <div class="menu menu--closed">
+    <header>
+      <h1 class="menu__title">Menu</h1>
+      <div class="menu__btn"></div>
+    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">Rules</li>
+        <li class="nav__item">About</li>
+        <li class="nav__item">Contact</li>
+      </ul>
+    </nav>
   </div>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">Rules</li>
-      <li class="nav__item">About</li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1 class="title">しりとり</h1>
-    <h2 class="subtitle">A Japanese word game</h2>
+  <header class="header">
+    <h1 class="header__title">しりとり</h1>
+    <h2 class="header__subtitle">A Japanese word game</h2>
   </header>
 
   <main>
-    <img src="../src/images/landing-pic-comp95.jpg"
-      alt="Cute Asian kid smiling behind a waffle topped with fruits">
     <div class="landing-buttons">
-      <img src="../src/images/rules-btn.png" alt="Custom green button for game rules">
-      <img src="../src/images/play-btn.png" alt="Custom coral button to start the game">
+      <img class="rules-btn" src="../src/images/rules-btn.png"
+        alt="Custom green button for game rules">
+      <img class="play-btn" src="../src/images/play-btn.png"
+        alt="Custom coral button to start the game">
+    </div>
+    <div class="landing-bg-pic">
+      <span role="img"
+        aria-label="Cute Asian kid smiling behind a waffle topped with fruits"></span>
     </div>
   </main>
 
