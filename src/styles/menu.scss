@@ -4,9 +4,9 @@
   position: absolute;
   background-color: black;
   height: 100vh;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
   z-index: 2;
+  width: 71px;
+  transition: width ease-in 150ms;
 
   header {
     display: flex;
@@ -57,10 +57,6 @@
   }
 }
 
-.menu--closed {
-  width: 71px;
-  transition: width ease-in 150ms;
-}
 
 .menu--opened {
   width: calc(200px - 1vw);
@@ -133,12 +129,9 @@ nav {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  display: none;
 }
 
 .menu__underlay--show {
   display: block;
-}
-
-.menu__underlay--hide {
-    display: none;
 }

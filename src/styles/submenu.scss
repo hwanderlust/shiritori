@@ -1,0 +1,65 @@
+  .submenu {
+    background-image: url("../images/submenu-pic-comp95.jpg");
+    background-size: cover;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(200px - 1vw);
+    width: 750px;
+    z-index: 2;
+    display: none;
+    padding-top: 150px;
+    color: white;
+
+    .submenu__contents {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .submenu--show {
+      display: block;
+    }
+
+    & section {
+      width: 500px;
+      display: none;
+
+      & h1 {
+        color: $green;
+        font-size: 36px;
+      }
+
+      & p {
+        font-size: 18px;
+      }
+    }
+
+    .submenu__rules {
+      & img {
+        align-self: center;
+      }
+    }
+  
+    // .submenu__about {}
+  
+    .submenu__contact {
+      & a {
+        text-decoration: none;
+        color: black;
+  
+        &:hover {
+          box-shadow: 0 0 20px 1px $primary-color;
+          background-color: rgba(255, 255, 255, 0.5);
+          outline: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+
+  .submenu--opened {
+    display: flex;
+    justify-content: center;
+  }

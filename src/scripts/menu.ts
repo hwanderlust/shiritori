@@ -1,32 +1,63 @@
-import { addAndRemoveClasses } from "./helpers";
+import { get } from "./helpers";
+import Submenu from "./submenu";
 
-window.addEventListener("DOMContentLoaded", _ => {
-  console.log("DOM loaded");
+const submenuInstance = Submenu();
 
-  const menuBtn = document.getElementById("menuBtn");
-  const menu = document.getElementById("menu");
-  const modalUnderlay = document.getElementById("underlay");
+export default function Menu() {
 
-  menuBtn.addEventListener("click", _ => {
-    toggleMenu();
-  });
+  let menuBtn: HTMLElement;
+  let menu: HTMLElement;
+  let modalUnderlay: HTMLElement;
+  let menuListener;
+  let underlayListener;
 
-  modalUnderlay.addEventListener("click", _ => {
-    toggleMenu();
-  });
-
-  function toggleMenu() {
-    addAndRemoveClasses({
+  function toggleMenu(): void {
+    toggleClasses({
       elementNode: menu,
       enabledClass: "menu--opened",
-      disabledClass: "menu--closed"
     });
 
-    addAndRemoveClasses({
+    toggleClasses({
       elementNode: modalUnderlay,
       enabledClass: "menu__underlay--show",
-      disabledClass: "menu__underlay--hide"
     });
-  }
-});
 
+    submenuInstance.hideSubmenu();
+  }
+
+  return {
+    addListeners: function (): void {
+      menuBtn = get("menuBtn");
+      menu = get("menu");
+      modalUnderlay = get("underlay");
+
+      menuListener = menuBtn.addEventListener("click", _ => {
+        toggleMenu();
+      });
+
+      underlayListener = modalUnderlay.addEventListener("click", _ => {
+        toggleMenu();
+      });
+
+      submenuInstance.addListeners();
+    },
+    removeListeners: function (): void {
+      menuBtn.removeEventListener("click", menuListener);
+      modalUnderlay.removeEventListener("click", underlayListener);
+    }
+  }
+}
+
+interface ToggleClasses {
+  elementNode: HTMLElement,
+  enabledClass: string;
+}
+
+function toggleClasses({ elementNode, enabledClass }: ToggleClasses) {
+  if (elementNode.classList.contains(enabledClass)) {
+    elementNode.classList.remove(enabledClass);
+    return;
+  }
+
+  elementNode.classList.add(enabledClass);
+}
