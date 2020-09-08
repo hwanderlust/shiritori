@@ -8,17 +8,16 @@
 </head>
 
 <body>
-  <div class="menu menu--closed">
+  <div id="underlay" class="menu__underlay menu__underlay--hide"></div>
+  <div id="menu" class="menu menu--closed">
     <header>
       <h1 class="menu__title">Menu</h1>
-      <div class="menu__btn"></div>
+      <button id="menuBtn" class="menu__btn"></button>
     </header>
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">Rules</li>
-        <li class="nav__item">About</li>
-        <li class="nav__item">Contact</li>
-      </ul>
+      <button class="nav__item">Rules</button>
+      <button class="nav__item">About</button>
+      <button class="nav__item">Contact</button>
     </nav>
   </div>
 
@@ -28,15 +27,12 @@
   </header>
 
   <main>
-    <div class="landing-buttons">
-      <img class="rules-btn" src="../src/images/rules-btn.png"
-        alt="Custom green button for game rules">
-      <img class="play-btn" src="../src/images/play-btn.png"
-        alt="Custom coral button to start the game">
-    </div>
     <div class="landing-bg-pic">
       <span role="img"
         aria-label="Cute Asian kid smiling behind a waffle topped with fruits"></span>
+    </div>
+    <div class="landing-buttons">
+      <button>PLAY しりとり</button>
     </div>
   </main>
 

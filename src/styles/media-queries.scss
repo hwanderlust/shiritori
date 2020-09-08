@@ -43,10 +43,7 @@
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.75);
     width: 100vw;
-
-    * {
-      padding-right: 1vw;
-    }
+    height: calc(67px - 3vh);
   }
 }
 

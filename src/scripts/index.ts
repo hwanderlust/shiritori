@@ -1,6 +1,3 @@
 import * as _ from 'lodash';
+import "./menu";
 import "../styles/index.scss";
-
-window.addEventListener("load", _ => {
-  console.log("page is fully loaded");
-});
