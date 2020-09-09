@@ -7,12 +7,13 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(200px - 1vw);
+    left: -700px;
+    display: flex;
+    justify-content: center;
     width: 750px;
-    z-index: 2;
-    display: none;
     padding-top: 150px;
     color: white;
+    opacity: 0;
 
     .submenu__contents {
       display: flex;
@@ -60,6 +61,8 @@
   }
 
   .submenu--opened {
-    display: flex;
-    justify-content: center;
+    left: calc(200px - 1vw);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 150ms ease-out;
   }
