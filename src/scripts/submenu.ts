@@ -14,6 +14,8 @@ export default function Submenu() {
   let aboutSubmenu: HTMLElement;
   let contactSubmenu: HTMLElement;
   let submenuWindow: HTMLElement;
+  let menuWindow: HTMLElement;
+  let modalUnderlay: HTMLElement;
 
   function toggleContent(el: SubmenuElement): void {
     const elMap = {
@@ -28,6 +30,8 @@ export default function Submenu() {
       enabledClass: "submenu--show",
     });
 
+    handleMobileMenuStyle({ menuWindow, modalUnderlay })
+
     showSubmenu(submenuWindow);
   }
 
@@ -40,6 +44,8 @@ export default function Submenu() {
       aboutSubmenu = get("submenuAbout");
       contactSubmenu = get("submenuContact");
       submenuWindow = get("submenu");
+      menuWindow = get("menu");
+      modalUnderlay = get("underlay");
       SUBMENU = [rulesSubmenu, aboutSubmenu, contactSubmenu];
 
       rulesListener = rulesBtn.addEventListener("click", _ => {
@@ -97,4 +103,19 @@ function showSubmenu(submenuWindow): void {
 
 function hideSubmenu(submenuWindow: HTMLElement): void {
   submenuWindow.classList.remove("submenu--opened");
+}
+
+
+interface HandleMobileMenuStyle {
+  menuWindow: HTMLElement;
+  modalUnderlay: HTMLElement;
+}
+/**
+ * Manages the mobile wireframe by maximizing window space for text by closing the menu when selecting a menu option and toggles (off) the underlay
+ */
+function handleMobileMenuStyle({ menuWindow, modalUnderlay }: HandleMobileMenuStyle): void {
+  if (window.innerWidth <= 1023) {
+    menuWindow.classList.remove("menu--opened");
+    modalUnderlay.classList.remove("menu__underlay--show");
+  }
 }

@@ -7,9 +7,47 @@
 
   .menu {
     background-color: transparent;
+    z-index: 100;
 
     header {
       padding-top: $spacing-med;
+    }
+  }
+
+  .submenu--opened {
+    top: 0;
+    left: 0;
+    padding-top: 5vh;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: undefined;
+    width: 100%;
+
+    & section {
+      width: 100%;
+      padding: 0 10vmin;
+      
+      & h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1rem;
+      }
+    }
+
+    .submenu__rules {
+      & img {
+        width: calc(100% - 10vmin);
+      }
+    }
+
+    .submenu__contact {
+      & a {
+        color: $primary-color;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
