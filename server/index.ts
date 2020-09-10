@@ -9,7 +9,7 @@ const baseURL = "https://jisho.org/api/v1/search";
 app.use(bodyParser.json());
 app.use(logger);
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.send("ようこそ！")
 });
 
@@ -51,17 +51,27 @@ app.listen(PORT, () => {
 // <-- HELPERS -->
 
 interface JoshiResult {
-  japanese: Array<{
-    reading: string;
-    word: string;
-  }>
+  japanese: Array<Entry>;
+}
+interface Entry {
+  reading: string;
+  word: string;
 }
 
-function findWord(query: string, potentialResult: JoshiResult) {
-  return potentialResult.japanese.find(el => el.reading?.localeCompare(query) === 0 || el.word?.localeCompare(query) === 0);
+function findWord(query: string, potentialResult: JoshiResult): Entry | undefined {
+  return potentialResult.japanese.find(
+    el => matchReading(query, el.reading) || matchWord(query, el.word)
+  );
 }
 
-function logger(req, res, next) {
+function matchReading(query: string, reading: string | undefined): boolean {
+  return reading?.localeCompare(query) === 0;
+}
+function matchWord(query: string, word: string | undefined): boolean {
+  return word?.localeCompare(query) === 0;
+}
+
+function logger(req, _, next) {
   if (req.method !== "POST" && req.url !== "/search") {
     console.log(req.method, req.url, req.body);
     next();
