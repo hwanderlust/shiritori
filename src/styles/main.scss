@@ -37,13 +37,12 @@
 .game-bg-pic {
   background-image: url("../images/chureito-fuji-bg-comp95.jpg");
   background-size: cover;
-  width: calc(100vw - 71px);
   height: calc(100vh - 67px - 67px);
   background-position: center;
   z-index: -1;
   position: absolute;
   top: 67px;
-  left: 71px;
+  left: 0;
 }
 
 .game-bg-pic--active {
@@ -58,66 +57,73 @@
   width: 100%;
   height: 100%;
 
-  .game-ui__prev {
+  .game-ui__content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
+    width: 100%;
+    height: 100%;
+    padding-left: 71px;
 
-    & h1 {
-      margin: 0 0 8px 0;
-      font-size: 36px;
-    }
-
-    & p {
-      margin: 0;
-      font-size: 18px;
-    }
-  }
-
-  .game-ui__input {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-
-    & input {
-      background-color: rgba(255, 255, 255, 0.1);
-      height: 2rem;
-      line-height: 1.5rem;
-      text-align: center;
-      border: none;
-      padding: 2px 10px;
-      font-size: 18px;
-    }
-
-    & p {
-      margin: 8px 0 0 0;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.5);
-
-      &:hover {
-        color: white;
-        transition: color ease-out 250ms;
+    .game-ui__prev {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+  
+      & h1 {
+        margin: 0 0 8px 0;
+        font-size: 36px;
+      }
+  
+      & p {
+        margin: 0;
+        font-size: 18px;
       }
     }
-
-    .game-ui__input--correct {
-      border: 1px solid $green;
-    }
-    .game-ui__input--wrong {
-      border: 1px solid $red;
+  
+    .game-ui__input {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 34%;
+  
+      & input {
+        background-color: rgba(255, 255, 255, 0.1);
+        height: 2rem;
+        line-height: 1.5rem;
+        text-align: center;
+        border: none;
+        padding: 2px 10px;
+        font-size: 18px;
+      }
+  
+      & p {
+        margin: 8px 0 0 0;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.5);
+  
+        &:hover {
+          color: white;
+          transition: color ease-out 250ms;
+        }
+      }
+  
+      .game-ui__input--correct {
+        border: 1px solid $green;
+      }
+      .game-ui__input--wrong {
+        border: 1px solid $red;
+      }
     }
   }
+
 
   .game-ui__clock {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 34%;
     padding-bottom: 1vw;
     
     & span {
@@ -191,7 +197,7 @@
   display: none;
   position: absolute;
   justify-content: center;
-  width: calc(100% + 71px);
+  width: 100%;
   bottom: 20vh;
   z-index: 2;
 }

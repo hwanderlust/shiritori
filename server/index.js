@@ -43,10 +43,7 @@ app.listen(PORT, function () {
     console.log("We are live on port " + PORT + "!");
 });
 function findWord(query, potentialResult) {
-    console.log("potentialResult.japanese:", potentialResult.japanese[0].reading);
-    console.log("query:", query);
-    console.log(query.localeCompare(potentialResult.japanese[0].reading));
-    return potentialResult.japanese.find(function (el) { var _a; return el.reading.localeCompare(query) === 0 || ((_a = el.word) === null || _a === void 0 ? void 0 : _a.localeCompare(query)) === 0; });
+    return potentialResult.japanese.find(function (el) { var _a, _b; return ((_a = el.reading) === null || _a === void 0 ? void 0 : _a.localeCompare(query)) === 0 || ((_b = el.word) === null || _b === void 0 ? void 0 : _b.localeCompare(query)) === 0; });
 }
 function logger(req, res, next) {
     if (req.method !== "POST" && req.url !== "/search") {

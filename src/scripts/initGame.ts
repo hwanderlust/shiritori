@@ -29,7 +29,7 @@ export default function InitGame() {
         gamePic.classList.add("game-bg-pic--active");
         inputEl.focus();
         clockInstance.countdown();
-        scoreInstance.display();
+        scoreInstance.init();
       });
 
       playAgainBtn.addEventListener("click", _ => {
