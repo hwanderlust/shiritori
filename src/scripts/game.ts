@@ -86,6 +86,8 @@ export default function Game() {
 
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
+
+      // bring in another word to start with
     },
 
     searchUsersGuess: async function (): Promise<boolean> {
@@ -106,6 +108,10 @@ export default function Game() {
           showCorrectUI();
           return Promise.resolve(true);
         });
+    },
+
+    gameover: function () {
+      showWrongUI();
     }
   }
 }

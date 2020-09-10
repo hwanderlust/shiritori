@@ -6,11 +6,19 @@ export default function Clock() {
   const clockEl: HTMLElement = get("clock");
   let currentTime = allowedTime;
   let interval;
+  let callBuzzer: () => void;
 
   return {
+    init: function (cb): void {
+      callBuzzer = cb;
+    },
     countdown: function (): void {
       interval = setInterval(() => {
         currentTime--;
+
+        if (currentTime === 0) {
+          callBuzzer();
+        }
 
         if (currentTime < 0) {
           this.stop();
@@ -24,7 +32,7 @@ export default function Clock() {
         }
 
         clockEl.innerText = `0:${currentTime}`;
-      }, 1000)
+      }, 1000);
     },
 
     reset: function (): void {
@@ -34,11 +42,6 @@ export default function Clock() {
         clockEl.innerText = `0:${currentTime}`;
         this.countdown();
       }, 200);
-    },
-
-    getTime: function (): number {
-      // use when clock runs out? then show red screen etc
-      return currentTime;
     },
 
     stop: function (): void {
