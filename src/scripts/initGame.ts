@@ -23,6 +23,7 @@ export default function InitGame() {
         gameInstance.initPlay();
         clockInstance.countdown();
         scoreInstance.init();
+        playBtn.removeEventListener("click", playBtnListener);
       });
 
       playAgainBtn.addEventListener("click", _ => {
