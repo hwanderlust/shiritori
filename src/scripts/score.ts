@@ -5,18 +5,22 @@ export default function Score() {
   let currentScore = 0;
 
   return {
+    init: function (): void {
+      scoreEl.classList.add("header__score--show");
+    },
     reset: function (): void {
       currentScore = 0;
     },
     update: function (pointsEarned): void {
       currentScore += pointsEarned;
-      scoreEl.innerText = `${currentScore}`;
+      scoreEl.innerText = format(currentScore);
     },
     getScore: function (): number {
       return currentScore;
     },
-    display: function (): void {
-      scoreEl.classList.add("header__score--show");
-    }
   }
+}
+
+function format(n: number): string {
+  return n.toString().padStart(4, "0");
 }

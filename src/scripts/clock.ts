@@ -11,10 +11,18 @@ export default function Clock() {
     countdown: function (): void {
       interval = setInterval(() => {
         currentTime--;
+
         if (currentTime < 0) {
           this.stop();
+          clockEl.innerText = `0:00`;
           return;
         }
+
+        if (currentTime < 10) {
+          clockEl.innerText = `0:0${currentTime}`;
+          return;
+        }
+
         clockEl.innerText = `0:${currentTime}`;
       }, 1000)
     },

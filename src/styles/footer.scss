@@ -3,11 +3,9 @@ footer {
   justify-content: flex-end;
   align-items: center;
   height: 67px;
+  padding-right: 1vw;
+  box-sizing: border-box;
 
-  * {
-    padding: 1vw;
-  }
-  
   a {
     text-decoration: none;
     color: black;

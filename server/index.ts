@@ -58,10 +58,7 @@ interface JoshiResult {
 }
 
 function findWord(query: string, potentialResult: JoshiResult) {
-  // console.log(`potentialResult.japanese:`, potentialResult.japanese[0].reading);
-  // console.log(`query:`, query);
-  // console.log(query.localeCompare(potentialResult.japanese[0].reading));
-  return potentialResult.japanese.find(el => el.reading.localeCompare(query) === 0 || el.word?.localeCompare(query) === 0);
+  return potentialResult.japanese.find(el => el.reading?.localeCompare(query) === 0 || el.word?.localeCompare(query) === 0);
 }
 
 function logger(req, res, next) {
