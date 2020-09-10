@@ -24,21 +24,13 @@ export default function InitGame() {
     addListeners: function () {
 
       playBtnListener = playBtn.addEventListener("click", _ => {
-        landingPic.remove();
-        playBtn.parentElement.remove();
-        gamePic.classList.add("game-bg-pic--active");
-        inputEl.focus();
+        gameInstance.initPlay();
         clockInstance.countdown();
         scoreInstance.init();
       });
 
       playAgainBtn.addEventListener("click", _ => {
-        resultOverlay.classList.remove("wrong");
-        gameInstance.resetInput();
-        inputEl.focus();
-
-        playAgainBtn.parentElement.classList.remove("play-again--show");
-        emojiContainer.firstElementChild.classList.add("hide");
+        gameInstance.initPlayAgain();
         clockInstance.reset();
         scoreInstance.reset();
 

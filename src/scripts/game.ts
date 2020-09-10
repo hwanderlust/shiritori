@@ -10,10 +10,15 @@ interface Response {
 
 export default function Game() {
 
+  const landingPic: HTMLElement = get("landingPic");
+  const playBtn: HTMLElement = get("playBtn");
+  const gamePic: HTMLElement = get("gamePic");
   const playAgainBtn: HTMLElement = get("playAgainBtn");
   const emojiContainer: HTMLElement = get("emoji");;
   const inputEl: HTMLInputElement = get("guessForm").firstElementChild as HTMLInputElement;
   const resultOverlay: HTMLElement = get("overlay");
+  const emojiSad = emojiContainer.firstElementChild as HTMLElement;
+  const emojiHappy = emojiContainer.lastElementChild as HTMLElement;
 
   function showWrongUI(): void {
     resultOverlay.classList.add("wrong");
@@ -23,7 +28,7 @@ export default function Game() {
 
     document.body.style.overflowX = "hidden";
     emojiContainer.classList.add("emoji--slideleft");
-    emojiContainer.firstElementChild.classList.remove("hide");
+    emojiSad.classList.remove("hide");
 
     playAgainBtn.parentElement.classList.add("play-again--show");
   }
@@ -47,11 +52,12 @@ export default function Game() {
 
     document.body.style.overflowX = "hidden";
     emojiContainer.classList.add("emoji--slideleft");
-    emojiContainer.lastElementChild.classList.remove("hide");
+    emojiHappy.classList.remove("hide");
+
     setTimeout(() => {
       document.body.style.overflowX = undefined;
       emojiContainer.classList.add("emoji--vanish");
-      emojiContainer.lastElementChild.classList.add("hide");
+      emojiHappy.classList.add("hide");
       inputEl.classList.remove("game-ui__input--correct");
       resultOverlay.classList.remove("correct");
 
@@ -66,7 +72,21 @@ export default function Game() {
   }
 
   return {
-    resetInput,
+    initPlay: function () {
+      landingPic.remove();
+      playBtn.parentElement.remove();
+      gamePic.classList.add("game-bg-pic--active");
+      inputEl.focus();
+    },
+
+    initPlayAgain: function () {
+      resultOverlay.classList.remove("wrong");
+      resetInput();
+      inputEl.focus();
+
+      playAgainBtn.parentElement.classList.remove("play-again--show");
+      emojiSad.classList.add("hide");
+    },
 
     searchUsersGuess: async function (): Promise<boolean> {
       return fetch("/search", {
