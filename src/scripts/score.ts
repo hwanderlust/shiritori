@@ -1,18 +1,12 @@
 import { get } from "./helpers"
 
 export default function Score() {
-  const headerEl = get("header");
-  let scoreEl;
+  const scoreEl = get("score");
   let currentScore = 0;
 
   return {
-    init: function () {
-      scoreEl = document.createElement("p");
-      scoreEl.id = "score";
-      scoreEl.className = "header__score header__score--show";
-      scoreEl.innerText = "0000";
-      headerEl.appendChild(scoreEl);
-      scoreEl = get("score");
+    init: function (): void {
+      scoreEl.classList.add("header__score--show");
     },
     reset: function (): void {
       currentScore = 0;

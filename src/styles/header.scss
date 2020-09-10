@@ -29,14 +29,13 @@
   }
 
   .header__score {
-    opacity: 0;
+    display: none;
     color: white;
     font-size: 36px;
     font-weight: normal;
   }
 
   .header__score--show {
-    opacity: 1;
-    transition: opacity ease-out 150ms;
+    display: block;
   }
 }
