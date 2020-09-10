@@ -4,10 +4,12 @@
   position: absolute;
   background-color: black;
   height: 100vh;
-  z-index: 2;
+  z-index: 10;
   width: 71px;
   transition: width ease-in 150ms;
-
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  
   header {
     display: flex;
     justify-content: center;
@@ -61,6 +63,8 @@
 .menu--opened {
   width: calc(200px - 1vw);
   transition: width ease-out 150ms;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 
   header .menu__btn {
     margin-left: $spacing-med;
@@ -128,7 +132,7 @@ nav {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 5;
   display: none;
 }
 

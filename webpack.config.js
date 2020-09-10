@@ -11,7 +11,12 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     contentBase: "./dist",
-    open: true
+    open: true,
+    proxy: [{
+      path: "/search",
+      target: "http://localhost:3000",
+      changeOrigin: true,
+    }],
   },
   resolve: {
     extensions: [".ts", ".js"] // If multiple files share the same name but have different extensions, webpack will resolve the one with the extension listed first in the array and skip the rest.

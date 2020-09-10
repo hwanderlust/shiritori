@@ -2,24 +2,41 @@
 .header {
   background-color: $dull-primary-color;
   padding-left: 80px;
+  padding-right: 1vw;
   display: flex;
   height: 67px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 
-  * {
-    display: inline;
+  .header__left {
+    display: inline-flex;
+    
+    * {
+      margin: 0;
+    }
+
+    .header__title {
+      color: white;
+      font-size: 36px;
+      font-weight: normal;
+    }
+    
+    .header__subtitle {
+      font-size: 18px;
+      font-weight: normal;
+      align-self: flex-end;
+    }
   }
 
-  .header__title {
+  .header__score {
+    opacity: 0;
     color: white;
     font-size: 36px;
     font-weight: normal;
   }
 
-  .header__subtitle {
-    font-size: 18px;
-    font-weight: normal;
-    align-self: flex-end;
+  .header__score--show {
+    opacity: 1;
+    transition: opacity ease-out 150ms;
   }
 }

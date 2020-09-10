@@ -62,7 +62,7 @@
 
   .submenu--opened {
     left: calc(200px - 1vw);
-    z-index: 2;
+    z-index: 5;
     opacity: 1;
     transition: opacity 150ms ease-out;
   }
