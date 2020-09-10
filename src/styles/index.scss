@@ -2,20 +2,11 @@
 @import "./header.scss";
 @import "./menu.scss";
 @import "./submenu.scss";
-@import "./buttons.scss";
+@import "./main.scss";
 @import "./footer.scss";
 
 body {
   margin: 0;
-}
-
-.landing-bg-pic {
-  background-image: url("../images/landing-pic-comp95.jpg");
-  background-size: cover;
-  width: calc(100vw - 71px);
-  padding-left: 71px;
-  height: calc(100vh - 67px - 67px);
-  background-position: center; // 40%
 }
 
 @import "./media-queries.scss";
