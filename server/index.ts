@@ -1,5 +1,6 @@
-const express = require('express');
 const bodyParser = require('body-parser');
+const express = require('express');
+const fs = require("fs");
 import fetch from "node-fetch"
 
 const app = express();
@@ -9,11 +10,25 @@ const baseURL = "https://jisho.org/api/v1/search";
 app.use(bodyParser.json());
 app.use(logger);
 
-app.get("/", (_, res) => {
+app.get("/api/", (_, res) => {
   res.send("ようこそ！")
 });
 
-app.post("/search", (req, res) => {
+app.get("/api/vocabulary", (_, res) => {
+  fs.readFile("./vocab-n5.json", 'utf8', (err, data) => {
+
+    if (err) {
+      console.log(`error:`, err);
+      res.end();
+      return;
+    }
+
+    console.log(`read json without a hitch!`);
+    res.json(data);
+  });
+});
+
+app.post("/api/search", (req, res) => {
   const query = req.body.query || "";
   console.log(`query: ${query}`);
   const encodedQuery = encodeURI(query);

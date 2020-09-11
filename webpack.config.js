@@ -13,7 +13,7 @@ module.exports = {
     contentBase: "./dist",
     open: true,
     proxy: [{
-      path: "/search",
+      path: "/api",
       target: "http://localhost:3000",
       changeOrigin: true,
     }],

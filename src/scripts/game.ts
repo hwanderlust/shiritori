@@ -1,15 +1,10 @@
 import { get } from "./helpers";
+import Vocab from "./vocab";
 
-interface Response {
-  found: boolean;
-  entry: {
-    reading: string;
-    word: string;
-  }
-}
+const vocabInstance = Vocab();
+vocabInstance.init()
 
 export default function Game() {
-
   const landingPic: HTMLElement = get("landingPic");
   const playBtn: HTMLElement = get("playBtn");
   const gamePic: HTMLElement = get("gamePic");
@@ -17,6 +12,8 @@ export default function Game() {
   const emojiContainer: HTMLElement = get("emoji");;
   const inputEl: HTMLInputElement = get("guessForm").firstElementChild as HTMLInputElement;
   const resultOverlay: HTMLElement = get("overlay");
+  const prevPrimary = get("prevWord").firstElementChild as HTMLElement;
+  const prevSecondary = get("prevWord").lastElementChild as HTMLElement;
   const emojiSad = emojiContainer.firstElementChild as HTMLElement;
   const emojiHappy = emojiContainer.lastElementChild as HTMLElement;
 
@@ -68,7 +65,9 @@ export default function Game() {
 
     resetInput();
 
-    // move on
+    const startingVocab = vocabInstance.nextWord();
+    prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
+    prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
   }
 
   return {
@@ -77,6 +76,10 @@ export default function Game() {
       playBtn.parentElement.remove();
       gamePic.classList.add("game-bg-pic--active");
       inputEl.focus();
+
+      const startingVocab = vocabInstance.nextWord();
+      prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
+      prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
 
     initPlayAgain: function () {
@@ -87,20 +90,16 @@ export default function Game() {
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
-      // bring in another word to start with
+      const startingVocab = vocabInstance.nextWord();
+      prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
+      prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
 
     searchUsersGuess: async function (): Promise<boolean> {
-      return fetch("/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: inputEl.value })
-      })
-        .then(r => r.json())
-        .then((r: Response) => {
-          console.log(r);
+      return vocabInstance.searchUsersGuess(inputEl.value)
+        .then(correct => {
 
-          if (!r.found) {
+          if (!correct) {
             showWrongUI();
             return Promise.resolve(false);
           }
