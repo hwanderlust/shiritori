@@ -10,6 +10,7 @@ export default function Score() {
     },
     reset: function (): void {
       currentScore = 0;
+      scoreEl.innerText = format(currentScore);
     },
     update: function (pointsEarned): void {
       currentScore += pointsEarned;
