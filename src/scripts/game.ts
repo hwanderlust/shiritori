@@ -28,6 +28,7 @@ export default function Game() {
     emojiSad.classList.remove("hide");
 
     playAgainBtn.parentElement.classList.add("play-again--show");
+    playAgainBtn.focus();
   }
 
   function resetInput(): void {
@@ -95,17 +96,17 @@ export default function Game() {
       prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
 
-    searchUsersGuess: async function (): Promise<boolean> {
+    searchUsersGuess: async function () {
+      inputEl.disabled = true;
       return vocabInstance.searchUsersGuess(inputEl.value)
-        .then(correct => {
-
-          if (!correct) {
-            showWrongUI();
-            return Promise.resolve(false);
-          }
-
+        .then(_ => {
+          inputEl.disabled = false;
+          inputEl.focus();
           showCorrectUI();
-          return Promise.resolve(true);
+        })
+        .catch(err => {
+          console.log(err);
+          showWrongUI();
         });
     },
 

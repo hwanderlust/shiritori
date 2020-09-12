@@ -37,14 +37,13 @@ export default function InitGame() {
         event.stopPropagation();
 
         gameInstance.searchUsersGuess()
-          .then(correct => {
-            if (!correct) {
-              clockInstance.stop();
-              return;
-            }
+          .then(_ => {
             clockInstance.reset();
             scoreInstance.update(1);
           })
+          .catch(_ => {
+            clockInstance.stop();
+          });
       })
     },
     removeListeners: function () {
