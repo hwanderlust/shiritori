@@ -1,15 +1,10 @@
 import * as wanakana from "wanakana";
 
 export default function Vocab() {
-  const cache = Cache();
   let vocab;
   let currentWord: string;
   let nextFirst: string = null;
-
-  function reject(error: Error) {
-    nextFirst = null;
-    return Promise.reject(error);
-  }
+  let initialWord = true;
 
   return {
     init: function (): void {
@@ -22,47 +17,21 @@ export default function Vocab() {
         .then(r => { vocab = r });
     },
 
-    searchUsersGuess: async function (query: string): Promise<string> {
-      console.log(`guess`, query);
-
-      if (!wanakana.isJapanese(query)) {
-        return reject(Error("Not Japanese"));
-      }
-
-      // before http request for hiragana and katakana guesses
-      if (!isValid(query)) {
-        return reject(Error("Last character is unacceptable"));
-      }
-      if (!startsWithLastChar(currentWord, query)) {
-        console.log(`prevWord`, currentWord);
-        console.log(`guess`, query);
-        return reject(Error("User input's first character doesn't match given word's last character"));
-      }
-
-      return fetch("/api/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query })
-      })
-        .then(r => r.json())
-        .then((r: Response) => {
-          console.log(r);
-
-          if (!r.found) {
-            return reject(Error("No exact matches in the Joshi dictionary"));
-          }
-
-          // after http-request-check bc now we have the entered kanji's furigana / reading in hiragana
-          if (!isValid(r.entry?.reading.substr(-1))) {
-            return reject(Error("User's kanji input ends with unacceptable character"));
-          }
-          if (!startsWithLastChar(currentWord, r.entry?.reading)) {
-            return reject(Error("User's kanji input's first character doesn't match given word's last character"));
-          }
-
-          nextFirst = convertSmallChars(r.entry?.reading) || "";
-          return Promise.resolve("Accepted");
+    searchUsersGuess: function (query) {
+      return searchUsersGuess(currentWord, query)
+        .then(guessWord => {
+          nextFirst = guessWord;
+          return Promise.resolve();
+        })
+        .catch(err => {
+          nextFirst = null;
+          return Promise.reject(err);
         });
+    },
+
+    start: function () {
+      initialWord = true;
+      return this.nextWord();
     },
 
     nextWord: function (): Vocab {
@@ -76,8 +45,13 @@ export default function Vocab() {
       nextFirst = ensureHiragana(nextFirst);
 
       if (nextFirst.localeCompare("る") === 0) {
-        alert(`There are no words starting with ${nextFirst} at this time. Another word will be supplied.`);
+        console.log(`no selection to choose from る`);
         nextFirst = getRandomChar();
+        console.log(`next try: ${nextFirst}`);
+
+        if (!initialWord) {
+          alert(`There are no words starting with ${nextFirst} at this time. Another word will be supplied.`);
+        }
       }
 
       let selection = vocab[nextFirst];
@@ -85,13 +59,15 @@ export default function Vocab() {
 
       if (selection === undefined || (Array.isArray(selection) && !selection.length)) {
         console.log(`no selection to choose from`);
+        if (!initialWord) {
+          alert(`There are no words starting with ${nextFirst} at this time. Another word will be supplied.`);
+        }
+
         nextFirst = getRandomChar();
         selection = vocab[nextFirst];
         console.log(`selection 2x`, selection);
       }
 
-      // const index = Math.floor(selection.length * Math.random());
-      // const selectedObj = selection[index];
       const selectedObj = selectWord(selection);
       console.log(`selectedObj`, selectedObj);
 
@@ -102,24 +78,9 @@ export default function Vocab() {
         return this.nextWord();
       }
 
-      // if (!isValid(selectedObj.Kana)) {
-      // console.log(`nextWord isValid false`);
-      // console.log(`next/prev in selection`, selection[index + 1 === selection.length ? Math.abs(index - 1) : index + 1])
-      // console.log(`again!`, selection[Math.abs(Math.floor(selection.length * (Math.random()) - 1))]);
-
-      // if (cache.add(nextFirst, selectedObj.Kana)) {
-
-      //   if (selection.length === cache.get(nextFirst)?.length) {
-      //     // already went through all possible options, need to move forward
-      //     cache.clear(nextFirst);
-      //     alert(`There are no words starting with '${nextFirst}' at this time. Another word will be supplied.`);
-      //     nextFirst = getRandomChar();
-      //     return this.nextWord();
-      //   }
-
-      //   return this.nextWord();
-      // }
-      // }
+      if (initialWord) {
+        initialWord = false;
+      }
 
       currentWord = selectedObj.Kana;
       console.log(`selected`, selectedObj);
@@ -154,7 +115,9 @@ const katakanaToHiragana = {
   "パ": "ぱ", "ピ": "ぴ", "プ": "ぷ", "ペ": "ぺ", "ポ": "ぽ",
   "マ": "ま", "ミ": "み", "ム": "む", "メ": "め", "モ": "も",
   "ラ": "ら", "リ": "り", "ル": "る", "レ": "れ", "ロ": "ろ",
-  "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を", "ン": "ん"
+  "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を", "ン": "ん",
+  "ッ": "っ", "ャ": "ゃ", "ュ": "ゅ", "ョ": "ょ",
+  "ァ": "ぁ", "ィ": "ぃ", "ゥ": "ぅ", "ェ": "ぇ", "ォ": "ぉ",
 }
 
 interface Response {
@@ -171,37 +134,101 @@ interface Vocab {
   Definition: string;
 }
 
+async function searchUsersGuess(currentWord: string, query: string): Promise<string> {
+  // console.log(`guess`, query);
+
+  return validateQuery(currentWord, query)
+    .then(_ => fetch("/api/search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query })
+    })
+      .then(r => r.json())
+      .then((r: Response) => {
+        console.log(r);
+        return validateResponse(r, currentWord)
+          .then(_ => Promise.resolve(convertSmallChars(r.entry?.reading) || ""));
+      })
+    );
+}
+
+/**
+ * Prior to HTTP-request validations
+ */
+async function validateQuery(currentWord: string, query: string): Promise<string> {
+  if (!wanakana.isJapanese(query)) {
+    return Promise.reject(Error("Not Japanese"));
+  }
+
+  if (!isValid(query)) {
+    return Promise.reject(Error("Last character is unacceptable"));
+  }
+
+  if (!startsWithLastChar(currentWord, query)) {
+    // console.log(`prevWord`, currentWord);
+    // console.log(`guess`, query);
+    return Promise.reject(Error("User input's first character doesn't match given word's last character"));
+  }
+
+  return Promise.resolve("No issues");
+}
+
+/**
+ * Post HTTP-request validations - bc we cannot validate kanji inputs
+ */
+async function validateResponse(response: Response, currentWord: string): Promise<string> {
+  if (!response.found) {
+    return Promise.reject(Error("No exact matches in the Joshi dictionary"));
+  }
+
+  if (!isValid(response.entry?.reading)) {
+    return Promise.reject(Error("User's kanji input ends with unacceptable character"));
+  }
+
+  if (!startsWithLastChar(currentWord, response.entry?.reading)) {
+    return Promise.reject(Error("User's kanji input's first character doesn't match given word's last character"));
+  }
+
+  return Promise.resolve("No issues");
+}
+
 /**
  * Goes through the Japanese hiragana alphabet and returns a single character
  */
 function getRandomChar(): string {
-  const nextCandidate = kanaGroups[Math.floor(kanaGroups.length * Math.random())];
+  const nextCandidate = kanaGroups[calcRandomNum(kanaGroups)];
   return nextCandidate;
 }
 
-// function calcRandomNum(numOfUnits: number): number {
-//   const result = Math.floor(numOfUnits * Math.random());
-//   console.log(`random num`, result);
-//   return result;
-// }
+function calcRandomNum(arr: Array<any>): number {
+  const result = Math.floor(arr.length * Math.random());
+  // console.log(`random num`, result);
+  return result;
+}
 
 function isValid(word: string): boolean {
-  console.log(`valid word check`, word);
+  // console.log(`valid word check`, word);
+
+  // Grab first character because API doesn't consider "色々" as kanji
+  if (wanakana.isKanji(word.substr(0, 1)) || wanakana.isKanji(wanakana.stripOkurigana(word).substr(0, 1))) {
+    // console.log(`isValid isKanji`);
+    return true;
+  }
 
   let lastChar = word.substr(-1);
-  console.log(`lastChar`, lastChar);
+  // console.log(`lastChar`, lastChar);
 
   const firstCheck = lastChar.localeCompare("ー") !== 0;
-  const secondCheck = lastChar.localeCompare("～") !== 0;
   lastChar = ensureHiragana(lastChar) || lastChar;
-  console.log(`lastChar hiragana`, lastChar);
+  const secondCheck = lastChar.localeCompare("～") !== 0;
+  // console.log(`lastChar hiragana`, lastChar);
   const thirdCheck = lastChar.localeCompare("ん") !== 0;
 
   const result = firstCheck && secondCheck && thirdCheck;
-  console.log(`firstCheck`, firstCheck);
-  console.log(`secondCheck`, secondCheck);
-  console.log(`thirdCheck`, thirdCheck);
-  console.log(`isValid`, result);
+  // console.log(`firstCheck`, firstCheck);
+  // console.log(`secondCheck`, secondCheck);
+  // console.log(`thirdCheck`, thirdCheck);
+  // console.log(`isValid`, result);
   return result;
 }
 
@@ -211,7 +238,7 @@ function isValid(word: string): boolean {
  * @param guessWord hiragana or katakana (converts), ignores kanji
  */
 function startsWithLastChar(prevWord: string, guessWord: string): boolean {
-  // console.log(`startsWithLastChar`, prevWord, guessWord);
+  console.log(`startsWithLastChar`, prevWord, guessWord);
 
   // Grab first character because API doesn't consider "色々" as kanji
   if (wanakana.isKanji(guessWord.substr(0, 1)) || wanakana.isKanji(wanakana.stripOkurigana(guessWord).substr(0, 1))) {
@@ -221,10 +248,13 @@ function startsWithLastChar(prevWord: string, guessWord: string): boolean {
 
   let lastChar = ensureHiragana(convertSmallChars(prevWord));
   let beginningChar = ensureHiragana(guessWord.substr(0, 1));
-  console.log(`beg Char`, beginningChar);
-  console.log(`last Char`, lastChar);
+  // console.log(`beg Char`, beginningChar);
+  // console.log(`last Char`, lastChar);
 
-  return beginningChar.localeCompare(lastChar) === 0;
+  const result = beginningChar.localeCompare(lastChar) === 0;
+  // console.log(`startsWithLastChar result`, result);
+
+  return result
 }
 
 /**
@@ -262,55 +292,35 @@ function convertSmallChars(word: string): string {
   if (lastChar.localeCompare("っ") === 0) {
     return "つ";
   }
+  if (lastChar.localeCompare("ぁ") === 0) {
+    return "あ";
+  }
+  if (lastChar.localeCompare("ぃ") === 0) {
+    return "い";
+  }
+  if (lastChar.localeCompare("ぅ") === 0) {
+    return "う";
+  }
+  if (lastChar.localeCompare("ぇ") === 0) {
+    return "え";
+  }
+  if (lastChar.localeCompare("ぉ") === 0) {
+    return "お";
+  }
 
   // console.log(`convertSmallChars end`, lastChar);
   return lastChar;
 }
 
-function Cache() {
-  const cacheObj = {};
-
-  return {
-    /**
-     * Returns true if added to the cache, otherwise false (exists)
-     * @param key the letter used to find potential words
-     * @param val the most recent candidate
-     */
-    add: function (key: string, val: string): boolean {
-      console.log(`add ${key}-${val}`);
-
-      if (!cacheObj[key]) {
-        cacheObj[key] = [val];
-        console.log(`cache`, cacheObj[key]);
-        return true;
-      }
-      if (!cacheObj[key].find(el => el.localeCompare(val) === 0)) {
-        cacheObj[key] = [...cacheObj[key], val];
-        console.log(`cache`, cacheObj[key]);
-        return true;
-      }
-
-      return false;
-    },
-    get: function (key: string): Array<string> | undefined {
-      return cacheObj[key];
-    },
-    clear: function (key: string): void {
-      delete cacheObj[key];
-      console.log(`cleared`, cacheObj);
-
-    }
-  }
-}
-
-function selectWord(choices: Array<Vocab>): Vocab {
-  const index = Math.floor(choices.length * Math.random());
-  const selectedObj = choices[index];
-  console.log(`original word`, selectedObj);
-
-  if (choices.length === 1) {
+function selectWord(choices: Array<Vocab>): Vocab | null {
+  if (!choices.length) {
     return null;
   }
+
+  // const index = Math.floor(choices.length * Math.random());
+  const index = calcRandomNum(choices);
+  const selectedObj = choices[index];
+  // console.log(`original word`, selectedObj);
 
   if (!isValid(selectedObj.Kana)) {
     // loop starting from index to end of array to find valid word
@@ -335,11 +345,19 @@ function selectWord(choices: Array<Vocab>): Vocab {
       }
     }
 
-    if (selectedObj.Kana.localeCompare(s.Kana)) {
-      return null;
-    }
-    return s;
+    return null;
   }
 
   return selectedObj;
+}
+
+export const Test = {
+  calcRandomNum,
+  convertSmallChars,
+  ensureHiragana,
+  isValid,
+  selectWord,
+  startsWithLastChar,
+  validateQuery,
+  validateResponse,
 }

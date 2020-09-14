@@ -78,7 +78,7 @@ export default function Game() {
       gamePic.classList.add("game-bg-pic--active");
       inputEl.focus();
 
-      const startingVocab = vocabInstance.nextWord();
+      const startingVocab = vocabInstance.start();
       prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
       prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
@@ -91,7 +91,7 @@ export default function Game() {
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
-      const startingVocab = vocabInstance.nextWord();
+      const startingVocab = vocabInstance.start();
       prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
       prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
