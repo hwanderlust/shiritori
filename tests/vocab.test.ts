@@ -1,81 +1,171 @@
-import { Test, } from "../src/scripts/vocab";
+import Vocab from "../src/scripts/game/vocabulary";
+import * as helpers from "../src/scripts/game/vocabulary/helpers";
+import * as helperAtoms from "../src/scripts/game/vocabulary/helper_atoms";
+const vocab = require("../vocab-n5.json");
 
-// nextWord
-
+const { calcRandomNum, convertSmallChars, ensureHiragana, } = helperAtoms;
+const { selectChar, selectWord, } = helpers;
 const {
-  calcRandomNum,
-  convertSmallChars,
-  ensureHiragana,
   isValid,
-  selectWord,
   startsWithLastChar,
   validateQuery,
   validateResponse,
-} = Test;
+} = helpers.Test;
 
 describe("Vocab tests", () => {
+  // revisit toHavebeenCalled for existing tests
+
+  describe("Vocab()", () => {
+
+    describe("methods", () => {
+      let vocabInstance;
+
+      beforeAll(() => {
+        vocabInstance = Vocab();
+        vocabInstance.Test.setVocab(vocab);
+      });
+
+      describe.skip("searchUsersGuess()", () => { });
+
+      describe("start()", () => {
+        it("initiates the first word", () => {
+          const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
+          const nextWord = jest.spyOn(vocabInstance, "nextWord");
+          vocabInstance.start();
+
+          expect(calcRandomNum).toHaveBeenCalled();
+          expect(nextWord).toHaveBeenCalled();
+        });
+      });
+
+      describe("nextWord()", () => {
+        it("retrieves a character to base finding a word with", () => {
+          const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
+          vocabInstance.nextWord();
+          expect(calcRandomNum).toHaveBeenCalled();
+        });
+
+        it("converts any possible Katakana to Hiragana to avoid reference errors", () => {
+          const ensureHiragana = jest.spyOn(helperAtoms, "ensureHiragana");
+          vocabInstance.nextWord();
+          expect(ensureHiragana).toHaveBeenCalled();
+        });
+
+        it("retrieves another character to base finding the next word with bc choices are unavailable", () => {
+          const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
+          vocabInstance.Test.setNextFirst("る");
+          vocabInstance.nextWord();
+          expect(calcRandomNum).toHaveBeenCalled();
+        });
+
+        it("chooses a word from a list of available options", () => {
+          const selectWord = jest.spyOn(helpers, "selectWord");
+          vocabInstance.nextWord();
+          expect(selectWord).toHaveBeenCalled();
+        });
+      });
+    });
+  });
+
+  describe("selectChar()", () => {
+    it("calls ensureHiragana()", () => {
+      const spy = jest.spyOn(helperAtoms, "ensureHiragana");
+      selectChar(vocab, "か");
+      expect(spy).toHaveBeenCalled();
+    });
+  });
 
   describe("validateQuery()", () => {
     describe("returns a Rejected Promise bc input isn't Japanese", () => {
       it("english", async () => {
-        await expect(validateQuery("なんでも", "english"))
-          .rejects.toEqual(Error("Not Japanese"));
+        await expect(
+          validateQuery("なんでも", "english")
+        ).rejects.toEqual(
+          Error("Not Japanese")
+        );
       });
 
       it("12345", async () => {
-        await expect(validateQuery("なんでも", "12345"))
-          .rejects.toEqual(Error("Not Japanese"));
+        await expect(
+          validateQuery("なんでも", "12345")
+        ).rejects.toEqual(
+          Error("Not Japanese")
+        );
       });
 
       it("!@%", async () => {
-        await expect(validateQuery("なんでも", "!@%"))
-          .rejects.toEqual(Error("Not Japanese"));
+        await expect(
+          validateQuery("なんでも", "!@%")
+        ).rejects.toEqual(
+          Error("Not Japanese")
+        );
       });
     });
 
     describe("returns a Rejected Promise bc of invalid input", () => {
       it("ーーーーー", async () => {
-        await expect(validateQuery("なんでも", "ーーーーー"))
-          .rejects.toEqual(Error("Last character is unacceptable"));
+        await expect(
+          validateQuery("なんでも", "ーーーーー")).rejects.toEqual(
+            Error("Last character is unacceptable")
+          );
       });
 
       it("そんな～", async () => {
-        await expect(validateQuery("なんでも", "そんな～"))
-          .rejects.toEqual(Error("Last character is unacceptable"));
+        await expect(
+          validateQuery("なんでも", "そんな～")).rejects.toEqual(
+            Error("Last character is unacceptable")
+          );
       });
 
       it("しんねん", async () => {
-        await expect(validateQuery("なんでも", "しんねん"))
-          .rejects.toEqual(Error("Last character is unacceptable"));
+        await expect(
+          validateQuery("なんでも", "しんねん")).rejects.toEqual(
+            Error("Last character is unacceptable")
+          );
       });
     });
 
     describe("returns a Rejected Promise bc word doesn't start with the previous' last character", () => {
       it("むてき", async () => {
-        await expect(validateQuery("なんでも", "むてき"))
-          .rejects.toEqual(Error("User input's first character doesn't match given word's last character"));
+        await expect(
+          validateQuery("なんでも", "むてき")
+        ).rejects.toEqual(
+          Error("User input's first character doesn't match given word's last character")
+        );
       });
 
       it("ったく", async () => {
-        await expect(validateQuery("なんでも", "ったく"))
-          .rejects.toEqual(Error("User input's first character doesn't match given word's last character"));
+        await expect(
+          validateQuery("なんでも", "ったく")
+        ).rejects.toEqual(
+          Error("User input's first character doesn't match given word's last character")
+        );
       });
     });
 
     describe("returns Resolved Promise", () => {
       it("むし", async () => {
-        await expect(validateQuery("すすむ", "むし"))
-          .resolves.toEqual("No issues");
+        await expect(
+          validateQuery("すすむ", "むし")
+        ).resolves.toEqual(
+          "No issues"
+        );
       });
 
       it("うらやましい", async () => {
-        await expect(validateQuery("じゆう", "うらやましい"))
-          .resolves.toEqual("No issues");
+        await expect(
+          validateQuery("じゆう", "うらやましい")
+        ).resolves.toEqual(
+          "No issues"
+        );
       });
 
       it("るす", async () => {
-        await expect(validateQuery("たべる", "るす"))
-          .resolves.toEqual("No issues");
+        await expect(
+          validateQuery("たべる", "るす")
+        ).resolves.toEqual(
+          "No issues"
+        );
       });
     });
   });
@@ -201,6 +291,7 @@ describe("Vocab tests", () => {
   });
 
   describe.skip("calcRandomNum()", () => {
+    // const { calcRandomNum } = helperAtoms;
     it("returns a random number between 0 and x [failure possibility]", () => {
       const exampleArray = [1, 2, 3, 4, 5];
       const result1 = calcRandomNum(exampleArray);
@@ -292,6 +383,7 @@ describe("Vocab tests", () => {
   });
 
   describe("ensureHiragana()", () => {
+    // const { ensureHiragana } = helperAtoms;
     it("detects katakana and converts to corresponding hiragana", () => {
       expect(ensureHiragana("カ")).toBe("か");
       expect(ensureHiragana("フ")).toBe("ふ");
@@ -309,6 +401,7 @@ describe("Vocab tests", () => {
   });
 
   describe("convertSmallChars()", () => {
+    // const { convertSmallChars } = helperAtoms;
     describe("for words ending in certain 'small' characters", () => {
       it("converts 'ょ' to 'よ'", () => {
         expect(convertSmallChars("かのじょ")).toBe("よ");

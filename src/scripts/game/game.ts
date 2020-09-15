@@ -1,5 +1,5 @@
-import { get } from "./helpers";
-import Vocab from "./vocab";
+import { get } from "../helpers";
+import Vocab from "./vocabulary";
 
 const vocabInstance = Vocab();
 vocabInstance.init()

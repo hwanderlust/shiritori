@@ -1,5 +1,5 @@
 import Clock from "./clock";
-import { get } from "./helpers";
+import { get } from "../helpers";
 import Game from "./game";
 import Score from "./score";
 

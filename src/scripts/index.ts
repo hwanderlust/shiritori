@@ -1,12 +1,12 @@
 import * as _ from 'lodash';
 import Menu from "./menu";
-import InitGame from "./initGame";
+import Game from "./game";
 import "../styles/index.scss";
 
 const menuInstance = Menu();
-const initGameInstance = InitGame();
+const gameInstance = Game();
 
 window.addEventListener("DOMContentLoaded", _ => {
   menuInstance.addListeners();
-  initGameInstance.addListeners();
+  gameInstance.addListeners();
 });
