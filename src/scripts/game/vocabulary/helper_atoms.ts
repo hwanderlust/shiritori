@@ -34,10 +34,16 @@ const katakanaToHiragana = {
 
 interface Response {
   found: boolean;
-  entry: {
-    reading: string;
-    word: string;
-  }
+  entry: Entry;
+}
+interface Entry {
+  slug: string;
+  japanese: Japanese,
+  english: Array<string>;
+}
+interface Japanese {
+  reading: string;
+  word: string;
 }
 
 interface Vocabulary {

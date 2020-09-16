@@ -24,7 +24,7 @@ async function searchUsersGuess(currentWord: string, query: string, mode?: Debug
 
         return validateResponse(r, currentWord)
           .then(_ => Promise.resolve(
-            convertSmallChars(r.entry?.reading || "")
+            convertSmallChars(r.entry?.japanese?.reading || "")
           ));
       })
     );
@@ -58,11 +58,11 @@ async function validateResponse(response: Response, currentWord: string): Promis
     return Promise.reject(Error("No exact matches in the Joshi dictionary"));
   }
 
-  if (!isValid(response.entry?.reading)) {
+  if (!isValid(response.entry?.japanese?.reading)) {
     return Promise.reject(Error("User's kanji input ends with unacceptable character"));
   }
 
-  if (!startsWithLastChar(currentWord, response.entry?.reading)) {
+  if (!startsWithLastChar(currentWord, response.entry?.japanese?.reading)) {
     return Promise.reject(Error("User's kanji input's first character doesn't match given word's last character"));
   }
 
