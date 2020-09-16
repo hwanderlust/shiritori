@@ -25,8 +25,6 @@ describe("Vocab tests", () => {
         vocabInstance.Test.setVocab(vocab);
       });
 
-      describe.skip("searchUsersGuess()", () => { });
-
       describe("start()", () => {
         it("initiates the first word", () => {
           const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
@@ -290,16 +288,6 @@ describe("Vocab tests", () => {
 
   });
 
-  describe.skip("calcRandomNum()", () => {
-    // const { calcRandomNum } = helperAtoms;
-    it("returns a random number between 0 and x [failure possibility]", () => {
-      const exampleArray = [1, 2, 3, 4, 5];
-      const result1 = calcRandomNum(exampleArray);
-      const result2 = calcRandomNum(exampleArray);
-      expect(result1).not.toBe(result2);
-    });
-  });
-
   describe("isValid()", () => {
     it("returns TRUE", () => {
       expect(isValid("しごと")).toBe(true);
@@ -383,7 +371,6 @@ describe("Vocab tests", () => {
   });
 
   describe("ensureHiragana()", () => {
-    // const { ensureHiragana } = helperAtoms;
     it("detects katakana and converts to corresponding hiragana", () => {
       expect(ensureHiragana("カ")).toBe("か");
       expect(ensureHiragana("フ")).toBe("ふ");
@@ -401,7 +388,6 @@ describe("Vocab tests", () => {
   });
 
   describe("convertSmallChars()", () => {
-    // const { convertSmallChars } = helperAtoms;
     describe("for words ending in certain 'small' characters", () => {
       it("converts 'ょ' to 'よ'", () => {
         expect(convertSmallChars("かのじょ")).toBe("よ");
@@ -429,18 +415,6 @@ describe("Vocab tests", () => {
   });
 
   describe("selectWord()", () => {
-    it.skip("selects a random word from a list of words [failure possibility]", () => {
-      const availableWords = [
-        { Kana: "かなり", Kanji: "", Definition: "" },
-        { Kana: "かならず", Kanji: "必ず", Definition: "" },
-        { Kana: "かっこいい", Kanji: "", Definition: "" },
-        { Kana: "かつ", Kanji: "勝つ", Definition: "" },
-      ];
-      const result1 = selectWord(availableWords);
-      const result2 = selectWord(availableWords);
-      expect(result1).not.toEqual(result2);
-    });
-
     it("returns 'null' if all options aren't valid", () => {
       const availableWords = [
         { Kana: "かんぜん", Kanji: "完全", Definition: "" },
@@ -469,5 +443,28 @@ describe("Vocab tests", () => {
       const result = selectWord(availableWords);
       expect(result).toBe(null);
     });
+  });
+
+  describe.skip("random tests [failure possibility]", () => {
+    it("[selectWord] selects a random word from a list of words", () => {
+      const availableWords = [
+        { Kana: "かなり", Kanji: "", Definition: "" },
+        { Kana: "かならず", Kanji: "必ず", Definition: "" },
+        { Kana: "かっこいい", Kanji: "", Definition: "" },
+        { Kana: "かつ", Kanji: "勝つ", Definition: "" },
+      ];
+      const result1 = selectWord(availableWords);
+      const result2 = selectWord(availableWords);
+      expect(result1).not.toEqual(result2);
+    });
+
+    it("[calcRandomNum] returns a random number between 0 and x", () => {
+      const exampleArray = [1, 2, 3, 4, 5];
+      const result1 = calcRandomNum(exampleArray);
+      const result2 = calcRandomNum(exampleArray);
+      expect(result1).not.toBe(result2);
+    });
+
+    it.skip("[searchUsersGuess]", () => { });
   });
 });
