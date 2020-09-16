@@ -14,18 +14,23 @@ app.get("/api/", (_, res) => {
   res.send("ようこそ！")
 });
 
-app.get("/api/vocabulary", (_, res) => {
-  fs.readFile("./vocab-n5.json", 'utf8', (err, data) => {
+app.get("/api/vocabulary/:level", (req, res) => {
+  try {
+    fs.readFile(`./vocab-${req?.params?.level}.json`, 'utf8', (err, data) => {
 
-    if (err) {
-      console.log(`error:`, err);
-      res.end();
-      return;
-    }
+      if (err) {
+        console.log(`error:`, err);
+        res.end();
+        return;
+      }
 
-    console.log(`read json without a hitch!`);
-    res.json(data);
-  });
+      console.log(`read json without a hitch!`);
+      res.json(data);
+    });
+
+  } catch (error) {
+    console.error(`error:`, error);
+  }
 });
 
 app.post("/api/search", (req, res) => {

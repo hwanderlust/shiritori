@@ -12,16 +12,22 @@ app.use(logger);
 app.get("/api/", function (_, res) {
     res.send("ようこそ！");
 });
-app.get("/api/vocabulary", function (_, res) {
-    fs.readFile("./vocab-n5.json", 'utf8', function (err, data) {
-        if (err) {
-            console.log("error:", err);
-            res.end();
-            return;
-        }
-        console.log("read json without a hitch!");
-        res.json(data);
-    });
+app.get("/api/vocabulary/:level", function (req, res) {
+    var _a;
+    try {
+        fs.readFile("./vocab-" + ((_a = req === null || req === void 0 ? void 0 : req.params) === null || _a === void 0 ? void 0 : _a.level) + ".json", 'utf8', function (err, data) {
+            if (err) {
+                console.log("error:", err);
+                res.end();
+                return;
+            }
+            console.log("read json without a hitch!");
+            res.json(data);
+        });
+    }
+    catch (error) {
+        console.error("error:", error);
+    }
 });
 app.post("/api/search", function (req, res) {
     var query = req.body.query || "";
