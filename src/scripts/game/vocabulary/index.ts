@@ -1,3 +1,4 @@
+import History from "./history";
 import {
   Vocabulary,
   compileVocabulary,
@@ -7,11 +8,13 @@ import {
   selectChar,
   selectWord,
 } from "./helpers";
+import { convertSmallChars } from "./helper_atoms";
 
 export default function Vocab() {
   let vocab: JSON = null;
   let currentWord: string = null;
   let nextFirst: string = null;
+  const history = History();
 
   return {
     init: function (): void {
@@ -28,12 +31,18 @@ export default function Vocab() {
 
     searchUsersGuess: function (query) {
       return searchUsersGuess(currentWord, query)
-        .then(guessWord => {
-          nextFirst = guessWord;
+        .then(entry => {
+          if (!history.check(entry)) {
+            return Promise.reject(Error("This word was already used this round"));
+          }
+
+          nextFirst = convertSmallChars(entry?.japanese?.reading || "");
+          history.add(entry);
           return Promise.resolve();
         })
         .catch(err => {
           nextFirst = null;
+          history.clear();
           return Promise.reject(err);
         });
     },

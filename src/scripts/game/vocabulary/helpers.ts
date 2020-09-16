@@ -1,5 +1,6 @@
 import * as wanakana from "wanakana";
 import {
+  Entry,
   Response,
   Vocabulary,
   kanaGroups,
@@ -9,7 +10,7 @@ import {
 } from "./helper_atoms";
 import { DebugMode, apiRequest, debug, } from "../../helpers";
 
-async function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<string> {
+async function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<Entry> {
   debug(mode, [`guess`, query]);
 
   return validateQuery(currentWord, query)
@@ -23,9 +24,7 @@ async function searchUsersGuess(currentWord: string, query: string, mode?: Debug
         debug(mode, [r]);
 
         return validateResponse(r, currentWord)
-          .then(_ => Promise.resolve(
-            convertSmallChars(r.entry?.japanese?.reading || "")
-          ));
+          .then(_ => Promise.resolve(r.entry));
       })
     );
 }

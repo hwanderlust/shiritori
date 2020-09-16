@@ -117,6 +117,7 @@ function convertSmallChars(word: string, mode: DebugMode = "normal"): string {
 }
 
 export {
+  Entry,
   Response,
   Vocabulary,
   kanaGroups,
