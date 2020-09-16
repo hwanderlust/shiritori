@@ -7,6 +7,7 @@ import {
   convertSmallChars,
   ensureHiragana,
 } from "./helper_atoms";
+import { apiRequest } from "../../helpers";
 
 async function searchUsersGuess(currentWord: string, query: string): Promise<string> {
   // console.log(`guess`, query);
@@ -178,13 +179,29 @@ function selectChar(vocab, char: string): string {
   return char;
 }
 
+function getVocabulary(level: number): Promise<JSON> {
+  return apiRequest(`/vocabulary/n${level}`, { method: "GET" })
+    .then(JSON.parse);
+}
+
+function compileVocabulary(res: JSON, vocab: null | JSON) {
+  if (!vocab) {
+    vocab = res;
+    return vocab;
+  }
+  vocab = { ...vocab, ...res };
+  return vocab;
+}
+
 
 export {
   Vocabulary,
   getRandomChar,
+  getVocabulary,
   searchUsersGuess,
   selectChar,
-  selectWord
+  selectWord,
+  compileVocabulary
 }
 
 export const Test = {

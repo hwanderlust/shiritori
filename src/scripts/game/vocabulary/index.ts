@@ -1,9 +1,11 @@
 import {
   Vocabulary,
+  compileVocabulary,
   getRandomChar,
+  getVocabulary,
   searchUsersGuess,
   selectChar,
-  selectWord
+  selectWord,
 } from "./helpers";
 
 export default function Vocab() {
@@ -13,13 +15,15 @@ export default function Vocab() {
 
   return {
     init: function (): void {
-      fetch("/api/vocabulary", {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-      })
-        .then(r => r.json())
-        .then((r: string) => JSON.parse(r))
-        .then((r: JSON) => { vocab = r });
+      getVocabulary(5)
+        .then((r: JSON) => {
+          vocab = compileVocabulary(r, vocab);
+        });
+
+      getVocabulary(4)
+        .then((r: JSON) => {
+          vocab = compileVocabulary(r, vocab);
+        });
     },
 
     searchUsersGuess: function (query) {
