@@ -1,5 +1,5 @@
-import { get } from "./helpers";
-import Vocab from "./vocab";
+import { get } from "../helpers";
+import Vocab from "./vocabulary";
 
 const vocabInstance = Vocab();
 vocabInstance.init()
@@ -28,6 +28,7 @@ export default function Game() {
     emojiSad.classList.remove("hide");
 
     playAgainBtn.parentElement.classList.add("play-again--show");
+    playAgainBtn.focus();
   }
 
   function resetInput(): void {
@@ -77,7 +78,7 @@ export default function Game() {
       gamePic.classList.add("game-bg-pic--active");
       inputEl.focus();
 
-      const startingVocab = vocabInstance.nextWord();
+      const startingVocab = vocabInstance.start();
       prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
       prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
@@ -90,22 +91,22 @@ export default function Game() {
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
-      const startingVocab = vocabInstance.nextWord();
+      const startingVocab = vocabInstance.start();
       prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
       prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
     },
 
-    searchUsersGuess: async function (): Promise<boolean> {
+    searchUsersGuess: async function () {
+      inputEl.disabled = true;
       return vocabInstance.searchUsersGuess(inputEl.value)
-        .then(correct => {
-
-          if (!correct) {
-            showWrongUI();
-            return Promise.resolve(false);
-          }
-
+        .then(_ => {
+          inputEl.disabled = false;
+          inputEl.focus();
           showCorrectUI();
-          return Promise.resolve(true);
+        })
+        .catch(err => {
+          console.log(err);
+          showWrongUI();
         });
     },
 

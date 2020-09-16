@@ -1,4 +1,4 @@
-import { get } from "./helpers"
+import { get } from "../helpers"
 
 const allowedTime = 30;
 

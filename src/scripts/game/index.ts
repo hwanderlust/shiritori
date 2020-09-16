@@ -1,5 +1,5 @@
 import Clock from "./clock";
-import { get } from "./helpers";
+import { get } from "../helpers";
 import Game from "./game";
 import Score from "./score";
 
@@ -37,14 +37,13 @@ export default function InitGame() {
         event.stopPropagation();
 
         gameInstance.searchUsersGuess()
-          .then(correct => {
-            if (!correct) {
-              clockInstance.stop();
-              return;
-            }
+          .then(_ => {
             clockInstance.reset();
             scoreInstance.update(1);
           })
+          .catch(_ => {
+            clockInstance.stop();
+          });
       })
     },
     removeListeners: function () {
