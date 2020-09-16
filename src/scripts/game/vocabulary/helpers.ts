@@ -7,10 +7,10 @@ import {
   convertSmallChars,
   ensureHiragana,
 } from "./helper_atoms";
-import { apiRequest } from "../../helpers";
+import { DebugMode, apiRequest, debug, } from "../../helpers";
 
-async function searchUsersGuess(currentWord: string, query: string): Promise<string> {
-  // console.log(`guess`, query);
+async function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<string> {
+  debug(mode, [`guess`, query]);
 
   return validateQuery(currentWord, query)
     .then(_ => fetch("/api/search", {
@@ -20,9 +20,12 @@ async function searchUsersGuess(currentWord: string, query: string): Promise<str
     })
       .then(r => r.json())
       .then((r: Response) => {
-        console.log(r);
+        debug(mode, [r]);
+
         return validateResponse(r, currentWord)
-          .then(_ => Promise.resolve(convertSmallChars(r.entry?.reading) || ""));
+          .then(_ => Promise.resolve(
+            convertSmallChars(r.entry?.reading || "")
+          ));
       })
     );
 }
@@ -30,7 +33,7 @@ async function searchUsersGuess(currentWord: string, query: string): Promise<str
 /**
  * Prior to HTTP-request validations
  */
-async function validateQuery(currentWord: string, query: string): Promise<string> {
+async function validateQuery(currentWord: string, query: string, mode?: DebugMode): Promise<string> {
   if (!wanakana.isJapanese(query)) {
     return Promise.reject(Error("Not Japanese"));
   }
@@ -40,8 +43,7 @@ async function validateQuery(currentWord: string, query: string): Promise<string
   }
 
   if (!startsWithLastChar(currentWord, query)) {
-    // console.log(`prevWord`, currentWord);
-    // console.log(`guess`, query);
+    debug(mode, [`prevWord`, currentWord, `guess`, query]);
     return Promise.reject(Error("User input's first character doesn't match given word's last character"));
   }
 
@@ -70,34 +72,34 @@ async function validateResponse(response: Response, currentWord: string): Promis
 /**
  * Goes through the Japanese hiragana alphabet and returns a single character
  */
-function getRandomChar(): string {
+function getRandomChar(mode?: DebugMode): string {
   const nextCandidate = kanaGroups[calcRandomNum(kanaGroups)];
+  debug(mode, [`randomChar`, nextCandidate]);
   return nextCandidate;
 }
 
-function isValid(word: string): boolean {
-  // console.log(`valid word check`, word);
+function isValid(word: string, mode?: DebugMode): boolean {
+  debug(mode, [`valid word check`, word])
 
   // Grab first character because API doesn't consider "色々" as kanji
   if (wanakana.isKanji(word.substr(0, 1)) || wanakana.isKanji(wanakana.stripOkurigana(word).substr(0, 1))) {
-    // console.log(`isValid isKanji`);
+    debug(mode, [`isValid isKanji`]);
     return true;
   }
 
   let lastChar = word.substr(-1);
-  // console.log(`lastChar`, lastChar);
+  debug(mode, [`lastChar`, lastChar])
 
   const firstCheck = lastChar.localeCompare("ー") !== 0;
   lastChar = ensureHiragana(lastChar) || lastChar;
   const secondCheck = lastChar.localeCompare("～") !== 0;
-  // console.log(`lastChar hiragana`, lastChar);
-  const thirdCheck = lastChar.localeCompare("ん") !== 0;
 
+  debug(mode, [`lastChar hiragana`, lastChar]);
+
+  const thirdCheck = lastChar.localeCompare("ん") !== 0;
   const result = firstCheck && secondCheck && thirdCheck;
-  // console.log(`firstCheck`, firstCheck);
-  // console.log(`secondCheck`, secondCheck);
-  // console.log(`thirdCheck`, thirdCheck);
-  // console.log(`isValid`, result);
+
+  debug(mode, [`firstCheck`, firstCheck, `secondCheck`, secondCheck, `thirdCheck`, thirdCheck, `isValid`, result]);
   return result;
 }
 
@@ -106,27 +108,26 @@ function isValid(word: string): boolean {
  * @param prevWord hiragana or katakana (converts)
  * @param guessWord hiragana or katakana (converts), ignores kanji
  */
-function startsWithLastChar(prevWord: string, guessWord: string): boolean {
-  console.log(`startsWithLastChar`, prevWord, guessWord);
+function startsWithLastChar(prevWord: string, guessWord: string, mode?: DebugMode): boolean {
+  debug(mode, [`startsWithLastChar`, prevWord, guessWord])
 
   // Grab first character because API doesn't consider "色々" as kanji
   if (wanakana.isKanji(guessWord.substr(0, 1)) || wanakana.isKanji(wanakana.stripOkurigana(guessWord).substr(0, 1))) {
-    // console.log(`startsWithLastChar isKanji`);
+    debug(mode, [`startsWithLastChar isKanji`])
     return true;
   }
 
   let lastChar = ensureHiragana(convertSmallChars(prevWord));
   let beginningChar = ensureHiragana(guessWord.substr(0, 1));
-  // console.log(`beg Char`, beginningChar);
-  // console.log(`last Char`, lastChar);
+  debug(mode, [`beg Char`, beginningChar, `last Char`, lastChar])
 
   const result = beginningChar.localeCompare(lastChar) === 0;
-  // console.log(`startsWithLastChar result`, result);
+  debug(mode, [`startsWithLastChar result`, result])
 
   return result
 }
 
-function selectWord(choices: Array<Vocabulary>): Vocabulary | null {
+function selectWord(choices: Array<Vocabulary>, mode?: DebugMode): Vocabulary | null {
   if (!choices.length) {
     return null;
   }
@@ -135,24 +136,26 @@ function selectWord(choices: Array<Vocabulary>): Vocabulary | null {
   const selectedObj = choices[index];
 
   if (!isValid(selectedObj.Kana)) {
-    console.log(`original word`, selectedObj);
+    debug(mode, [`original word`, selectedObj]);
+
     // loop starting from index to end of array to find valid word
     let s;
     for (let i = index; i < choices.length; i++) {
       const word = choices[i];
       if (isValid(word.Kana)) {
         s = word;
-        // console.log(`end word`, s);
+        debug(mode, [`end word`, s]);
         return word;
       }
     }
+
     // if not, start from the beginning
     if (index !== 0) {
       for (let i = 0; i < index; i++) {
         const word = choices[i];
         if (isValid(word.Kana)) {
           s = word;
-          // console.log(`end word`, s);
+          debug(mode, [`end word`, s]);
           return word;
         }
       }
@@ -167,12 +170,12 @@ function selectWord(choices: Array<Vocabulary>): Vocabulary | null {
 /**
  * Chooses a viable character to be used to find a word to be used in the game's next round
  */
-function selectChar(vocab, char: string): string {
+function selectChar(vocab, char: string, mode?: DebugMode): string {
   char = ensureHiragana(char);
 
   if (vocab && (!vocab[char] || !vocab[char].length)) {
     const nextChar = getRandomChar();
-    console.log(`no selection to choose from. trying ${nextChar}`);
+    debug(mode, [`no selection to choose from. trying ${nextChar}`]);
     return selectChar(vocab, nextChar);
   }
 

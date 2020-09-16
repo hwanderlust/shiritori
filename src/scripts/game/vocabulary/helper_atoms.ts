@@ -1,4 +1,5 @@
 import * as wanakana from "wanakana";
+import { DebugMode, debug, } from "../../helpers";
 
 const kanaGroups = [
   "あ", "い", "う", "え", "お",
@@ -26,8 +27,8 @@ const katakanaToHiragana = {
   "パ": "ぱ", "ピ": "ぴ", "プ": "ぷ", "ペ": "ぺ", "ポ": "ぽ",
   "マ": "ま", "ミ": "み", "ム": "む", "メ": "め", "モ": "も",
   "ラ": "ら", "リ": "り", "ル": "る", "レ": "れ", "ロ": "ろ",
-  "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を", "ン": "ん",
-  "ッ": "っ", "ャ": "ゃ", "ュ": "ゅ", "ョ": "ょ",
+  "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を",
+  "ッ": "っ", "ャ": "ゃ", "ュ": "ゅ", "ョ": "ょ", "ン": "ん",
   "ァ": "ぁ", "ィ": "ぃ", "ゥ": "ぅ", "ェ": "ぇ", "ォ": "ぉ",
 }
 
@@ -45,9 +46,9 @@ interface Vocabulary {
   Definition: string;
 }
 
-function calcRandomNum(arr: Array<any>): number {
+function calcRandomNum(arr: Array<any>, mode?: DebugMode): number {
   const result = Math.floor(arr.length * Math.random());
-  // console.log(`random num`, result);
+  debug(mode, [`random num`, result])
   return result;
 }
 
@@ -57,10 +58,11 @@ function calcRandomNum(arr: Array<any>): number {
  * "ー" registers as katakana
  * @param char a single (Japanese) character (hiragana / katakana)
  */
-function ensureHiragana(char: string): string {
-  // console.log(`ensureHiragana`, char);
+function ensureHiragana(char: string, mode?: DebugMode): string {
+  debug(mode, [`ensureHiragana`, char]);
+
   if (wanakana.isKatakana(char) && char.localeCompare("ー") !== 0) {
-    // console.log(`isKatakana`, katakanaToHiragana[char]);
+    debug(mode, [`isKatakana`, katakanaToHiragana[char]])
     return katakanaToHiragana[char];
   }
   return char;
@@ -70,11 +72,11 @@ function ensureHiragana(char: string): string {
 /**
  * Returns the full character if input is the small character, otherwise the input's original last character
  */
-function convertSmallChars(word: string): string {
-  // console.log(`convertSmallChars`, word);
+function convertSmallChars(word: string, mode: DebugMode = "normal"): string {
+  debug(mode, [`convertSmallChars`, word]);
 
   const lastChar = word.substr(-1);
-  // console.log(`convertSmallChars lastChar`, lastChar);
+  debug(mode, [`convertSmallChars lastChar`, lastChar]);
 
   if (lastChar.localeCompare("ょ") === 0) {
     return "よ";
@@ -104,7 +106,7 @@ function convertSmallChars(word: string): string {
     return "お";
   }
 
-  // console.log(`convertSmallChars end`, lastChar);
+  debug(mode, [`convertSmallChars end`, lastChar]);
   return lastChar;
 }
 
