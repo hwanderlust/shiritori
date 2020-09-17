@@ -196,7 +196,7 @@
 
 .wrong {
   background-color: $red;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 2;
   transition: opacity 150ms;
 }
@@ -219,4 +219,9 @@
 
 .play-again--show {
   display: flex;
+}
+
+.gameover {
+  display: block;
+  z-index: 1;
 }

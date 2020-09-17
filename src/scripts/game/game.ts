@@ -11,6 +11,7 @@ export default function Game() {
   const emojiContainer = get("emoji");;
   const inputEl = get("guessInput") as HTMLInputElement;
   const resultOverlay = get("overlay");
+  const underlay = get("underlay");
   const prevWord = get("prevWord");
   const prevPrimary = prevWord.firstElementChild as HTMLElement;
   const prevSecondary = prevWord.lastElementChild as HTMLElement;
@@ -19,6 +20,7 @@ export default function Game() {
 
   function showWrongUI(): void {
     resultOverlay.classList.add("wrong");
+    underlay.classList.add("gameover");
 
     inputEl.classList.add("game-ui__input--wrong");
     inputEl.disabled = true;
@@ -119,6 +121,7 @@ export default function Game() {
 
     initPlayAgain: function () {
       resultOverlay.classList.remove("wrong");
+      underlay.classList.remove("gameover");
       resetInput();
 
       playAgainBtn.parentElement.classList.remove("play-again--show");
