@@ -54,17 +54,19 @@ export default function Game() {
     emphasizeWord();
     resetInput();
     displayWord("next");
-    timeouts();
+    activateTransitions();
   }
 
   function emphasizeWord() {
     prevWord.classList.add("focus");
     inputEl.parentElement.parentElement.classList.add("hide");
   }
-  function resetWordEmphasis() {
-    prevWord.classList.remove("focus", "slide-left");
-    inputEl.parentElement.parentElement.classList.remove("hide");
-    inputEl.focus();
+  function resetWordEmphasis(timeout: number) {
+    setTimeout(() => {
+      prevWord.classList.remove("focus", "slide-left");
+      inputEl.parentElement.parentElement.classList.remove("hide");
+      inputEl.focus();
+    }, timeout);
   }
 
   function displayWord(type: "start" | "next") {
@@ -73,7 +75,7 @@ export default function Game() {
     prevSecondary.innerText = nextVocab.Kanji ? nextVocab.Kana : "";
   }
 
-  function timeouts() {
+  function activateTransitions() {
     setTimeout(() => {
       document.body.style.overflowX = "";
       emojiContainer.classList.add("emoji--vanish");
@@ -84,10 +86,7 @@ export default function Game() {
       setTimeout(() => {
         emojiContainer.classList.remove("emoji--vanish");
         prevWord.classList.add("slide-left");
-
-        setTimeout(() => {
-          resetWordEmphasis();
-        }, 100);
+        resetWordEmphasis(100);
       }, 200);
     }, 1000);
   }
@@ -103,22 +102,20 @@ export default function Game() {
       setTimeout(() => {
         landingPic.remove();
         playBtn.parentElement.remove();
-
-        setTimeout(() => {
-          resetWordEmphasis();
-        }, 800);
+        resetWordEmphasis(800);
       }, 500);
     },
 
     initPlayAgain: function () {
       resultOverlay.classList.remove("wrong");
       resetInput();
-      inputEl.focus();
 
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
+      emphasizeWord();
       displayWord("start");
+      resetWordEmphasis(1300);
     },
 
     searchUsersGuess: async function () {
