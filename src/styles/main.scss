@@ -7,6 +7,12 @@
   background-position: center;
 }
 
+.fade-out {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
 .play {
   position: absolute;
   width: 100%;
@@ -37,19 +43,12 @@
 .game-bg-pic {
   background-image: url("../images/chureito-fuji-bg-comp95.jpg");
   background-size: cover;
-  height: calc(100vh - 67px - 67px);
   background-position: center;
-  z-index: -1;
   position: absolute;
-  top: 67px;
-  left: 0;
-}
-
-.game-bg-pic--active {
-  position: relative;
   top: 0;
-  left: undefined;
-  z-index: 1;
+  width: 100%;
+  height: calc(100vh - 67px);
+  z-index: -1;
 }
 
 .game-ui {
@@ -69,6 +68,7 @@
       justify-content: center;
       align-items: center;
       width: 33%;
+      word-break: keep-all;
   
       & h1 {
         margin: 0 0 8px 0;

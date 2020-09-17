@@ -73,14 +73,18 @@ export default function Game() {
 
   return {
     initPlay: function () {
-      landingPic.remove();
-      playBtn.parentElement.remove();
-      gamePic.classList.add("game-bg-pic--active");
-      inputEl.focus();
+      landingPic.classList.add("fade-out");
+      playBtn.classList.add("fade-out");
 
-      const startingVocab = vocabInstance.start();
-      prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
-      prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
+      setTimeout(() => {
+        landingPic.remove();
+        playBtn.parentElement.remove();
+
+        const startingVocab = vocabInstance.start();
+        prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
+        prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
+        inputEl.focus();
+      }, 500);
     },
 
     initPlayAgain: function () {
