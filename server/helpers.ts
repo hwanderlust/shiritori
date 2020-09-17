@@ -53,7 +53,7 @@ function createFoundResponse(element: JoshiElement, searchResult: JapaneseEntry)
     el => el.reading.localeCompare(searchResult.reading) === 0
   );
   const japanese = element.japanese[index];
-  const english = element.senses[index].english_definitions;
+  const english = element.senses[0].english_definitions;
   const entry = {
     slug: element.slug,
     japanese,

@@ -5,15 +5,15 @@ const vocabInstance = Vocab();
 vocabInstance.init()
 
 export default function Game() {
-  const landingPic: HTMLElement = get("landingPic");
-  const playBtn: HTMLElement = get("playBtn");
-  const gamePic: HTMLElement = get("gamePic");
-  const playAgainBtn: HTMLElement = get("playAgainBtn");
-  const emojiContainer: HTMLElement = get("emoji");;
-  const inputEl: HTMLInputElement = get("guessForm").firstElementChild as HTMLInputElement;
-  const resultOverlay: HTMLElement = get("overlay");
-  const prevPrimary = get("prevWord").firstElementChild as HTMLElement;
-  const prevSecondary = get("prevWord").lastElementChild as HTMLElement;
+  const landingPic = get("landingPic");
+  const playBtn = get("playBtn");
+  const playAgainBtn = get("playAgainBtn");
+  const emojiContainer = get("emoji");;
+  const inputEl = get("guessInput") as HTMLInputElement;
+  const resultOverlay = get("overlay");
+  const prevWord = get("prevWord");
+  const prevPrimary = prevWord.firstElementChild as HTMLElement;
+  const prevSecondary = prevWord.lastElementChild as HTMLElement;
   const emojiSad = emojiContainer.firstElementChild as HTMLElement;
   const emojiHappy = emojiContainer.lastElementChild as HTMLElement;
 
@@ -45,15 +45,29 @@ export default function Game() {
 
   function showCorrectUI(): void {
     resultOverlay.classList.add("correct");
-
     inputEl.classList.add("game-ui__input--correct");
 
     document.body.style.overflowX = "hidden";
     emojiContainer.classList.add("emoji--slideleft");
     emojiHappy.classList.remove("hide");
 
+    prevWord.classList.add("focus");
+    inputEl.parentElement.parentElement.classList.add("hide");
+
+    resetInput();
+    displayNextWord();
+    timeouts();
+  }
+
+  function displayNextWord() {
+    const startingVocab = vocabInstance.nextWord();
+    prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
+    prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
+  }
+
+  function timeouts() {
     setTimeout(() => {
-      document.body.style.overflowX = undefined;
+      document.body.style.overflowX = "";
       emojiContainer.classList.add("emoji--vanish");
       emojiHappy.classList.add("hide");
       inputEl.classList.remove("game-ui__input--correct");
@@ -61,14 +75,18 @@ export default function Game() {
 
       setTimeout(() => {
         emojiContainer.classList.remove("emoji--vanish");
-      }, 150);
+
+        setTimeout(() => {
+          prevWord.classList.add("slide-left");
+          inputEl.parentElement.parentElement.classList.remove("hide");
+
+          setTimeout(() => {
+            prevWord.classList.remove("focus", "slide-left");
+            inputEl.focus();
+          }, 100);
+        }, 100);
+      }, 100);
     }, 1000);
-
-    resetInput();
-
-    const startingVocab = vocabInstance.nextWord();
-    prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
-    prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
   }
 
   return {
@@ -104,8 +122,6 @@ export default function Game() {
       inputEl.disabled = true;
       return vocabInstance.searchUsersGuess(inputEl.value)
         .then(_ => {
-          inputEl.disabled = false;
-          inputEl.focus();
           showCorrectUI();
         })
         .catch(err => {

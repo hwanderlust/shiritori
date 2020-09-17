@@ -79,7 +79,17 @@
         margin: 0;
         font-size: 18px;
       }
+
     }
+
+    .focus {
+        width: 100%;
+      }
+
+      .slide-left {
+        width: 33%;
+        transition: width 100ms ease-out;
+      }
   
     .game-ui__input {
       align-self: center;
@@ -116,6 +126,11 @@
       .game-ui__input--wrong {
         border: 1px solid $red;
       }
+
+    }
+    
+    .hide {
+      display: none;
     }
   }
 

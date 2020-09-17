@@ -20,7 +20,7 @@ function findWord(query, potentialResult) {
 function createFoundResponse(element, searchResult) {
     var index = element.japanese.findIndex(function (el) { return el.reading.localeCompare(searchResult.reading) === 0; });
     var japanese = element.japanese[index];
-    var english = element.senses[index].english_definitions;
+    var english = element.senses[0].english_definitions;
     var entry = {
         slug: element.slug,
         japanese: japanese,
