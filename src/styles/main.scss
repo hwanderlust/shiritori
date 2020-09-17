@@ -86,10 +86,10 @@
         width: 100%;
       }
 
-      .slide-left {
-        width: 33%;
-        transition: width 100ms ease-out;
-      }
+    .slide {
+      width: 33%;
+      transition: width 100ms ease-out;
+    }
   
     .game-ui__input {
       align-self: center;

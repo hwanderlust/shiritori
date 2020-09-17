@@ -62,8 +62,19 @@ export default function Game() {
     inputEl.parentElement.parentElement.classList.add("hide");
   }
   function resetWordEmphasis(timeout: number) {
+    if (window.innerWidth < 1024) {
+      inputEl.parentElement.parentElement.classList.remove("hide");
+      prevWord.classList.remove("focus");
+      inputEl.focus();
+
+      setTimeout(() => {
+        prevWord.classList.remove("slide");
+      }, timeout);
+      return;
+    }
+
     setTimeout(() => {
-      prevWord.classList.remove("focus", "slide-left");
+      prevWord.classList.remove("focus", "slide");
       inputEl.parentElement.parentElement.classList.remove("hide");
       inputEl.focus();
     }, timeout);
@@ -85,7 +96,7 @@ export default function Game() {
 
       setTimeout(() => {
         emojiContainer.classList.remove("emoji--vanish");
-        prevWord.classList.add("slide-left");
+        prevWord.classList.add("slide");
         resetWordEmphasis(100);
       }, 200);
     }, 1000);
