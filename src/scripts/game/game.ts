@@ -51,18 +51,26 @@ export default function Game() {
     emojiContainer.classList.add("emoji--slideleft");
     emojiHappy.classList.remove("hide");
 
-    prevWord.classList.add("focus");
-    inputEl.parentElement.parentElement.classList.add("hide");
-
+    emphasizeWord();
     resetInput();
-    displayNextWord();
+    displayWord("next");
     timeouts();
   }
 
-  function displayNextWord() {
-    const startingVocab = vocabInstance.nextWord();
-    prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
-    prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
+  function emphasizeWord() {
+    prevWord.classList.add("focus");
+    inputEl.parentElement.parentElement.classList.add("hide");
+  }
+  function resetWordEmphasis() {
+    prevWord.classList.remove("focus", "slide-left");
+    inputEl.parentElement.parentElement.classList.remove("hide");
+    inputEl.focus();
+  }
+
+  function displayWord(type: "start" | "next") {
+    const nextVocab = type === "start" ? vocabInstance.start() : vocabInstance.nextWord();
+    prevPrimary.innerText = nextVocab?.Kanji || nextVocab?.Kana;
+    prevSecondary.innerText = nextVocab.Kanji ? nextVocab.Kana : "";
   }
 
   function timeouts() {
@@ -75,17 +83,12 @@ export default function Game() {
 
       setTimeout(() => {
         emojiContainer.classList.remove("emoji--vanish");
+        prevWord.classList.add("slide-left");
 
         setTimeout(() => {
-          prevWord.classList.add("slide-left");
-          inputEl.parentElement.parentElement.classList.remove("hide");
-
-          setTimeout(() => {
-            prevWord.classList.remove("focus", "slide-left");
-            inputEl.focus();
-          }, 100);
+          resetWordEmphasis();
         }, 100);
-      }, 100);
+      }, 200);
     }, 1000);
   }
 
@@ -94,14 +97,16 @@ export default function Game() {
       landingPic.classList.add("fade-out");
       playBtn.classList.add("fade-out");
 
+      emphasizeWord();
+      displayWord("start")
+
       setTimeout(() => {
         landingPic.remove();
         playBtn.parentElement.remove();
 
-        const startingVocab = vocabInstance.start();
-        prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
-        prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
-        inputEl.focus();
+        setTimeout(() => {
+          resetWordEmphasis();
+        }, 800);
       }, 500);
     },
 
@@ -113,9 +118,7 @@ export default function Game() {
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
-      const startingVocab = vocabInstance.start();
-      prevPrimary.innerText = startingVocab?.Kanji || startingVocab?.Kana;
-      prevSecondary.innerText = startingVocab.Kanji ? startingVocab.Kana : "";
+      displayWord("start");
     },
 
     searchUsersGuess: async function () {
