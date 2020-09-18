@@ -436,21 +436,21 @@ describe("Vocab tests", () => {
     describe("selectWord()", () => {
       it("returns 'null' if all options aren't valid", () => {
         const availableWords = [
-          { Kana: "かんぜん", Kanji: "完全", Definition: "" },
-          { Kana: "たぶん", Kanji: "多分", Definition: "" },
-          { Kana: "カテゴリー", Kanji: "", Definition: "" },
-          { Kana: "ね～", Kanji: "", Definition: "" },
+          { ID: "1", Kana: "かんぜん", Kanji: "完全", Definition: "" },
+          { ID: "2", Kana: "たぶん", Kanji: "多分", Definition: "" },
+          { ID: "3", Kana: "カテゴリー", Kanji: "", Definition: "" },
+          { ID: "4", Kana: "ね～", Kanji: "", Definition: "" },
         ];
         const result = selectWord(availableWords);
         expect(result).toBe(null);
       });
 
       it("returns the sole valid option", () => {
-        const validOption = { Kana: "ふくざつ", Kanji: "複雑", Definition: "" };
+        const validOption = { ID: "0", Kana: "ふくざつ", Kanji: "複雑", Definition: "" };
         const availableWords = [
-          { Kana: "かんぜん", Kanji: "完全", Definition: "" },
-          { Kana: "たぶん", Kanji: "多分", Definition: "" },
-          { Kana: "カテゴリー", Kanji: "", Definition: "" },
+          { ID: "1", Kana: "かんぜん", Kanji: "完全", Definition: "" },
+          { ID: "2", Kana: "たぶん", Kanji: "多分", Definition: "" },
+          { ID: "3", Kana: "カテゴリー", Kanji: "", Definition: "" },
           validOption
         ];
         const result = selectWord(availableWords);
@@ -516,10 +516,10 @@ describe("Vocab tests", () => {
   describe.skip("random tests [failure possibility]", () => {
     it("[selectWord] selects a random word from a list of words", () => {
       const availableWords = [
-        { Kana: "かなり", Kanji: "", Definition: "" },
-        { Kana: "かならず", Kanji: "必ず", Definition: "" },
-        { Kana: "かっこいい", Kanji: "", Definition: "" },
-        { Kana: "かつ", Kanji: "勝つ", Definition: "" },
+        { ID: "1", Kana: "かなり", Kanji: "", Definition: "" },
+        { ID: "2", Kana: "かならず", Kanji: "必ず", Definition: "" },
+        { ID: "3", Kana: "かっこいい", Kanji: "", Definition: "" },
+        { ID: "4", Kana: "かつ", Kanji: "勝つ", Definition: "" },
       ];
       const result1 = selectWord(availableWords);
       const result2 = selectWord(availableWords);
