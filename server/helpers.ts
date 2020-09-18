@@ -9,8 +9,8 @@ interface JoshiElement {
   senses: Array<Sense>;
 }
 interface JapaneseEntry {
-  reading: string;
-  word: string;
+  reading?: string;
+  word?: string;
 }
 interface Sense {
   english_definitions: Array<string>;
@@ -44,13 +44,13 @@ function findAndSendMatch(query: string, receivedResp: JoshiResponse, res: Respo
 
 function findWord(query: string, potentialResult: JoshiElement): JapaneseEntry | undefined {
   return potentialResult.japanese.find(
-    el => matchReading(query, el.reading) || matchWord(query, el.word)
+    el => matchReading(query, el?.reading) || matchWord(query, el?.word)
   );
 }
 
 function createFoundResponse(element: JoshiElement, searchResult: JapaneseEntry): ApiResponse {
   const index = element.japanese.findIndex(
-    el => el.reading.localeCompare(searchResult.reading) === 0
+    el => el?.reading.localeCompare(searchResult?.reading) === 0 || el?.word.localeCompare(searchResult?.word) === 0
   );
   const japanese = element.japanese[index];
   const english = element.senses[0].english_definitions;

@@ -15,10 +15,10 @@ function findAndSendMatch(query, receivedResp, res) {
 }
 exports.findAndSendMatch = findAndSendMatch;
 function findWord(query, potentialResult) {
-    return potentialResult.japanese.find(function (el) { return matchReading(query, el.reading) || matchWord(query, el.word); });
+    return potentialResult.japanese.find(function (el) { return matchReading(query, el === null || el === void 0 ? void 0 : el.reading) || matchWord(query, el === null || el === void 0 ? void 0 : el.word); });
 }
 function createFoundResponse(element, searchResult) {
-    var index = element.japanese.findIndex(function (el) { return el.reading.localeCompare(searchResult.reading) === 0; });
+    var index = element.japanese.findIndex(function (el) { return (el === null || el === void 0 ? void 0 : el.reading.localeCompare(searchResult === null || searchResult === void 0 ? void 0 : searchResult.reading)) === 0 || (el === null || el === void 0 ? void 0 : el.word.localeCompare(searchResult === null || searchResult === void 0 ? void 0 : searchResult.word)) === 0; });
     var japanese = element.japanese[index];
     var english = element.senses[0].english_definitions;
     var entry = {

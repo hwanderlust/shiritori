@@ -49,6 +49,7 @@ app.post("/api/search", function (req, res) {
         if (!helpers_1.findAndSendMatch(query, r, res)) {
             res.send({ found: false, response: r });
         }
+        console.log("nothing found");
         res.end();
     });
 });
