@@ -175,6 +175,9 @@ function selectChar(vocab, char: string, mode?: DebugMode): string {
   if (vocab && (!vocab[char] || !vocab[char].length)) {
     const nextChar = getRandomChar();
     debug(mode, [`no selection to choose from. trying ${nextChar}`]);
+    // TODO: make call to Joshi for a word, new backend endpoint
+    // https://jisho.org/api/v1/search/words?keyword=た*
+    // https://jisho.org/docs
     return selectChar(vocab, nextChar);
   }
 
@@ -202,15 +205,30 @@ function compileVocabulary(res: JSON, vocab: null | JSON): JSON {
   return vocab;
 }
 
+function removeWordFromVocab(selectedWord: Vocabulary, vocab: JSON): JSON {
+  const selectedInitial = ensureHiragana(selectedWord.Kana.substring(0, 1));
+  const selectedIndex = (vocab[selectedInitial] as Array<Vocabulary>).findIndex(el => el.ID.localeCompare(selectedWord.ID) === 0);
+
+  if (selectedIndex === -1) {
+    console.warn(`Couldn't locate word`, selectedWord);
+    console.warn(`Removal failed`);
+    return vocab;
+  }
+
+  vocab[selectedInitial].splice(selectedIndex, 1);
+  return vocab;
+}
+
 
 export {
   Vocabulary,
+  compileVocabulary,
   getRandomChar,
   getVocabulary,
+  removeWordFromVocab,
   searchUsersGuess,
   selectChar,
   selectWord,
-  compileVocabulary
 }
 
 export const Test = {

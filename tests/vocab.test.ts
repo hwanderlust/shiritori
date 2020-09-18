@@ -4,7 +4,12 @@ import * as helperAtoms from "../src/scripts/game/vocabulary/helper_atoms";
 const vocab = require("../vocab-n5.json");
 
 const { calcRandomNum, convertSmallChars, ensureHiragana, } = helperAtoms;
-const { compileVocabulary, selectChar, selectWord, } = helpers;
+const {
+  compileVocabulary,
+  removeWordFromVocab,
+  selectChar,
+  selectWord,
+} = helpers;
 const {
   isValid,
   startsWithLastChar,
@@ -25,10 +30,30 @@ describe("Vocab tests", () => {
         vocabInstance.Test.setVocab(vocab);
       });
 
+      describe("init()", () => {
+        it("calls fetch API", () => {
+          const spy = jest.spyOn(helpers, "getVocabulary");
+          vocabInstance.init();
+          expect(spy).toBeCalledTimes(3);
+        })
+      });
+
       describe("start()", () => {
         it("initiates the first word", () => {
           const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
           const nextWord = jest.spyOn(vocabInstance, "nextWord");
+          const origWindow = { ...window };
+          const spy = jest.spyOn(global, "window", "get");
+          // @ts-ignore: Mock Type
+          spy.mockImplementation(() => {
+            return {
+              ...origWindow,
+              sessionStorage: {
+                ...origWindow.sessionStorage,
+                getItem: () => JSON.stringify(vocab),
+              }
+            };
+          });
           vocabInstance.start();
 
           expect(calcRandomNum).toHaveBeenCalled();
@@ -461,6 +486,48 @@ describe("Vocab tests", () => {
         const availableWords = [];
         const result = selectWord(availableWords);
         expect(result).toBe(null);
+      });
+    });
+
+    describe("removeWordFromVocab()", () => {
+      let word1;
+      let word2;
+      let vocab;
+
+      beforeEach(() => {
+        word1 = JSON.parse(JSON.stringify({
+          ID: "1",
+          Kana: "あつい",
+          Kanji: "熱い"
+        }));
+        word2 = JSON.parse(JSON.stringify({
+          ID: "2",
+          Kana: "あつい",
+          Kanji: "暑い"
+        }));
+        vocab = JSON.parse(JSON.stringify({
+          "あ": [word1]
+        }));
+      });
+
+      it("calls 'ensureHiragana()'", () => {
+        const spy = jest.spyOn(helperAtoms, "ensureHiragana");
+        removeWordFromVocab(word1, vocab);
+        expect(spy).toBeCalled();
+      });
+
+      it("removes the word from 'vocab' if found", () => {
+        const beforeLength = vocab["あ"].length;
+        const result = removeWordFromVocab(word1, vocab);
+        const afterLength = result["あ"].length;
+
+        expect(afterLength).toBe(beforeLength - 1);
+        expect(result.valueOf()).toEqual({ "あ": [] });
+      });
+
+      it("returns 'vocab' without any changes", () => {
+        const result = removeWordFromVocab(word1, vocab);
+        expect(result.valueOf()).toEqual(vocab.valueOf());
       });
     });
   });

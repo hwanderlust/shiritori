@@ -1,242 +1,82 @@
 import History from "../src/scripts/game/vocabulary/history";
 
 describe("History()", () => {
+
+  describe("add()", () => {
+    it("adds the already confirmed entry to the current round's cache", () => {
+      const history = History();
+      const beforeCache = history.test.getEntries();
+      const confirmedEntry = {
+        slug: "0",
+        japanese: {
+          reading: "ふくざつ",
+          word: "複雑"
+        },
+        english: [],
+      };
+      history.add(confirmedEntry);
+      const afterCache = history.test.getEntries();
+      expect(afterCache.length).toBe(beforeCache.length + 1);
+    });
+  });
+
   describe("check()", () => {
-    it("Checking an empty cache with a new word [Entry]", () => {
+    it("confirms the user's guess wasn't used in the current round", () => {
       const history = History();
-      const entry = {
-        slug: "slug1",
+      const addedEntry = {
+        slug: "1",
         japanese: {
-          reading: "あつい",
-          word: "熱い",
+          reading: "にほん",
+          word: "日本"
         },
-        english: []
+        english: [],
       };
-      expect(history.check(entry)).toBe(true);
-    });
-
-    it("Checking an empty cache with a new word [Vocab]", () => {
-      const history = History();
-      const entry = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "熱い",
-        Definition: "hot"
-      };
-      expect(history.check(entry)).toBe(true);
-    });
-
-    it("Checking cache with the same exact word [Entry, Entry]", () => {
-      const history = History();
-      const entry = {
-        slug: "slug1",
+      const guess = {
+        slug: "0",
         japanese: {
-          reading: "あつい",
-          word: "熱い",
+          reading: "ふくざつ",
+          word: "複雑"
         },
-        english: []
+        english: [],
       };
-      history.add(entry);
-      expect(history.check(entry)).toBe(false);
+      history.add(addedEntry);
+      expect(history.check(guess)).toBe(true);
     });
 
-    it("Checking cache with the same exact word [Vocab, Vocab]", () => {
+    it("confirms the user's guess was already used in the current round", () => {
       const history = History();
-      const entry = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "熱い",
-        Definition: "hot"
-      };
-      history.add(entry);
-      expect(history.check(entry)).toBe(false);
-    });
-
-    it("Checking cache with the same exact word [Entry, Vocab]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
+      const addedEntry = {
+        slug: "1",
         japanese: {
-          reading: "あつい",
-          word: "熱い",
+          reading: "にほん",
+          word: "日本"
         },
-        english: []
+        english: [],
       };
-      history.add(entry1);
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "熱い",
-        Definition: "hot"
-      };
-      expect(history.check(entry2)).toBe(false);
+      history.add(addedEntry);
+      expect(history.check(addedEntry)).toBe(false);
     });
+  });
 
-    it("Checking cache with the same exact word [Vocab, Entry]", () => {
+  describe("clear()", () => {
+    it("completely empties out the cache", () => {
       const history = History();
-      const entry1 = {
-        slug: "slug1",
+      const confirmedEntry = {
+        slug: "0",
         japanese: {
-          reading: "あつい",
-          word: "熱い",
+          reading: "ふくざつ",
+          word: "複雑"
         },
-        english: []
+        english: [],
       };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "熱い",
-        Definition: "hot"
-      };
-      history.add(entry2);
-      expect(history.check(entry1)).toBe(false);
-    });
 
-    it("Checking cache with a word with the same reading but not kanji [Entry, Vocab]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "熱い",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "暑い",
-        Definition: "thick"
-      };
-      history.add(entry1);
-      expect(history.check(entry2)).toBe(true);
-    });
+      history.add(confirmedEntry);
+      const beforeCache = history.test.getEntries();
+      history.clear();
+      const afterCache = history.test.getEntries();
 
-    it("Checking cache with a word with the same reading but not kanji [Vocab, Entry]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "熱い",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "暑い",
-        Definition: "thick"
-      };
-      history.add(entry2);
-      expect(history.check(entry1)).toBe(true);
+      expect(beforeCache.length).toBe(1);
+      expect(afterCache.length).toBe(0);
     });
-
-    it("Checking cache with a word with the same reading but one w/o kanji [Vocab, Entry]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "熱い",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "",
-        Definition: "thick"
-      };
-      history.add(entry2);
-      expect(history.check(entry1)).toBe(true);
-    });
-
-    it("Checking cache with a word the same reading but both w/o kanji [Vocab, Entry]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "",
-        Definition: "thick"
-      };
-      history.add(entry2);
-      expect(history.check(entry1)).toBe(true);
-    });
-
-    it("Checking cache via slug [Entry, Entry]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "",
-        },
-        english: []
-      };
-      history.add(entry1);
-      expect(history.check(entry1)).toBe(false);
-    });
-
-    it("Checking cache via id [Vocab, Vocab]", () => {
-      const history = History();
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "",
-        Definition: "thick"
-      };
-      history.add(entry2);
-      expect(history.check(entry2)).toBe(false);
-    });
-
-    it("Checking cache via id [Entry, Vocab]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "",
-        Definition: "thick"
-      };
-      history.add(entry1);
-      expect(history.check(entry2)).toBe(true);
-    });
-
-    it("Checking cache via id [Vocab, Entry]", () => {
-      const history = History();
-      const entry1 = {
-        slug: "slug1",
-        japanese: {
-          reading: "あつい",
-          word: "",
-        },
-        english: []
-      };
-      const entry2 = {
-        ID: "id1",
-        Kana: "あつい",
-        Kanji: "",
-        Definition: "thick"
-      };
-      history.add(entry2);
-      expect(history.check(entry1)).toBe(true);
-    });
-
   });
 });
