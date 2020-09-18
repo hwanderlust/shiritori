@@ -70,8 +70,14 @@ export default function Vocab() {
         return this.start();
       }
 
+      if (!history.check(selectedObj)) {
+        console.log(`check finished -- word was already used, restart process`, selectedObj);
+        return this.start();
+      }
+
       currentWord = selectedObj.Kana;
       console.log(`selected`, selectedObj);
+      history.add(selectedObj);
       return selectedObj;
     },
     Test: {
