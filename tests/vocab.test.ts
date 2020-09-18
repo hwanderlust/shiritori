@@ -203,124 +203,156 @@ describe("Vocab tests", () => {
     });
   });
 
-  // describe("validateResponse()", () => {
-  //   it("returns a Rejected Promise bc input wasn't found / doesn't match", async () => {
-  //     const currentWord = "なんでも";
-  //     const response = {
-  //       found: false,
-  //       entry: {
-  //         reading: "",
-  //         word: ""
-  //       }
-  //     };
-  //     return validateResponse(response, currentWord)
-  //       .catch(err =>
-  //         expect(err).toEqual(Error("No exact matches in the Joshi dictionary"))
-  //       );
-  //   });
+  describe("validateResponse()", () => {
+    it("returns a Rejected Promise bc input wasn't found / doesn't match", async () => {
+      const currentWord = "なんでも";
+      const response = {
+        found: false,
+        entry: {
+          slug: "",
+          japanese: {
+            reading: "",
+            word: ""
+          },
+          english: []
+        }
+      };
+      return validateResponse(response, currentWord)
+        .catch(err =>
+          expect(err).toEqual(Error("No exact matches in the Joshi dictionary"))
+        );
+    });
 
-  //   describe("returns a Rejected Promise bc of invalid input", () => {
-  //     it("ん", () => {
-  //       const currentWord = "みず";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "みずん",
-  //           word: ""
-  //         }
-  //       };
-  //       return validateResponse(response, currentWord)
-  //         .catch(err =>
-  //           expect(err).toEqual(Error("User's kanji input ends with unacceptable character"))
-  //         );
-  //     });
+    describe("returns a Rejected Promise bc of invalid input", () => {
+      it("ん", () => {
+        const currentWord = "みず";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "みずん",
+              word: ""
+            },
+            english: []
+          }
+        };
+        return validateResponse(response, currentWord)
+          .catch(err =>
+            expect(err).toEqual(Error("User's kanji input ends with unacceptable character"))
+          );
+      });
 
-  //     it("～", () => {
-  //       const currentWord = "みず";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "みず～",
-  //           word: ""
-  //         }
-  //       };
-  //       return validateResponse(response, currentWord)
-  //         .catch(err =>
-  //           expect(err).toEqual(Error("User's kanji input ends with unacceptable character"))
-  //         );
-  //     });
-  //   })
+      it("～", () => {
+        const currentWord = "みず";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "みず～",
+              word: ""
+            },
+            english: []
+          }
+        };
+        return validateResponse(response, currentWord)
+          .catch(err =>
+            expect(err).toEqual(Error("User's kanji input ends with unacceptable character"))
+          );
+      });
+    })
 
-  //   describe("returns a Rejected Promise bc word doesn't start with the previous' last character", () => {
-  //     it("みず --> すてき", async () => {
-  //       const currentWord = "みず";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "すてき",
-  //           word: "素敵"
-  //         }
-  //       };
-  //       return validateResponse(response, currentWord)
-  //         .catch(err =>
-  //           expect(err).toEqual(Error("User's kanji input's first character doesn't match given word's last character"))
-  //         );
-  //     });
+    describe("returns a Rejected Promise bc word doesn't start with the previous' last character", () => {
+      it("みず --> すてき", async () => {
+        const currentWord = "みず";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "すてき",
+              word: "素敵"
+            },
+            english: []
+          }
+        };
+        return validateResponse(response, currentWord)
+          .catch(err =>
+            expect(err).toEqual(Error("User's kanji input's first character doesn't match given word's last character"))
+          );
+      });
 
-  //     it("みず --> ～まで", async () => {
-  //       const currentWord = "みず";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "～まで",
-  //           word: ""
-  //         }
-  //       };
-  //       return validateResponse(response, currentWord)
-  //         .catch(err =>
-  //           expect(err).toEqual(Error("User's kanji input's first character doesn't match given word's last character"))
-  //         );
-  //     });
-  //   });
+      it("みず --> ～まで", async () => {
+        const currentWord = "みず";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "～まで",
+              word: ""
+            },
+            english: []
+          }
+        };
+        return validateResponse(response, currentWord)
+          .catch(err =>
+            expect(err).toEqual(Error("User's kanji input's first character doesn't match given word's last character"))
+          );
+      });
+    });
 
-  //   describe("returns Resolved Promise", () => {
-  //     it("みず --> ズルい", async () => {
-  //       const currentWord = "みず";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "ズルい",
-  //           word: ""
-  //         }
-  //       };
-  //       await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
-  //     });
+    describe("returns Resolved Promise", () => {
+      it("みず --> ズルい", async () => {
+        const currentWord = "みず";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "ズルい",
+              word: ""
+            },
+            english: []
+          }
+        };
+        await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
+      });
 
-  //     it("ギリギリ --> 理想的", async () => {
-  //       const currentWord = "ギリギリ";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "りそうてき",
-  //           word: "理想的"
-  //         }
-  //       };
-  //       await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
-  //     });
+      it("ギリギリ --> 理想的", async () => {
+        const currentWord = "ギリギリ";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "りそうてき",
+              word: "理想的"
+            },
+            english: []
+          }
+        };
+        await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
+      });
 
-  //     it("わかりやすい --> 忙しい", async () => {
-  //       const currentWord = "わかりやすい";
-  //       const response = {
-  //         found: true,
-  //         entry: {
-  //           reading: "いそがしい",
-  //           word: "忙しい"
-  //         }
-  //       };
-  //       await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
-  //     });
-  //   });
-  // });
+      it("わかりやすい --> 忙しい", async () => {
+        const currentWord = "わかりやすい";
+        const response = {
+          found: true,
+          entry: {
+            slug: "",
+            japanese: {
+              reading: "いそがしい",
+              word: "忙しい"
+            },
+            english: []
+          }
+        };
+        await expect(validateResponse(response, currentWord)).resolves.toBe("No issues");
+      });
+    });
+  });
 
   describe("isValid()", () => {
     it("returns TRUE", () => {
