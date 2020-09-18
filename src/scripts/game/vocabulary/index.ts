@@ -27,6 +27,11 @@ export default function Vocab() {
         .then((r: JSON) => {
           vocab = compileVocabulary(r, vocab);
         });
+
+      getVocabulary(3)
+        .then((r: JSON) => {
+          vocab = compileVocabulary(r, vocab);
+        });
     },
 
     searchUsersGuess: function (query) {

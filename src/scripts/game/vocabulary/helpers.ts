@@ -186,12 +186,19 @@ function getVocabulary(level: number): Promise<JSON> {
     .then(JSON.parse);
 }
 
-function compileVocabulary(res: JSON, vocab: null | JSON) {
+function compileVocabulary(res: JSON, vocab: null | JSON): JSON {
   if (!vocab) {
     vocab = res;
     return vocab;
   }
-  vocab = { ...vocab, ...res };
+
+  Object.keys(res).forEach(key => {
+    if (Object.keys(vocab).includes(key)) {
+      vocab[key] = vocab[key].concat(res[key]);
+    } else {
+      vocab[key] = res[key];
+    }
+  });
   return vocab;
 }
 
