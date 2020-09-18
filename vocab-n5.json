@@ -1,216 +1,259 @@
 {
   "あ": [
     {
+      "ID": "N5#1",
       "Kana": "ああ",
       "Kanji": "",
       "Definition": "Ah!, Oh!"
     },
     {
+      "ID": "N5#2",
       "Kana": "あう",
       "Kanji": "会う",
       "Definition": "to meet, to see"
     },
     {
+      "ID": "N5#3",
       "Kana": "あお",
       "Kanji": "青",
       "Definition": "blue"
     },
     {
+      "ID": "N5#4",
       "Kana": "あおい",
       "Kanji": "青い",
       "Definition": "blue"
     },
     {
+      "ID": "N5#5",
       "Kana": "あか",
       "Kanji": "赤",
       "Definition": "red"
     },
     {
+      "ID": "N5#6",
       "Kana": "あかい",
       "Kanji": "赤い",
       "Definition": "red"
     },
     {
+      "ID": "N5#7",
       "Kana": "あかるい",
       "Kanji": "明るい",
       "Definition": "bright, cheerful"
     },
     {
+      "ID": "N5#8",
       "Kana": "あき",
       "Kanji": "秋",
       "Definition": "autumn, fall"
     },
     {
+      "ID": "N5#9",
       "Kana": "あく",
       "Kanji": "開く",
       "Definition": "to open, to become open"
     },
     {
+      "ID": "N5#10",
       "Kana": "あける",
       "Kanji": "開ける",
       "Definition": "to open"
     },
     {
+      "ID": "N5#11",
       "Kana": "あげる",
       "Kanji": "上げる",
       "Definition": "to give"
     },
     {
+      "ID": "N5#12",
       "Kana": "あさ",
       "Kanji": "朝",
       "Definition": "morning"
     },
     {
+      "ID": "N5#13",
       "Kana": "あさごはん",
       "Kanji": "朝御飯",
       "Definition": "breakfast"
     },
     {
+      "ID": "N5#14",
       "Kana": "あさって",
       "Kanji": "",
       "Definition": "day after tomorrow"
     },
     {
+      "ID": "N5#15",
       "Kana": "あし",
       "Kanji": "足",
       "Definition": "foot, leg"
     },
     {
+      "ID": "N5#16",
       "Kana": "あした",
       "Kanji": "",
       "Definition": "tomorrow"
     },
     {
+      "ID": "N5#17",
       "Kana": "あそこ",
       "Kanji": "",
       "Definition": "there, over there, that place"
     },
     {
+      "ID": "N5#18",
       "Kana": "あそぶ",
       "Kanji": "遊ぶ",
       "Definition": "to play, to enjoy oneself"
     },
     {
+      "ID": "N5#19",
       "Kana": "あたたかい",
       "Kanji": "暖かい",
       "Definition": "warm, mild"
     },
     {
+      "ID": "N5#20",
       "Kana": "あたま",
       "Kanji": "頭",
       "Definition": "head"
     },
     {
+      "ID": "N5#21",
       "Kana": "あたらしい",
       "Kanji": "新しい",
       "Definition": "new"
     },
     {
+      "ID": "N5#22",
       "Kana": "あちら",
       "Kanji": "",
       "Definition": "there, yonder, that"
     },
     {
+      "ID": "N5#23",
       "Kana": "あつい",
       "Kanji": "暑い",
       "Definition": "hot, warm"
     },
     {
+      "ID": "N5#24",
       "Kana": "あつい",
       "Kanji": "熱い",
       "Definition": "hot (thing)"
     },
     {
+      "ID": "N5#25",
       "Kana": "あつい",
       "Kanji": "厚い",
       "Definition": "kind, warm(hearted), thick, deep"
     },
     {
+      "ID": "N5#26",
       "Kana": "あっち",
       "Kanji": "",
       "Definition": "over there"
     },
     {
+      "ID": "N5#27",
       "Kana": "あと",
       "Kanji": "後",
       "Definition": "afterwards, since then, in the future"
     },
     {
+      "ID": "N5#28",
       "Kana": "あなた",
       "Kanji": "",
       "Definition": "you"
     },
     {
+      "ID": "N5#29",
       "Kana": "あに",
       "Kanji": "兄",
       "Definition": "(hum) older brother"
     },
     {
+      "ID": "N5#30",
       "Kana": "あね",
       "Kanji": "姉",
       "Definition": "(hum) older sister"
     },
     {
+      "ID": "N5#31",
       "Kana": "あの",
       "Kanji": "",
       "Definition": "that over there"
     },
     {
+      "ID": "N5#32",
       "Kana": "あの",
       "Kanji": "",
       "Definition": "um..."
     },
     {
+      "ID": "N5#33",
       "Kana": "アパート",
       "Kanji": "",
       "Definition": "apartment (abbr)"
     },
     {
+      "ID": "N5#34",
       "Kana": "あびる",
       "Kanji": "",
       "Definition": "to bathe, to shower"
     },
     {
+      "ID": "N5#35",
       "Kana": "あぶない",
       "Kanji": "危ない",
       "Definition": "dangerous, critical, watch out!"
     },
     {
+      "ID": "N5#36",
       "Kana": "あまい",
       "Kanji": "甘い",
       "Definition": "generous, sweet"
     },
     {
+      "ID": "N5#37",
       "Kana": "あまり",
       "Kanji": "",
       "Definition": "not very, not much"
     },
     {
+      "ID": "N5#38",
       "Kana": "あめ",
       "Kanji": "雨",
       "Definition": "rain"
     },
     {
+      "ID": "N5#39",
       "Kana": "あめ",
       "Kanji": "飴",
       "Definition": "(hard) candy, toffee"
     },
     {
+      "ID": "N5#40",
       "Kana": "あらう",
       "Kanji": "洗う",
       "Definition": "to wash"
     },
     {
+      "ID": "N5#41",
       "Kana": "ある",
       "Kanji": "",
       "Definition": "to be [存在], to have [所有]"
     },
     {
+      "ID": "N5#42",
       "Kana": "あるく",
       "Kanji": "歩く",
       "Definition": "to walk"
     },
     {
+      "ID": "N5#43",
       "Kana": "あれ",
       "Kanji": "",
       "Definition": "that, that thing"
@@ -218,161 +261,193 @@
   ],
   "い": [
     {
+      "ID": "N5#44",
       "Kana": "いい",
       "Kanji": "",
       "Definition": "good"
     },
     {
+      "ID": "N5#45",
       "Kana": "いいえ",
       "Kanji": "",
       "Definition": "no, not at all"
     },
     {
+      "ID": "N5#46",
       "Kana": "いう",
       "Kanji": "言う",
       "Definition": "to say"
     },
     {
+      "ID": "N5#47",
       "Kana": "いえ",
       "Kanji": "家",
       "Definition": "house, family"
     },
     {
+      "ID": "N5#48",
       "Kana": "いかが",
       "Kanji": "",
       "Definition": "how, in what way"
     },
     {
+      "ID": "N5#49",
       "Kana": "いく",
       "Kanji": "行く",
       "Definition": "to go"
     },
     {
+      "ID": "N5#50",
       "Kana": "いくつ",
       "Kanji": "",
       "Definition": "how many?, how old?"
     },
     {
+      "ID": "N5#51",
       "Kana": "いくら",
       "Kanji": "",
       "Definition": "how much?, how many?"
     },
     {
+      "ID": "N5#52",
       "Kana": "いけ",
       "Kanji": "池",
       "Definition": "pond"
     },
     {
+      "ID": "N5#53",
       "Kana": "いしゃ",
       "Kanji": "医者",
       "Definition": "doctor (medical)"
     },
     {
+      "ID": "N5#54",
       "Kana": "いす",
       "Kanji": "",
       "Definition": "chair"
     },
     {
+      "ID": "N5#55",
       "Kana": "いそがしい",
       "Kanji": "忙しい",
       "Definition": "busy, irritated"
     },
     {
+      "ID": "N5#56",
       "Kana": "いたい",
       "Kanji": "痛い",
       "Definition": "painful"
     },
     {
+      "ID": "N5#57",
       "Kana": "いち",
       "Kanji": "一",
       "Definition": "one"
     },
     {
+      "ID": "N5#58",
       "Kana": "いちにち",
       "Kanji": "一日",
       "Definition": "1 day (duration)"
     },
     {
+      "ID": "N5#59",
       "Kana": "いちばん",
       "Kanji": "",
       "Definition": "best, first, number one"
     },
     {
+      "ID": "N5#60",
       "Kana": "いつ",
       "Kanji": "",
       "Definition": "when"
     },
     {
+      "ID": "N5#61",
       "Kana": "いつか",
       "Kanji": "五日",
       "Definition": "five days, the fifth day (of the month)"
     },
     {
+      "ID": "N5#62",
       "Kana": "いっしょ",
       "Kanji": "一緒",
       "Definition": "together"
     },
     {
+      "ID": "N5#63",
       "Kana": "いつつ",
       "Kanji": "五つ",
       "Definition": "five"
     },
     {
+      "ID": "N5#64",
       "Kana": "いつも",
       "Kanji": "",
       "Definition": "always, every time"
     },
     {
+      "ID": "N5#65",
       "Kana": "いぬ",
       "Kanji": "犬",
       "Definition": "dog"
     },
     {
+      "ID": "N5#66",
       "Kana": "いま",
       "Kanji": "今",
       "Definition": "now"
     },
     {
+      "ID": "N5#67",
       "Kana": "いみ",
       "Kanji": "意味",
       "Definition": "meaning"
     },
     {
+      "ID": "N5#68",
       "Kana": "いもうと",
       "Kanji": "妹",
       "Definition": "younger sister"
     },
     {
+      "ID": "N5#69",
       "Kana": "いや",
       "Kanji": "嫌",
       "Definition": "disagreeable, no"
     },
     {
+      "ID": "N5#70",
       "Kana": "いりぐち",
       "Kanji": "入口",
       "Definition": "entrance, gate"
     },
     {
+      "ID": "N5#71",
       "Kana": "いる",
       "Kanji": "居る",
       "Definition": "(hum) to be (animate), to exist"
     },
     {
+      "ID": "N5#72",
       "Kana": "いる",
       "Kanji": "要る",
       "Definition": "to need"
     },
     {
+      "ID": "N5#73",
       "Kana": "いれる",
       "Kanji": "入れる",
       "Definition": "to put in"
     },
     {
+      "ID": "N5#74",
       "Kana": "いろ",
       "Kanji": "色",
       "Definition": "colour"
     },
     {
+      "ID": "N5#75",
       "Kana": "いろいろ",
       "Kanji": "",
       "Definition": "various"
@@ -380,56 +455,67 @@
   ],
   "う": [
     {
+      "ID": "N5#76",
       "Kana": "うえ",
       "Kanji": "上",
       "Definition": "above, on top of"
     },
     {
+      "ID": "N5#77",
       "Kana": "うしろ",
       "Kanji": "後ろ",
       "Definition": "behind, rear"
     },
     {
+      "ID": "N5#78",
       "Kana": "うすい",
       "Kanji": "薄い",
       "Definition": "thin, weak"
     },
     {
+      "ID": "N5#79",
       "Kana": "うた",
       "Kanji": "歌",
       "Definition": "song"
     },
     {
+      "ID": "N5#80",
       "Kana": "うたう",
       "Kanji": "歌う",
       "Definition": "to sing"
     },
     {
+      "ID": "N5#81",
       "Kana": "うち",
       "Kanji": "",
       "Definition": "house (one's own)"
     },
     {
+      "ID": "N5#82",
       "Kana": "うまれる",
       "Kanji": "生まれる",
       "Definition": "to be born"
     },
     {
+      "ID": "N5#83",
       "Kana": "うみ",
       "Kanji": "海",
       "Definition": "sea, beach"
     },
     {
+      "ID": "N5#84",
       "Kana": "うる",
       "Kanji": "売る",
       "Definition": "to sell"
     },
     {
+      "ID": "N5#85",
       "Kana": "うるさい",
       "Kanji": "",
       "Definition": "noisy, loud, annoying"
     },
     {
+      "ID": "N5#86",
       "Kana": "うわぎ",
       "Kanji": "上着",
       "Definition": "coat, jacket"
@@ -437,41 +523,49 @@
   ],
   "え": [
     {
+      "ID": "N5#87",
       "Kana": "え",
       "Kanji": "絵",
       "Definition": "picture, drawing, painting, sketch"
     },
     {
+      "ID": "N5#88",
       "Kana": "えいが",
       "Kanji": "映画",
       "Definition": "movie, film"
     },
     {
+      "ID": "N5#89",
       "Kana": "えいがかん",
       "Kanji": "映画館",
       "Definition": "movie theatre (theater), cinema"
     },
     {
+      "ID": "N5#90",
       "Kana": "えいご",
       "Kanji": "英語",
       "Definition": "the English language"
     },
     {
+      "ID": "N5#91",
       "Kana": "ええ",
       "Kanji": "",
       "Definition": "yes"
     },
     {
+      "ID": "N5#92",
       "Kana": "えき",
       "Kanji": "駅",
       "Definition": "station"
     },
     {
+      "ID": "N5#93",
       "Kana": "エレベーター",
       "Kanji": "",
       "Definition": "elevator"
     },
     {
+      "ID": "N5#94",
       "Kana": "えんぴつ",
       "Kanji": "鉛筆",
       "Definition": "pencil"
@@ -479,226 +573,271 @@
   ],
   "お": [
     {
+      "ID": "N5#95",
       "Kana": "おいしい",
       "Kanji": "",
       "Definition": "delicious, tasty"
     },
     {
+      "ID": "N5#96",
       "Kana": "おおい",
       "Kanji": "多い",
       "Definition": "many"
     },
     {
+      "ID": "N5#97",
       "Kana": "おおきい",
       "Kanji": "大きい",
       "Definition": "big"
     },
     {
+      "ID": "N5#98",
       "Kana": "おおきな",
       "Kanji": "大きな",
       "Definition": "big"
     },
     {
+      "ID": "N5#99",
       "Kana": "おおぜい",
       "Kanji": "大勢",
       "Definition": "great number of people"
     },
     {
+      "ID": "N5#100",
       "Kana": "おかあさん",
       "Kanji": "お母さん",
       "Definition": "(hon) mother"
     },
     {
+      "ID": "N5#101",
       "Kana": "おかし",
       "Kanji": "お菓子",
       "Definition": "confections, sweets, candy"
     },
     {
+      "ID": "N5#102",
       "Kana": "おかね",
       "Kanji": "お金",
       "Definition": "money"
     },
     {
+      "ID": "N5#103",
       "Kana": "おきる",
       "Kanji": "起きる",
       "Definition": "to get up, to rise"
     },
     {
+      "ID": "N5#104",
       "Kana": "おく",
       "Kanji": "置く",
       "Definition": "to put, to place"
     },
     {
+      "ID": "N5#105",
       "Kana": "おくさん",
       "Kanji": "奥さん",
       "Definition": "(hon) wife"
     },
     {
+      "ID": "N5#106",
       "Kana": "おさけ",
       "Kanji": "お酒",
       "Definition": "alcohol, sake (rice wine)"
     },
     {
+      "ID": "N5#107",
       "Kana": "おさら",
       "Kanji": "お皿",
       "Definition": "plate, dish"
     },
     {
+      "ID": "N5#108",
       "Kana": "おじさん",
       "Kanji": "伯父/叔父・さん",
       "Definition": "uncle, middle aged man"
     },
     {
+      "ID": "N5#109",
       "Kana": "おじいさん",
       "Kanji": "",
       "Definition": "grandfather, male senior citizen"
     },
     {
+      "ID": "N5#110",
       "Kana": "おしえる",
       "Kanji": "教える",
       "Definition": "to teach, to inform"
     },
     {
+      "ID": "N5#111",
       "Kana": "おす",
       "Kanji": "押す",
       "Definition": "to push, to press"
     },
     {
+      "ID": "N5#112",
       "Kana": "おそい",
       "Kanji": "遅い",
       "Definition": "late, slow"
     },
     {
+      "ID": "N5#113",
       "Kana": "おちゃ",
       "Kanji": "お茶",
       "Definition": "tea (green)"
     },
     {
+      "ID": "N5#114",
       "Kana": "おてあらい",
       "Kanji": "お手洗い",
       "Definition": "toilet, lavatory, bathroom"
     },
     {
+      "ID": "N5#115",
       "Kana": "おとうさん",
       "Kanji": "お父さん",
       "Definition": "(hon) father"
     },
     {
+      "ID": "N5#116",
       "Kana": "おとうと",
       "Kanji": "弟",
       "Definition": "younger brother"
     },
     {
+      "ID": "N5#117",
       "Kana": "おとこ",
       "Kanji": "男",
       "Definition": "man"
     },
     {
+      "ID": "N5#118",
       "Kana": "おとこのこ",
       "Kanji": "男の子",
       "Definition": "boy"
     },
     {
+      "ID": "N5#119",
       "Kana": "おととい",
       "Kanji": "",
       "Definition": "day before yesterday"
     },
     {
+      "ID": "N5#120",
       "Kana": "おととし",
       "Kanji": "",
       "Definition": "year before last"
     },
     {
+      "ID": "N5#121",
       "Kana": "おとな",
       "Kanji": "大人",
       "Definition": "adult"
     },
     {
+      "ID": "N5#122",
       "Kana": "おなか",
       "Kanji": "",
       "Definition": "stomach"
     },
     {
+      "ID": "N5#123",
       "Kana": "おなじ",
       "Kanji": "同じ",
       "Definition": "same, identical, similar"
     },
     {
+      "ID": "N5#124",
       "Kana": "おにいさん",
       "Kanji": "お兄さん",
       "Definition": "(hon) older brother"
     },
     {
+      "ID": "N5#125",
       "Kana": "おねえさん",
       "Kanji": "お姉さん",
       "Definition": "(hon) older sister"
     },
     {
+      "ID": "N5#126",
       "Kana": "おばさん",
       "Kanji": "伯母さん/叔母さん",
       "Definition": "aunt"
     },
     {
+      "ID": "N5#127",
       "Kana": "おばあさん",
       "Kanji": "",
       "Definition": "grandmother, female senior-citizen"
     },
     {
+      "ID": "N5#128",
       "Kana": "おふろ",
       "Kanji": "お風呂",
       "Definition": "bath"
     },
     {
+      "ID": "N5#129",
       "Kana": "おべんとう",
       "Kanji": "お弁当",
       "Definition": "boxed lunch"
     },
     {
+      "ID": "N5#130",
       "Kana": "おぼえる",
       "Kanji": "覚える",
       "Definition": "to remember, to memorize"
     },
     {
+      "ID": "N5#131",
       "Kana": "おまわりさん",
       "Kanji": "",
       "Definition": "policeman (friendly term)"
     },
     {
+      "ID": "N5#132",
       "Kana": "おもい",
       "Kanji": "重い",
       "Definition": "heavy"
     },
     {
+      "ID": "N5#133",
       "Kana": "おもしろい",
       "Kanji": "",
       "Definition": "interesting, amusing"
     },
     {
+      "ID": "N5#134",
       "Kana": "およぐ",
       "Kanji": "泳ぐ",
       "Definition": "to swim"
     },
     {
+      "ID": "N5#135",
       "Kana": "おりる",
       "Kanji": "降りる",
       "Definition": "to alight (eg from bus), to get off"
     },
     {
+      "ID": "N5#136",
       "Kana": "おわる",
       "Kanji": "終る",
       "Definition": "to finish, to close"
     },
     {
+      "ID": "N5#137",
       "Kana": "おんがく",
       "Kanji": "音楽",
       "Definition": "music"
     },
     {
+      "ID": "N5#138",
       "Kana": "おんな",
       "Kanji": "女",
       "Definition": "woman, girl, daughter"
     },
     {
+      "ID": "N5#139",
       "Kana": "おんなのこ",
       "Kanji": "女の子",
       "Definition": "girl"
@@ -706,196 +845,223 @@
   ],
   "か": [
     {
-      "Kana": "がいこく",
-      "Kanji": "外国",
-      "Definition": "foreign country"
-    },
-    {
-      "Kana": "がいこくじん",
-      "Kanji": "外国人",
-      "Definition": "foreigner"
-    },
-    {
+      "ID": "N5#140",
       "Kana": "かいしゃ",
       "Kanji": "会社",
       "Definition": "company, corporation"
     },
     {
+      "ID": "N5#141",
       "Kana": "かいだん",
       "Kanji": "階段",
       "Definition": "stairs"
     },
     {
+      "ID": "N5#142",
       "Kana": "かいもの",
       "Kanji": "買い物",
       "Definition": "shopping"
     },
     {
+      "ID": "N5#143",
       "Kana": "かう",
       "Kanji": "買う",
       "Definition": "to buy"
     },
     {
+      "ID": "N5#144",
       "Kana": "かえす",
       "Kanji": "返す",
       "Definition": "to return something"
     },
     {
+      "ID": "N5#145",
       "Kana": "かえる",
       "Kanji": "帰る",
       "Definition": "to go home, to return"
     },
     {
+      "ID": "N5#146",
       "Kana": "かお",
       "Kanji": "顔",
       "Definition": "face (person)"
     },
     {
+      "ID": "N5#147",
       "Kana": "かかる",
       "Kanji": "",
       "Definition": "to take (eg time, money)"
     },
     {
+      "ID": "N5#148",
       "Kana": "かぎ",
       "Kanji": "",
       "Definition": "key/s"
     },
     {
+      "ID": "N5#149",
       "Kana": "かく",
       "Kanji": "書く",
       "Definition": "to write"
     },
     {
+      "ID": "N5#150",
       "Kana": "かける",
       "Kanji": "",
       "Definition": "to put on (eg glasses)"
     },
     {
+      "ID": "N5#151",
       "Kana": "かける",
       "Kanji": "",
       "Definition": "to dial/call (eg phone)"
     },
     {
+      "ID": "N5#152",
       "Kana": "かさ",
       "Kanji": "傘",
       "Definition": "umbrella"
     },
     {
+      "ID": "N5#153",
       "Kana": "かす",
       "Kanji": "貸す",
       "Definition": "to lend"
     },
     {
+      "ID": "N5#154",
       "Kana": "かぜ",
       "Kanji": "風",
       "Definition": "wind, breeze"
     },
     {
+      "ID": "N5#155",
       "Kana": "かぜ",
       "Kanji": "風邪",
       "Definition": "cold, illness"
     },
     {
+      "ID": "N5#156",
       "Kana": "かた",
       "Kanji": "方",
       "Definition": "person"
     },
     {
+      "ID": "N5#157",
       "Kana": "かぞく",
       "Kanji": "家族",
       "Definition": "family"
     },
     {
+      "ID": "N5#158",
       "Kana": "かたかな",
       "Kanji": "片仮名",
       "Definition": "katakana"
     },
     {
+      "ID": "N5#159",
       "Kana": "カップ",
       "Kanji": "",
       "Definition": "cup"
     },
     {
+      "ID": "N5#160",
       "Kana": "かてい",
       "Kanji": "家庭",
       "Definition": "home, household"
     },
     {
+      "ID": "N5#161",
       "Kana": "かど",
       "Kanji": "角",
       "Definition": "corner (e.g. desk)"
     },
     {
+      "ID": "N5#162",
       "Kana": "かばん",
       "Kanji": "",
       "Definition": "bag, basket"
     },
     {
+      "ID": "N5#163",
       "Kana": "かびん",
       "Kanji": "花瓶",
       "Definition": "(flower) vase"
     },
     {
+      "ID": "N5#164",
       "Kana": "かぶる",
       "Kanji": "",
       "Definition": "to wear, to put on (head)"
     },
     {
+      "ID": "N5#165",
       "Kana": "かみ",
       "Kanji": "紙",
       "Definition": "paper"
     },
     {
+      "ID": "N5#166",
       "Kana": "カメラ",
       "Kanji": "",
       "Definition": "camera"
     },
     {
+      "ID": "N5#167",
       "Kana": "かようび",
       "Kanji": "火曜日",
       "Definition": "Tuesday"
     },
     {
+      "ID": "N5#168",
       "Kana": "からい",
       "Kanji": "辛い",
       "Definition": "spicy, salty"
     },
     {
+      "ID": "N5#169",
       "Kana": "からだ",
       "Kanji": "体",
       "Definition": "body"
     },
     {
+      "ID": "N5#170",
       "Kana": "かりる",
       "Kanji": "借りる",
       "Definition": "to borrow, to have a loan"
     },
     {
+      "ID": "N5#171",
       "Kana": "かるい",
       "Kanji": "軽い",
       "Definition": "light, non-serious, minor"
     },
     {
+      "ID": "N5#172",
       "Kana": "カレー",
       "Kanji": "",
       "Definition": "curry"
     },
     {
+      "ID": "N5#173",
       "Kana": "カレンダー",
       "Kanji": "",
       "Definition": "calendar"
     },
     {
+      "ID": "N5#174",
       "Kana": "かわ",
       "Kanji": "川/河",
       "Definition": "river"
     },
     {
+      "ID": "N5#175",
       "Kana": "かわいい",
       "Kanji": "",
       "Definition": "cute, charming"
     },
     {
+      "ID": "N5#176",
       "Kana": "かんじ",
       "Kanji": "漢字",
       "Definition": "kanji, Chinese character"
@@ -903,11 +1069,25 @@
   ],
   "が": [
     {
+      "ID": "N5#177",
+      "Kana": "がいこく",
+      "Kanji": "外国",
+      "Definition": "foreign country"
+    },
+    {
+      "ID": "N5#178",
+      "Kana": "がいこくじん",
+      "Kanji": "外国人",
+      "Definition": "foreigner"
+    },
+    {
+      "ID": "N5#179",
       "Kana": "がくせい",
       "Kanji": "学生",
       "Definition": "student"
     },
     {
+      "ID": "N5#180",
       "Kana": "がっこう",
       "Kanji": "学校",
       "Definition": "school"
@@ -915,116 +1095,139 @@
   ],
   "き": [
     {
+      "ID": "N5#181",
       "Kana": "き",
       "Kanji": "木",
       "Definition": "tree, wood"
     },
     {
+      "ID": "N5#182",
       "Kana": "きいろ",
       "Kanji": "黄色",
       "Definition": "yellow"
     },
     {
+      "ID": "N5#183",
       "Kana": "きいろい",
       "Kanji": "黄色い",
       "Definition": "yellow"
     },
     {
+      "ID": "N5#184",
       "Kana": "きえる",
       "Kanji": "消える",
       "Definition": "to go out, to vanish"
     },
     {
+      "ID": "N5#185",
       "Kana": "きく",
       "Kanji": "聞く",
       "Definition": "to hear, to listen, to ask"
     },
     {
+      "ID": "N5#186",
       "Kana": "きた",
       "Kanji": "北",
       "Definition": "north"
     },
     {
+      "ID": "N5#187",
       "Kana": "きたない",
       "Kanji": "汚い",
       "Definition": "dirty, messy"
     },
     {
+      "ID": "N5#188",
       "Kana": "きっさてん",
       "Kanji": "喫茶店",
       "Definition": "coffee lounge"
     },
     {
+      "ID": "N5#189",
       "Kana": "きって",
       "Kanji": "切手",
       "Definition": "stamp (eg. postage)"
     },
     {
+      "ID": "N5#190",
       "Kana": "きっぷ",
       "Kanji": "切符",
       "Definition": "ticket"
     },
     {
+      "ID": "N5#191",
       "Kana": "きのう",
       "Kanji": "昨日",
       "Definition": "yesterday"
     },
     {
+      "ID": "N5#192",
       "Kana": "きゅう",
       "Kanji": "九",
       "Definition": "nine"
     },
     {
+      "ID": "N5#193",
       "Kana": "きょう",
       "Kanji": "今日",
       "Definition": "today, this day"
     },
     {
+      "ID": "N5#194",
       "Kana": "きょうしつ",
       "Kanji": "教室",
       "Definition": "classroom"
     },
     {
+      "ID": "N5#195",
       "Kana": "きょうだい",
       "Kanji": "兄弟",
       "Definition": "siblings (brothers and sisters)"
     },
     {
+      "ID": "N5#196",
       "Kana": "きょねん",
       "Kanji": "去年",
       "Definition": "last year"
     },
     {
+      "ID": "N5#197",
       "Kana": "きらい",
       "Kanji": "嫌い",
       "Definition": "dislike, hate"
     },
     {
+      "ID": "N5#198",
       "Kana": "きる",
       "Kanji": "切る",
       "Definition": "to cut, to chop"
     },
     {
+      "ID": "N5#199",
       "Kana": "きる",
       "Kanji": "着る",
       "Definition": "to wear, to put on (from shoulders down)"
     },
     {
+      "ID": "N5#200",
       "Kana": "きれい",
       "Kanji": "",
       "Definition": "pretty, clean, nice, tidy"
     },
     {
+      "ID": "N5#201",
       "Kana": "キログラム",
       "Kanji": "",
       "Definition": "kilo (kilogram)"
     },
     {
+      "ID": "N5#202",
       "Kana": "キロメートル",
       "Kanji": "",
       "Definition": "kilo (kilometre)"
     },
     {
+      "ID": "N5#203",
       "Kana": "きんようび",
       "Kanji": "金曜日",
       "Definition": "Friday"
@@ -1032,21 +1235,25 @@
   ],
   "ぎ": [
     {
+      "ID": "N5#204",
       "Kana": "ギター",
       "Kanji": "",
       "Definition": "guitar"
     },
     {
+      "ID": "N5#205",
       "Kana": "ぎゅうにく",
       "Kanji": "牛肉",
       "Definition": "beef"
     },
     {
+      "ID": "N5#206",
       "Kana": "ぎゅうにゅう",
       "Kanji": "牛乳",
       "Definition": "milk"
     },
     {
+      "ID": "N5#207",
       "Kana": "ぎんこう",
       "Kanji": "銀行",
       "Definition": "bank"
@@ -1054,81 +1261,97 @@
   ],
   "く": [
     {
+      "ID": "N5#208",
       "Kana": "く",
       "Kanji": "九",
       "Definition": "nine"
     },
     {
+      "ID": "N5#209",
       "Kana": "くすり",
       "Kanji": "薬",
       "Definition": "medicine"
     },
     {
+      "ID": "N5#210",
       "Kana": "ください",
       "Kanji": "",
       "Definition": "(with te-form verb) please do for me"
     },
     {
+      "ID": "N5#211",
       "Kana": "くだもの",
       "Kanji": "果物",
       "Definition": "fruit"
     },
     {
+      "ID": "N5#212",
       "Kana": "くち",
       "Kanji": "口",
       "Definition": "mouth, orifice, opening"
     },
     {
+      "ID": "N5#213",
       "Kana": "くつ",
       "Kanji": "靴",
       "Definition": "shoes, footwear"
     },
     {
+      "ID": "N5#214",
       "Kana": "くつした",
       "Kanji": "靴下",
       "Definition": "socks"
     },
     {
+      "ID": "N5#215",
       "Kana": "くに",
       "Kanji": "国",
       "Definition": "country"
     },
     {
+      "ID": "N5#216",
       "Kana": "くもり",
       "Kanji": "曇り",
       "Definition": "cloudiness, cloudy weather"
     },
     {
+      "ID": "N5#217",
       "Kana": "くもる",
       "Kanji": "曇る",
       "Definition": "to become cloudy, to become dim"
     },
     {
+      "ID": "N5#218",
       "Kana": "くらい",
       "Kanji": "暗い",
       "Definition": "dark, gloomy"
     },
     {
+      "ID": "N5#219",
       "Kana": "クラス",
       "Kanji": "",
       "Definition": "class"
     },
     {
+      "ID": "N5#220",
       "Kana": "くる",
       "Kanji": "来る",
       "Definition": "to come"
     },
     {
+      "ID": "N5#221",
       "Kana": "くるま",
       "Kanji": "車",
       "Definition": "car, vehicle"
     },
     {
+      "ID": "N5#222",
       "Kana": "くろ",
       "Kanji": "黒",
       "Definition": "black"
     },
     {
+      "ID": "N5#223",
       "Kana": "くろい",
       "Kanji": "黒い",
       "Definition": "black"
@@ -1136,6 +1359,7 @@
   ],
   "ぐ": [
     {
+      "ID": "N5#224",
       "Kana": "グラム",
       "Kanji": "",
       "Definition": "gram"
@@ -1143,31 +1367,37 @@
   ],
   "け": [
     {
+      "ID": "N5#225",
       "Kana": "けいかん",
       "Kanji": "警官",
       "Definition": "policeman"
     },
     {
+      "ID": "N5#226",
       "Kana": "けさ",
       "Kanji": "今朝",
       "Definition": "this morning"
     },
     {
+      "ID": "N5#227",
       "Kana": "けす",
       "Kanji": "消す",
       "Definition": "to erase, to delete, to turn off power"
     },
     {
+      "ID": "N5#228",
       "Kana": "けっこう",
       "Kanji": "結構",
       "Definition": "nice, enough"
     },
     {
+      "ID": "N5#229",
       "Kana": "けっこん",
       "Kanji": "結婚",
       "Definition": "marriage"
     },
     {
+      "ID": "N5#230",
       "Kana": "けっこんする",
       "Kanji": "結婚する",
       "Definition": "to get married"
@@ -1175,16 +1405,19 @@
   ],
   "げ": [
     {
+      "ID": "N5#231",
       "Kana": "げつようび",
       "Kanji": "月曜日",
       "Definition": "Monday"
     },
     {
+      "ID": "N5#232",
       "Kana": "げんかん",
       "Kanji": "玄関",
       "Definition": "entrance-way, entry hall"
     },
     {
+      "ID": "N5#233",
       "Kana": "げんき",
       "Kanji": "元気",
       "Definition": "health"
@@ -1192,131 +1425,157 @@
   ],
   "こ": [
     {
+      "ID": "N5#234",
       "Kana": "こうえん",
       "Kanji": "公園",
       "Definition": "(public) park"
     },
     {
+      "ID": "N5#235",
       "Kana": "こうさてん",
       "Kanji": "交差点",
       "Definition": "intersection"
     },
     {
+      "ID": "N5#236",
       "Kana": "こうちゃ",
       "Kanji": "紅茶",
       "Definition": "black tea"
     },
     {
+      "ID": "N5#237",
       "Kana": "こうばん",
       "Kanji": "交番",
       "Definition": "police box"
     },
     {
+      "ID": "N5#238",
       "Kana": "こえ",
       "Kanji": "声",
       "Definition": "voice"
     },
     {
+      "ID": "N5#239",
       "Kana": "コート",
       "Kanji": "",
       "Definition": "coat"
     },
     {
+      "ID": "N5#240",
       "Kana": "コーヒー",
       "Kanji": "",
       "Definition": "coffee"
     },
     {
+      "ID": "N5#241",
       "Kana": "ここ",
       "Kanji": "",
       "Definition": "here, this place"
     },
     {
+      "ID": "N5#242",
       "Kana": "ここのか",
       "Kanji": "九日",
       "Definition": "nine days, the ninth day (of the month)"
     },
     {
+      "ID": "N5#243",
       "Kana": "ここのつ",
       "Kanji": "九つ",
       "Definition": "nine"
     },
     {
+      "ID": "N5#244",
       "Kana": "こたえる",
       "Kanji": "答える",
       "Definition": "to answer, to reply"
     },
     {
+      "ID": "N5#245",
       "Kana": "こちら",
       "Kanji": "",
       "Definition": "this eg person, way"
     },
     {
+      "ID": "N5#246",
       "Kana": "こっち",
       "Kanji": "",
       "Definition": "this eg person, way"
     },
     {
+      "ID": "N5#247",
       "Kana": "コップ",
       "Kanji": "",
       "Definition": "cup"
     },
     {
+      "ID": "N5#248",
       "Kana": "ことし",
       "Kanji": "今年",
       "Definition": "this year"
     },
     {
+      "ID": "N5#249",
       "Kana": "ことば",
       "Kanji": "言葉",
       "Definition": "word"
     },
     {
+      "ID": "N5#250",
       "Kana": "こども",
       "Kanji": "子供",
       "Definition": "child, children"
     },
     {
+      "ID": "N5#251",
       "Kana": "この",
       "Kanji": "",
       "Definition": "this"
     },
     {
+      "ID": "N5#252",
       "Kana": "コピー",
       "Kanji": "",
       "Definition": "a copy"
     },
     {
+      "ID": "N5#253",
       "Kana": "コピーする",
       "Kanji": "",
       "Definition": "to copy"
     },
     {
+      "ID": "N5#254",
       "Kana": "こまる",
       "Kanji": "困る",
       "Definition": "to be worried, to be bothered"
     },
     {
+      "ID": "N5#255",
       "Kana": "これ",
       "Kanji": "",
       "Definition": "this"
     },
     {
+      "ID": "N5#256",
       "Kana": "こんげつ",
       "Kanji": "今月",
       "Definition": "this month"
     },
     {
+      "ID": "N5#257",
       "Kana": "こんしゅう",
       "Kanji": "今週",
       "Definition": "this week"
     },
     {
+      "ID": "N5#258",
       "Kana": "こんな",
       "Kanji": "",
       "Definition": "such, like this"
     },
     {
+      "ID": "N5#259",
       "Kana": "こんばん",
       "Kanji": "今晩",
       "Definition": "tonight, this evening"
@@ -1324,21 +1583,25 @@
   ],
   "ご": [
     {
+      "ID": "N5#260",
       "Kana": "ご",
       "Kanji": "五",
       "Definition": "five"
     },
     {
+      "ID": "N5#261",
       "Kana": "ごご",
       "Kanji": "午後",
       "Definition": "afternoon, P.M."
     },
     {
+      "ID": "N5#262",
       "Kana": "ごぜん",
       "Kanji": "午前",
       "Definition": "morning, A.M."
     },
     {
+      "ID": "N5#263",
       "Kana": "ごはん",
       "Kanji": "御飯",
       "Definition": "rice (cooked), meal"
@@ -1346,66 +1609,79 @@
   ],
   "さ": [
     {
+      "ID": "N5#264",
       "Kana": "さあ",
       "Kanji": "",
       "Definition": "come now, well"
     },
     {
+      "ID": "N5#265",
       "Kana": "さいふ",
       "Kanji": "財布",
       "Definition": "wallet"
     },
     {
+      "ID": "N5#266",
       "Kana": "さかな",
       "Kanji": "魚",
       "Definition": "fish"
     },
     {
+      "ID": "N5#267",
       "Kana": "さき",
       "Kanji": "先",
       "Definition": "the future, former, previous"
     },
     {
+      "ID": "N5#268",
       "Kana": "さく",
       "Kanji": "咲く",
       "Definition": "to bloom"
     },
     {
+      "ID": "N5#269",
       "Kana": "さくぶん",
       "Kanji": "作文",
       "Definition": "composition, writing"
     },
     {
+      "ID": "N5#270",
       "Kana": "さす",
       "Kanji": "差す",
       "Definition": "to raise (stretch out) hands, to raise (eg umbrella)"
     },
     {
+      "ID": "N5#271",
       "Kana": "さとう",
       "Kanji": "砂糖",
       "Definition": "sugar"
     },
     {
+      "ID": "N5#272",
       "Kana": "さむい",
       "Kanji": "寒い",
       "Definition": "cold (e.g. weather)"
     },
     {
+      "ID": "N5#273",
       "Kana": "さらいねん",
       "Kanji": "さ来年",
       "Definition": "year after next"
     },
     {
+      "ID": "N5#274",
       "Kana": "さん",
       "Kanji": "三",
       "Definition": "three"
     },
     {
+      "ID": "N5#275",
       "Kana": "さんぽ",
       "Kanji": "散歩",
       "Definition": "a walk, stroll"
     },
     {
+      "ID": "N5#276",
       "Kana": "さんぽする",
       "Kanji": "散歩する",
       "Definition": "to walk or to go for a stroll"
@@ -1413,6 +1689,7 @@
   ],
   "ざ": [
     {
+      "ID": "N5#277",
       "Kana": "ざっし",
       "Kanji": "雑誌",
       "Definition": "magazine"
@@ -1420,111 +1697,133 @@
   ],
   "し": [
     {
+      "ID": "N5#278",
       "Kana": "し",
       "Kanji": "四",
       "Definition": "four"
     },
     {
+      "ID": "N5#279",
       "Kana": "しお",
       "Kanji": "塩",
       "Definition": "salt"
     },
     {
+      "ID": "N5#280",
       "Kana": "しかし",
       "Kanji": "",
       "Definition": "however, but"
     },
     {
+      "ID": "N5#281",
       "Kana": "しごと",
       "Kanji": "仕事",
       "Definition": "work, occupation, employment"
     },
     {
+      "ID": "N5#282",
       "Kana": "しずか",
       "Kanji": "静か",
       "Definition": "quiet, peaceful"
     },
     {
+      "ID": "N5#283",
       "Kana": "した",
       "Kanji": "下",
       "Definition": "under, below, beneath"
     },
     {
+      "ID": "N5#284",
       "Kana": "しち",
       "Kanji": "七",
       "Definition": "seven"
     },
     {
+      "ID": "N5#285",
       "Kana": "しつもん",
       "Kanji": "質問",
       "Definition": "question, inquiry"
     },
     {
+      "ID": "N5#286",
       "Kana": "しぬ",
       "Kanji": "死ぬ",
       "Definition": "to die"
     },
     {
+      "ID": "N5#287",
       "Kana": "しまる",
       "Kanji": "閉まる",
       "Definition": "to close, to be closed"
     },
     {
+      "ID": "N5#288",
       "Kana": "しめる",
       "Kanji": "閉める",
       "Definition": "to close, to shut"
     },
     {
+      "ID": "N5#289",
       "Kana": "しめる",
       "Kanji": "締める",
       "Definition": "to tie, to fasten"
     },
     {
+      "ID": "N5#290",
       "Kana": "しゃしん",
       "Kanji": "写真",
       "Definition": "photograph"
     },
     {
+      "ID": "N5#291",
       "Kana": "シャツ",
       "Kanji": "",
       "Definition": "shirt, singlet"
     },
     {
+      "ID": "N5#292",
       "Kana": "シャワー",
       "Kanji": "",
       "Definition": "shower"
     },
     {
+      "ID": "N5#293",
       "Kana": "しゅくだい",
       "Kanji": "宿題",
       "Definition": "homework"
     },
     {
+      "ID": "N5#294",
       "Kana": "しょうゆ",
       "Kanji": "",
       "Definition": "soy sauce"
     },
     {
+      "ID": "N5#295",
       "Kana": "しょくどう",
       "Kanji": "食堂",
       "Definition": "cafeteria, dining hall"
     },
     {
+      "ID": "N5#296",
       "Kana": "しる",
       "Kanji": "知る",
       "Definition": "to know, to understand"
     },
     {
+      "ID": "N5#297",
       "Kana": "しろ",
       "Kanji": "白",
       "Definition": "white"
     },
     {
+      "ID": "N5#298",
       "Kana": "しろい",
       "Kanji": "白い",
       "Definition": "white"
     },
     {
+      "ID": "N5#299",
       "Kana": "しんぶん",
       "Kanji": "新聞",
       "Definition": "newspaper"
@@ -1532,61 +1831,73 @@
   ],
   "じ": [
     {
+      "ID": "N5#300",
       "Kana": "じかん",
       "Kanji": "時間",
       "Definition": "time"
     },
     {
+      "ID": "N5#301",
       "Kana": "じしょ",
       "Kanji": "辞書",
       "Definition": "dictionary"
     },
     {
+      "ID": "N5#302",
       "Kana": "じてんしゃ",
       "Kanji": "自転車",
       "Definition": "bicycle"
     },
     {
+      "ID": "N5#303",
       "Kana": "じどうしゃ",
       "Kanji": "自動車",
       "Definition": "automobile"
     },
     {
+      "ID": "N5#304",
       "Kana": "じびき",
       "Kanji": "字引",
       "Definition": "dictionary"
     },
     {
+      "ID": "N5#305",
       "Kana": "じぶん",
       "Kanji": "自分",
       "Definition": "myself, oneself"
     },
     {
+      "ID": "N5#306",
       "Kana": "じゃ",
       "Kanji": "",
       "Definition": "well, well then"
     },
     {
+      "ID": "N5#307",
       "Kana": "じゃあ",
       "Kanji": "",
       "Definition": "well, well then"
     },
     {
+      "ID": "N5#308",
       "Kana": "じゅう",
       "Kanji": "十",
       "Definition": "ten"
     },
     {
+      "ID": "N5#309",
       "Kana": "じゅぎょう",
       "Kanji": "授業",
       "Definition": "lesson, class work"
     },
     {
+      "ID": "N5#310",
       "Kana": "じょうず",
       "Kanji": "上手",
       "Definition": "skill, skillful, dexterity"
     },
     {
+      "ID": "N5#311",
       "Kana": "じょうぶ",
       "Kanji": "丈夫",
       "Definition": "strong, solid, durable"
@@ -1594,76 +1905,91 @@
   ],
   "す": [
     {
+      "ID": "N5#312",
       "Kana": "すいようび",
       "Kanji": "水曜日",
       "Definition": "Wednesday"
     },
     {
+      "ID": "N5#313",
       "Kana": "すう",
       "Kanji": "吸う",
       "Definition": "to smoke, to breathe in, to suck"
     },
     {
+      "ID": "N5#314",
       "Kana": "スカート",
       "Kanji": "",
       "Definition": "skirt"
     },
     {
+      "ID": "N5#315",
       "Kana": "すき",
       "Kanji": "好き",
       "Definition": "liking, fondness, love"
     },
     {
+      "ID": "N5#316",
       "Kana": "すくない",
       "Kanji": "少ない",
       "Definition": "a few, scarce"
     },
     {
+      "ID": "N5#317",
       "Kana": "すぐ",
       "Kanji": "",
       "Definition": "immediately, instantly"
     },
     {
+      "ID": "N5#318",
       "Kana": "すこし",
       "Kanji": "少し",
       "Definition": "little, few"
     },
     {
+      "ID": "N5#319",
       "Kana": "すずしい",
       "Kanji": "涼しい",
       "Definition": "cool, refreshing"
     },
     {
+      "ID": "N5#320",
       "Kana": "ストーブ",
       "Kanji": "",
       "Definition": "heater (lit: stove)"
     },
     {
+      "ID": "N5#321",
       "Kana": "スプーン",
       "Kanji": "",
       "Definition": "spoon"
     },
     {
+      "ID": "N5#322",
       "Kana": "スポーツ",
       "Kanji": "",
       "Definition": "sport"
     },
     {
+      "ID": "N5#323",
       "Kana": "すむ",
       "Kanji": "住む",
       "Definition": "to reside, to live in"
     },
     {
+      "ID": "N5#324",
       "Kana": "スリッパ",
       "Kanji": "",
       "Definition": "slippers"
     },
     {
+      "ID": "N5#325",
       "Kana": "する",
       "Kanji": "",
       "Definition": "to do, to try"
     },
     {
+      "ID": "N5#326",
       "Kana": "すわる",
       "Kanji": "座る",
       "Definition": "to sit"
@@ -1671,6 +1997,7 @@
   ],
   "ず": [
     {
+      "ID": "N5#327",
       "Kana": "ズボン",
       "Kanji": "",
       "Definition": "trousers (fr: jupon)"
@@ -1678,56 +2005,67 @@
   ],
   "せ": [
     {
+      "ID": "N5#328",
       "Kana": "せい",
       "Kanji": "背",
       "Definition": "height, stature"
     },
     {
+      "ID": "N5#329",
       "Kana": "せいと",
       "Kanji": "生徒",
       "Definition": "pupil"
     },
     {
+      "ID": "N5#330",
       "Kana": "セーター",
       "Kanji": "",
       "Definition": "sweater, jumper"
     },
     {
+      "ID": "N5#331",
       "Kana": "せっけん",
       "Kanji": "石鹸",
       "Definition": "soap"
     },
     {
+      "ID": "N5#332",
       "Kana": "せびろ",
       "Kanji": "背広",
       "Definition": "business suit"
     },
     {
+      "ID": "N5#333",
       "Kana": "せまい",
       "Kanji": "狭い",
       "Definition": "narrow, confined, small"
     },
     {
+      "ID": "N5#334",
       "Kana": "せん",
       "Kanji": "千",
       "Definition": "thousand, many"
     },
     {
+      "ID": "N5#335",
       "Kana": "せんげつ",
       "Kanji": "先月",
       "Definition": "last month"
     },
     {
+      "ID": "N5#336",
       "Kana": "せんしゅう",
       "Kanji": "先週",
       "Definition": "last week, the week before"
     },
     {
+      "ID": "N5#337",
       "Kana": "せんせい",
       "Kanji": "先生",
       "Definition": "teacher, master, doctor"
     },
     {
+      "ID": "N5#338",
       "Kana": "せんたく",
       "Kanji": "洗濯",
       "Definition": "washing, laundry"
@@ -1735,11 +2073,13 @@
   ],
   "ぜ": [
     {
+      "ID": "N5#339",
       "Kana": "ゼロ",
       "Kanji": "",
       "Definition": "zero"
     },
     {
+      "ID": "N5#340",
       "Kana": "ぜんぶ",
       "Kanji": "全部",
       "Definition": "all, entire, whole"
@@ -1747,76 +2087,91 @@
   ],
   "そ": [
     {
+      "ID": "N5#341",
       "Kana": "そう",
       "Kanji": "",
       "Definition": "appears, to be the case"
     },
     {
+      "ID": "N5#342",
       "Kana": "そうじ",
       "Kanji": "掃除",
       "Definition": "cleaning, sweeping"
     },
     {
+      "ID": "N5#343",
       "Kana": "そうじする",
       "Kanji": "掃除する",
       "Definition": "to clean, to sweep"
     },
     {
+      "ID": "N5#344",
       "Kana": "そうして",
       "Kanji": "",
       "Definition": "and, like that"
     },
     {
+      "ID": "N5#345",
       "Kana": "そこ",
       "Kanji": "",
       "Definition": "that place, there"
     },
     {
+      "ID": "N5#346",
       "Kana": "そちら",
       "Kanji": "",
       "Definition": "over there"
     },
     {
+      "ID": "N5#347",
       "Kana": "そして",
       "Kanji": "",
       "Definition": "and, like that"
     },
     {
+      "ID": "N5#348",
       "Kana": "そっち",
       "Kanji": "",
       "Definition": "over there"
     },
     {
+      "ID": "N5#349",
       "Kana": "そと",
       "Kanji": "外",
       "Definition": "outside, exterior"
     },
     {
+      "ID": "N5#350",
       "Kana": "その",
       "Kanji": "",
       "Definition": "that"
     },
     {
+      "ID": "N5#351",
       "Kana": "そば",
       "Kanji": "",
       "Definition": "near, close, beside"
     },
     {
+      "ID": "N5#352",
       "Kana": "そら",
       "Kanji": "空",
       "Definition": "sky"
     },
     {
+      "ID": "N5#353",
       "Kana": "それ",
       "Kanji": "",
       "Definition": "it, that"
     },
     {
+      "ID": "N5#354",
       "Kana": "それから",
       "Kanji": "",
       "Definition": "and then, after that"
     },
     {
+      "ID": "N5#355",
       "Kana": "それでは",
       "Kanji": "",
       "Definition": "in that situation, well then..."
@@ -1824,96 +2179,115 @@
   ],
   "た": [
     {
+      "ID": "N5#356",
       "Kana": "たいしかん",
       "Kanji": "大使館",
       "Definition": "embassy"
     },
     {
+      "ID": "N5#357",
       "Kana": "たいせつ",
       "Kanji": "大切",
       "Definition": "important"
     },
     {
+      "ID": "N5#358",
       "Kana": "たいへん",
       "Kanji": "",
       "Definition": "very"
     },
     {
+      "ID": "N5#359",
       "Kana": "たいへん",
       "Kanji": "",
       "Definition": "difficult situation, tough situation"
     },
     {
+      "ID": "N5#360",
       "Kana": "たかい",
       "Kanji": "高い",
       "Definition": "tall, high"
     },
     {
+      "ID": "N5#361",
       "Kana": "たかい",
       "Kanji": "高い",
       "Definition": "expensive"
     },
     {
+      "ID": "N5#362",
       "Kana": "たくさん",
       "Kanji": "",
       "Definition": "many, a lot, much"
     },
     {
+      "ID": "N5#363",
       "Kana": "タクシー",
       "Kanji": "",
       "Definition": "taxi"
     },
     {
+      "ID": "N5#364",
       "Kana": "たつ",
       "Kanji": "立つ",
       "Definition": "to stand"
     },
     {
+      "ID": "N5#365",
       "Kana": "たて",
       "Kanji": "",
       "Definition": "length, height"
     },
     {
+      "ID": "N5#366",
       "Kana": "たてもの",
       "Kanji": "建物",
       "Definition": "building"
     },
     {
+      "ID": "N5#367",
       "Kana": "たのしい",
       "Kanji": "楽しい",
       "Definition": "enjoyable, fun"
     },
     {
+      "ID": "N5#368",
       "Kana": "たのむ",
       "Kanji": "頼む",
       "Definition": "to request, to ask"
     },
     {
+      "ID": "N5#369",
       "Kana": "たばこ",
       "Kanji": "",
       "Definition": "tobacco, cigarettes"
     },
     {
+      "ID": "N5#370",
       "Kana": "たぶん",
       "Kanji": "",
       "Definition": "perhaps, probably"
     },
     {
+      "ID": "N5#371",
       "Kana": "たべもの",
       "Kanji": "食べ物",
       "Definition": "food"
     },
     {
+      "ID": "N5#372",
       "Kana": "たべる",
       "Kanji": "食べる",
       "Definition": "to eat"
     },
     {
+      "ID": "N5#373",
       "Kana": "たまご",
       "Kanji": "卵",
       "Definition": "egg(s)"
     },
     {
+      "ID": "N5#374",
       "Kana": "たんじょうび",
       "Kanji": "誕生日",
       "Definition": "birthday"
@@ -1921,103 +2295,123 @@
   ],
   "だ": [
     {
+      "ID": "N5#375",
       "Kana": "だいがく",
       "Kanji": "大学",
       "Definition": "university"
     },
     {
+      "ID": "N5#376",
       "Kana": "だいじょうぶ",
       "Kanji": "大丈夫",
       "Definition": "safe, all right, O.K."
     },
     {
+      "ID": "N5#377",
       "Kana": "だいすき",
       "Kanji": "大好き",
       "Definition": "very likeable, like very much"
     },
     {
+      "ID": "N5#378",
       "Kana": "だいどころ",
       "Kanji": "台所",
       "Definition": "kitchen"
     },
     {
+      "ID": "N5#379",
       "Kana": "だす",
       "Kanji": "出す",
       "Definition": "to put out, to send"
     },
     {
-      "Kana": "だんだん",
-      "Kanji": "",
-      "Definition": "gradually, by degrees"
-    },
-    {
+      "ID": "N5#380",
       "Kana": "だれ",
       "Kanji": "誰",
       "Definition": "who"
     },
     {
+      "ID": "N5#381",
       "Kana": "だれか",
       "Kanji": "誰か",
       "Definition": "someone, somebody"
+    },
+    {
+      "ID": "N5#382",
+      "Kana": "だんだん",
+      "Kanji": "",
+      "Definition": "gradually, by degrees"
     }
   ],
   "ち": [
     {
+      "ID": "N5#383",
       "Kana": "ちいさい",
       "Kanji": "小さい",
       "Definition": "small, little"
     },
     {
+      "ID": "N5#384",
       "Kana": "ちいさな",
       "Kanji": "小さな",
       "Definition": "small, little"
     },
     {
+      "ID": "N5#385",
       "Kana": "ちかい",
       "Kanji": "近い",
       "Definition": "near, close by, short"
     },
     {
+      "ID": "N5#386",
       "Kana": "ちがう",
       "Kanji": "違う",
       "Definition": "to differ (from)"
     },
     {
+      "ID": "N5#387",
       "Kana": "ちかく",
       "Kanji": "近く",
       "Definition": "near"
     },
     {
+      "ID": "N5#388",
       "Kana": "ちかてつ",
       "Kanji": "地下鉄",
       "Definition": "underground train, subway"
     },
     {
+      "ID": "N5#389",
       "Kana": "ちず",
       "Kanji": "地図",
       "Definition": "map"
     },
     {
+      "ID": "N5#390",
       "Kana": "ちち",
       "Kanji": "父",
       "Definition": "(one's own) father"
     },
     {
+      "ID": "N5#391",
       "Kana": "ちゃいろ",
       "Kanji": "茶色",
       "Definition": "brown"
     },
     {
+      "ID": "N5#392",
       "Kana": "ちゃわん",
       "Kanji": "",
       "Definition": "rice bowl"
     },
     {
+      "ID": "N5#393",
       "Kana": "ちょうど",
       "Kanji": "",
       "Definition": "just, right, exactly"
     },
     {
+      "ID": "N5#394",
       "Kana": "ちょっと",
       "Kanji": "",
       "Definition": "a little, somewhat"
@@ -2025,61 +2419,73 @@
   ],
   "つ": [
     {
+      "ID": "N5#395",
       "Kana": "ついたち",
       "Kanji": "一日",
       "Definition": "for one day, first of month"
     },
     {
+      "ID": "N5#396",
       "Kana": "つかう",
       "Kanji": "使う",
       "Definition": "to use"
     },
     {
+      "ID": "N5#397",
       "Kana": "つかれる",
       "Kanji": "疲れる",
       "Definition": "to get tired, to tire"
     },
     {
+      "ID": "N5#398",
       "Kana": "つぎ",
       "Kanji": "次",
       "Definition": "next"
     },
     {
+      "ID": "N5#399",
       "Kana": "つく",
       "Kanji": "着く",
       "Definition": "to arrive at, to reach"
     },
     {
+      "ID": "N5#400",
       "Kana": "つくえ",
       "Kanji": "机",
       "Definition": "desk"
     },
     {
+      "ID": "N5#401",
       "Kana": "つくる",
       "Kanji": "作る",
       "Definition": "to make, to create"
     },
     {
+      "ID": "N5#402",
       "Kana": "つける",
       "Kanji": "",
       "Definition": "to turn on (eg a light)"
     },
     {
+      "ID": "N5#403",
       "Kana": "つとめる",
       "Kanji": "勤める",
       "Definition": "to serve, to work (for)"
     },
     {
+      "ID": "N5#404",
       "Kana": "つまらない",
       "Kanji": "",
       "Definition": "insignificant, boring"
     },
     {
+      "ID": "N5#405",
       "Kana": "つめたい",
       "Kanji": "冷たい",
       "Definition": "cold (to the touch)"
     },
     {
+      "ID": "N5#406",
       "Kana": "つよい",
       "Kanji": "強い",
       "Definition": "strong, powerful"
@@ -2087,41 +2493,49 @@
   ],
   "て": [
     {
+      "ID": "N5#407",
       "Kana": "て",
       "Kanji": "手",
       "Definition": "hand"
     },
     {
+      "ID": "N5#408",
       "Kana": "テープ",
       "Kanji": "",
       "Definition": "tape"
     },
     {
+      "ID": "N5#409",
       "Kana": "テープレコーダー",
       "Kanji": "",
       "Definition": "tape recorder"
     },
     {
+      "ID": "N5#410",
       "Kana": "テーブル",
       "Kanji": "",
       "Definition": "table"
     },
     {
+      "ID": "N5#411",
       "Kana": "てがみ",
       "Kanji": "手紙",
       "Definition": "letter"
     },
     {
+      "ID": "N5#412",
       "Kana": "テスト",
       "Kanji": "",
       "Definition": "test"
     },
     {
+      "ID": "N5#413",
       "Kana": "テレビ",
       "Kanji": "",
       "Definition": "television, TV"
     },
     {
+      "ID": "N5#414",
       "Kana": "てんき",
       "Kanji": "天気",
       "Definition": "weather"
@@ -2129,51 +2543,61 @@
   ],
   "で": [
     {
+      "ID": "N5#415",
       "Kana": "でかける",
       "Kanji": "出かける",
       "Definition": "to depart, to go out"
     },
     {
+      "ID": "N5#416",
       "Kana": "できる",
       "Kanji": "",
       "Definition": "to be able to"
     },
     {
+      "ID": "N5#417",
       "Kana": "でぐち",
       "Kanji": "出口",
       "Definition": "exit"
     },
     {
+      "ID": "N5#418",
       "Kana": "では",
       "Kanji": "",
       "Definition": "with that..."
     },
     {
+      "ID": "N5#419",
       "Kana": "デパート",
       "Kanji": "",
       "Definition": "department store"
     },
     {
+      "ID": "N5#420",
       "Kana": "でも",
       "Kanji": "",
       "Definition": "but, however"
     },
     {
+      "ID": "N5#421",
       "Kana": "でる",
       "Kanji": "出る",
       "Definition": "to appear, to leave"
     },
     {
+      "ID": "N5#422",
       "Kana": "でんき",
       "Kanji": "電気",
       "Definition": "electricity, (electric) light"
     },
     {
+      "ID": "N5#423",
       "Kana": "でんしゃ",
       "Kanji": "電車",
       "Definition": "electric train"
     },
     {
+      "ID": "N5#424",
       "Kana": "でんわ",
       "Kanji": "電話",
       "Definition": "telephone"
@@ -2181,96 +2605,115 @@
   ],
   "と": [
     {
+      "ID": "N5#425",
       "Kana": "と",
       "Kanji": "戸",
       "Definition": "door (Japanese style)"
     },
     {
+      "ID": "N5#426",
       "Kana": "トイレ",
       "Kanji": "",
       "Definition": "toilet"
     },
     {
+      "ID": "N5#427",
       "Kana": "とお",
       "Kanji": "十",
       "Definition": "ten"
     },
     {
+      "ID": "N5#428",
       "Kana": "とおい",
       "Kanji": "遠い",
       "Definition": "far, distant"
     },
     {
+      "ID": "N5#429",
       "Kana": "とおか",
       "Kanji": "十日",
       "Definition": "ten days, the tenth (day of the month)"
     },
     {
+      "ID": "N5#430",
       "Kana": "ときどき",
       "Kanji": "時々",
       "Definition": "sometimes"
     },
     {
+      "ID": "N5#431",
       "Kana": "とけい",
       "Kanji": "時計",
       "Definition": "watch, clock"
     },
     {
+      "ID": "N5#432",
       "Kana": "ところ",
       "Kanji": "所",
       "Definition": "place"
     },
     {
+      "ID": "N5#433",
       "Kana": "とし",
       "Kanji": "年",
       "Definition": "year, age"
     },
     {
+      "ID": "N5#434",
       "Kana": "としょかん",
       "Kanji": "図書館",
       "Definition": "library"
     },
     {
+      "ID": "N5#435",
       "Kana": "とても",
       "Kanji": "",
       "Definition": "very"
     },
     {
+      "ID": "N5#436",
       "Kana": "となり",
       "Kanji": "隣",
       "Definition": "next to, next door to"
     },
     {
+      "ID": "N5#437",
       "Kana": "とぶ",
       "Kanji": "飛ぶ",
       "Definition": "to fly, to hop"
     },
     {
+      "ID": "N5#438",
       "Kana": "とまる",
       "Kanji": "止まる",
       "Definition": "to come to a halt"
     },
     {
+      "ID": "N5#439",
       "Kana": "ともだち",
       "Kanji": "友達",
       "Definition": "friend"
     },
     {
+      "ID": "N5#440",
       "Kana": "とり",
       "Kanji": "鳥",
       "Definition": "bird"
     },
     {
+      "ID": "N5#441",
       "Kana": "とりにく",
       "Kanji": "とり肉",
       "Definition": "chicken meat"
     },
     {
+      "ID": "N5#442",
       "Kana": "とる",
       "Kanji": "取る",
       "Definition": "to take"
     },
     {
+      "ID": "N5#443",
       "Kana": "とる",
       "Kanji": "撮る",
       "Definition": "to take (a photo)"
@@ -2278,71 +2721,85 @@
   ],
   "ど": [
     {
+      "ID": "N5#444",
       "Kana": "ドア",
       "Kanji": "",
       "Definition": "door (Western style)"
     },
     {
+      "ID": "N5#445",
       "Kana": "どう",
       "Kanji": "",
       "Definition": "how, in what way"
     },
     {
+      "ID": "N5#446",
       "Kana": "どうして",
       "Kanji": "",
       "Definition": "why?, for what reason"
     },
     {
+      "ID": "N5#447",
       "Kana": "どうぞ",
       "Kanji": "",
       "Definition": "please, kindly, by all means"
     },
     {
+      "ID": "N5#448",
       "Kana": "どうぶつ",
       "Kanji": "動物",
       "Definition": "animal"
     },
     {
+      "ID": "N5#449",
       "Kana": "どうも",
       "Kanji": "",
       "Definition": "thanks, very"
     },
     {
+      "ID": "N5#450",
       "Kana": "どこ",
       "Kanji": "",
       "Definition": "where, what place"
     },
     {
+      "ID": "N5#451",
       "Kana": "どちら",
       "Kanji": "",
       "Definition": "which, which way"
     },
     {
+      "ID": "N5#452",
       "Kana": "どっち",
       "Kanji": "",
       "Definition": "which one, which way"
     },
     {
+      "ID": "N5#453",
       "Kana": "どなた",
       "Kanji": "",
       "Definition": "who"
     },
     {
+      "ID": "N5#454",
       "Kana": "どの",
       "Kanji": "",
       "Definition": "which"
     },
     {
+      "ID": "N5#455",
       "Kana": "どようび",
       "Kanji": "土曜日",
       "Definition": "Saturday"
     },
     {
+      "ID": "N5#456",
       "Kana": "どれ",
       "Kanji": "",
       "Definition": "which (of three or more)"
     },
     {
+      "ID": "N5#457",
       "Kana": "どんな",
       "Kanji": "",
       "Definition": "what, what kind of"
@@ -2350,86 +2807,103 @@
   ],
   "な": [
     {
+      "ID": "N5#458",
       "Kana": "ない",
       "Kanji": "",
       "Definition": "there isn't, doesn't have"
     },
     {
+      "ID": "N5#459",
       "Kana": "ナイフ",
       "Kanji": "",
       "Definition": "knife"
     },
     {
+      "ID": "N5#460",
       "Kana": "なか",
       "Kanji": "中",
       "Definition": "inside, middle, among"
     },
     {
+      "ID": "N5#461",
       "Kana": "ながい",
       "Kanji": "長い",
       "Definition": "long"
     },
     {
+      "ID": "N5#462",
       "Kana": "なく",
       "Kanji": "鳴く",
       "Definition": "to sing (bird), to make sound (animal)"
     },
     {
+      "ID": "N5#463",
       "Kana": "なくす",
       "Kanji": "無くす",
       "Definition": "to lose something"
     },
     {
+      "ID": "N5#464",
       "Kana": "なぜ",
       "Kanji": "",
       "Definition": "why"
     },
     {
+      "ID": "N5#465",
       "Kana": "なつ",
       "Kanji": "夏",
       "Definition": "summer"
     },
     {
+      "ID": "N5#466",
       "Kana": "なつやすみ",
       "Kanji": "夏休み",
       "Definition": "summer vacation, summer holiday"
     },
     {
+      "ID": "N5#467",
       "Kana": "ななつ",
       "Kanji": "七つ",
       "Definition": "seven"
     },
     {
+      "ID": "N5#468",
       "Kana": "なに",
       "Kanji": "何",
       "Definition": "what"
     },
     {
+      "ID": "N5#469",
       "Kana": "なのか",
       "Kanji": "七日",
       "Definition": "seven days, the seventh day (of the month)"
     },
     {
+      "ID": "N5#470",
       "Kana": "なまえ",
       "Kanji": "名前",
       "Definition": "name"
     },
     {
+      "ID": "N5#471",
       "Kana": "ならう",
       "Kanji": "習う",
       "Definition": "to learn"
     },
     {
+      "ID": "N5#472",
       "Kana": "ならぶ",
       "Kanji": "並ぶ",
       "Definition": "to line up, to stand in a line"
     },
     {
+      "ID": "N5#473",
       "Kana": "ならべる",
       "Kanji": "並べる",
       "Definition": "to line up, to set up"
     },
     {
+      "ID": "N5#474",
       "Kana": "なる",
       "Kanji": "",
       "Definition": "to become"
@@ -2437,41 +2911,49 @@
   ],
   "に": [
     {
+      "ID": "N5#475",
       "Kana": "に",
       "Kanji": "二",
       "Definition": "two"
     },
     {
+      "ID": "N5#476",
       "Kana": "にぎやか",
       "Kanji": "",
       "Definition": "bustling, busy"
     },
     {
+      "ID": "N5#477",
       "Kana": "にく",
       "Kanji": "肉",
       "Definition": "meat"
     },
     {
+      "ID": "N5#478",
       "Kana": "にし",
       "Kanji": "西",
       "Definition": "west"
     },
     {
+      "ID": "N5#479",
       "Kana": "にちようび",
       "Kanji": "日曜日",
       "Definition": "Sunday"
     },
     {
+      "ID": "N5#480",
       "Kana": "にもつ",
       "Kanji": "荷物",
       "Definition": "luggage"
     },
     {
+      "ID": "N5#481",
       "Kana": "ニュース",
       "Kanji": "",
       "Definition": "news"
     },
     {
+      "ID": "N5#482",
       "Kana": "にわ",
       "Kanji": "庭",
       "Definition": "garden"
@@ -2479,11 +2961,13 @@
   ],
   "ぬ": [
     {
+      "ID": "N5#483",
       "Kana": "ぬぐ",
       "Kanji": "脱ぐ",
       "Definition": "to take off clothes"
     },
     {
+      "ID": "N5#484",
       "Kana": "ぬるい",
       "Kanji": "温い",
       "Definition": "lukewarm"
@@ -2491,16 +2975,19 @@
   ],
   "ね": [
     {
+      "ID": "N5#485",
       "Kana": "ネクタイ",
       "Kanji": "",
       "Definition": "tie, necktie"
     },
     {
+      "ID": "N5#486",
       "Kana": "ねこ",
       "Kanji": "猫",
       "Definition": "cat"
     },
     {
+      "ID": "N5#487",
       "Kana": "ねる",
       "Kanji": "寝る",
       "Definition": "to go to bed, to sleep"
@@ -2508,26 +2995,31 @@
   ],
   "の": [
     {
+      "ID": "N5#488",
       "Kana": "ノート",
       "Kanji": "",
       "Definition": "notebook, exercise book"
     },
     {
+      "ID": "N5#489",
       "Kana": "のぼる",
       "Kanji": "登る",
       "Definition": "to climb"
     },
     {
+      "ID": "N5#490",
       "Kana": "のみもの",
       "Kanji": "飲み物",
       "Definition": "drink, beverage"
     },
     {
+      "ID": "N5#491",
       "Kana": "のむ",
       "Kanji": "飲む",
       "Definition": "to drink"
     },
     {
+      "ID": "N5#492",
       "Kana": "のる",
       "Kanji": "乗る",
       "Definition": "to get on, to ride in, to board"
@@ -2535,156 +3027,187 @@
   ],
   "は": [
     {
+      "ID": "N5#493",
       "Kana": "は",
       "Kanji": "歯",
       "Definition": "tooth"
     },
     {
+      "ID": "N5#494",
       "Kana": "はい",
       "Kanji": "",
       "Definition": "yes"
     },
     {
+      "ID": "N5#495",
       "Kana": "はいざら",
       "Kanji": "灰皿",
       "Definition": "ashtray"
     },
     {
+      "ID": "N5#496",
       "Kana": "はいる",
       "Kanji": "入る",
       "Definition": "to enter, to contain, to hold"
     },
     {
+      "ID": "N5#497",
       "Kana": "はがき",
       "Kanji": "葉書",
       "Definition": "postcard"
     },
     {
+      "ID": "N5#498",
       "Kana": "はく",
       "Kanji": "",
       "Definition": "to wear, to put on (trousers)"
     },
     {
+      "ID": "N5#499",
       "Kana": "はこ",
       "Kanji": "箱",
       "Definition": "box"
     },
     {
+      "ID": "N5#500",
       "Kana": "はし",
       "Kanji": "橋",
       "Definition": "bridge"
     },
     {
+      "ID": "N5#501",
       "Kana": "はし",
       "Kanji": "",
       "Definition": "chopsticks"
     },
     {
+      "ID": "N5#502",
       "Kana": "はじまる",
       "Kanji": "始まる",
       "Definition": "to begin"
     },
     {
+      "ID": "N5#503",
       "Kana": "はじめ",
       "Kanji": "初め/始め",
       "Definition": "beginning, start"
     },
     {
+      "ID": "N5#504",
       "Kana": "はじめて",
       "Kanji": "初めて",
       "Definition": "for the first time"
     },
     {
+      "ID": "N5#505",
       "Kana": "はしる",
       "Kanji": "走る",
       "Definition": "to run"
     },
     {
+      "ID": "N5#506",
       "Kana": "はたち",
       "Kanji": "二十歳",
       "Definition": "20 years old, 20th year"
     },
     {
+      "ID": "N5#507",
       "Kana": "はたらく",
       "Kanji": "働く",
       "Definition": "to work"
     },
     {
+      "ID": "N5#508",
       "Kana": "はち",
       "Kanji": "八",
       "Definition": "eight"
     },
     {
+      "ID": "N5#509",
       "Kana": "はつか",
       "Kanji": "二十日",
       "Definition": "twenty days, twentieth (day of the month)"
     },
     {
+      "ID": "N5#510",
       "Kana": "はな",
       "Kanji": "花",
       "Definition": "flower"
     },
     {
+      "ID": "N5#511",
       "Kana": "はな",
       "Kanji": "鼻",
       "Definition": "nose"
     },
     {
+      "ID": "N5#512",
       "Kana": "はなし",
       "Kanji": "話",
       "Definition": "talk, story"
     },
     {
+      "ID": "N5#513",
       "Kana": "はなす",
       "Kanji": "話す",
       "Definition": "to speak"
     },
     {
+      "ID": "N5#514",
       "Kana": "はは",
       "Kanji": "母",
       "Definition": "(one's own) mother"
     },
     {
+      "ID": "N5#515",
       "Kana": "はやい",
       "Kanji": "早い",
       "Definition": "early"
     },
     {
+      "ID": "N5#516",
       "Kana": "はやい",
       "Kanji": "速い",
       "Definition": "quick, fast"
     },
     {
+      "ID": "N5#517",
       "Kana": "はる",
       "Kanji": "春",
       "Definition": "spring"
     },
     {
+      "ID": "N5#518",
       "Kana": "はる",
       "Kanji": "貼る",
       "Definition": "to stick, to paste"
     },
     {
+      "ID": "N5#519",
       "Kana": "はれ",
       "Kanji": "晴れ",
       "Definition": "clear weather"
     },
     {
+      "ID": "N5#520",
       "Kana": "はれる",
       "Kanji": "晴れる",
       "Definition": "to be sunny"
     },
     {
+      "ID": "N5#521",
       "Kana": "はん",
       "Kanji": "半",
       "Definition": "half"
     },
     {
+      "ID": "N5#522",
       "Kana": "ハンカチ",
       "Kanji": "",
       "Definition": "handkerchief"
     },
     {
+      "ID": "N5#523",
       "Kana": "はんぶん",
       "Kanji": "半分",
       "Definition": "half"
@@ -2692,26 +3215,31 @@
   ],
   "ば": [
     {
+      "ID": "N5#524",
       "Kana": "バス",
       "Kanji": "",
       "Definition": "bus"
     },
     {
+      "ID": "N5#525",
       "Kana": "バター",
       "Kanji": "",
       "Definition": "butter"
     },
     {
+      "ID": "N5#526",
       "Kana": "ばん",
       "Kanji": "晩",
       "Definition": "evening"
     },
     {
+      "ID": "N5#527",
       "Kana": "ばんごう",
       "Kanji": "番号",
       "Definition": "number"
     },
     {
+      "ID": "N5#528",
       "Kana": "ばんごはん",
       "Kanji": "晩御飯",
       "Definition": "dinner, evening meal"
@@ -2719,11 +3247,13 @@
   ],
   "ぱ": [
     {
+      "ID": "N5#529",
       "Kana": "パーティー",
       "Kanji": "",
       "Definition": "party"
     },
     {
+      "ID": "N5#530",
       "Kana": "パン",
       "Kanji": "",
       "Definition": "bread"
@@ -2731,81 +3261,97 @@
   ],
   "ひ": [
     {
+      "ID": "N5#531",
       "Kana": "ひがし",
       "Kanji": "東",
       "Definition": "east"
     },
     {
+      "ID": "N5#532",
       "Kana": "ひく",
       "Kanji": "引く",
       "Definition": "to pull"
     },
     {
+      "ID": "N5#533",
       "Kana": "ひく",
       "Kanji": "弾く",
       "Definition": "to play (piano, guitar)"
     },
     {
+      "ID": "N5#534",
       "Kana": "ひくい",
       "Kanji": "低い",
       "Definition": "short, low"
     },
     {
+      "ID": "N5#535",
       "Kana": "ひこうき",
       "Kanji": "飛行機",
       "Definition": "aeroplane, airplane"
     },
     {
+      "ID": "N5#536",
       "Kana": "ひだり",
       "Kanji": "左",
       "Definition": "left hand side"
     },
     {
+      "ID": "N5#537",
       "Kana": "ひと",
       "Kanji": "人",
       "Definition": "man, person"
     },
     {
+      "ID": "N5#538",
       "Kana": "ひとつ",
       "Kanji": "一つ",
       "Definition": "one"
     },
     {
+      "ID": "N5#539",
       "Kana": "ひとつき",
       "Kanji": "一月",
       "Definition": "one month"
     },
     {
+      "ID": "N5#540",
       "Kana": "ひとり",
       "Kanji": "一人",
       "Definition": "one person"
     },
     {
+      "ID": "N5#541",
       "Kana": "ひま",
       "Kanji": "暇",
       "Definition": "free time, leisure"
     },
     {
+      "ID": "N5#542",
       "Kana": "ひゃく",
       "Kanji": "百",
       "Definition": "100, hundred"
     },
     {
+      "ID": "N5#543",
       "Kana": "ひらがな",
       "Kanji": "平仮名",
       "Definition": "hiragana"
     },
     {
+      "ID": "N5#544",
       "Kana": "ひる",
       "Kanji": "昼",
       "Definition": "noon, daytime"
     },
     {
+      "ID": "N5#545",
       "Kana": "ひるごはん",
       "Kanji": "昼御飯",
       "Definition": "lunch, midday meal"
     },
     {
+      "ID": "N5#546",
       "Kana": "ひろい",
       "Kanji": "広い",
       "Definition": "spacious, wide"
@@ -2813,11 +3359,13 @@
   ],
   "び": [
     {
+      "ID": "N5#547",
       "Kana": "びょういん",
       "Kanji": "病院",
       "Definition": "hospital"
     },
     {
+      "ID": "N5#548",
       "Kana": "びょうき",
       "Kanji": "病気",
       "Definition": "illness, disease, sickness"
@@ -2825,66 +3373,79 @@
   ],
   "ふ": [
     {
+      "ID": "N5#549",
       "Kana": "フィルム",
       "Kanji": "",
       "Definition": "film (roll of)"
     },
     {
+      "ID": "N5#550",
       "Kana": "ふうとう",
       "Kanji": "封筒",
       "Definition": "envelope"
     },
     {
+      "ID": "N5#551",
       "Kana": "フォーク",
       "Kanji": "",
       "Definition": "fork"
     },
     {
+      "ID": "N5#552",
       "Kana": "ふく",
       "Kanji": "吹く",
       "Definition": "to blow (wind, etc)"
     },
     {
+      "ID": "N5#553",
       "Kana": "ふく",
       "Kanji": "服",
       "Definition": "clothes"
     },
     {
+      "ID": "N5#554",
       "Kana": "ふたつ",
       "Kanji": "二つ",
       "Definition": "two"
     },
     {
+      "ID": "N5#555",
       "Kana": "ふたり",
       "Kanji": "二人",
       "Definition": "two people"
     },
     {
+      "ID": "N5#556",
       "Kana": "ふつか",
       "Kanji": "二日",
       "Definition": "second day of the month, two days"
     },
     {
+      "ID": "N5#557",
       "Kana": "ふとい",
       "Kanji": "太い",
       "Definition": "fat, thick"
     },
     {
+      "ID": "N5#558",
       "Kana": "ふゆ",
       "Kanji": "冬",
       "Definition": "winter"
     },
     {
+      "ID": "N5#559",
       "Kana": "ふる",
       "Kanji": "降る",
       "Definition": "to precipitate, to fall (e.g. rain)"
     },
     {
+      "ID": "N5#560",
       "Kana": "ふるい",
       "Kanji": "古い",
       "Definition": "old (not person), aged, ancient"
     },
     {
+      "ID": "N5#561",
       "Kana": "ふろ",
       "Kanji": "",
       "Definition": "bath"
@@ -2892,11 +3453,13 @@
   ],
   "ぶ": [
     {
+      "ID": "N5#562",
       "Kana": "ぶたにく",
       "Kanji": "豚肉",
       "Definition": "pork"
     },
     {
+      "ID": "N5#563",
       "Kana": "ぶんしょう",
       "Kanji": "文章",
       "Definition": "sentence, text"
@@ -2904,6 +3467,7 @@
   ],
   "ぷ": [
     {
+      "ID": "N5#564",
       "Kana": "プール",
       "Kanji": "",
       "Definition": "swimming pool"
@@ -2911,16 +3475,19 @@
   ],
   "へ": [
     {
+      "ID": "N5#565",
       "Kana": "へた",
       "Kanji": "下手",
       "Definition": "unskillful, poor"
     },
     {
+      "ID": "N5#566",
       "Kana": "へや",
       "Kanji": "部屋",
       "Definition": "room"
     },
     {
+      "ID": "N5#567",
       "Kana": "へん",
       "Kanji": "辺",
       "Definition": "area, vicinity"
@@ -2928,21 +3495,25 @@
   ],
   "べ": [
     {
+      "ID": "N5#568",
       "Kana": "ベッド",
       "Kanji": "",
       "Definition": "bed"
     },
     {
+      "ID": "N5#569",
       "Kana": "べんきょう",
       "Kanji": "勉強",
       "Definition": "studying, diligence"
     },
     {
+      "ID": "N5#570",
       "Kana": "べんきょうする",
       "Kanji": "勉強する",
       "Definition": "to study, be diligent"
     },
     {
+      "ID": "N5#571",
       "Kana": "べんり",
       "Kanji": "便利",
       "Definition": "convenient, handy"
@@ -2950,58 +3521,69 @@
   ],
   "ぺ": [
     {
+      "ID": "N5#572",
       "Kana": "ページ",
       "Kanji": "",
       "Definition": "page"
     },
     {
-      "Kana": "ペット",
-      "Kanji": "",
-      "Definition": "pet"
-    },
-    {
+      "ID": "N5#573",
       "Kana": "ペン",
       "Kanji": "",
       "Definition": "pen"
+    },
+    {
+      "ID": "N5#574",
+      "Kana": "ペット",
+      "Kanji": "",
+      "Definition": "pet"
     }
   ],
   "ほ": [
     {
+      "ID": "N5#575",
       "Kana": "ほう",
       "Kanji": "",
       "Definition": "way"
     },
     {
+      "ID": "N5#576",
       "Kana": "ほか",
       "Kanji": "外",
       "Definition": "other place, the rest"
     },
     {
+      "ID": "N5#577",
       "Kana": "ほしい",
       "Kanji": "欲しい",
       "Definition": "want, in need of, desire"
     },
     {
+      "ID": "N5#578",
       "Kana": "ほそい",
       "Kanji": "細い",
       "Definition": "thin, slender, fine"
     },
     {
+      "ID": "N5#579",
       "Kana": "ホテル",
       "Kanji": "",
       "Definition": "hotel"
     },
     {
+      "ID": "N5#580",
       "Kana": "ほん",
       "Kanji": "本",
       "Definition": "book"
     },
     {
+      "ID": "N5#581",
       "Kana": "ほんだな",
       "Kanji": "本棚",
       "Definition": "bookshelves"
     },
     {
+      "ID": "N5#582",
       "Kana": "ほんとう",
       "Kanji": "",
       "Definition": "reality, truth"
@@ -3009,16 +3591,19 @@
   ],
   "ぼ": [
     {
+      "ID": "N5#583",
       "Kana": "ぼうし",
       "Kanji": "帽子",
       "Definition": "hat"
     },
     {
+      "ID": "N5#584",
       "Kana": "ボールペン",
       "Kanji": "",
       "Definition": "ball-point pen"
     },
     {
+      "ID": "N5#585",
       "Kana": "ボタン",
       "Kanji": "",
       "Definition": "button"
@@ -3026,11 +3611,13 @@
   ],
   "ぽ": [
     {
+      "ID": "N5#586",
       "Kana": "ポケット",
       "Kanji": "",
       "Definition": "pocket"
     },
     {
+      "ID": "N5#587",
       "Kana": "ポスト",
       "Kanji": "",
       "Definition": "post"
@@ -3038,106 +3625,127 @@
   ],
   "ま": [
     {
+      "ID": "N5#588",
       "Kana": "まいあさ",
       "Kanji": "毎朝",
       "Definition": "every morning"
     },
     {
+      "ID": "N5#589",
       "Kana": "まいげつ",
       "Kanji": "毎月",
       "Definition": "every month, monthly"
     },
     {
+      "ID": "N5#590",
       "Kana": "まいしゅう",
       "Kanji": "毎週",
       "Definition": "every week"
     },
     {
+      "ID": "N5#591",
       "Kana": "まいつき",
       "Kanji": "毎月",
       "Definition": "every month, monthly"
     },
     {
+      "ID": "N5#592",
       "Kana": "まいとし",
       "Kanji": "毎年",
       "Definition": "every year, annually"
     },
     {
+      "ID": "N5#593",
       "Kana": "まいにち",
       "Kanji": "毎日",
       "Definition": "every day"
     },
     {
+      "ID": "N5#594",
       "Kana": "まいねん",
       "Kanji": "毎年",
       "Definition": "every year, annually"
     },
     {
+      "ID": "N5#595",
       "Kana": "まいばん",
       "Kanji": "毎晩",
       "Definition": "every night"
     },
     {
+      "ID": "N5#596",
       "Kana": "まえ",
       "Kanji": "前",
       "Definition": "before, in front"
     },
     {
+      "ID": "N5#597",
       "Kana": "まがる",
       "Kanji": "曲る",
       "Definition": "to turn, to bend"
     },
     {
+      "ID": "N5#598",
       "Kana": "まずい",
       "Kanji": "",
       "Definition": "unappetising, unpleasant (taste)"
     },
     {
+      "ID": "N5#599",
       "Kana": "また",
       "Kanji": "",
       "Definition": "again, and"
     },
     {
+      "ID": "N5#600",
       "Kana": "まだ",
       "Kanji": "",
       "Definition": "yet, still, besides"
     },
     {
+      "ID": "N5#601",
       "Kana": "まち",
       "Kanji": "町",
       "Definition": "town, city"
     },
     {
+      "ID": "N5#602",
       "Kana": "まつ",
       "Kanji": "待つ",
       "Definition": "to wait"
     },
     {
+      "ID": "N5#603",
       "Kana": "まっすぐ",
       "Kanji": "",
       "Definition": "straight (ahead), direct"
     },
     {
+      "ID": "N5#604",
       "Kana": "マッチ",
       "Kanji": "",
       "Definition": "match"
     },
     {
+      "ID": "N5#605",
       "Kana": "まど",
       "Kanji": "窓",
       "Definition": "window"
     },
     {
+      "ID": "N5#606",
       "Kana": "まるい",
       "Kanji": "丸い/円い",
       "Definition": "round, circular"
     },
     {
+      "ID": "N5#607",
       "Kana": "まん",
       "Kanji": "万",
       "Definition": "ten thousand, everything"
     },
     {
+      "ID": "N5#608",
       "Kana": "まんねんひつ",
       "Kanji": "万年筆",
       "Definition": "fountain pen"
@@ -3145,76 +3753,91 @@
   ],
   "み": [
     {
+      "ID": "N5#609",
       "Kana": "みがく",
       "Kanji": "磨く",
       "Definition": "to brush (teeth)"
     },
     {
+      "ID": "N5#610",
       "Kana": "みぎ",
       "Kanji": "右",
       "Definition": "right hand side"
     },
     {
+      "ID": "N5#611",
       "Kana": "みじかい",
       "Kanji": "短い",
       "Definition": "short"
     },
     {
+      "ID": "N5#612",
       "Kana": "みず",
       "Kanji": "水",
       "Definition": "water"
     },
     {
+      "ID": "N5#613",
       "Kana": "みせ",
       "Kanji": "店",
       "Definition": "store, shop, establishment"
     },
     {
+      "ID": "N5#614",
       "Kana": "みせる",
       "Kanji": "見せる",
       "Definition": "to show, to display"
     },
     {
+      "ID": "N5#615",
       "Kana": "みち",
       "Kanji": "道",
       "Definition": "road, street"
     },
     {
+      "ID": "N5#616",
       "Kana": "みっか",
       "Kanji": "三日",
       "Definition": "three days, the third day (of the month)"
     },
     {
+      "ID": "N5#617",
       "Kana": "みっつ",
       "Kanji": "三つ",
       "Definition": "three"
     },
     {
+      "ID": "N5#618",
       "Kana": "みどり",
       "Kanji": "緑",
       "Definition": "green"
     },
     {
+      "ID": "N5#619",
       "Kana": "みなさん",
       "Kanji": "皆さん",
       "Definition": "everyone"
     },
     {
+      "ID": "N5#620",
       "Kana": "みなみ",
       "Kanji": "南",
       "Definition": "South, proceeding south"
     },
     {
+      "ID": "N5#621",
       "Kana": "みみ",
       "Kanji": "耳",
       "Definition": "ear"
     },
     {
+      "ID": "N5#622",
       "Kana": "みる",
       "Kanji": "見る",
       "Definition": "to see, to watch"
     },
     {
+      "ID": "N5#623",
       "Kana": "みんな",
       "Kanji": "",
       "Definition": "all, everyone, everybody"
@@ -3222,26 +3845,31 @@
   ],
   "む": [
     {
+      "ID": "N5#624",
       "Kana": "むいか",
       "Kanji": "六日",
       "Definition": "six days, sixth (day of month)"
     },
     {
+      "ID": "N5#625",
       "Kana": "むこう",
       "Kanji": "向こう",
       "Definition": "beyond, over there"
     },
     {
+      "ID": "N5#626",
       "Kana": "むずかしい",
       "Kanji": "難しい",
       "Definition": "difficult"
     },
     {
+      "ID": "N5#627",
       "Kana": "むっつ",
       "Kanji": "六つ",
       "Definition": "six"
     },
     {
+      "ID": "N5#628",
       "Kana": "むら",
       "Kanji": "村",
       "Definition": "village"
@@ -3249,16 +3877,19 @@
   ],
   "め": [
     {
+      "ID": "N5#629",
       "Kana": "め",
       "Kanji": "目",
       "Definition": "eye, eyeball"
     },
     {
+      "ID": "N5#630",
       "Kana": "メートル",
       "Kanji": "",
       "Definition": "metre, meter"
     },
     {
+      "ID": "N5#631",
       "Kana": "めがね",
       "Kanji": "眼鏡",
       "Definition": "spectacles, glasses"
@@ -3266,46 +3897,55 @@
   ],
   "も": [
     {
+      "ID": "N5#632",
       "Kana": "もう",
       "Kanji": "",
       "Definition": "already"
     },
     {
+      "ID": "N5#633",
       "Kana": "もう",
       "Kanji": "",
       "Definition": "again"
     },
     {
+      "ID": "N5#634",
       "Kana": "もくようび",
       "Kanji": "木曜日",
       "Definition": "Thursday"
     },
     {
+      "ID": "N5#635",
       "Kana": "もしもし",
       "Kanji": "",
       "Definition": "hello (on phone)"
     },
     {
+      "ID": "N5#636",
       "Kana": "もつ",
       "Kanji": "持つ",
       "Definition": "(1) to hold, to carry, (2) to possess"
     },
     {
+      "ID": "N5#637",
       "Kana": "もっと",
       "Kanji": "",
       "Definition": "more, longer, farther"
     },
     {
+      "ID": "N5#638",
       "Kana": "もの",
       "Kanji": "物",
       "Definition": "thing, object"
     },
     {
+      "ID": "N5#639",
       "Kana": "もん",
       "Kanji": "門",
       "Definition": "gate"
     },
     {
+      "ID": "N5#640",
       "Kana": "もんだい",
       "Kanji": "問題",
       "Definition": "problem, question"
@@ -3313,46 +3953,55 @@
   ],
   "や": [
     {
+      "ID": "N5#641",
       "Kana": "やおや",
       "Kanji": "八百屋",
       "Definition": "greengrocer"
     },
     {
+      "ID": "N5#642",
       "Kana": "やさい",
       "Kanji": "野菜",
       "Definition": "vegetable"
     },
     {
+      "ID": "N5#643",
       "Kana": "やさしい",
       "Kanji": "易しい",
       "Definition": "easy, plain, simple"
     },
     {
+      "ID": "N5#644",
       "Kana": "やすい",
       "Kanji": "安い",
       "Definition": "cheap, inexpensive"
     },
     {
+      "ID": "N5#645",
       "Kana": "やすみ",
       "Kanji": "休み",
       "Definition": "rest, vacation, holiday"
     },
     {
+      "ID": "N5#646",
       "Kana": "やすむ",
       "Kanji": "休む",
       "Definition": "to rest, to have a break, to take a day off"
     },
     {
+      "ID": "N5#647",
       "Kana": "やっつ",
       "Kanji": "八つ",
       "Definition": "eight"
     },
     {
+      "ID": "N5#648",
       "Kana": "やま",
       "Kanji": "山",
       "Definition": "mountain"
     },
     {
+      "ID": "N5#649",
       "Kana": "やる",
       "Kanji": "",
       "Definition": "to do"
@@ -3360,41 +4009,49 @@
   ],
   "ゆ": [
     {
+      "ID": "N5#650",
       "Kana": "ゆうがた",
       "Kanji": "夕方",
       "Definition": "evening"
     },
     {
+      "ID": "N5#651",
       "Kana": "ゆうはん",
       "Kanji": "夕飯",
       "Definition": "dinner"
     },
     {
+      "ID": "N5#652",
       "Kana": "ゆうびんきょく",
       "Kanji": "郵便局",
       "Definition": "post office"
     },
     {
+      "ID": "N5#653",
       "Kana": "ゆうべ",
       "Kanji": "昨夜",
       "Definition": "last night"
     },
     {
+      "ID": "N5#654",
       "Kana": "ゆうめい",
       "Kanji": "有名",
       "Definition": "famous"
     },
     {
+      "ID": "N5#655",
       "Kana": "ゆく",
       "Kanji": "行く",
       "Definition": "to go"
     },
     {
+      "ID": "N5#656",
       "Kana": "ゆき",
       "Kanji": "雪",
       "Definition": "snow"
     },
     {
+      "ID": "N5#657",
       "Kana": "ゆっくり",
       "Kanji": "",
       "Definition": "slowly, at ease"
@@ -3402,56 +4059,67 @@
   ],
   "よ": [
     {
+      "ID": "N5#658",
       "Kana": "ようか",
       "Kanji": "八日",
       "Definition": "eight days, the eighth (day of the month)"
     },
     {
+      "ID": "N5#659",
       "Kana": "ようふく",
       "Kanji": "洋服",
       "Definition": "Western-style clothes"
     },
     {
+      "ID": "N5#660",
       "Kana": "よい",
       "Kanji": "良い",
       "Definition": "good"
     },
     {
+      "ID": "N5#661",
       "Kana": "よく",
       "Kanji": "",
       "Definition": "frequently, often / well, skillfully"
     },
     {
+      "ID": "N5#662",
       "Kana": "よこ",
       "Kanji": "横",
       "Definition": "beside, side, width"
     },
     {
+      "ID": "N5#663",
       "Kana": "よっか",
       "Kanji": "四日",
       "Definition": "(1) 4th day of month, (2) four days"
     },
     {
+      "ID": "N5#664",
       "Kana": "よっつ",
       "Kanji": "四つ",
       "Definition": "four"
     },
     {
+      "ID": "N5#665",
       "Kana": "よぶ",
       "Kanji": "呼ぶ",
       "Definition": "to call out, to invite"
     },
     {
+      "ID": "N5#666",
       "Kana": "よむ",
       "Kanji": "読む",
       "Definition": "to read"
     },
     {
+      "ID": "N5#667",
       "Kana": "よる",
       "Kanji": "夜",
       "Definition": "evening, night"
     },
     {
+      "ID": "N5#668",
       "Kana": "よわい",
       "Kanji": "弱い",
       "Definition": "weak, feable"
@@ -3459,26 +4127,31 @@
   ],
   "ら": [
     {
+      "ID": "N5#669",
       "Kana": "らいげつ",
       "Kanji": "来月",
       "Definition": "next month"
     },
     {
+      "ID": "N5#670",
       "Kana": "らいしゅう",
       "Kanji": "来週",
       "Definition": "next week"
     },
     {
+      "ID": "N5#671",
       "Kana": "らいねん",
       "Kanji": "来年",
       "Definition": "next year"
     },
     {
+      "ID": "N5#672",
       "Kana": "ラジオ",
       "Kanji": "",
       "Definition": "radio"
     },
     {
+      "ID": "N5#673",
       "Kana": "ラジカセ",
       "Kanji": "",
       "Definition": "radio cassette player"
@@ -3486,59 +4159,69 @@
   ],
   "り": [
     {
+      "ID": "N5#674",
       "Kana": "りっぱ",
       "Kanji": "",
       "Definition": "splendid, fine"
     },
     {
+      "ID": "N5#675",
       "Kana": "りゅうがくせい",
       "Kanji": "留学生",
       "Definition": "overseas student"
     },
     {
+      "ID": "N5#676",
       "Kana": "りょうしん",
       "Kanji": "両親",
       "Definition": "parents, both parents"
     },
     {
+      "ID": "N5#677",
       "Kana": "りょうり",
       "Kanji": "料理",
       "Definition": "cooking, cuisine"
     },
     {
+      "ID": "N5#678",
       "Kana": "りょこう",
       "Kanji": "旅行",
       "Definition": "travel, trip"
     }
   ],
-  "る": [],
   "れ": [
     {
+      "ID": "N5#679",
       "Kana": "れい",
       "Kanji": "零",
       "Definition": "zero, nought"
     },
     {
+      "ID": "N5#680",
       "Kana": "れいぞうこ",
       "Kanji": "冷蔵庫",
       "Definition": "refrigerator"
     },
     {
+      "ID": "N5#681",
       "Kana": "レコード",
       "Kanji": "",
       "Definition": "record"
     },
     {
+      "ID": "N5#682",
       "Kana": "レストラン",
       "Kanji": "",
       "Definition": "restaurant"
     },
     {
+      "ID": "N5#683",
       "Kana": "れんしゅう",
       "Kanji": "練習",
       "Definition": "practice"
     },
     {
+      "ID": "N5#684",
       "Kana": "れんしゅうする",
       "Kanji": "練習する",
       "Definition": "to practice"
@@ -3546,11 +4229,13 @@
   ],
   "ろ": [
     {
+      "ID": "N5#685",
       "Kana": "ろうか",
       "Kanji": "廊下",
       "Definition": "corridor"
     },
     {
+      "ID": "N5#686",
       "Kana": "ろく",
       "Kanji": "六",
       "Definition": "six"
@@ -3558,50 +4243,58 @@
   ],
   "わ": [
     {
+      "ID": "N5#687",
       "Kana": "ワイシャツ",
       "Kanji": "",
       "Definition": "shirt (lit: white shirt), business shirt"
     },
     {
+      "ID": "N5#688",
       "Kana": "わかい",
       "Kanji": "若い",
       "Definition": "young"
     },
     {
+      "ID": "N5#689",
       "Kana": "わかる",
       "Kanji": "分かる",
       "Definition": "to understand"
     },
     {
+      "ID": "N5#690",
       "Kana": "わすれる",
       "Kanji": "忘れる",
       "Definition": "to forget"
     },
     {
+      "ID": "N5#691",
       "Kana": "わたし",
       "Kanji": "私",
       "Definition": "I, myself"
     },
     {
+      "ID": "N5#692",
       "Kana": "わたくし",
       "Kanji": "私",
       "Definition": "I, myself"
     },
     {
+      "ID": "N5#693",
       "Kana": "わたす",
       "Kanji": "渡す",
       "Definition": "to pass over, to hand over"
     },
     {
+      "ID": "N5#694",
       "Kana": "わたる",
       "Kanji": "渡る",
       "Definition": "to cross over, to go across"
     },
     {
+      "ID": "N5#695",
       "Kana": "わるい",
       "Kanji": "悪い",
       "Definition": "bad, inferior"
     }
-  ],
-  "を": []
+  ]
 }

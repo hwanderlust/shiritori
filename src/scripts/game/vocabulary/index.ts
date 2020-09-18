@@ -4,6 +4,7 @@ import {
   compileVocabulary,
   getRandomChar,
   getVocabulary,
+  removeWordFromVocab,
   searchUsersGuess,
   selectChar,
   selectWord,
@@ -21,11 +22,19 @@ export default function Vocab() {
       getVocabulary(5)
         .then((r: JSON) => {
           vocab = compileVocabulary(r, vocab);
+          window.sessionStorage.setItem("vocab", JSON.stringify(vocab));
         });
 
       getVocabulary(4)
         .then((r: JSON) => {
           vocab = compileVocabulary(r, vocab);
+          window.sessionStorage.setItem("vocab", JSON.stringify(vocab));
+        });
+
+      getVocabulary(3)
+        .then((r: JSON) => {
+          vocab = compileVocabulary(r, vocab);
+          window.sessionStorage.setItem("vocab", JSON.stringify(vocab));
         });
     },
 
@@ -48,6 +57,7 @@ export default function Vocab() {
     },
 
     start: function () {
+      vocab = JSON.parse(window.sessionStorage.getItem("vocab"));
       console.log(`vocab start`);
       nextFirst = getRandomChar();
       return this.nextWord();
@@ -67,6 +77,8 @@ export default function Vocab() {
 
       currentWord = selectedObj.Kana;
       console.log(`selected`, selectedObj);
+
+      vocab = removeWordFromVocab(selectedObj, vocab);
       return selectedObj;
     },
     Test: {

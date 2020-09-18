@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 type DebugMode = "normal" | "debug";
 
 function get(el): HTMLElement {

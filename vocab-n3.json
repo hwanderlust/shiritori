@@ -1,0 +1,1146 @@
+{
+  "あ": [
+    {
+      "ID": "N3#1",
+      "Kana": "あかり",
+      "Kanji": "明かり",
+      "Definition": "light; illumination; glow; gleam"
+    },
+    {
+      "ID": "N3#2",
+      "Kana": "あける",
+      "Kanji": "明ける",
+      "Definition": "to dawn,to become daylight"
+    },
+    {
+      "ID": "N3#3",
+      "Kana": "あきらか",
+      "Kanji": "明らか",
+      "Definition": "clear; obvious"
+    },
+    {
+      "ID": "N3#4",
+      "Kana": "あくま",
+      "Kanji": "悪魔",
+      "Definition": "devil; demon; fiend; Satan"
+    },
+    {
+      "ID": "N3#5",
+      "Kana": "あんき",
+      "Kanji": "暗記",
+      "Definition": "memorization; learning by heart"
+    },
+    {
+      "ID": "N3#6",
+      "Kana": "あらた",
+      "Kanji": "新た",
+      "Definition": "new; fresh; novel"
+    },
+    {
+      "ID": "N3#7",
+      "Kana": "あらゆる",
+      "Kanji": "有らゆる",
+      "Definition": "all; every​"
+    },
+    {
+      "ID": "N3#8",
+      "Kana": "あつまり",
+      "Kanji": "集まり",
+      "Definition": "gathering; meeting; assembly; collection; attendance"
+    }
+  ],
+  "い": [
+    {
+      "ID": "N3#9",
+      "Kana": "いっち",
+      "Kanji": "一致",
+      "Definition": "agreement; union; match​; coincidence"
+    },
+    {
+      "ID": "N3#10",
+      "Kana": "いちじ",
+      "Kanji": "一時",
+      "Definition": "one o'clock"
+    },
+    {
+      "ID": "N3#11",
+      "Kana": "いがい",
+      "Kanji": "意外",
+      "Definition": "unexpected; surprising"
+    },
+    {
+      "ID": "N3#12",
+      "Kana": "いっか",
+      "Kanji": "一家",
+      "Definition": "a family; a household; a home; one's family; whole family"
+    },
+    {
+      "ID": "N3#13",
+      "Kana": "いまに",
+      "Kanji": "今に",
+      "Definition": "before long; even now"
+    },
+    {
+      "ID": "N3#14",
+      "Kana": "いまにも",
+      "Kanji": "今にも",
+      "Definition": "at any moment; at any minute; on the verge of"
+    },
+    {
+      "ID": "N3#15",
+      "Kana": "いっぱん",
+      "Kanji": "一般",
+      "Definition": "general; universal; ordinary; average; common"
+    },
+    {
+      "ID": "N3#16",
+      "Kana": "いっぽう",
+      "Kanji": "一方",
+      "Definition": "one (esp. of two); one way; the other direction; although"
+    },
+    {
+      "ID": "N3#17",
+      "Kana": "いっしょう",
+      "Kanji": "一生",
+      "Definition": "whole life; a lifetime; a generation"
+    },
+    {
+      "ID": "N3#18",
+      "Kana": "いっしゅ",
+      "Kanji": "一種",
+      "Definition": "species; kind; variety"
+    },
+    {
+      "ID": "N3#19",
+      "Kana": "いっしゅん",
+      "Kanji": "一瞬",
+      "Definition": "instant; moment; for an instant"
+    },
+    {
+      "ID": "N3#20",
+      "Kana": "いっそう",
+      "Kanji": "一層",
+      "Definition": "much more; still more; all the more; single layer; sooner; preferably​"
+    },
+    {
+      "ID": "N3#21",
+      "Kana": "いったい",
+      "Kanji": "一体",
+      "Definition": "(what) the heck; (why) in the world"
+    },
+    {
+      "ID": "N3#22",
+      "Kana": "いわゆる",
+      "Kanji": "所謂",
+      "Definition": "what is called; as it is called; the so-called; so to speak​"
+    }
+  ],
+  "う": [
+    {
+      "ID": "N3#23",
+      "Kana": "うけとる",
+      "Kanji": "受け取る",
+      "Definition": "to receive; to understand"
+    },
+    {
+      "ID": "N3#24",
+      "Kana": "うまい",
+      "Kanji": "上手い",
+      "Definition": "skillful; delicious"
+    },
+    {
+      "ID": "N3#25",
+      "Kana": "うれる",
+      "Kanji": "売れる",
+      "Definition": "to sell (well)"
+    }
+  ],
+  "え": [
+    {
+      "ID": "N3#26",
+      "Kana": "えん",
+      "Kanji": "円",
+      "Definition": "yen; Japanese monetary unit; circle"
+    }
+  ],
+  "お": [
+    {
+      "ID": "N3#27",
+      "Kana": "おひる",
+      "Kanji": "お昼",
+      "Definition": "lunch; midday; daytime"
+    },
+    {
+      "ID": "N3#28",
+      "Kana": "おさめる",
+      "Kanji": "収める",
+      "Definition": "to supply; to dedicate; to make an offering; to pay"
+    }
+  ],
+  "か": [
+    {
+      "ID": "N3#29",
+      "Kana": "かがく",
+      "Kanji": "化学",
+      "Definition": "chemistry"
+    },
+    {
+      "ID": "N3#30",
+      "Kana": "かいいん",
+      "Kanji": "会員",
+      "Definition": "member"
+    },
+    {
+      "ID": "N3#31",
+      "Kana": "かいがい",
+      "Kanji": "海外",
+      "Definition": "foreign; abroad; overseas"
+    },
+    {
+      "ID": "N3#32",
+      "Kana": "かいごう",
+      "Kanji": "会合",
+      "Definition": "meeting; assembly; gathering; association"
+    },
+    {
+      "ID": "N3#33",
+      "Kana": "かいけい",
+      "Kanji": "会計",
+      "Definition": "finance; account; treasurer; bill"
+    },
+    {
+      "ID": "N3#34",
+      "Kana": "かいし",
+      "Kanji": "開始",
+      "Definition": "start; commencement; beginning; initiation​"
+    },
+    {
+      "ID": "N3#35",
+      "Kana": "かもく",
+      "Kanji": "科目",
+      "Definition": "(school) subject; curriculum; course"
+    }
+  ],
+  "が": [
+    {
+      "ID": "N3#36",
+      "Kana": "がいこう",
+      "Kanji": "外交",
+      "Definition": "diplomacy"
+    },
+    {
+      "ID": "N3#37",
+      "Kana": "がいしゅつ",
+      "Kanji": "外出",
+      "Definition": "going out; outing; leaving (one's home, office, etc.)"
+    },
+    {
+      "ID": "N3#38",
+      "Kana": "がっき",
+      "Kanji": "学期",
+      "Definition": "school term; semester"
+    },
+    {
+      "ID": "N3#39",
+      "Kana": "がくもん",
+      "Kanji": "学問",
+      "Definition": "scholarship; study; learning"
+    },
+    {
+      "ID": "N3#40",
+      "Kana": "がくしゃ",
+      "Kanji": "学者",
+      "Definition": "scholar"
+    },
+    {
+      "ID": "N3#41",
+      "Kana": "がくしゅう",
+      "Kanji": "学習",
+      "Definition": "study; learning; tutorial"
+    }
+  ],
+  "き": [
+    {
+      "ID": "N3#42",
+      "Kana": "きほん",
+      "Kanji": "基本",
+      "Definition": "basics; fundamentals; basis; foundation"
+    },
+    {
+      "ID": "N3#43",
+      "Kana": "きじ",
+      "Kanji": "記事",
+      "Definition": "article; news story; report; account"
+    },
+    {
+      "ID": "N3#44",
+      "Kana": "きみ",
+      "Kanji": "気味",
+      "Definition": "sensation; feeling​; tendency"
+    },
+    {
+      "ID": "N3#45",
+      "Kana": "きねん",
+      "Kanji": "記念",
+      "Definition": "commemoration; celebration; honoring the memory of something"
+    },
+    {
+      "ID": "N3#46",
+      "Kana": "きにいる",
+      "Kanji": "気に入る",
+      "Definition": "to like; to take a liking to"
+    },
+    {
+      "ID": "N3#47",
+      "Kana": "きにゅう",
+      "Kanji": "記入",
+      "Definition": "entry; filling in; filling out"
+    },
+    {
+      "ID": "N3#48",
+      "Kana": "きおく",
+      "Kanji": "記憶",
+      "Definition": "memory; recollection; remembrance"
+    },
+    {
+      "ID": "N3#49",
+      "Kana": "きしゃ",
+      "Kanji": "記者",
+      "Definition": "reporter; journalist"
+    },
+    {
+      "ID": "N3#50",
+      "Kana": "きたい",
+      "Kanji": "期待",
+      "Definition": "expectation; anticipation; hope"
+    },
+    {
+      "ID": "N3#51",
+      "Kana": "きょうかしょ",
+      "Kanji": "教科書",
+      "Definition": "textbook; coursebook; schoolbook"
+    },
+    {
+      "ID": "N3#52",
+      "Kana": "きょうりょく",
+      "Kanji": "協力",
+      "Definition": "cooperation; collaboration"
+    },
+    {
+      "ID": "N3#53",
+      "Kana": "きょうりょく",
+      "Kanji": "強力",
+      "Definition": "powerful; strong"
+    },
+    {
+      "ID": "N3#54",
+      "Kana": "きゅうげき",
+      "Kanji": "急激",
+      "Definition": "sudden; abrupt; rapid; sharp; drastic; radical"
+    },
+    {
+      "ID": "N3#55",
+      "Kana": "きゅうに",
+      "Kanji": "急に",
+      "Definition": "swiftly; rapidly; quickly; immediately; hastily"
+    },
+    {
+      "ID": "N3#56",
+      "Kana": "きゅうしゅう",
+      "Kanji": "吸収",
+      "Definition": "absorption; suction; attraction"
+    },
+    {
+      "ID": "N3#57",
+      "Kana": "きゅうそく",
+      "Kanji": "急速",
+      "Definition": "rapid (e.g. progress)"
+    }
+  ],
+  "ぎ": [
+    {
+      "ID": "N3#58",
+      "Kana": "ぎちょう",
+      "Kanji": "議長",
+      "Definition": "chairman; president; moderator"
+    },
+    {
+      "ID": "N3#59",
+      "Kana": "ぎかい",
+      "Kanji": "議会",
+      "Definition": "congress; parliament; diet; legislative assembly"
+    }
+  ],
+  "く": [
+    {
+      "ID": "N3#60",
+      "Kana": "くんれん",
+      "Kanji": "訓練",
+      "Definition": "training; drill; practice; discipline"
+    }
+  ],
+  "け": [
+    {
+      "ID": "N3#61",
+      "Kana": "けんり",
+      "Kanji": "権利",
+      "Definition": "right; privilege"
+    }
+  ],
+  "こ": [
+    {
+      "ID": "N3#62",
+      "Kana": "こっか",
+      "Kanji": "国家",
+      "Definition": "state; country; nation"
+    },
+    {
+      "ID": "N3#63",
+      "Kana": "こっかい",
+      "Kanji": "国会",
+      "Definition": "National Diet; legislative assembly of Japan; parliament; congress"
+    },
+    {
+      "ID": "N3#64",
+      "Kana": "こっきょう",
+      "Kanji": "国境",
+      "Definition": "national border"
+    },
+    {
+      "ID": "N3#65",
+      "Kana": "こくご",
+      "Kanji": "国語",
+      "Definition": "national language"
+    },
+    {
+      "ID": "N3#66",
+      "Kana": "こくみん",
+      "Kanji": "国民",
+      "Definition": "people (of a country); nation; citizen; national"
+    },
+    {
+      "ID": "N3#67",
+      "Kana": "こんご",
+      "Kanji": "今後",
+      "Definition": "from now on; hereafter"
+    },
+    {
+      "ID": "N3#68",
+      "Kana": "こんかい",
+      "Kanji": "今回",
+      "Definition": "now; this time; lately"
+    },
+    {
+      "ID": "N3#69",
+      "Kana": "こんにち",
+      "Kanji": "今日",
+      "Definition": "today; this day"
+    },
+    {
+      "ID": "N3#70",
+      "Kana": "ころぶ",
+      "Kanji": "転ぶ",
+      "Definition": "to fall down; to fall over"
+    },
+    {
+      "ID": "N3#71",
+      "Kana": "こうそく",
+      "Kanji": "高速",
+      "Definition": "high-speed; rapid; express"
+    }
+  ],
+  "ご": [
+    {
+      "ID": "N3#72",
+      "Kana": "ごがく",
+      "Kanji": "語学",
+      "Definition": "study of foreign languages; linguistics"
+    }
+  ],
+  "さ": [
+    {
+      "ID": "N3#73",
+      "Kana": "さくひん",
+      "Kanji": "作品",
+      "Definition": "work of art; performance"
+    },
+    {
+      "ID": "N3#74",
+      "Kana": "さゆう",
+      "Kanji": "左右",
+      "Definition": "left and right"
+    }
+  ],
+  "し": [
+    {
+      "ID": "N3#75",
+      "Kana": "しげき",
+      "Kanji": "刺激",
+      "Definition": "stimulus; impetus; incentive; encouragement; motivation; provocation; excitement; thrill"
+    },
+    {
+      "ID": "N3#76",
+      "Kana": "しほん",
+      "Kanji": "資本",
+      "Definition": "funds; capital"
+    },
+    {
+      "ID": "N3#77",
+      "Kana": "しな",
+      "Kanji": "品",
+      "Definition": "article; item; thing; goods; stock; quality"
+    },
+    {
+      "ID": "N3#78",
+      "Kana": "しんちょう",
+      "Kanji": "身長",
+      "Definition": "body height; stature"
+    },
+    {
+      "ID": "N3#79",
+      "Kana": "しんがく",
+      "Kanji": "進学",
+      "Definition": "entering a higher-level school (often university)"
+    },
+    {
+      "ID": "N3#80",
+      "Kana": "しんせん",
+      "Kanji": "新鮮",
+      "Definition": "fresh"
+    },
+    {
+      "ID": "N3#81",
+      "Kana": "してん",
+      "Kanji": "支店",
+      "Definition": "branch office; branch store​"
+    },
+    {
+      "ID": "N3#82",
+      "Kana": "しよう",
+      "Kanji": "使用",
+      "Definition": "use; application; employment; utilization."
+    },
+    {
+      "ID": "N3#83",
+      "Kana": "しょくひん",
+      "Kanji": "食品",
+      "Definition": "food; food products"
+    },
+    {
+      "ID": "N3#84",
+      "Kana": "しょもつ",
+      "Kanji": "書物",
+      "Definition": "book; volume"
+    },
+    {
+      "ID": "N3#85",
+      "Kana": "しょるい",
+      "Kanji": "書類",
+      "Definition": "document; official papers"
+    },
+    {
+      "ID": "N3#86",
+      "Kana": "しょさい",
+      "Kanji": "書斎",
+      "Definition": "study; library; den; home office; reading room"
+    },
+    {
+      "ID": "N3#87",
+      "Kana": "しょうばい",
+      "Kanji": "商売",
+      "Definition": "trade; business; commerce; transaction; occupation"
+    },
+    {
+      "ID": "N3#88",
+      "Kana": "しょうがくきん",
+      "Kanji": "奨学金",
+      "Definition": "scholarship; stipend; student loan"
+    },
+    {
+      "ID": "N3#89",
+      "Kana": "しょうご",
+      "Kanji": "正午",
+      "Definition": "midday"
+    },
+    {
+      "ID": "N3#90",
+      "Kana": "しょうひん",
+      "Kanji": "商品",
+      "Definition": "commodity; article of commerce; goods; stock; merchandise"
+    },
+    {
+      "ID": "N3#91",
+      "Kana": "しょうじょ",
+      "Kanji": "少女",
+      "Definition": "little girl; maiden; young lady"
+    },
+    {
+      "ID": "N3#92",
+      "Kana": "しょうめい",
+      "Kanji": "証明",
+      "Definition": "proof; verification; certification"
+    },
+    {
+      "ID": "N3#93",
+      "Kana": "しょうねん",
+      "Kanji": "少年",
+      "Definition": "boy; juvenile; young boy; youth; lad"
+    },
+    {
+      "ID": "N3#94",
+      "Kana": "しょうしょう",
+      "Kanji": "少々",
+      "Definition": "just a minute; small quantity"
+    },
+    {
+      "ID": "N3#95",
+      "Kana": "しゅうちゅう",
+      "Kanji": "集中",
+      "Definition": "concentration; focusing; centralization; integration"
+    },
+    {
+      "ID": "N3#96",
+      "Kana": "しゅうだん",
+      "Kanji": "集団",
+      "Definition": "group; mass"
+    },
+    {
+      "ID": "N3#97",
+      "Kana": "しゅうかく",
+      "Kanji": "収穫",
+      "Definition": "harvest; crop; fruits (of one's labors)"
+    },
+    {
+      "ID": "N3#98",
+      "Kana": "しゅうかん",
+      "Kanji": "週間",
+      "Definition": "week"
+    },
+    {
+      "ID": "N3#99",
+      "Kana": "しゅうかん",
+      "Kanji": "週刊",
+      "Definition": "weekly publication"
+    },
+    {
+      "ID": "N3#100",
+      "Kana": "しゅうにゅう",
+      "Kanji": "収入",
+      "Definition": "income; receipts; revenue; salary"
+    }
+  ],
+  "す": [
+    {
+      "ID": "N3#101",
+      "Kana": "すこしも",
+      "Kanji": "少しも",
+      "Definition": "anything of; not one bit (with negative sentence)"
+    }
+  ],
+  "せ": [
+    {
+      "ID": "N3#102",
+      "Kana": "せいちょう",
+      "Kanji": "成長",
+      "Definition": "growth; development; growing up; becoming an adult"
+    },
+    {
+      "ID": "N3#103",
+      "Kana": "せいひん",
+      "Kanji": "製品",
+      "Definition": "manufactured goods; finished goods; product"
+    },
+    {
+      "ID": "N3#104",
+      "Kana": "せいねん",
+      "Kanji": "青年",
+      "Definition": "youth; young man"
+    }
+  ],
+  "ぜ": [
+    {
+      "ID": "N3#105",
+      "Kana": "ぜんこく",
+      "Kanji": "全国",
+      "Definition": "the whole country"
+    }
+  ],
+  "そ": [
+    {
+      "ID": "N3#106",
+      "Kana": "そくど",
+      "Kanji": "速度",
+      "Definition": "speed; velocity; pace; rate"
+    }
+  ],
+  "た": [
+    {
+      "ID": "N3#107",
+      "Kana": "たいはん",
+      "Kanji": "大半",
+      "Definition": "majority; more than half; most; largely; mainly"
+    },
+    {
+      "ID": "N3#108",
+      "Kana": "たいかい",
+      "Kanji": "大会",
+      "Definition": "convention; rally; conference; tournament;"
+    },
+    {
+      "ID": "N3#109",
+      "Kana": "たいした",
+      "Kanji": "大した",
+      "Definition": "considerable; great; important; significant; a big deal"
+    },
+    {
+      "ID": "N3#110",
+      "Kana": "たんなる",
+      "Kanji": "単なる",
+      "Definition": "mere; simple; sheer"
+    },
+    {
+      "ID": "N3#111",
+      "Kana": "たしょう",
+      "Kanji": "多少",
+      "Definition": "more or less; somewhat; a little; a few; some"
+    }
+  ],
+  "だ": [
+    {
+      "ID": "N3#112",
+      "Kana": "だいぶぶん",
+      "Kanji": "大部分",
+      "Definition": "most part; greater part; majority"
+    },
+    {
+      "ID": "N3#113",
+      "Kana": "だんし",
+      "Kanji": "男子",
+      "Definition": "youth; young man"
+    }
+  ],
+  "ち": [
+    {
+      "ID": "N3#114",
+      "Kana": "ちちおや",
+      "Kanji": "父親",
+      "Definition": "father"
+    },
+    {
+      "ID": "N3#115",
+      "Kana": "ちへいせん",
+      "Kanji": "地平線",
+      "Definition": "horizon (related to land)​"
+    },
+    {
+      "ID": "N3#116",
+      "Kana": "ちい",
+      "Kanji": "地位",
+      "Definition": "(social) position; status"
+    },
+    {
+      "ID": "N3#117",
+      "Kana": "ちょうき",
+      "Kanji": "長期",
+      "Definition": "long-term"
+    },
+    {
+      "ID": "N3#118",
+      "Kana": "ちゅうがく",
+      "Kanji": "中学",
+      "Definition": "junior high school; middle school"
+    },
+    {
+      "ID": "N3#119",
+      "Kana": "ちゅうしょく",
+      "Kanji": "昼食",
+      "Definition": "lunch; midday meal"
+    }
+  ],
+  "つ": [
+    {
+      "ID": "N3#120",
+      "Kana": "つうがく",
+      "Kanji": "通学",
+      "Definition": "commuting to school; school commute"
+    }
+  ],
+  "て": [
+    {
+      "ID": "N3#121",
+      "Kana": "てじな",
+      "Kanji": "手品",
+      "Definition": "magic trick; illusion"
+    },
+    {
+      "ID": "N3#122",
+      "Kana": "てつがく",
+      "Kanji": "哲学",
+      "Definition": "philosophy"
+    },
+    {
+      "ID": "N3#123",
+      "Kana": "てつや",
+      "Kanji": "徹夜",
+      "Definition": "staying up all night"
+    }
+  ],
+  "で": [
+    {
+      "ID": "N3#124",
+      "Kana": "であい",
+      "Kanji": "出会い",
+      "Definition": "meeting; rendezvous; encounter"
+    },
+    {
+      "ID": "N3#125",
+      "Kana": "であう",
+      "Kanji": "出会う",
+      "Definition": "to meet (by chance); to come across; to run across; to encounter"
+    }
+  ],
+  "と": [
+    {
+      "ID": "N3#126",
+      "Kana": "とち",
+      "Kanji": "土地",
+      "Definition": "plot of land; lot; soil"
+    },
+    {
+      "ID": "N3#127",
+      "Kana": "とかい",
+      "Kanji": "都会",
+      "Definition": "(big) city"
+    },
+    {
+      "ID": "N3#128",
+      "Kana": "とれる",
+      "Kanji": "取れる",
+      "Definition": "to come off; to be removed; to be obtainable"
+    },
+    {
+      "ID": "N3#129",
+      "Kana": "とりあげる",
+      "Kanji": "取り上げる",
+      "Definition": "to pick up"
+    },
+    {
+      "ID": "N3#130",
+      "Kana": "としょ",
+      "Kanji": "図書",
+      "Definition": "books"
+    }
+  ],
+  "ど": [
+    {
+      "ID": "N3#131",
+      "Kana": "どくしょ",
+      "Kanji": "読書",
+      "Definition": "reading"
+    },
+    {
+      "ID": "N3#132",
+      "Kana": "どりょく",
+      "Kanji": "努力",
+      "Definition": "effort; exertion; endeavor; hard work; striving"
+    },
+    {
+      "ID": "N3#133",
+      "Kana": "どういつ",
+      "Kanji": "同一",
+      "Definition": "identical; same; one and the same; equal"
+    }
+  ],
+  "な": [
+    {
+      "ID": "N3#134",
+      "Kana": "なかば",
+      "Kanji": "半ば",
+      "Definition": "middle; half; semi; halfway; partly"
+    }
+  ],
+  "に": [
+    {
+      "ID": "N3#135",
+      "Kana": "にほん",
+      "Kanji": "日本",
+      "Definition": "Japan"
+    },
+    {
+      "ID": "N3#136",
+      "Kana": "にゅうじょう",
+      "Kanji": "入場",
+      "Definition": "entrance; admission; entering"
+    }
+  ],
+  "の": [
+    {
+      "ID": "N3#137",
+      "Kana": "のうりょく",
+      "Kanji": "能力",
+      "Definition": "ability; faculty"
+    }
+  ],
+  "は": [
+    {
+      "ID": "N3#138",
+      "Kana": "はげしい",
+      "Kanji": "激しい",
+      "Definition": "violent; extreme; intense"
+    },
+    {
+      "ID": "N3#139",
+      "Kana": "ははおや",
+      "Kanji": "母親",
+      "Definition": "mother"
+    },
+    {
+      "ID": "N3#140",
+      "Kana": "はくぶつかん",
+      "Kanji": "博物館",
+      "Definition": "museum"
+    },
+    {
+      "ID": "N3#141",
+      "Kana": "はんばい",
+      "Kanji": "販売",
+      "Definition": "sales; selling; marketing"
+    },
+    {
+      "ID": "N3#142",
+      "Kana": "はつめい",
+      "Kanji": "発明",
+      "Definition": "invention"
+    },
+    {
+      "ID": "N3#143",
+      "Kana": "はずす",
+      "Kanji": "外す",
+      "Definition": "to remove; to undo; to drop; to miss"
+    }
+  ],
+  "ひ": [
+    {
+      "ID": "N3#144",
+      "Kana": "ひとこと",
+      "Kanji": "一言",
+      "Definition": "single word; a few words; brief comment"
+    },
+    {
+      "ID": "N3#145",
+      "Kana": "ひとりひとり",
+      "Kanji": "一人一人",
+      "Definition": "one by one; each; one at a time"
+    }
+  ],
+  "ふ": [
+    {
+      "ID": "N3#146",
+      "Kana": "ふり",
+      "Kanji": "不利",
+      "Definition": "disadvantage; handicap; unfavorable position"
+    },
+    {
+      "ID": "N3#147",
+      "Kana": "ふそく",
+      "Kanji": "不足",
+      "Definition": "insufficiency; shortage; deficiency; lack; dearth"
+    },
+    {
+      "ID": "N3#148",
+      "Kana": "ふたたび",
+      "Kanji": "再び",
+      "Definition": "again; once more; a second time"
+    }
+  ],
+  "ぶ": [
+    {
+      "ID": "N3#149",
+      "Kana": "ぶぶん",
+      "Kanji": "部分",
+      "Definition": "portion; section; part"
+    },
+    {
+      "ID": "N3#150",
+      "Kana": "ぶんめい",
+      "Kanji": "文明",
+      "Definition": "civilization; culture"
+    },
+    {
+      "ID": "N3#151",
+      "Kana": "ぶんせき",
+      "Kanji": "分析",
+      "Definition": "analysis"
+    },
+    {
+      "ID": "N3#152",
+      "Kana": "ぶんや",
+      "Kanji": "分野",
+      "Definition": "field; sphere; realm; division; branch"
+    }
+  ],
+  "ほ": [
+    {
+      "ID": "N3#153",
+      "Kana": "ほんもの",
+      "Kanji": "本物",
+      "Definition": "genuine article; real thing; real deal​"
+    },
+    {
+      "ID": "N3#154",
+      "Kana": "ほんにん",
+      "Kanji": "本人",
+      "Definition": "the person in question; the person themselves; said person"
+    }
+  ],
+  "ま": [
+    {
+      "ID": "N3#155",
+      "Kana": "まっか",
+      "Kanji": "真っ赤",
+      "Definition": "bright red; deep red; flushed (of face)"
+    },
+    {
+      "ID": "N3#156",
+      "Kana": "まなぶ",
+      "Kanji": "学ぶ",
+      "Definition": "to study (in depth); to learn; to take lessons in"
+    },
+    {
+      "ID": "N3#157",
+      "Kana": "まんいち",
+      "Kanji": "万一",
+      "Definition": "emergency; unlikely event​; by some chance; by some possibility"
+    },
+    {
+      "ID": "N3#158",
+      "Kana": "まんぞく",
+      "Kanji": "満足",
+      "Definition": "satisfaction; contentment;​ sufficient; enough"
+    }
+  ],
+  "み": [
+    {
+      "ID": "N3#159",
+      "Kana": "みかた",
+      "Kanji": "味方",
+      "Definition": "friend; ally; supporter; taking sides with; supporting"
+    },
+    {
+      "ID": "N3#160",
+      "Kana": "みりょく",
+      "Kanji": "魅力",
+      "Definition": "charm; fascination; glamour; attraction; appeal"
+    }
+  ],
+  "め": [
+    {
+      "ID": "N3#161",
+      "Kana": "めいかく",
+      "Kanji": "明確",
+      "Definition": "clear; precise; definite; distinct"
+    },
+    {
+      "ID": "N3#162",
+      "Kana": "めし",
+      "Kanji": "飯",
+      "Definition": "cooked rice; meal"
+    }
+  ],
+  "も": [
+    {
+      "ID": "N3#163",
+      "Kana": "もくよう",
+      "Kanji": "木曜",
+      "Definition": "Thursday"
+    }
+  ],
+  "ゆ": [
+    {
+      "ID": "N3#164",
+      "Kana": "ゆいいつ",
+      "Kanji": "唯一",
+      "Definition": "only; sole; unique"
+    },
+    {
+      "ID": "N3#165",
+      "Kana": "ゆうべ",
+      "Kanji": "夕べ",
+      "Definition": "evening / last night; yesterday evening"
+    },
+    {
+      "ID": "N3#166",
+      "Kana": "ゆうり",
+      "Kanji": "有利",
+      "Definition": "advantageous; favorable; profitable"
+    }
+  ],
+  "よ": [
+    {
+      "ID": "N3#167",
+      "Kana": "よあけ",
+      "Kanji": "夜明け",
+      "Definition": "dawn; daybreak"
+    },
+    {
+      "ID": "N3#168",
+      "Kana": "よぶん",
+      "Kanji": "余分",
+      "Definition": "extra; excess; surplus"
+    },
+    {
+      "ID": "N3#169",
+      "Kana": "よみ",
+      "Kanji": "読み",
+      "Definition": "reading (of a kanji, situation, etc)"
+    },
+    {
+      "ID": "N3#170",
+      "Kana": "よなか",
+      "Kanji": "夜中",
+      "Definition": "middle of the night; dead of night"
+    }
+  ],
+  "り": [
+    {
+      "ID": "N3#171",
+      "Kana": "りえき",
+      "Kanji": "利益",
+      "Definition": "profit; gains; benefit"
+    },
+    {
+      "ID": "N3#172",
+      "Kana": "りこう",
+      "Kanji": "利口",
+      "Definition": "clever; intelligent; wise; bright; sharp"
+    },
+    {
+      "ID": "N3#173",
+      "Kana": "りゅうがく",
+      "Kanji": "留学",
+      "Definition": "studying abroad"
+    }
+  ],
+  "れ": [
+    {
+      "ID": "N3#174",
+      "Kana": "れんぞく",
+      "Kanji": "連続",
+      "Definition": "continuation; succession; series"
+    }
+  ],
+  "わ": [
+    {
+      "ID": "N3#175",
+      "Kana": "わける",
+      "Kanji": "分ける",
+      "Definition": "to divide; to split; to part; to separate"
+    },
+    {
+      "ID": "N3#176",
+      "Kana": "わるぐち",
+      "Kanji": "悪口",
+      "Definition": "slander; bad-mouthing; abuse; insult; speaking ill (of)"
+    }
+  ]
+}

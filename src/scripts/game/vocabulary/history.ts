@@ -23,5 +23,10 @@ export default function History(mode?: DebugMode) {
       cache = {};
       debug(mode, [`history cleared`, cache]);
     },
+    test: {
+      getEntries: function () {
+        return Object.entries(cache);
+      }
+    }
   };
 }

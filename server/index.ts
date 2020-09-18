@@ -59,6 +59,7 @@ app.post("/api/search", (req: Request, res: Response) => {
         res.send({ found: false, response: r });
       }
 
+      console.log(`nothing found`);
       res.end();
     });
 });

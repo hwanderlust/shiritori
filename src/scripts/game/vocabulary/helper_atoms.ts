@@ -47,6 +47,7 @@ interface Japanese {
 }
 
 interface Vocabulary {
+  ID: string;
   Kana: string;
   Kanji: string;
   Definition: string;
