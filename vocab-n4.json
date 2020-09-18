@@ -1,141 +1,169 @@
 {
   "あ": [
     {
+      "ID": "N4#1",
       "Kana": "あ",
       "Kanji": "",
       "Definition": "Ah"
     },
     {
+      "ID": "N4#2",
       "Kana": "あいさつ",
       "Kanji": "",
       "Definition": "greeting"
     },
     {
+      "ID": "N4#3",
       "Kana": "あいさつする",
       "Kanji": "",
       "Definition": "to greet"
     },
     {
+      "ID": "N4#4",
       "Kana": "あいだ",
       "Kanji": "間",
       "Definition": "space, interval"
     },
     {
+      "ID": "N4#5",
       "Kana": "あう",
       "Kanji": "合う",
       "Definition": "to fit, to match"
     },
     {
+      "ID": "N4#6",
       "Kana": "あかちゃん",
       "Kanji": "",
       "Definition": "baby, infant"
     },
     {
+      "ID": "N4#7",
       "Kana": "あがる",
       "Kanji": "上がる",
       "Definition": "to rise, to go up"
     },
     {
+      "ID": "N4#8",
       "Kana": "あかんぼう",
       "Kanji": "赤ん坊",
       "Definition": "baby"
     },
     {
+      "ID": "N4#9",
       "Kana": "あく",
       "Kanji": "空く",
       "Definition": "to open, to become empty"
     },
     {
+      "ID": "N4#10",
       "Kana": "アクセサリー",
       "Kanji": "",
       "Definition": "accessory"
     },
     {
+      "ID": "N4#11",
       "Kana": "あさい",
       "Kanji": "浅い",
       "Definition": "shallow, superficial"
     },
     {
+      "ID": "N4#12",
       "Kana": "あじ",
       "Kanji": "味",
       "Definition": "flavor, taste"
     },
     {
+      "ID": "N4#13",
       "Kana": "アジア",
       "Kanji": "",
       "Definition": "Asia"
     },
     {
+      "ID": "N4#14",
       "Kana": "あす",
       "Kanji": "明日",
       "Definition": "tomorrow"
     },
     {
+      "ID": "N4#15",
       "Kana": "あそび",
       "Kanji": "遊び",
       "Definition": "play"
     },
     {
+      "ID": "N4#16",
       "Kana": "あつまる",
       "Kanji": "集る",
       "Definition": "to gather, to collect"
     },
     {
+      "ID": "N4#17",
       "Kana": "あつめる",
       "Kanji": "集める",
       "Definition": "to collect, to assemble"
     },
     {
+      "ID": "N4#18",
       "Kana": "アナウンサー",
       "Kanji": "",
       "Definition": "announcer"
     },
     {
+      "ID": "N4#19",
       "Kana": "アフリカ",
       "Kanji": "",
       "Definition": "Africa"
     },
     {
+      "ID": "N4#20",
       "Kana": "アメリカ",
       "Kanji": "",
       "Definition": "America"
     },
     {
+      "ID": "N4#21",
       "Kana": "あやまる",
       "Kanji": "謝る",
       "Definition": "to apologize"
     },
     {
+      "ID": "N4#22",
       "Kana": "アルコール",
       "Kanji": "",
       "Definition": "alcohol"
     },
     {
+      "ID": "N4#23",
       "Kana": "アルバイト",
       "Kanji": "",
       "Definition": "part-time job"
     },
     {
+      "ID": "N4#24",
       "Kana": "あんしん",
       "Kanji": "安心",
       "Definition": "peace of mind, relief"
     },
     {
+      "ID": "N4#25",
       "Kana": "あんぜん",
       "Kanji": "安全",
       "Definition": "safety, security"
     },
     {
+      "ID": "N4#26",
       "Kana": "あんな",
       "Kanji": "",
       "Definition": "such, like that"
     },
     {
+      "ID": "N4#27",
       "Kana": "あんない",
       "Kanji": "案内",
       "Definition": "information, guidance"
     },
     {
+      "ID": "N4#28",
       "Kana": "あんないする",
       "Kanji": "案内する",
       "Definition": "to inform, to guide"
@@ -143,96 +171,115 @@
   ],
   "い": [
     {
+      "ID": "N4#29",
       "Kana": "いか",
       "Kanji": "以下",
       "Definition": "less than, below"
     },
     {
+      "ID": "N4#30",
       "Kana": "いがい",
       "Kanji": "以外",
       "Definition": "with the exception of, excepting"
     },
     {
+      "ID": "N4#31",
       "Kana": "いがく",
       "Kanji": "医学",
       "Definition": "medical science"
     },
     {
+      "ID": "N4#32",
       "Kana": "いきる",
       "Kanji": "生きる",
       "Definition": "to live, to exist"
     },
     {
+      "ID": "N4#33",
       "Kana": "いけん",
       "Kanji": "意見",
       "Definition": "opinion, view"
     },
     {
+      "ID": "N4#34",
       "Kana": "いし",
       "Kanji": "石",
       "Definition": "stone"
     },
     {
+      "ID": "N4#35",
       "Kana": "いじめる",
       "Kanji": "",
       "Definition": "to tease, to torment"
     },
     {
+      "ID": "N4#36",
       "Kana": "いじょう",
       "Kanji": "以上",
       "Definition": "more than, this is all"
     },
     {
+      "ID": "N4#37",
       "Kana": "いそぐ",
       "Kanji": "急ぐ",
       "Definition": "to hurry, to rush"
     },
     {
+      "ID": "N4#38",
       "Kana": "いたす",
       "Kanji": "致す",
       "Definition": "(hum) to do"
     },
     {
+      "ID": "N4#39",
       "Kana": "いただく",
       "Kanji": "",
       "Definition": "to receive, to take food or drink (hum)"
     },
     {
+      "ID": "N4#40",
       "Kana": "いちど",
       "Kanji": "一度",
       "Definition": "once, one time"
     },
     {
+      "ID": "N4#41",
       "Kana": "いっしょうけんめい",
       "Kanji": "一生懸命",
       "Definition": "as well as one can, with utmost effort"
     },
     {
+      "ID": "N4#42",
       "Kana": "いっぱい",
       "Kanji": "",
       "Definition": "full, to the utmost"
     },
     {
+      "ID": "N4#43",
       "Kana": "いと",
       "Kanji": "糸",
       "Definition": "thread"
     },
     {
+      "ID": "N4#44",
       "Kana": "いない",
       "Kanji": "以内",
       "Definition": "within, inside of"
     },
     {
+      "ID": "N4#45",
       "Kana": "いなか",
       "Kanji": "田舎",
       "Definition": "rural, countryside"
     },
     {
+      "ID": "N4#46",
       "Kana": "いのる",
       "Kanji": "祈る",
       "Definition": "to pray, to wish"
     },
     {
+      "ID": "N4#47",
       "Kana": "いらっしゃる",
       "Kanji": "",
       "Definition": "(hon) to be, to come, to go"
@@ -240,116 +287,139 @@
   ],
   "う": [
     {
+      "ID": "N4#48",
       "Kana": "うえる",
       "Kanji": "植える",
       "Definition": "to plant, to grow"
     },
     {
+      "ID": "N4#49",
       "Kana": "うかがう",
       "Kanji": "",
       "Definition": "to visit"
     },
     {
+      "ID": "N4#50",
       "Kana": "うかがう",
       "Kanji": "",
       "Definition": "to ask"
     },
     {
+      "ID": "N4#51",
       "Kana": "うけつけ",
       "Kanji": "受付",
       "Definition": "reception (desk), information ガス"
     },
     {
+      "ID": "N4#52",
       "Kana": "うける",
       "Kanji": "受ける",
       "Definition": "to take (lesson, test), to undergo"
     },
     {
+      "ID": "N4#53",
       "Kana": "うごく",
       "Kanji": "動く",
       "Definition": "to move"
     },
     {
+      "ID": "N4#54",
       "Kana": "うそ",
       "Kanji": "",
       "Definition": "lie"
     },
     {
+      "ID": "N4#55",
       "Kana": "うち",
       "Kanji": "",
       "Definition": "within"
     },
     {
+      "ID": "N4#56",
       "Kana": "うつ",
       "Kanji": "打つ",
       "Definition": "to hit, to strike"
     },
     {
+      "ID": "N4#57",
       "Kana": "うつくしい",
       "Kanji": "美しい",
       "Definition": "beautiful, lovely"
     },
     {
+      "ID": "N4#58",
       "Kana": "うつす",
       "Kanji": "写す",
       "Definition": "copy, to photograph, to film"
     },
     {
+      "ID": "N4#59",
       "Kana": "うつる",
       "Kanji": "移る",
       "Definition": "to move (house), to transfer (department)"
     },
     {
+      "ID": "N4#60",
       "Kana": "うで",
       "Kanji": "腕",
       "Definition": "arm"
     },
     {
+      "ID": "N4#61",
       "Kana": "うまい",
       "Kanji": "",
       "Definition": "delicious"
     },
     {
+      "ID": "N4#62",
       "Kana": "うら",
       "Kanji": "裏",
       "Definition": "reverse side, wrong side, back"
     },
     {
+      "ID": "N4#63",
       "Kana": "うりば",
       "Kanji": "売り場",
       "Definition": "place where things are sold"
     },
     {
+      "ID": "N4#64",
       "Kana": "うれしい",
       "Kanji": "",
       "Definition": "happy, glad"
     },
     {
+      "ID": "N4#65",
       "Kana": "うん",
       "Kanji": "",
       "Definition": "yes (informal), alright"
     },
     {
+      "ID": "N4#66",
       "Kana": "うんてんしゅ",
       "Kanji": "運転手",
       "Definition": "driver, chauffeur"
     },
     {
+      "ID": "N4#67",
       "Kana": "うんてん",
       "Kanji": "運転",
       "Definition": "driving"
     },
     {
+      "ID": "N4#68",
       "Kana": "うんてんする",
       "Kanji": "運転する",
       "Definition": "to drive"
     },
     {
+      "ID": "N4#69",
       "Kana": "うんどう",
       "Kanji": "運動",
       "Definition": "exercise"
     },
     {
+      "ID": "N4#70",
       "Kana": "うんどうする",
       "Kanji": "運動する",
       "Definition": "to exercise"
@@ -357,26 +427,31 @@
   ],
   "え": [
     {
+      "ID": "N4#71",
       "Kana": "エスカレーター",
       "Kanji": "",
       "Definition": "escalator"
     },
     {
+      "ID": "N4#72",
       "Kana": "えだ",
       "Kanji": "枝",
       "Definition": "branch, twig"
     },
     {
+      "ID": "N4#73",
       "Kana": "えらぶ",
       "Kanji": "選ぶ",
       "Definition": "to choose, to select"
     },
     {
+      "ID": "N4#74",
       "Kana": "えんりょ",
       "Kanji": "遠慮",
       "Definition": "restraint, reserve"
     },
     {
+      "ID": "N4#75",
       "Kana": "えんりょする",
       "Kanji": "遠慮する",
       "Definition": "to restrain, to reserve"
@@ -384,206 +459,247 @@
   ],
   "お": [
     {
+      "ID": "N4#76",
       "Kana": "おいでになる",
       "Kanji": "",
       "Definition": "(hon)to be"
     },
     {
+      "ID": "N4#77",
       "Kana": "おいわい",
       "Kanji": "お祝い",
       "Definition": "congratulation, celebration"
     },
     {
+      "ID": "N4#78",
       "Kana": "オートバイ",
       "Kanji": "",
       "Definition": "motorcycle (lit: auto-bi(ke))"
     },
     {
+      "ID": "N4#79",
       "Kana": "オーバー",
       "Kanji": "",
       "Definition": "overcoat"
     },
     {
+      "ID": "N4#80",
       "Kana": "おかげ",
       "Kanji": "",
       "Definition": "thanks or owing to"
     },
     {
+      "ID": "N4#81",
       "Kana": "おかしい",
       "Kanji": "",
       "Definition": "strange, funny"
     },
     {
+      "ID": "N4#82",
       "Kana": "おく",
       "Kanji": "億",
       "Definition": "100,000,000, hundred million"
     },
     {
+      "ID": "N4#83",
       "Kana": "おくじょう",
       "Kanji": "屋上",
       "Definition": "rooftop"
     },
     {
+      "ID": "N4#84",
       "Kana": "おくりもの",
       "Kanji": "贈り物",
       "Definition": "present, gift"
     },
     {
+      "ID": "N4#85",
       "Kana": "おくる",
       "Kanji": "送る",
       "Definition": "to send (a thing), to dispatch"
     },
     {
+      "ID": "N4#86",
       "Kana": "おくれる",
       "Kanji": "遅れる",
       "Definition": "to be late, to be delayed"
     },
     {
+      "ID": "N4#87",
       "Kana": "おこさん",
       "Kanji": "お子さん",
       "Definition": "(someone else's) child"
     },
     {
+      "ID": "N4#88",
       "Kana": "おこす",
       "Kanji": "起こす",
       "Definition": "to wake someone"
     },
     {
+      "ID": "N4#89",
       "Kana": "おこなう",
       "Kanji": "行う",
       "Definition": "to perform, to do, to carry out"
     },
     {
+      "ID": "N4#90",
       "Kana": "おこる",
       "Kanji": "怒る",
       "Definition": "to get angry, to be angry"
     },
     {
+      "ID": "N4#91",
       "Kana": "おしいれ",
       "Kanji": "押し入れ",
       "Definition": "closet"
     },
     {
+      "ID": "N4#92",
       "Kana": "おじょうさん",
       "Kanji": "お嬢さん",
       "Definition": "(1) (hon) daughter, (2) young lady"
     },
     {
+      "ID": "N4#93",
       "Kana": "おたく",
       "Kanji": "お宅",
       "Definition": "(pol) your house, your home"
     },
     {
+      "ID": "N4#94",
       "Kana": "おちる",
       "Kanji": "落ちる",
       "Definition": "to fall, to drop"
     },
     {
+      "ID": "N4#95",
       "Kana": "おっしゃる",
       "Kanji": "",
       "Definition": "(hon) to say, to speak"
     },
     {
+      "ID": "N4#96",
       "Kana": "おっと",
       "Kanji": "夫",
       "Definition": "husband"
     },
     {
+      "ID": "N4#97",
       "Kana": "おつり",
       "Kanji": "",
       "Definition": "change (money), balance"
     },
     {
+      "ID": "N4#98",
       "Kana": "おと",
       "Kanji": "音",
       "Definition": "sound, note"
     },
     {
+      "ID": "N4#99",
       "Kana": "おとす",
       "Kanji": "落す",
       "Definition": "to drop, to lose"
     },
     {
+      "ID": "N4#100",
       "Kana": "おどり",
       "Kanji": "踊り",
       "Definition": "dance"
     },
     {
+      "ID": "N4#101",
       "Kana": "おどる",
       "Kanji": "踊る",
       "Definition": "to dance"
     },
     {
+      "ID": "N4#102",
       "Kana": "おどろく",
       "Kanji": "驚く",
       "Definition": "to be surprised, to be astonished"
     },
     {
+      "ID": "N4#103",
       "Kana": "おまつり",
       "Kanji": "お祭り",
       "Definition": "festival"
     },
     {
+      "ID": "N4#104",
       "Kana": "おみまい",
       "Kanji": "お見舞い",
       "Definition": "calling on someone who is ill, enquiry"
     },
     {
+      "ID": "N4#105",
       "Kana": "おみやげ",
       "Kanji": "お土産",
       "Definition": "souvenir"
     },
     {
+      "ID": "N4#106",
       "Kana": "おもいだす",
       "Kanji": "思い出す",
       "Definition": "to recall, to remember"
     },
     {
+      "ID": "N4#107",
       "Kana": "おもう",
       "Kanji": "思う",
       "Definition": "to think, to feel"
     },
     {
+      "ID": "N4#108",
       "Kana": "おもちゃ",
       "Kanji": "",
       "Definition": "toy"
     },
     {
+      "ID": "N4#109",
       "Kana": "おもて",
       "Kanji": "表",
       "Definition": "the front, surface, exterior"
     },
     {
+      "ID": "N4#110",
       "Kana": "おや",
       "Kanji": "親",
       "Definition": "parents"
     },
     {
+      "ID": "N4#111",
       "Kana": "おりる",
       "Kanji": "下りる",
       "Definition": "to descend a mountain, to (descend) go down stairs"
     },
     {
+      "ID": "N4#112",
       "Kana": "おる",
       "Kanji": "",
       "Definition": "to be (polite version of いる)"
     },
     {
+      "ID": "N4#113",
       "Kana": "おる",
       "Kanji": "折る",
       "Definition": "to break, to fold, to pick a flower"
     },
     {
+      "ID": "N4#114",
       "Kana": "おれい",
       "Kanji": "お礼",
       "Definition": "thanking, expression of gratitude"
     },
     {
+      "ID": "N4#115",
       "Kana": "おれる",
       "Kanji": "折れる",
       "Definition": "to break, to be folded, to give in, to turn (a corner)"
     },
     {
+      "ID": "N4#116",
       "Kana": "おわり",
       "Kanji": "終わり",
       "Definition": "the end"
@@ -591,206 +707,247 @@
   ],
   "か": [
     {
+      "ID": "N4#117",
       "Kana": "カーテン",
       "Kanji": "",
       "Definition": "curtain"
     },
     {
+      "ID": "N4#118",
       "Kana": "かいがん",
       "Kanji": "海岸",
       "Definition": "coast, beach"
     },
     {
+      "ID": "N4#119",
       "Kana": "かいぎ",
       "Kanji": "会議",
       "Definition": "meeting, conference"
     },
     {
+      "ID": "N4#120",
       "Kana": "かいぎしつ",
       "Kanji": "会議室",
       "Definition": "conference room"
     },
     {
+      "ID": "N4#121",
       "Kana": "かいじょう",
       "Kanji": "会場",
       "Definition": "assembly hall, meeting place, the grounds"
     },
     {
+      "ID": "N4#122",
       "Kana": "かいわ",
       "Kanji": "会話",
       "Definition": "conversation"
     },
     {
+      "ID": "N4#123",
       "Kana": "かえり",
       "Kanji": "帰り",
       "Definition": "return, coming back"
     },
     {
+      "ID": "N4#124",
       "Kana": "かえる",
       "Kanji": "変える",
       "Definition": "to change, to alter, to vary"
     },
     {
+      "ID": "N4#125",
       "Kana": "かがく",
       "Kanji": "科学",
       "Definition": "science"
     },
     {
+      "ID": "N4#126",
       "Kana": "かがみ",
       "Kanji": "鏡",
       "Definition": "mirror"
     },
     {
+      "ID": "N4#127",
       "Kana": "かける",
       "Kanji": "掛ける",
       "Definition": "to hang, to put on (eg wall)"
     },
     {
+      "ID": "N4#128",
       "Kana": "かける",
       "Kanji": "",
       "Definition": "to sit down"
     },
     {
+      "ID": "N4#129",
       "Kana": "かける",
       "Kanji": "",
       "Definition": "to begin to"
     },
     {
+      "ID": "N4#130",
       "Kana": "かざる",
       "Kanji": "飾る",
       "Definition": "to decorate, to ornament, to adorn"
     },
     {
+      "ID": "N4#131",
       "Kana": "かじ",
       "Kanji": "火事",
       "Definition": "fire"
     },
     {
+      "ID": "N4#132",
       "Kana": "かた",
       "Kanji": "方",
       "Definition": "way of doing"
     },
     {
+      "ID": "N4#133",
       "Kana": "かたい",
       "Kanji": "堅/硬/固い",
       "Definition": "solid, hard, firm"
     },
     {
+      "ID": "N4#134",
       "Kana": "かたち",
       "Kanji": "形",
       "Definition": "shape"
     },
     {
+      "ID": "N4#135",
       "Kana": "かたづける",
       "Kanji": "片付ける",
       "Definition": "to tidy up, to put in order, to put away"
     },
     {
+      "ID": "N4#136",
       "Kana": "かちょう",
       "Kanji": "課長",
       "Definition": "section manager"
     },
     {
+      "ID": "N4#137",
       "Kana": "かつ",
       "Kanji": "勝つ",
       "Definition": "to win, to gain victory"
     },
     {
+      "ID": "N4#138",
       "Kana": "かっこう",
       "Kanji": "",
       "Definition": "appearance, manner"
     },
     {
+      "ID": "N4#139",
       "Kana": "かない",
       "Kanji": "家内",
       "Definition": "housewife"
     },
     {
+      "ID": "N4#140",
       "Kana": "かなしい",
       "Kanji": "悲しい",
       "Definition": "sad, sorrowful"
     },
     {
+      "ID": "N4#141",
       "Kana": "かならず",
       "Kanji": "必ず",
       "Definition": "certainly, necessarily, invariably"
     },
     {
+      "ID": "N4#142",
       "Kana": "かねもち/おかねもち",
       "Kanji": "お・金持ち",
       "Definition": "rich man"
     },
     {
+      "ID": "N4#143",
       "Kana": "かのじょ",
       "Kanji": "彼女",
       "Definition": "she, girl-friend"
     },
     {
+      "ID": "N4#144",
       "Kana": "かべ",
       "Kanji": "壁",
       "Definition": "wall"
     },
     {
+      "ID": "N4#145",
       "Kana": "かまう",
       "Kanji": "",
       "Definition": "to mind, to care about"
     },
     {
+      "ID": "N4#146",
       "Kana": "かみ",
       "Kanji": "髪",
       "Definition": "hair"
     },
     {
+      "ID": "N4#147",
       "Kana": "かむ",
       "Kanji": "噛む",
       "Definition": "to bite, to chew"
     },
     {
+      "ID": "N4#148",
       "Kana": "かよう",
       "Kanji": "通う",
       "Definition": "(1) to go back and forth, (2) to commute"
     },
     {
+      "ID": "N4#149",
       "Kana": "かれ",
       "Kanji": "彼",
       "Definition": "he, boyfriend"
     },
     {
+      "ID": "N4#150",
       "Kana": "かれら",
       "Kanji": "彼ら",
       "Definition": "they (usually male)"
     },
     {
+      "ID": "N4#151",
       "Kana": "かわく",
       "Kanji": "乾く",
       "Definition": "to get dry"
     },
     {
+      "ID": "N4#152",
       "Kana": "かわり",
       "Kanji": "代わり",
       "Definition": "substitute, alternate"
     },
     {
+      "ID": "N4#153",
       "Kana": "かわる",
       "Kanji": "変わる",
       "Definition": "to change, to be transformed, to vary"
     },
     {
+      "ID": "N4#154",
       "Kana": "かんがえる",
       "Kanji": "考える",
       "Definition": "to consider"
     },
     {
+      "ID": "N4#155",
       "Kana": "かんけい",
       "Kanji": "関係",
       "Definition": "relation, connection"
     },
     {
+      "ID": "N4#156",
       "Kana": "かんごふ",
       "Kanji": "看護婦",
       "Definition": "(female) nurse"
     },
     {
+      "ID": "N4#157",
       "Kana": "かんたん",
       "Kanji": "簡単",
       "Definition": "simple"
@@ -798,26 +955,31 @@
   ],
   "が": [
     {
+      "ID": "N4#158",
       "Kana": "ガス",
       "Kanji": "",
       "Definition": "gas"
     },
     {
+      "ID": "N4#159",
       "Kana": "ガソリン",
       "Kanji": "",
       "Definition": "gasoline, petrol"
     },
     {
+      "ID": "N4#160",
       "Kana": "ガソリンスタンド",
       "Kanji": "",
       "Definition": "gasoline stand, gas station, petrol station"
     },
     {
+      "ID": "N4#161",
       "Kana": "ガラス",
       "Kanji": "",
       "Definition": "glass, pane"
     },
     {
+      "ID": "N4#162",
       "Kana": "がんばる",
       "Kanji": "頑張る",
       "Definition": "to try one's best, to persist"
@@ -825,121 +987,145 @@
   ],
   "き": [
     {
+      "ID": "N4#163",
       "Kana": "き",
       "Kanji": "気",
       "Definition": "spirit, mood"
     },
     {
+      "ID": "N4#164",
       "Kana": "きかい",
       "Kanji": "機会",
       "Definition": "chance, opportunity"
     },
     {
+      "ID": "N4#165",
       "Kana": "きけん",
       "Kanji": "危険",
       "Definition": "danger, peril, hazard"
     },
     {
+      "ID": "N4#166",
       "Kana": "きこえる",
       "Kanji": "聞こえる",
       "Definition": "to be heard, to be audible"
     },
     {
+      "ID": "N4#167",
       "Kana": "きしゃ",
       "Kanji": "汽車",
       "Definition": "train (steam)"
     },
     {
+      "ID": "N4#168",
       "Kana": "きせつ",
       "Kanji": "季節",
       "Definition": "season"
     },
     {
+      "ID": "N4#169",
       "Kana": "きそく",
       "Kanji": "規則",
       "Definition": "rule, regulations"
     },
     {
+      "ID": "N4#170",
       "Kana": "きっと",
       "Kanji": "",
       "Definition": "surely, definitely"
     },
     {
+      "ID": "N4#171",
       "Kana": "きぬ",
       "Kanji": "絹",
       "Definition": "silk"
     },
     {
+      "ID": "N4#172",
       "Kana": "きびしい",
       "Kanji": "厳しい",
       "Definition": "strict"
     },
     {
+      "ID": "N4#173",
       "Kana": "きぶん",
       "Kanji": "気分",
       "Definition": "feeling, mood"
     },
     {
+      "ID": "N4#174",
       "Kana": "きまる",
       "Kanji": "決る",
       "Definition": "to be decided, to be settled"
     },
     {
+      "ID": "N4#175",
       "Kana": "きみ",
       "Kanji": "君",
       "Definition": "You (masculine term for female)"
     },
     {
+      "ID": "N4#176",
       "Kana": "きめる",
       "Kanji": "決める",
       "Definition": "to decide"
     },
     {
+      "ID": "N4#177",
       "Kana": "きもち",
       "Kanji": "気持ち",
       "Definition": "feeling, sensation, mood"
     },
     {
+      "ID": "N4#178",
       "Kana": "きもの",
       "Kanji": "着物",
       "Definition": "kimono"
     },
     {
+      "ID": "N4#179",
       "Kana": "きゃく",
       "Kanji": "客",
       "Definition": "guest, customer"
     },
     {
+      "ID": "N4#180",
       "Kana": "きゅう",
       "Kanji": "急",
       "Definition": "(1) urgent, sudden, (2) steep"
     },
     {
+      "ID": "N4#181",
       "Kana": "きゅうこう",
       "Kanji": "急行",
       "Definition": "express (eg train that bypasses stations)"
     },
     {
+      "ID": "N4#182",
       "Kana": "きょういく",
       "Kanji": "教育",
       "Definition": "training, education"
     },
     {
+      "ID": "N4#183",
       "Kana": "きょうかい",
       "Kanji": "教会",
       "Definition": "church"
     },
     {
+      "ID": "N4#184",
       "Kana": "きょうそう",
       "Kanji": "競争",
       "Definition": "competition, contest"
     },
     {
+      "ID": "N4#185",
       "Kana": "きょうみ",
       "Kanji": "興味",
       "Definition": "interest (in something)"
     },
     {
+      "ID": "N4#186",
       "Kana": "きんじょ",
       "Kanji": "近所",
       "Definition": "neighbourhood"
@@ -947,6 +1133,7 @@
   ],
   "ぎ": [
     {
+      "ID": "N4#187",
       "Kana": "ぎじゅつ",
       "Kanji": "技術",
       "Definition": "art, technique, technology, skill"
@@ -954,46 +1141,55 @@
   ],
   "く": [
     {
+      "ID": "N4#188",
       "Kana": "くうき",
       "Kanji": "空気",
       "Definition": "air, atmosphere"
     },
     {
+      "ID": "N4#189",
       "Kana": "くうこう",
       "Kanji": "空港",
       "Definition": "airport"
     },
     {
+      "ID": "N4#190",
       "Kana": "くさ",
       "Kanji": "草",
       "Definition": "grass"
     },
     {
+      "ID": "N4#191",
       "Kana": "くださる",
       "Kanji": "",
       "Definition": "(hon) to give, to confer"
     },
     {
+      "ID": "N4#192",
       "Kana": "くび",
       "Kanji": "首",
       "Definition": "neck"
     },
     {
+      "ID": "N4#193",
       "Kana": "くも",
       "Kanji": "雲",
       "Definition": "cloud"
     },
     {
+      "ID": "N4#194",
       "Kana": "くらべる",
       "Kanji": "比べる",
       "Definition": "to compare"
     },
     {
+      "ID": "N4#195",
       "Kana": "くれる",
       "Kanji": "",
       "Definition": "to give, to do for"
     },
     {
+      "ID": "N4#196",
       "Kana": "くれる",
       "Kanji": "暮れる",
       "Definition": "to get dark, to come to an end"
@@ -1001,6 +1197,7 @@
   ],
   "ぐ": [
     {
+      "ID": "N4#197",
       "Kana": "ぐあい",
       "Kanji": "具合",
       "Definition": "condition, state, health"
@@ -1008,101 +1205,121 @@
   ],
   "け": [
     {
+      "ID": "N4#198",
       "Kana": "け",
       "Kanji": "毛",
       "Definition": "hair"
     },
     {
+      "ID": "N4#199",
       "Kana": "け",
       "Kanji": "毛",
       "Definition": "fur"
     },
     {
+      "ID": "N4#200",
       "Kana": "けいかく",
       "Kanji": "計画",
       "Definition": "plan, project, schedule"
     },
     {
+      "ID": "N4#201",
       "Kana": "けいかくする",
       "Kanji": "計画する",
       "Definition": "to plan, to schedule"
     },
     {
+      "ID": "N4#202",
       "Kana": "けいけん",
       "Kanji": "経験",
       "Definition": "experience"
     },
     {
+      "ID": "N4#203",
       "Kana": "けいけんする",
       "Kanji": "経験する",
       "Definition": "to experience or gain experience"
     },
     {
+      "ID": "N4#204",
       "Kana": "けいざい",
       "Kanji": "経済",
       "Definition": "economics, finance, economy"
     },
     {
+      "ID": "N4#205",
       "Kana": "けいさつ",
       "Kanji": "警察",
       "Definition": "police"
     },
     {
+      "ID": "N4#206",
       "Kana": "けが",
       "Kanji": "",
       "Definition": "injury (to animate object), hurt"
     },
     {
+      "ID": "N4#207",
       "Kana": "けがする",
       "Kanji": "",
       "Definition": "to injure (to animate object), to harm"
     },
     {
+      "ID": "N4#208",
       "Kana": "ケーキ",
       "Kanji": "",
       "Definition": "cake"
     },
     {
+      "ID": "N4#209",
       "Kana": "けしき",
       "Kanji": "景色",
       "Definition": "scenery, scene, landscape"
     },
     {
+      "ID": "N4#210",
       "Kana": "けしゴム",
       "Kanji": "消しゴム",
       "Definition": "eraser"
     },
     {
+      "ID": "N4#211",
       "Kana": "けっして",
       "Kanji": "決して",
       "Definition": "never"
     },
     {
+      "ID": "N4#212",
       "Kana": "けれど/けれども",
       "Kanji": "",
       "Definition": "but, however"
     },
     {
+      "ID": "N4#213",
       "Kana": "けんか",
       "Kanji": "",
       "Definition": "quarrel"
     },
     {
+      "ID": "N4#214",
       "Kana": "けんか・する",
       "Kanji": "",
       "Definition": "to quarrel"
     },
     {
+      "ID": "N4#215",
       "Kana": "けんきゅう",
       "Kanji": "研究",
       "Definition": "study, research, investigation"
     },
     {
+      "ID": "N4#216",
       "Kana": "けんきゅうしつ",
       "Kanji": "研究室",
       "Definition": "study room, laboratory"
     },
     {
+      "ID": "N4#217",
       "Kana": "けんぶつ",
       "Kanji": "見物",
       "Definition": "a sight, an attraction"
@@ -1110,16 +1327,19 @@
   ],
   "げ": [
     {
+      "ID": "N4#218",
       "Kana": "げしゅく",
       "Kanji": "下宿",
       "Definition": "boarding, lodging, boarding house"
     },
     {
+      "ID": "N4#219",
       "Kana": "げんいん",
       "Kanji": "原因",
       "Definition": "cause, origin, source"
     },
     {
+      "ID": "N4#220",
       "Kana": "げんかん",
       "Kanji": "玄関",
       "Definition": "entrance way (in Japanese house)"
@@ -1127,176 +1347,211 @@
   ],
   "こ": [
     {
+      "ID": "N4#221",
       "Kana": "こ",
       "Kanji": "子",
       "Definition": "child"
     },
     {
+      "ID": "N4#222",
       "Kana": "こう",
       "Kanji": "",
       "Definition": "like this, this way"
     },
     {
+      "ID": "N4#223",
       "Kana": "こうがい",
       "Kanji": "郊外",
       "Definition": "suburb, outskirts"
     },
     {
+      "ID": "N4#224",
       "Kana": "こうぎ",
       "Kanji": "講義",
       "Definition": "lecture"
     },
     {
+      "ID": "N4#225",
       "Kana": "こうぎょう",
       "Kanji": "工業",
       "Definition": "(manufacturing) industry"
     },
     {
+      "ID": "N4#226",
       "Kana": "こうこう",
       "Kanji": "高校",
       "Definition": "high school"
     },
     {
+      "ID": "N4#227",
       "Kana": "こうとうがっこう",
       "Kanji": "高等学校",
       "Definition": "senior high school"
     },
     {
+      "ID": "N4#228",
       "Kana": "こうこうせい",
       "Kanji": "高校生",
       "Definition": "high school student"
     },
     {
+      "ID": "N4#229",
       "Kana": "こうじょう",
       "Kanji": "工場",
       "Definition": "factory"
     },
     {
+      "ID": "N4#230",
       "Kana": "こうちょう",
       "Kanji": "校長",
       "Definition": "principal, headmaster"
     },
     {
+      "ID": "N4#231",
       "Kana": "こうつう",
       "Kanji": "交通",
       "Definition": "traffic, transportation"
     },
     {
+      "ID": "N4#232",
       "Kana": "こうどう",
       "Kanji": "講堂",
       "Definition": "auditorium"
     },
     {
+      "ID": "N4#233",
       "Kana": "こうむいん",
       "Kanji": "公務員",
       "Definition": "government worker, public servant"
     },
     {
+      "ID": "N4#234",
       "Kana": "こくさい",
       "Kanji": "国際",
       "Definition": "international"
     },
     {
+      "ID": "N4#235",
       "Kana": "こころ",
       "Kanji": "心",
       "Definition": "core, heart"
     },
     {
+      "ID": "N4#236",
       "Kana": "こしょう",
       "Kanji": "故障",
       "Definition": "break-down"
     },
     {
+      "ID": "N4#237",
       "Kana": "こしょうする",
       "Kanji": "故障する",
       "Definition": "to break-down"
     },
     {
+      "ID": "N4#238",
       "Kana": "こたえ",
       "Kanji": "答",
       "Definition": "answer, response"
     },
     {
+      "ID": "N4#239",
       "Kana": "こっち",
       "Kanji": "",
       "Definition": "(1) this person, (2) this direction, (3) this side, (4) thereafter"
     },
     {
+      "ID": "N4#240",
       "Kana": "こと",
       "Kanji": "",
       "Definition": "thing, matter, fact"
     },
     {
+      "ID": "N4#241",
       "Kana": "ことり",
       "Kanji": "小鳥",
       "Definition": "small bird"
     },
     {
+      "ID": "N4#242",
       "Kana": "このあいだ",
       "Kanji": "",
       "Definition": "the other day, recently"
     },
     {
+      "ID": "N4#243",
       "Kana": "このごろ",
       "Kanji": "",
       "Definition": "these days, nowadays"
     },
     {
+      "ID": "N4#244",
       "Kana": "こまかい",
       "Kanji": "細かい",
       "Definition": "(1) small, (2) fine, minute"
     },
     {
+      "ID": "N4#245",
       "Kana": "こむ",
       "Kanji": "込む",
       "Definition": "to be crowded"
     },
     {
+      "ID": "N4#246",
       "Kana": "こめ",
       "Kanji": "米",
       "Definition": "uncooked rice"
     },
     {
+      "ID": "N4#247",
       "Kana": "これから",
       "Kanji": "",
       "Definition": "after this"
     },
     {
+      "ID": "N4#248",
       "Kana": "こわい",
       "Kanji": "怖い",
       "Definition": "scary, frightening"
     },
     {
+      "ID": "N4#249",
       "Kana": "こわす",
       "Kanji": "壊す",
       "Definition": "to break, to break down"
     },
     {
+      "ID": "N4#250",
       "Kana": "こわれる",
       "Kanji": "壊れる",
       "Definition": "to be broken, to break"
     },
     {
+      "ID": "N4#251",
       "Kana": "コンサート",
       "Kanji": "",
       "Definition": "concert"
     },
     {
+      "ID": "N4#252",
       "Kana": "こんど",
       "Kanji": "今度",
       "Definition": "now, next time"
     },
     {
+      "ID": "N4#253",
       "Kana": "コンピュータ",
       "Kanji": "",
       "Definition": "computer"
     },
     {
+      "ID": "N4#254",
       "Kana": "コンピューター",
       "Kanji": "",
       "Definition": "computer"
     },
     {
+      "ID": "N4#255",
       "Kana": "こんや",
       "Kanji": "今夜",
       "Definition": "this evening, tonight"
@@ -1304,26 +1559,31 @@
   ],
   "ご": [
     {
+      "ID": "N4#256",
       "Kana": "ごしゅじん",
       "Kanji": "ご主人",
       "Definition": "your husband, her husband"
     },
     {
+      "ID": "N4#257",
       "Kana": "ごぞんじ",
       "Kanji": "ご存じ",
       "Definition": "knowing, acquaintance"
     },
     {
+      "ID": "N4#258",
       "Kana": "ごちそう",
       "Kanji": "",
       "Definition": "feast, treating (someone)"
     },
     {
+      "ID": "N4#259",
       "Kana": "ごみ",
       "Kanji": "",
       "Definition": "rubbish, trash, garbage"
     },
     {
+      "ID": "N4#260",
       "Kana": "ごらんになる",
       "Kanji": "",
       "Definition": "(hon) to see"
@@ -1331,96 +1591,115 @@
   ],
   "さ": [
     {
+      "ID": "N4#261",
       "Kana": "さいきん",
       "Kanji": "最近",
       "Definition": "latest, most recent, nowadays"
     },
     {
+      "ID": "N4#262",
       "Kana": "さいご",
       "Kanji": "最後",
       "Definition": "last, end, conclusion"
     },
     {
+      "ID": "N4#263",
       "Kana": "さいしょ",
       "Kanji": "最初",
       "Definition": "beginning, first"
     },
     {
+      "ID": "N4#264",
       "Kana": "さか",
       "Kanji": "坂",
       "Definition": "slope, hill"
     },
     {
+      "ID": "N4#265",
       "Kana": "さがす",
       "Kanji": "探す",
       "Definition": "to search, to seek, to look for"
     },
     {
+      "ID": "N4#266",
       "Kana": "さがる",
       "Kanji": "下る",
       "Definition": "to get down, to descend"
     },
     {
+      "ID": "N4#267",
       "Kana": "さかん",
       "Kanji": "盛ん",
       "Definition": "popularity, prosperous"
     },
     {
+      "ID": "N4#268",
       "Kana": "さげる",
       "Kanji": "下げる",
       "Definition": "to hang, to lower, to move back"
     },
     {
+      "ID": "N4#269",
       "Kana": "さしあげる",
       "Kanji": "差し上げる",
       "Definition": "(polite) to give, to offer"
     },
     {
+      "ID": "N4#270",
       "Kana": "さっき",
       "Kanji": "",
       "Definition": "some time ago"
     },
     {
+      "ID": "N4#271",
       "Kana": "さびしい",
       "Kanji": "寂しい",
       "Definition": "lonely, lonesome"
     },
     {
+      "ID": "N4#272",
       "Kana": "さらいげつ",
       "Kanji": "さ来月",
       "Definition": "the month after next"
     },
     {
+      "ID": "N4#273",
       "Kana": "さらいしゅう",
       "Kanji": "さ来週",
       "Definition": "the week after next"
     },
     {
+      "ID": "N4#274",
       "Kana": "サラダ",
       "Kanji": "",
       "Definition": "salad"
     },
     {
+      "ID": "N4#275",
       "Kana": "さわぐ",
       "Kanji": "騒ぐ",
       "Definition": "to make noise, to clamor, to be excited"
     },
     {
+      "ID": "N4#276",
       "Kana": "さわる",
       "Kanji": "触る",
       "Definition": "to touch, to feel"
     },
     {
+      "ID": "N4#277",
       "Kana": "さんぎょう",
       "Kanji": "産業",
       "Definition": "industry"
     },
     {
+      "ID": "N4#278",
       "Kana": "サンダル",
       "Kanji": "",
       "Definition": "sandal"
     },
     {
+      "ID": "N4#279",
       "Kana": "サンドイッチ",
       "Kanji": "",
       "Definition": "sandwich"
@@ -1428,6 +1707,7 @@
   ],
   "ざ": [
     {
+      "ID": "N4#280",
       "Kana": "ざんねん",
       "Kanji": "残念",
       "Definition": "bad luck, disappointment"
@@ -1435,206 +1715,247 @@
   ],
   "し": [
     {
+      "ID": "N4#281",
       "Kana": "し",
       "Kanji": "市",
       "Definition": "city"
     },
     {
+      "ID": "N4#282",
       "Kana": "しあい",
       "Kanji": "試合",
       "Definition": "match, game, contest"
     },
     {
+      "ID": "N4#283",
       "Kana": "しかた",
       "Kanji": "仕方",
       "Definition": "way, method"
     },
     {
+      "ID": "N4#284",
       "Kana": "しかる",
       "Kanji": "",
       "Definition": "to scold"
     },
     {
+      "ID": "N4#285",
       "Kana": "しけん",
       "Kanji": "試験",
       "Definition": "examination, test, study"
     },
     {
+      "ID": "N4#286",
       "Kana": "したぎ",
       "Kanji": "下着",
       "Definition": "underwear"
     },
     {
+      "ID": "N4#287",
       "Kana": "したく",
       "Kanji": "支度",
       "Definition": "preparation"
     },
     {
+      "ID": "N4#288",
       "Kana": "したくする",
       "Kanji": "支度する",
       "Definition": "to prepare"
     },
     {
+      "ID": "N4#289",
       "Kana": "しっかり",
       "Kanji": "",
       "Definition": "firmly, tightly, steady"
     },
     {
+      "ID": "N4#290",
       "Kana": "しっぱい",
       "Kanji": "失敗",
       "Definition": "failure, mistake, blunder"
     },
     {
+      "ID": "N4#291",
       "Kana": "しつれい",
       "Kanji": "失礼",
       "Definition": "(1) discourtesy, impoliteness, (2) Excuse me, Goodbye"
     },
     {
+      "ID": "N4#292",
       "Kana": "しなもの",
       "Kanji": "品物",
       "Definition": "goods"
     },
     {
+      "ID": "N4#293",
       "Kana": "しばらく",
       "Kanji": "",
       "Definition": "little while"
     },
     {
+      "ID": "N4#294",
       "Kana": "しま",
       "Kanji": "島",
       "Definition": "island"
     },
     {
+      "ID": "N4#295",
       "Kana": "しみん",
       "Kanji": "市民",
       "Definition": "citizen"
     },
     {
+      "ID": "N4#296",
       "Kana": "しゃかい",
       "Kanji": "社会",
       "Definition": "society, public"
     },
     {
+      "ID": "N4#297",
       "Kana": "しゃちょう",
       "Kanji": "社長",
       "Definition": "company president, manager, director"
     },
     {
+      "ID": "N4#298",
       "Kana": "しゅうかん",
       "Kanji": "習慣",
       "Definition": "custom, habit, manners"
     },
     {
+      "ID": "N4#299",
       "Kana": "しゅっせき",
       "Kanji": "出席",
       "Definition": "attendance, presence"
     },
     {
+      "ID": "N4#300",
       "Kana": "しゅっせきする",
       "Kanji": "出席する",
       "Definition": "to attend, to be present"
     },
     {
+      "ID": "N4#301",
       "Kana": "しゅっぱつ",
       "Kanji": "出発",
       "Definition": "departure"
     },
     {
+      "ID": "N4#302",
       "Kana": "しゅっぱつする",
       "Kanji": "出発する",
       "Definition": "to depart"
     },
     {
+      "ID": "N4#303",
       "Kana": "しゅみ",
       "Kanji": "趣味",
       "Definition": "hobby"
     },
     {
+      "ID": "N4#304",
       "Kana": "しょうかい",
       "Kanji": "紹介",
       "Definition": "introduction"
     },
     {
+      "ID": "N4#305",
       "Kana": "しょうがつ",
       "Kanji": "正月",
       "Definition": "New Year, New Year's Day"
     },
     {
+      "ID": "N4#306",
       "Kana": "しょうがっこう",
       "Kanji": "小学校",
       "Definition": "primary school, elementary school"
     },
     {
+      "ID": "N4#307",
       "Kana": "しょうせつ",
       "Kanji": "小説",
       "Definition": "novel, story"
     },
     {
+      "ID": "N4#308",
       "Kana": "しょうたい",
       "Kanji": "招待",
       "Definition": "invitation"
     },
     {
+      "ID": "N4#309",
       "Kana": "しょうたいする",
       "Kanji": "招待する",
       "Definition": "to invite"
     },
     {
+      "ID": "N4#310",
       "Kana": "しょうち",
       "Kanji": "承知",
       "Definition": "consent, acceptance"
     },
     {
+      "ID": "N4#311",
       "Kana": "しょうちする",
       "Kanji": "承知する",
       "Definition": "to consent, to acceptance"
     },
     {
+      "ID": "N4#312",
       "Kana": "しょうらい",
       "Kanji": "将来",
       "Definition": "future, prospects"
     },
     {
+      "ID": "N4#313",
       "Kana": "しょくじ",
       "Kanji": "食事",
       "Definition": "meal"
     },
     {
+      "ID": "N4#314",
       "Kana": "しょくじする",
       "Kanji": "食事",
       "Definition": "to grab a meal, to eat"
     },
     {
+      "ID": "N4#315",
       "Kana": "しょくりょうひん",
       "Kanji": "食料品",
       "Definition": "foodstuff, groceries"
     },
     {
+      "ID": "N4#316",
       "Kana": "しらせる",
       "Kanji": "知らせる",
       "Definition": "to notify, to advise"
     },
     {
+      "ID": "N4#317",
       "Kana": "しらべる",
       "Kanji": "調べる",
       "Definition": "to investigate, to check up"
     },
     {
+      "ID": "N4#318",
       "Kana": "しんせつ",
       "Kanji": "親切",
       "Definition": "kindness, gentleness"
     },
     {
+      "ID": "N4#319",
       "Kana": "しんぱい",
       "Kanji": "心配",
       "Definition": "worry, concern"
     },
     {
+      "ID": "N4#320",
       "Kana": "しんぱいする",
       "Kanji": "心配する",
       "Definition": "to worry, to concern"
     },
     {
+      "ID": "N4#321",
       "Kana": "しんぶんしゃ",
       "Kanji": "新聞社",
       "Definition": "newspaper company"
@@ -1642,86 +1963,103 @@
   ],
   "じ": [
     {
+      "ID": "N4#322",
       "Kana": "じ",
       "Kanji": "字",
       "Definition": "character, hand-writing"
     },
     {
+      "ID": "N4#323",
       "Kana": "じこ",
       "Kanji": "事故",
       "Definition": "accident"
     },
     {
+      "ID": "N4#324",
       "Kana": "じしん",
       "Kanji": "地震",
       "Definition": "earthquake"
     },
     {
+      "ID": "N4#325",
       "Kana": "じだい",
       "Kanji": "時代",
       "Definition": "period, epoch, era"
     },
     {
+      "ID": "N4#326",
       "Kana": "じてん",
       "Kanji": "辞典",
       "Definition": "dictionary"
     },
     {
+      "ID": "N4#327",
       "Kana": "じむしょ",
       "Kanji": "事務所",
       "Definition": "office"
     },
     {
+      "ID": "N4#328",
       "Kana": "じゃま",
       "Kanji": "",
       "Definition": "hindrance, intrusion"
     },
     {
+      "ID": "N4#329",
       "Kana": "ジャム",
       "Kanji": "",
       "Definition": "jam"
     },
     {
+      "ID": "N4#330",
       "Kana": "じゆう",
       "Kanji": "自由",
       "Definition": "freedom"
     },
     {
+      "ID": "N4#331",
       "Kana": "じゅうしょ",
       "Kanji": "住所",
       "Definition": "address (eg of house), residence, domicile"
     },
     {
+      "ID": "N4#332",
       "Kana": "じゅうどう",
       "Kanji": "柔道",
       "Definition": "judo"
     },
     {
+      "ID": "N4#333",
       "Kana": "じゅうぶん",
       "Kanji": "十分",
       "Definition": "enough , sufficient"
     },
     {
+      "ID": "N4#334",
       "Kana": "じゅんび",
       "Kanji": "準備",
       "Definition": "prepare"
     },
     {
+      "ID": "N4#335",
       "Kana": "じゅんびする",
       "Kanji": "準備する",
       "Definition": "to prepare"
     },
     {
+      "ID": "N4#336",
       "Kana": "じょせい",
       "Kanji": "女性",
       "Definition": "woman"
     },
     {
+      "ID": "N4#337",
       "Kana": "じんこう",
       "Kanji": "人口",
       "Definition": "population"
     },
     {
+      "ID": "N4#338",
       "Kana": "じんじゃ",
       "Kanji": "神社",
       "Definition": "Shinto shrine"
@@ -1729,116 +2067,139 @@
   ],
   "す": [
     {
+      "ID": "N4#339",
       "Kana": "すいえい",
       "Kanji": "水泳",
       "Definition": "swimming"
     },
     {
+      "ID": "N4#340",
       "Kana": "すいどう",
       "Kanji": "水道",
       "Definition": "water service, water supply"
     },
     {
+      "ID": "N4#341",
       "Kana": "すうがく",
       "Kanji": "数学",
       "Definition": "mathematics, arithmetic"
     },
     {
+      "ID": "N4#342",
       "Kana": "スーツ",
       "Kanji": "",
       "Definition": "suit"
     },
     {
+      "ID": "N4#343",
       "Kana": "スーツケース",
       "Kanji": "",
       "Definition": "suitcase"
     },
     {
+      "ID": "N4#344",
       "Kana": "スーパー",
       "Kanji": "",
       "Definition": "supermarket"
     },
     {
+      "ID": "N4#345",
       "Kana": "すぎる",
       "Kanji": "過ぎる",
       "Definition": "to exceed, to go beyond"
     },
     {
+      "ID": "N4#346",
       "Kana": "すく",
       "Kanji": "",
       "Definition": "to become empty"
     },
     {
+      "ID": "N4#347",
       "Kana": "すく",
       "Kanji": "",
       "Definition": "to be less crowded"
     },
     {
+      "ID": "N4#348",
       "Kana": "スクリーン",
       "Kanji": "",
       "Definition": "screen"
     },
     {
+      "ID": "N4#349",
       "Kana": "すごい",
       "Kanji": "凄い",
       "Definition": "terrific, amazing, to a great extent"
     },
     {
+      "ID": "N4#350",
       "Kana": "すすむ",
       "Kanji": "進む",
       "Definition": "to make progress, to advance, to proceed"
     },
     {
+      "ID": "N4#351",
       "Kana": "すっかり",
       "Kanji": "",
       "Definition": "all, completely, thoroughly"
     },
     {
+      "ID": "N4#352",
       "Kana": "ステーキ",
       "Kanji": "",
       "Definition": "steak"
     },
     {
+      "ID": "N4#353",
       "Kana": "ステレオ",
       "Kanji": "",
       "Definition": "stereo"
     },
     {
+      "ID": "N4#354",
       "Kana": "すてる",
       "Kanji": "捨てる",
       "Definition": "to throw away"
     },
     {
+      "ID": "N4#355",
       "Kana": "すな",
       "Kanji": "砂",
       "Definition": "sand"
     },
     {
+      "ID": "N4#356",
       "Kana": "すばらしい",
       "Kanji": "",
       "Definition": "wonderful, splendid"
     },
     {
+      "ID": "N4#357",
       "Kana": "すべる",
       "Kanji": "滑る",
       "Definition": "to slide, to slip"
     },
     {
+      "ID": "N4#358",
       "Kana": "すみ",
       "Kanji": "隅",
       "Definition": "corner, nook"
     },
     {
+      "ID": "N4#359",
       "Kana": "すむ",
       "Kanji": "済む",
       "Definition": "to finish, to end"
     },
     {
+      "ID": "N4#360",
       "Kana": "すり",
       "Kanji": "",
       "Definition": "pickpocket"
     },
     {
+      "ID": "N4#361",
       "Kana": "すると",
       "Kanji": "",
       "Definition": "and, then"
@@ -1846,11 +2207,13 @@
   ],
   "ず": [
     {
+      "ID": "N4#362",
       "Kana": "ずいぶん",
       "Kanji": "",
       "Definition": "extremely"
     },
     {
+      "ID": "N4#363",
       "Kana": "ずっと",
       "Kanji": "",
       "Definition": "straight, quickly, all of a sudden"
@@ -1858,81 +2221,97 @@
   ],
   "せ": [
     {
+      "ID": "N4#364",
       "Kana": "せいかつ",
       "Kanji": "生活",
       "Definition": "living, life (one's daily existence), livelihood"
     },
     {
+      "ID": "N4#365",
       "Kana": "せいかつする",
       "Kanji": "生活する",
       "Definition": "to live (one's daily existence)"
     },
     {
+      "ID": "N4#366",
       "Kana": "せいさん",
       "Kanji": "生産",
       "Definition": "production, manufacture"
     },
     {
+      "ID": "N4#367",
       "Kana": "せいさんする",
       "Kanji": "生産する",
       "Definition": "to produce, to manufacture"
     },
     {
+      "ID": "N4#368",
       "Kana": "せいじ",
       "Kanji": "政治",
       "Definition": "politics, government"
     },
     {
+      "ID": "N4#369",
       "Kana": "せいよう",
       "Kanji": "西洋",
       "Definition": "the west, Western countries"
     },
     {
+      "ID": "N4#370",
       "Kana": "せかい",
       "Kanji": "世界",
       "Definition": "the world"
     },
     {
+      "ID": "N4#371",
       "Kana": "せき",
       "Kanji": "席",
       "Definition": "seat"
     },
     {
+      "ID": "N4#372",
       "Kana": "せつめい",
       "Kanji": "説明",
       "Definition": "explanation"
     },
     {
+      "ID": "N4#373",
       "Kana": "せなか",
       "Kanji": "背中",
       "Definition": "back (of body)"
     },
     {
+      "ID": "N4#374",
       "Kana": "せわ",
       "Kanji": "世話",
       "Definition": "looking after, help"
     },
     {
+      "ID": "N4#375",
       "Kana": "せわする",
       "Kanji": "世話する",
       "Definition": "to look after, to help"
     },
     {
+      "ID": "N4#376",
       "Kana": "せん",
       "Kanji": "線",
       "Definition": "line, wire"
     },
     {
+      "ID": "N4#377",
       "Kana": "せんそう",
       "Kanji": "戦争",
       "Definition": "war"
     },
     {
+      "ID": "N4#378",
       "Kana": "せんぱい",
       "Kanji": "先輩",
       "Definition": "senior, superior, elder"
     },
     {
+      "ID": "N4#379",
       "Kana": "せんもん",
       "Kanji": "専門",
       "Definition": "speciality, study major"
@@ -1940,11 +2319,13 @@
   ],
   "ぜ": [
     {
+      "ID": "N4#380",
       "Kana": "ぜひ",
       "Kanji": "",
       "Definition": "certainly, without fail"
     },
     {
+      "ID": "N4#381",
       "Kana": "ぜんぜん",
       "Kanji": "",
       "Definition": "wholly, entirely"
@@ -1952,66 +2333,79 @@
   ],
   "そ": [
     {
+      "ID": "N4#382",
       "Kana": "そうだん",
       "Kanji": "相談",
       "Definition": "consultation, discussion"
     },
     {
+      "ID": "N4#383",
       "Kana": "そうだんする",
       "Kanji": "相談する",
       "Definition": "to consult, to discuss"
     },
     {
+      "ID": "N4#384",
       "Kana": "そだてる",
       "Kanji": "育てる",
       "Definition": "to raise, to rear, to bring up"
     },
     {
+      "ID": "N4#385",
       "Kana": "そつぎょう",
       "Kanji": "卒業",
       "Definition": "graduation"
     },
     {
+      "ID": "N4#386",
       "Kana": "そふ",
       "Kanji": "祖父",
       "Definition": "grandfather"
     },
     {
+      "ID": "N4#387",
       "Kana": "ソフト",
       "Kanji": "",
       "Definition": "soft"
     },
     {
+      "ID": "N4#388",
       "Kana": "そぼ",
       "Kanji": "祖母",
       "Definition": "grandmother"
     },
     {
+      "ID": "N4#389",
       "Kana": "それで",
       "Kanji": "",
       "Definition": "and, thereupon, because of that"
     },
     {
+      "ID": "N4#390",
       "Kana": "それに",
       "Kanji": "",
       "Definition": "besides, moreover"
     },
     {
+      "ID": "N4#391",
       "Kana": "それほど",
       "Kanji": "",
       "Definition": "to that degree, extent"
     },
     {
+      "ID": "N4#392",
       "Kana": "そろそろ",
       "Kanji": "",
       "Definition": "gradually, steadily, soon"
     },
     {
+      "ID": "N4#393",
       "Kana": "そんな",
       "Kanji": "",
       "Definition": "such, like that, that sort of"
     },
     {
+      "ID": "N4#394",
       "Kana": "そんなに",
       "Kanji": "",
       "Definition": "so much, like that"
@@ -2019,106 +2413,127 @@
   ],
   "た": [
     {
+      "ID": "N4#395",
       "Kana": "たいいん",
       "Kanji": "退院",
       "Definition": "leaving hospital"
     },
     {
+      "ID": "N4#396",
       "Kana": "たいいんする",
       "Kanji": "退院する",
       "Definition": "to leave the hospital"
     },
     {
+      "ID": "N4#397",
       "Kana": "たいてい",
       "Kanji": "",
       "Definition": "generally, usually"
     },
     {
+      "ID": "N4#398",
       "Kana": "タイプ",
       "Kanji": "",
       "Definition": "type, style"
     },
     {
+      "ID": "N4#399",
       "Kana": "たいふう",
       "Kanji": "台風",
       "Definition": "typhoon"
     },
     {
+      "ID": "N4#400",
       "Kana": "たおれる",
       "Kanji": "倒れる",
       "Definition": "to collapse, to break down"
     },
     {
+      "ID": "N4#401",
       "Kana": "たしか",
       "Kanji": "確か",
       "Definition": "certain, sure, definite"
     },
     {
+      "ID": "N4#402",
       "Kana": "たす",
       "Kanji": "足す",
       "Definition": "to add (numbers), to do (eg. one's business)"
     },
     {
+      "ID": "N4#403",
       "Kana": "たずねる",
       "Kanji": "訪ねる",
       "Definition": "to visit"
     },
     {
+      "ID": "N4#404",
       "Kana": "たずねる",
       "Kanji": "尋ねる",
       "Definition": "to ask"
     },
     {
+      "ID": "N4#405",
       "Kana": "ただしい",
       "Kanji": "正しい",
       "Definition": "right, just, correct"
     },
     {
+      "ID": "N4#406",
       "Kana": "たたみ",
       "Kanji": "畳",
       "Definition": "tatami mat (Japanese straw mat)"
     },
     {
+      "ID": "N4#407",
       "Kana": "たてる",
       "Kanji": "立てる",
       "Definition": "to stand (something) up, to erect (something)"
     },
     {
+      "ID": "N4#408",
       "Kana": "たてる",
       "Kanji": "建てる",
       "Definition": "to build, to construct"
     },
     {
+      "ID": "N4#409",
       "Kana": "たとえば",
       "Kanji": "例えば",
       "Definition": "for example, eg."
     },
     {
+      "ID": "N4#410",
       "Kana": "たな",
       "Kanji": "棚",
       "Definition": "shelves, rack"
     },
     {
+      "ID": "N4#411",
       "Kana": "たのしむ",
       "Kanji": "楽む",
       "Definition": "to enjoy oneself"
     },
     {
+      "ID": "N4#412",
       "Kana": "たのしみ",
       "Kanji": "楽しみ",
       "Definition": "pleasure, joy"
     },
     {
+      "ID": "N4#413",
       "Kana": "たまに",
       "Kanji": "",
       "Definition": "occasionally, once in a while"
     },
     {
+      "ID": "N4#414",
       "Kana": "ため",
       "Kanji": "為",
       "Definition": "good, advantage, in order to"
     },
     {
+      "ID": "N4#415",
       "Kana": "たりる",
       "Kanji": "足りる",
       "Definition": "to be sufficient, to be enough"
@@ -2126,41 +2541,49 @@
   ],
   "だ": [
     {
+      "ID": "N4#416",
       "Kana": "だいがくせい",
       "Kanji": "大学生",
       "Definition": "college student, university student"
     },
     {
+      "ID": "N4#417",
       "Kana": "だいじ",
       "Kanji": "大事",
       "Definition": "important, valuable, serious matter"
     },
     {
+      "ID": "N4#418",
       "Kana": "だいたい",
       "Kanji": "大体",
       "Definition": "generally, substantially"
     },
     {
+      "ID": "N4#419",
       "Kana": "だいぶ",
       "Kanji": "大分",
       "Definition": "considerably, greatly, a lot"
     },
     {
+      "ID": "N4#420",
       "Kana": "だから",
       "Kanji": "",
       "Definition": "so, therefore"
     },
     {
+      "ID": "N4#421",
       "Kana": "だめ",
       "Kanji": "",
       "Definition": "useless, no good, hopeless"
     },
     {
+      "ID": "N4#422",
       "Kana": "だんせい",
       "Kanji": "男性",
       "Definition": "male, man"
     },
     {
+      "ID": "N4#423",
       "Kana": "だんぼう",
       "Kanji": "暖房",
       "Definition": "heating"
@@ -2168,51 +2591,61 @@
   ],
   "ち": [
     {
+      "ID": "N4#424",
       "Kana": "ち",
       "Kanji": "血",
       "Definition": "blood"
     },
     {
+      "ID": "N4#425",
       "Kana": "チェック",
       "Kanji": "",
       "Definition": "check"
     },
     {
+      "ID": "N4#426",
       "Kana": "チェックする",
       "Kanji": "",
       "Definition": "to check"
     },
     {
+      "ID": "N4#427",
       "Kana": "ちから",
       "Kanji": "力",
       "Definition": "strength, power"
     },
     {
+      "ID": "N4#428",
       "Kana": "ちっとも",
       "Kanji": "",
       "Definition": "not at all (neg. verb)"
     },
     {
+      "ID": "N4#429",
       "Kana": "ちゅうい",
       "Kanji": "注意",
       "Definition": "caution, being careful, attention (heed)"
     },
     {
+      "ID": "N4#430",
       "Kana": "ちゅうがっこう",
       "Kanji": "中学校",
       "Definition": "junior high school, middle school pupil"
     },
     {
+      "ID": "N4#431",
       "Kana": "ちゅうしゃ",
       "Kanji": "注射",
       "Definition": "injection"
     },
     {
+      "ID": "N4#432",
       "Kana": "ちゅうしゃじょう",
       "Kanji": "駐車場",
       "Definition": "parking lot, parking place"
     },
     {
+      "ID": "N4#433",
       "Kana": "ちり",
       "Kanji": "地理",
       "Definition": "geography"
@@ -2220,71 +2653,85 @@
   ],
   "つ": [
     {
+      "ID": "N4#434",
       "Kana": "つかまえる",
       "Kanji": "捕まえる",
       "Definition": "to catch, to arrest, to seize"
     },
     {
+      "ID": "N4#435",
       "Kana": "つき",
       "Kanji": "",
       "Definition": "moon"
     },
     {
+      "ID": "N4#436",
       "Kana": "つく",
       "Kanji": "点く",
       "Definition": "to be started, to be switched on"
     },
     {
+      "ID": "N4#437",
       "Kana": "つける",
       "Kanji": "",
       "Definition": "to take"
     },
     {
+      "ID": "N4#438",
       "Kana": "つける",
       "Kanji": "漬ける",
       "Definition": "to soak, to moisten, to pickle"
     },
     {
+      "ID": "N4#439",
       "Kana": "つごう",
       "Kanji": "都合",
       "Definition": "circumstances, condition, convenience"
     },
     {
+      "ID": "N4#440",
       "Kana": "つたえる",
       "Kanji": "伝える",
       "Definition": "to tell, to report"
     },
     {
+      "ID": "N4#441",
       "Kana": "つづく",
       "Kanji": "続く",
       "Definition": "to be continued"
     },
     {
+      "ID": "N4#442",
       "Kana": "つづける",
       "Kanji": "続ける",
       "Definition": "to continue, to keep up, to keep on"
     },
     {
+      "ID": "N4#443",
       "Kana": "つつむ",
       "Kanji": "包む",
       "Definition": "wrap, pack"
     },
     {
+      "ID": "N4#444",
       "Kana": "つま",
       "Kanji": "妻",
       "Definition": "(hum) wife"
     },
     {
+      "ID": "N4#445",
       "Kana": "つもり",
       "Kanji": "",
       "Definition": "intention, plan"
     },
     {
+      "ID": "N4#446",
       "Kana": "つる",
       "Kanji": "釣る",
       "Definition": "to fish"
     },
     {
+      "ID": "N4#447",
       "Kana": "つれる",
       "Kanji": "連れる",
       "Definition": "to lead, to take (a person)"
@@ -2292,56 +2739,67 @@
   ],
   "て": [
     {
+      "ID": "N4#448",
       "Kana": "ていねい",
       "Kanji": "丁寧",
       "Definition": "polite, courteous"
     },
     {
+      "ID": "N4#449",
       "Kana": "テキスト",
       "Kanji": "",
       "Definition": "(1)text, (2)text book"
     },
     {
+      "ID": "N4#450",
       "Kana": "てきとう",
       "Kanji": "適当",
       "Definition": "fitness, suitability"
     },
     {
+      "ID": "N4#451",
       "Kana": "てつだう",
       "Kanji": "手伝う",
       "Definition": "to help, to assist, to take part in"
     },
     {
+      "ID": "N4#452",
       "Kana": "テニス",
       "Kanji": "",
       "Definition": "tennis"
     },
     {
+      "ID": "N4#453",
       "Kana": "てぶくろ",
       "Kanji": "手袋",
       "Definition": "glove"
     },
     {
+      "ID": "N4#454",
       "Kana": "てら",
       "Kanji": "寺",
       "Definition": "temple"
     },
     {
+      "ID": "N4#455",
       "Kana": "てん",
       "Kanji": "点",
       "Definition": "spot, mark, point, dot"
     },
     {
+      "ID": "N4#456",
       "Kana": "てんいん",
       "Kanji": "店員",
       "Definition": "shop assistant, employee, clerk, salesperson"
     },
     {
+      "ID": "N4#457",
       "Kana": "てんきよほう",
       "Kanji": "天気予報",
       "Definition": "weather forecast, weather report"
     },
     {
+      "ID": "N4#458",
       "Kana": "てんらんかい",
       "Kanji": "展覧会",
       "Definition": "exhibition"
@@ -2349,21 +2807,25 @@
   ],
   "で": [
     {
+      "ID": "N4#459",
       "Kana": "できる",
       "Kanji": "",
       "Definition": "to be able to do"
     },
     {
+      "ID": "N4#460",
       "Kana": "できるだけ",
       "Kanji": "",
       "Definition": "if at all possible, as much as possible"
     },
     {
+      "ID": "N4#461",
       "Kana": "でんとう",
       "Kanji": "電灯",
       "Definition": "electric light"
     },
     {
+      "ID": "N4#462",
       "Kana": "でんぽう",
       "Kanji": "電報",
       "Definition": "telegram"
@@ -2371,71 +2833,85 @@
   ],
   "と": [
     {
+      "ID": "N4#463",
       "Kana": "と",
       "Kanji": "都",
       "Definition": "metroplitan, municipal"
     },
     {
+      "ID": "N4#464",
       "Kana": "とうとう",
       "Kanji": "",
       "Definition": "finally, at last"
     },
     {
+      "ID": "N4#465",
       "Kana": "とおく",
       "Kanji": "遠く",
       "Definition": "far away, distant"
     },
     {
+      "ID": "N4#466",
       "Kana": "とおり",
       "Kanji": "通り",
       "Definition": "～ Street, ～ Avenue"
     },
     {
+      "ID": "N4#467",
       "Kana": "とおる",
       "Kanji": "通る",
       "Definition": "to pass (by), to go through"
     },
     {
+      "ID": "N4#468",
       "Kana": "とくに",
       "Kanji": "特に",
       "Definition": "particularly, especially"
     },
     {
+      "ID": "N4#469",
       "Kana": "とくべつ",
       "Kanji": "特別",
       "Definition": "special"
     },
     {
+      "ID": "N4#470",
       "Kana": "とこや",
       "Kanji": "",
       "Definition": "barber"
     },
     {
+      "ID": "N4#471",
       "Kana": "とちゅう",
       "Kanji": "途中",
       "Definition": "on the way, en route, midway"
     },
     {
+      "ID": "N4#472",
       "Kana": "とっきゅう",
       "Kanji": "特急",
       "Definition": "limited express (train, faster than an express)"
     },
     {
+      "ID": "N4#473",
       "Kana": "とどける",
       "Kanji": "届ける",
       "Definition": "to reach"
     },
     {
+      "ID": "N4#474",
       "Kana": "とまる",
       "Kanji": "泊まる",
       "Definition": "to stay at (eg. hotel)"
     },
     {
+      "ID": "N4#475",
       "Kana": "とめる",
       "Kanji": "止める",
       "Definition": "to stop (something)"
     },
     {
+      "ID": "N4#476",
       "Kana": "とりかえる",
       "Kanji": "取り替える",
       "Definition": "to exchange, to replace"
@@ -2443,21 +2919,25 @@
   ],
   "ど": [
     {
+      "ID": "N4#477",
       "Kana": "どうぐ",
       "Kanji": "道具",
       "Definition": "tool, means"
     },
     {
+      "ID": "N4#478",
       "Kana": "どうぶつえん",
       "Kanji": "動物園",
       "Definition": "zoo"
     },
     {
+      "ID": "N4#479",
       "Kana": "どろぼう",
       "Kanji": "泥棒",
       "Definition": "thief, burglar, robber"
     },
     {
+      "ID": "N4#480",
       "Kana": "どんどん",
       "Kanji": "",
       "Definition": "steadily, little by little"
@@ -2465,66 +2945,79 @@
   ],
   "な": [
     {
+      "ID": "N4#481",
       "Kana": "なおす",
       "Kanji": "直す",
       "Definition": "to fix, to repair"
     },
     {
+      "ID": "N4#482",
       "Kana": "なおる",
       "Kanji": "直る",
       "Definition": "to be fixed, to be repaired"
     },
     {
+      "ID": "N4#483",
       "Kana": "なおる",
       "Kanji": "治る",
       "Definition": "to be cured, to heal"
     },
     {
+      "ID": "N4#484",
       "Kana": "なかなか",
       "Kanji": "中々",
       "Definition": "very, considerably, quite"
     },
     {
+      "ID": "N4#485",
       "Kana": "なく",
       "Kanji": "泣く",
       "Definition": "to cry, to weep"
     },
     {
+      "ID": "N4#486",
       "Kana": "なくなる",
       "Kanji": "無くなる",
       "Definition": "to disappear, to get lost"
     },
     {
+      "ID": "N4#487",
       "Kana": "なくなる",
       "Kanji": "亡くなる",
       "Definition": "to die"
     },
     {
+      "ID": "N4#488",
       "Kana": "なげる",
       "Kanji": "投げる",
       "Definition": "to throw, to cast away"
     },
     {
+      "ID": "N4#489",
       "Kana": "なさる",
       "Kanji": "",
       "Definition": "(hon) to do"
     },
     {
+      "ID": "N4#490",
       "Kana": "なる",
       "Kanji": "鳴る",
       "Definition": "to sound, to ring, to resound"
     },
     {
+      "ID": "N4#491",
       "Kana": "なるべく",
       "Kanji": "",
       "Definition": "as much as possible"
     },
     {
+      "ID": "N4#492",
       "Kana": "なるほど",
       "Kanji": "",
       "Definition": "I see, now I understand"
     },
     {
+      "ID": "N4#493",
       "Kana": "なれる",
       "Kanji": "慣れる",
       "Definition": "to grow accustomed to"
@@ -2532,51 +3025,61 @@
   ],
   "に": [
     {
+      "ID": "N4#494",
       "Kana": "におい",
       "Kanji": "",
       "Definition": "odour, scent, smell"
     },
     {
+      "ID": "N4#495",
       "Kana": "にがい",
       "Kanji": "苦い",
       "Definition": "bitter"
     },
     {
+      "ID": "N4#496",
       "Kana": "にげる",
       "Kanji": "逃げる",
       "Definition": "to escape, to run away"
     },
     {
+      "ID": "N4#497",
       "Kana": "にっき",
       "Kanji": "日記",
       "Definition": "diary, journal"
     },
     {
+      "ID": "N4#498",
       "Kana": "にゅういん",
       "Kanji": "入院",
       "Definition": "hospitalization"
     },
     {
+      "ID": "N4#499",
       "Kana": "にゅういんする",
       "Kanji": "入院する",
       "Definition": "to be hospitalized"
     },
     {
+      "ID": "N4#500",
       "Kana": "にゅうがく",
       "Kanji": "入学",
       "Definition": "entry to school or university, matriculation"
     },
     {
+      "ID": "N4#501",
       "Kana": "にゅうがくする",
       "Kanji": "入学する",
       "Definition": "to enter a school or university"
     },
     {
+      "ID": "N4#502",
       "Kana": "にる",
       "Kanji": "似る",
       "Definition": "to resemble, to be similar"
     },
     {
+      "ID": "N4#503",
       "Kana": "にんぎょう",
       "Kanji": "人形",
       "Definition": "doll, puppet, figure"
@@ -2584,16 +3087,19 @@
   ],
   "ぬ": [
     {
+      "ID": "N4#504",
       "Kana": "ぬすむ",
       "Kanji": "盗む",
       "Definition": "to steal"
     },
     {
+      "ID": "N4#505",
       "Kana": "ぬる",
       "Kanji": "塗る",
       "Definition": "to paint, to plaster"
     },
     {
+      "ID": "N4#506",
       "Kana": "ぬれる",
       "Kanji": "",
       "Definition": "to get wet"
@@ -2601,31 +3107,37 @@
   ],
   "ね": [
     {
+      "ID": "N4#507",
       "Kana": "ねだん",
       "Kanji": "",
       "Definition": "price, cost"
     },
     {
+      "ID": "N4#508",
       "Kana": "ねつ",
       "Kanji": "熱",
       "Definition": "fever, temperature"
     },
     {
+      "ID": "N4#509",
       "Kana": "ねっしん",
-      "Kanji": "",
+      "Kanji": "熱心",
       "Definition": "zeal, enthusiasm"
     },
     {
+      "ID": "N4#510",
       "Kana": "ねぼう",
       "Kanji": "寝坊",
       "Definition": "sleeping in late"
     },
     {
+      "ID": "N4#511",
       "Kana": "ねむい",
       "Kanji": "眠い",
       "Definition": "sleepy, drowsy"
     },
     {
+      "ID": "N4#512",
       "Kana": "ねむる",
       "Kanji": "眠る",
       "Definition": "to sleep"
@@ -2633,21 +3145,25 @@
   ],
   "の": [
     {
+      "ID": "N4#513",
       "Kana": "のこる",
       "Kanji": "残る",
       "Definition": "to remain, to be left"
     },
     {
+      "ID": "N4#514",
       "Kana": "のど",
       "Kanji": "",
       "Definition": "throat"
     },
     {
+      "ID": "N4#515",
       "Kana": "のりかえる",
       "Kanji": "乗り換える",
       "Definition": "to transfer (trains), to change (bus, train)"
     },
     {
+      "ID": "N4#516",
       "Kana": "のりもの",
       "Kanji": "乗り物",
       "Definition": "vehicle"
@@ -2655,76 +3171,91 @@
   ],
   "は": [
     {
+      "ID": "N4#517",
       "Kana": "は",
       "Kanji": "葉",
       "Definition": "leaf"
     },
     {
+      "ID": "N4#518",
       "Kana": "はいけん",
       "Kanji": "拝見",
       "Definition": "seeing, look at (humble) (polite)"
     },
     {
+      "ID": "N4#519",
       "Kana": "はいけんする",
       "Kanji": "拝見する",
       "Definition": "to see, to look at (humble) (polite)"
     },
     {
+      "ID": "N4#520",
       "Kana": "はいしゃ",
       "Kanji": "歯医者",
       "Definition": "dentist"
     },
     {
+      "ID": "N4#521",
       "Kana": "はこぶ",
       "Kanji": "運ぶ",
       "Definition": "to transport, to carry"
     },
     {
+      "ID": "N4#522",
       "Kana": "はじめる",
       "Kanji": "始める",
       "Definition": "to start, to begin"
     },
     {
+      "ID": "N4#523",
       "Kana": "はず",
       "Kanji": "",
       "Definition": "it should be so"
     },
     {
+      "ID": "N4#524",
       "Kana": "はずかしい",
       "Kanji": "恥ずかしい",
       "Definition": "shy, ashamed, embarrassed"
     },
     {
+      "ID": "N4#525",
       "Kana": "はつおん",
       "Kanji": "発音",
       "Definition": "pronunciation"
     },
     {
+      "ID": "N4#526",
       "Kana": "はっきり",
       "Kanji": "",
       "Definition": "clearly, plainly, distinctly"
     },
     {
+      "ID": "N4#527",
       "Kana": "はなみ",
       "Kanji": "花見",
       "Definition": "cherry-blossom viewing, flower viewing"
     },
     {
+      "ID": "N4#528",
       "Kana": "はやし",
       "Kanji": "林",
       "Definition": "woods, forester"
     },
     {
+      "ID": "N4#529",
       "Kana": "はらう",
       "Kanji": "払う",
       "Definition": "to pay"
     },
     {
+      "ID": "N4#530",
       "Kana": "はんたい",
       "Kanji": "反対",
       "Definition": "oppose, opposition, resistance"
     },
     {
+      "ID": "N4#531",
       "Kana": "ハンバーグ",
       "Kanji": "",
       "Definition": "hamburger (meat, no bun)"
@@ -2732,21 +3263,25 @@
   ],
   "ば": [
     {
+      "ID": "N4#532",
       "Kana": "ばあい",
       "Kanji": "場合",
       "Definition": "case, situation"
     },
     {
+      "ID": "N4#533",
       "Kana": "ばい",
       "Kanji": "倍",
       "Definition": "twice, double"
     },
     {
+      "ID": "N4#534",
       "Kana": "ばしょ",
       "Kanji": "場所",
       "Definition": "place, location"
     },
     {
+      "ID": "N4#535",
       "Kana": "ばんぐみ",
       "Kanji": "番組",
       "Definition": "program (eg. TV)"
@@ -2754,16 +3289,19 @@
   ],
   "ぱ": [
     {
+      "ID": "N4#536",
       "Kana": "パート",
       "Kanji": "",
       "Definition": "part time (esp female part time employees)"
     },
     {
+      "ID": "N4#537",
       "Kana": "パソコン",
       "Kanji": "",
       "Definition": "(personal) computer"
     },
     {
+      "ID": "N4#538",
       "Kana": "パパ",
       "Kanji": "",
       "Definition": "papa, father"
@@ -2771,86 +3309,103 @@
   ],
   "ひ": [
     {
+      "ID": "N4#539",
       "Kana": "ひ",
       "Kanji": "日",
       "Definition": "sun, sunshine, day"
     },
     {
+      "ID": "N4#540",
       "Kana": "ひ",
       "Kanji": "火",
       "Definition": "fire, flame, blaze"
     },
     {
+      "ID": "N4#541",
       "Kana": "ひえる",
       "Kanji": "冷える",
       "Definition": "to grow cold, to get chilly, to cool down"
     },
     {
+      "ID": "N4#542",
       "Kana": "ひかる",
       "Kanji": "光る",
       "Definition": "to shine, to glitter"
     },
     {
+      "ID": "N4#543",
       "Kana": "ひかり",
       "Kanji": "光",
       "Definition": "light"
     },
     {
+      "ID": "N4#544",
       "Kana": "ひきだし",
       "Kanji": "引き出し",
       "Definition": "drawer, drawing out"
     },
     {
+      "ID": "N4#545",
       "Kana": "ひげ",
       "Kanji": "",
       "Definition": "beard"
     },
     {
+      "ID": "N4#546",
       "Kana": "ひこうじょう",
       "Kanji": "飛行場",
       "Definition": "airport"
     },
     {
+      "ID": "N4#547",
       "Kana": "ひさしぶり",
       "Kanji": "久しぶり",
       "Definition": "after a long time"
     },
     {
+      "ID": "N4#548",
       "Kana": "ひじょうに",
       "Kanji": "非常に",
       "Definition": "very, extremely, exceedingly"
     },
     {
+      "ID": "N4#549",
       "Kana": "ひっこす",
       "Kanji": "引っ越す",
       "Definition": "to move, to change residence"
     },
     {
+      "ID": "N4#550",
       "Kana": "ひつよう",
       "Kanji": "必要",
       "Definition": "necessary, essential"
     },
     {
+      "ID": "N4#551",
       "Kana": "ひどい",
       "Kanji": "",
       "Definition": "cruel, awful"
     },
     {
+      "ID": "N4#552",
       "Kana": "ひらく",
       "Kanji": "開く",
       "Definition": "to open (eg. a festival)"
     },
     {
+      "ID": "N4#553",
       "Kana": "ひるま",
       "Kanji": "昼間",
       "Definition": "daytime, during the day"
     },
     {
+      "ID": "N4#554",
       "Kana": "ひるやすみ",
       "Kanji": "昼休み",
       "Definition": "lunch break, noon recess, noon rest period"
     },
     {
+      "ID": "N4#555",
       "Kana": "ひろう",
       "Kanji": "拾う",
       "Definition": "to pick up, to find, to gather"
@@ -2858,16 +3413,19 @@
   ],
   "び": [
     {
+      "ID": "N4#556",
       "Kana": "びじゅつかん",
       "Kanji": "美術館",
       "Definition": "art gallery, art museum"
     },
     {
+      "ID": "N4#557",
       "Kana": "びっくりする",
       "Kanji": "",
       "Definition": "to be surprised"
     },
     {
+      "ID": "N4#558",
       "Kana": "ビル",
       "Kanji": "",
       "Definition": "(abbr) building, bill"
@@ -2875,6 +3433,7 @@
   ],
   "ぴ": [
     {
+      "ID": "N4#559",
       "Kana": "ピアノ",
       "Kanji": "",
       "Definition": "piano"
@@ -2882,56 +3441,67 @@
   ],
   "ふ": [
     {
+      "ID": "N4#560",
       "Kana": "ファックス",
       "Kanji": "",
       "Definition": "fax"
     },
     {
+      "ID": "N4#561",
       "Kana": "ふえる",
       "Kanji": "増える",
       "Definition": "to increase, to multiply"
     },
     {
+      "ID": "N4#562",
       "Kana": "ふかい",
       "Kanji": "深い",
       "Definition": "deep, profound, thick"
     },
     {
+      "ID": "N4#563",
       "Kana": "ふくざつ",
       "Kanji": "複雑",
       "Definition": "complexity, complication"
     },
     {
+      "ID": "N4#564",
       "Kana": "ふくしゅう",
       "Kanji": "復習",
       "Definition": "review, revision"
     },
     {
+      "ID": "N4#565",
       "Kana": "ふつう",
       "Kanji": "普通",
       "Definition": "(1) generally, ordinarily, usually, (2) train that stops at every station"
     },
     {
+      "ID": "N4#566",
       "Kana": "ふとる",
       "Kanji": "太る",
       "Definition": "to grow fat (stout, plump), to become fat"
     },
     {
+      "ID": "N4#567",
       "Kana": "ふとん",
       "Kanji": "布団",
       "Definition": "bedding (Japanese style), futon"
     },
     {
+      "ID": "N4#568",
       "Kana": "ふね",
       "Kanji": "舟",
       "Definition": "ship, boat"
     },
     {
+      "ID": "N4#569",
       "Kana": "ふべん",
       "Kanji": "不便",
       "Definition": "inconvenience"
     },
     {
+      "ID": "N4#570",
       "Kana": "ふむ",
       "Kanji": "踏む",
       "Definition": "to step on, to tread on"
@@ -2939,26 +3509,31 @@
   ],
   "ぶ": [
     {
+      "ID": "N4#571",
       "Kana": "ぶちょう",
       "Kanji": "部長",
       "Definition": "head of a section"
     },
     {
+      "ID": "N4#572",
       "Kana": "ぶどう",
       "Kanji": "",
       "Definition": "grapes"
     },
     {
+      "ID": "N4#573",
       "Kana": "ぶんか",
       "Kanji": "文化",
       "Definition": "culture, civilization"
     },
     {
+      "ID": "N4#574",
       "Kana": "ぶんがく",
       "Kanji": "文学",
       "Definition": "literature"
     },
     {
+      "ID": "N4#575",
       "Kana": "ぶんぽう",
       "Kanji": "文法",
       "Definition": "grammar"
@@ -2966,6 +3541,7 @@
   ],
   "ぷ": [
     {
+      "ID": "N4#576",
       "Kana": "プレゼント",
       "Kanji": "",
       "Definition": "present, gift"
@@ -2973,11 +3549,13 @@
   ],
   "へ": [
     {
+      "ID": "N4#577",
       "Kana": "へん",
       "Kanji": "変",
       "Definition": "strange, odd, peculiar"
     },
     {
+      "ID": "N4#578",
       "Kana": "へんじ",
       "Kanji": "返事",
       "Definition": "reply, answer"
@@ -2985,11 +3563,13 @@
   ],
   "べ": [
     {
+      "ID": "N4#579",
       "Kana": "べつ",
       "Kanji": "別",
       "Definition": "distinction, different"
     },
     {
+      "ID": "N4#580",
       "Kana": "ベル",
       "Kanji": "",
       "Definition": "bell"
@@ -2997,41 +3577,49 @@
   ],
   "ほ": [
     {
+      "ID": "N4#581",
       "Kana": "ほうそう",
       "Kanji": "放送",
       "Definition": "broadcast, broadcasting"
     },
     {
+      "ID": "N4#582",
       "Kana": "ほうそうする",
       "Kanji": "放送する",
       "Definition": "to broadcast"
     },
     {
+      "ID": "N4#583",
       "Kana": "ほうりつ",
       "Kanji": "法律",
       "Definition": "law"
     },
     {
+      "ID": "N4#584",
       "Kana": "ほし",
       "Kanji": "星",
       "Definition": "star"
     },
     {
+      "ID": "N4#585",
       "Kana": "ほど",
       "Kanji": "",
       "Definition": "degree, extent"
     },
     {
+      "ID": "N4#586",
       "Kana": "ほとんど",
       "Kanji": "",
       "Definition": "mostly, almost"
     },
     {
+      "ID": "N4#587",
       "Kana": "ほめる",
       "Kanji": "",
       "Definition": "to praise"
     },
     {
+      "ID": "N4#588",
       "Kana": "ほんやく",
       "Kanji": "翻訳",
       "Definition": "translation (written)"
@@ -3039,11 +3627,13 @@
   ],
   "ぼ": [
     {
+      "ID": "N4#589",
       "Kana": "ぼうえき",
       "Kanji": "貿易",
       "Definition": "trade (foreign)"
     },
     {
+      "ID": "N4#590",
       "Kana": "ぼく",
       "Kanji": "僕",
       "Definition": "(male) I, manservant"
@@ -3051,56 +3641,67 @@
   ],
   "ま": [
     {
+      "ID": "N4#591",
       "Kana": "まいる",
       "Kanji": "参る",
       "Definition": "(1) (hum) to go, to come"
     },
     {
+      "ID": "N4#592",
       "Kana": "まける",
       "Kanji": "負ける",
       "Definition": "to lose, to be defeated"
     },
     {
+      "ID": "N4#593",
       "Kana": "まじめ",
-      "Kanji": "",
+      "Kanji": "真面目",
       "Definition": "diligent, serious"
     },
     {
+      "ID": "N4#594",
       "Kana": "まず",
       "Kanji": "",
       "Definition": "first (of all), to start with"
     },
     {
+      "ID": "N4#595",
       "Kana": "または",
       "Kanji": "",
       "Definition": "or, otherwise"
     },
     {
+      "ID": "N4#596",
       "Kana": "まちがえる",
       "Kanji": "間違える",
       "Definition": "to err, to make a mistake"
     },
     {
+      "ID": "N4#597",
       "Kana": "まにあう",
       "Kanji": "間に合う",
       "Definition": "(1) to be in time for"
     },
     {
+      "ID": "N4#598",
       "Kana": "まわり",
       "Kanji": "周り",
       "Definition": "surroundings, circulation"
     },
     {
+      "ID": "N4#599",
       "Kana": "まわる",
       "Kanji": "回る",
       "Definition": "to go around, to revolve"
     },
     {
+      "ID": "N4#600",
       "Kana": "まんが",
       "Kanji": "漫画",
       "Definition": "comic, cartoon"
     },
     {
+      "ID": "N4#601",
       "Kana": "まんなか",
       "Kanji": "真中",
       "Definition": "middle, centre"
@@ -3108,36 +3709,43 @@
   ],
   "み": [
     {
+      "ID": "N4#602",
       "Kana": "みえる",
       "Kanji": "見える",
       "Definition": "to be seen, to be in sight"
     },
     {
+      "ID": "N4#603",
       "Kana": "みずうみ",
       "Kanji": "湖",
       "Definition": "lake"
     },
     {
+      "ID": "N4#604",
       "Kana": "みそ",
       "Kanji": "味噌",
       "Definition": "miso, bean paste"
     },
     {
+      "ID": "N4#605",
       "Kana": "みつかる",
       "Kanji": "見つかる",
       "Definition": "(uk) to be found, to be discovered"
     },
     {
+      "ID": "N4#606",
       "Kana": "みつける",
       "Kanji": "見つける",
       "Definition": "to discover, to find"
     },
     {
+      "ID": "N4#607",
       "Kana": "みな",
       "Kanji": "皆",
       "Definition": "everyone, everybody"
     },
     {
+      "ID": "N4#608",
       "Kana": "みなと",
       "Kanji": "港",
       "Definition": "harbour, port"
@@ -3145,36 +3753,43 @@
   ],
   "む": [
     {
+      "ID": "N4#609",
       "Kana": "むかえる",
       "Kanji": "迎える",
       "Definition": "to go out to meet"
     },
     {
+      "ID": "N4#610",
       "Kana": "むかう",
       "Kanji": "向かう",
       "Definition": "to face, to go towards"
     },
     {
+      "ID": "N4#611",
       "Kana": "むかし",
       "Kanji": "昔",
       "Definition": "olden days, former"
     },
     {
+      "ID": "N4#612",
       "Kana": "むし",
       "Kanji": "虫",
       "Definition": "insect"
     },
     {
+      "ID": "N4#613",
       "Kana": "むすこ",
       "Kanji": "息子",
       "Definition": "(hum) son"
     },
     {
+      "ID": "N4#614",
       "Kana": "むすめ",
       "Kanji": "娘",
       "Definition": "(hum) daughter"
     },
     {
+      "ID": "N4#615",
       "Kana": "むり",
       "Kanji": "無理",
       "Definition": "unreasonable, impossible"
@@ -3182,11 +3797,13 @@
   ],
   "め": [
     {
+      "ID": "N4#616",
       "Kana": "めしあがる",
       "Kanji": "召し上がる",
       "Definition": "(pol) to eat"
     },
     {
+      "ID": "N4#617",
       "Kana": "めずらしい",
       "Kanji": "珍しい",
       "Definition": "unusual, rare"
@@ -3194,51 +3811,61 @@
   ],
   "も": [
     {
+      "ID": "N4#618",
       "Kana": "もうしあげる",
       "Kanji": "申し上げる",
       "Definition": "to say, to tell"
     },
     {
+      "ID": "N4#619",
       "Kana": "もうす",
       "Kanji": "申す",
       "Definition": "(hum) to be called, to say"
     },
     {
+      "ID": "N4#620",
       "Kana": "もうすぐ",
       "Kanji": "",
       "Definition": "soon, very soon"
     },
     {
+      "ID": "N4#621",
       "Kana": "もし",
       "Kanji": "",
       "Definition": "if"
     },
     {
+      "ID": "N4#622",
       "Kana": "もちろん",
       "Kanji": "",
       "Definition": "certainly, of course"
     },
     {
+      "ID": "N4#623",
       "Kana": "もっとも",
       "Kanji": "",
       "Definition": "most, extremely"
     },
     {
+      "ID": "N4#624",
       "Kana": "もどる",
       "Kanji": "戻る",
       "Definition": "to turn back, to return"
     },
     {
+      "ID": "N4#625",
       "Kana": "もめん",
       "Kanji": "木綿",
       "Definition": "cotton"
     },
     {
+      "ID": "N4#626",
       "Kana": "もらう",
       "Kanji": "",
       "Definition": "to receive"
     },
     {
+      "ID": "N4#627",
       "Kana": "もり",
       "Kanji": "森",
       "Definition": "forest"
@@ -3246,61 +3873,73 @@
   ],
   "や": [
     {
+      "ID": "N4#628",
       "Kana": "やく",
       "Kanji": "焼く",
       "Definition": "to bake, to grill"
     },
     {
+      "ID": "N4#629",
       "Kana": "やくにたつ",
       "Kanji": "役に立つ",
       "Definition": "to be helpful, to be useful"
     },
     {
+      "ID": "N4#630",
       "Kana": "やくそく",
       "Kanji": "約束",
       "Definition": "arrangement, promise"
     },
     {
+      "ID": "N4#631",
       "Kana": "やける",
       "Kanji": "焼ける",
       "Definition": "to burn, to be roasted, to be sunburnt"
     },
     {
+      "ID": "N4#632",
       "Kana": "やさしい",
       "Kanji": "優しい",
       "Definition": "kind, gentle"
     },
     {
+      "ID": "N4#633",
       "Kana": "やせる",
       "Kanji": "",
       "Definition": "to become thin, to lose weight"
     },
     {
+      "ID": "N4#634",
       "Kana": "やっと",
       "Kanji": "",
       "Definition": "at last, at length"
     },
     {
+      "ID": "N4#635",
       "Kana": "やはり",
       "Kanji": "",
       "Definition": "as I thought, absolutely"
     },
     {
+      "ID": "N4#636",
       "Kana": "やっぱり",
       "Kanji": "",
       "Definition": "as I thought, absolutely"
     },
     {
+      "ID": "N4#637",
       "Kana": "やむ",
       "Kanji": "",
       "Definition": "to cease, to stop"
     },
     {
+      "ID": "N4#638",
       "Kana": "やめる",
       "Kanji": "止める",
       "Definition": "to end, to stop, to resign"
     },
     {
+      "ID": "N4#639",
       "Kana": "やわらかい",
       "Kanji": "柔らかい",
       "Definition": "soft, tender"
@@ -3308,46 +3947,55 @@
   ],
   "ゆ": [
     {
+      "ID": "N4#640",
       "Kana": "ゆ",
       "Kanji": "湯",
       "Definition": "hot water"
     },
     {
+      "ID": "N4#641",
       "Kana": "ゆしゅつ",
       "Kanji": "輸出",
       "Definition": "export"
     },
     {
+      "ID": "N4#642",
       "Kana": "ゆしゅつする",
       "Kanji": "輸出する",
       "Definition": "to export"
     },
     {
+      "ID": "N4#643",
       "Kana": "ゆにゅう",
       "Kanji": "輸入",
       "Definition": "import"
     },
     {
+      "ID": "N4#644",
       "Kana": "ゆにゅうする",
       "Kanji": "輸入する",
       "Definition": "to import"
     },
     {
+      "ID": "N4#645",
       "Kana": "ゆび",
       "Kanji": "指",
       "Definition": "finger"
     },
     {
+      "ID": "N4#646",
       "Kana": "ゆびわ",
       "Kanji": "指輪",
       "Definition": "(finger) ring"
     },
     {
+      "ID": "N4#647",
       "Kana": "ゆめ",
       "Kanji": "夢",
       "Definition": "dream"
     },
     {
+      "ID": "N4#648",
       "Kana": "ゆれる",
       "Kanji": "揺れる",
       "Definition": "to shake, to sway"
@@ -3355,56 +4003,67 @@
   ],
   "よ": [
     {
+      "ID": "N4#649",
       "Kana": "よう",
       "Kanji": "様",
       "Definition": "way, manner, kind"
     },
     {
+      "ID": "N4#650",
       "Kana": "よう",
       "Kanji": "用",
       "Definition": "task, business, use"
     },
     {
+      "ID": "N4#651",
       "Kana": "ようい",
       "Kanji": "用意",
       "Definition": "preparation"
     },
     {
+      "ID": "N4#652",
       "Kana": "ようじ",
       "Kanji": "用事",
       "Definition": "tasks, chores"
     },
     {
+      "ID": "N4#653",
       "Kana": "よごれる",
       "Kanji": "汚れる",
       "Definition": "to get dirty, to become dirty"
     },
     {
+      "ID": "N4#654",
       "Kana": "よしゅう",
       "Kanji": "予習",
       "Definition": "preparation for a lesson"
     },
     {
+      "ID": "N4#655",
       "Kana": "よてい",
       "Kanji": "予定",
       "Definition": "plans, arrangement, schedule"
     },
     {
+      "ID": "N4#656",
       "Kana": "よやく",
       "Kanji": "予約",
       "Definition": "reservation, booking"
     },
     {
+      "ID": "N4#657",
       "Kana": "よる",
       "Kanji": "寄る",
       "Definition": "to visit, to drop in"
     },
     {
+      "ID": "N4#658",
       "Kana": "よろこぶ",
       "Kanji": "喜ぶ",
       "Definition": "to be delighted, to be glad"
     },
     {
+      "ID": "N4#659",
       "Kana": "よろしい",
       "Kanji": "",
       "Definition": "(hon) good, OK, all right"
@@ -3412,26 +4071,31 @@
   ],
   "り": [
     {
+      "ID": "N4#660",
       "Kana": "リポート",
       "Kanji": "",
       "Definition": "report, essay, assignment (aus)"
     },
     {
+      "ID": "N4#661",
       "Kana": "りゆう",
       "Kanji": "理由",
       "Definition": "reason, pretext, motive"
     },
     {
+      "ID": "N4#662",
       "Kana": "りよう",
       "Kanji": "利用",
       "Definition": "use, utilization"
     },
     {
+      "ID": "N4#663",
       "Kana": "りょうほう",
       "Kanji": "両方",
       "Definition": "both sides, both parties"
     },
     {
+      "ID": "N4#664",
       "Kana": "りょかん",
       "Kanji": "旅館",
       "Definition": "Japanese hotel, inn"
@@ -3439,6 +4103,7 @@
   ],
   "る": [
     {
+      "ID": "N4#665",
       "Kana": "るす",
       "Kanji": "留守",
       "Definition": "absence, being away from home"
@@ -3446,26 +4111,31 @@
   ],
   "れ": [
     {
+      "ID": "N4#666",
       "Kana": "れいぼう",
       "Kanji": "冷房",
       "Definition": "cooling, air conditioning"
     },
     {
+      "ID": "N4#667",
       "Kana": "れきし",
       "Kanji": "歴史",
       "Definition": "history"
     },
     {
+      "ID": "N4#668",
       "Kana": "レジ",
       "Kanji": "",
       "Definition": "register"
     },
     {
+      "ID": "N4#669",
       "Kana": "レポート",
       "Kanji": "",
       "Definition": "report, essay, assignment (aus)"
     },
     {
+      "ID": "N4#670",
       "Kana": "れんらく",
       "Kanji": "連絡",
       "Definition": "communication, contact, connection"
@@ -3473,46 +4143,55 @@
   ],
   "わ": [
     {
+      "ID": "N4#671",
       "Kana": "ワープロ",
       "Kanji": "",
       "Definition": "word processor"
     },
     {
+      "ID": "N4#672",
       "Kana": "わかす",
       "Kanji": "沸かす",
       "Definition": "to boil, to heat"
     },
     {
+      "ID": "N4#673",
       "Kana": "わかれる",
       "Kanji": "別れる",
       "Definition": "to be divided, to part from, to separate"
     },
     {
+      "ID": "N4#674",
       "Kana": "わく",
       "Kanji": "沸く",
       "Definition": "to boil, to grow hot, to get excited"
     },
     {
+      "ID": "N4#675",
       "Kana": "わけ",
       "Kanji": "訳",
       "Definition": "meaning, reason"
     },
     {
+      "ID": "N4#676",
       "Kana": "わすれもの",
       "Kanji": "忘れ物",
       "Definition": "lost article, something forgotten"
     },
     {
+      "ID": "N4#677",
       "Kana": "わらう",
       "Kanji": "笑う",
       "Definition": "to laugh, to smile"
     },
     {
+      "ID": "N4#678",
       "Kana": "わりあい",
       "Kanji": "割合",
       "Definition": "rate, ratio, percentage"
     },
     {
+      "ID": "N4#679",
       "Kana": "われる",
       "Kanji": "割れる",
       "Definition": "to break"
