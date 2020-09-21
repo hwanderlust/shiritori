@@ -9,8 +9,9 @@ import {
   ensureHiragana,
 } from "./helper_atoms";
 import { DebugMode, apiRequest, debug, } from "../../helpers";
+import { HistoryInstance } from "./history";
 
-async function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<Entry> {
+function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<Entry> {
   debug(mode, [`guess`, query]);
 
   return validateQuery(currentWord, query)
@@ -32,7 +33,7 @@ async function searchUsersGuess(currentWord: string, query: string, mode?: Debug
 /**
  * Prior to HTTP-request validations
  */
-async function validateQuery(currentWord: string, query: string, mode?: DebugMode): Promise<string> {
+function validateQuery(currentWord: string, query: string, mode?: DebugMode): Promise<string> {
   if (!wanakana.isJapanese(query)) {
     return Promise.reject(Error("Not Japanese"));
   }
@@ -52,7 +53,7 @@ async function validateQuery(currentWord: string, query: string, mode?: DebugMod
 /**
  * Post HTTP-request validations - bc we cannot validate kanji inputs
  */
-async function validateResponse(response: Response, currentWord: string): Promise<string> {
+function validateResponse(response: Response, currentWord: string): Promise<string> {
   if (!response.found) {
     return Promise.reject(Error("No exact matches in the Joshi dictionary"));
   }
@@ -127,7 +128,7 @@ function startsWithLastChar(prevWord: string, guessWord: string, mode?: DebugMod
 }
 
 function selectWord(choices: Array<Vocabulary>, mode?: DebugMode): Vocabulary | null {
-  if (!choices.length) {
+  if (!choices?.length) {
     return null;
   }
 
@@ -166,24 +167,6 @@ function selectWord(choices: Array<Vocabulary>, mode?: DebugMode): Vocabulary | 
   return selectedObj;
 }
 
-/**
- * Chooses a viable character to be used to find a word to be used in the game's next round
- */
-function selectChar(vocab, char: string, mode?: DebugMode): string {
-  char = ensureHiragana(char);
-
-  if (vocab && (!vocab[char] || !vocab[char].length)) {
-    const nextChar = getRandomChar();
-    debug(mode, [`no selection to choose from. trying ${nextChar}`]);
-    // TODO: make call to Joshi for a word, new backend endpoint
-    // https://jisho.org/api/v1/search/words?keyword=た*
-    // https://jisho.org/docs
-    return selectChar(vocab, nextChar);
-  }
-
-  return char;
-}
-
 function getVocabulary(level: number): Promise<JSON> {
   return apiRequest(`/vocabulary/n${level}`, { method: "GET" })
     .then(JSON.parse);
@@ -219,19 +202,57 @@ function removeWordFromVocab(selectedWord: Vocabulary, vocab: JSON): JSON {
   return vocab;
 }
 
+async function getNextWord(char: string, history: HistoryInstance): Promise<Entry> {
+  const nextWord = await getWordStartingWith(char);
+
+  if (!nextWord) {
+    return null;
+  }
+
+  if (!history.check(nextWord)) {
+    return await getNextWord(char, history);
+  }
+
+  return nextWord;
+}
+
+async function getWordStartingWith(char: string): Promise<Entry> {
+  const response = await apiRequest(`/words-starting-with/${encodeURI(char)}`, { method: "GET" });
+
+  if (!response.found) {
+    console.warn(`There are no words starting with ${char} at this time. Another word will be supplied.`);
+    return;
+  }
+
+  return response.entry;
+}
+
+function formatToVocab(entry: Entry): Vocabulary {
+  return {
+    ID: entry.slug,
+    Kana: entry.japanese.reading, // backend enforces the availability of this
+    Kanji: entry.japanese?.word,
+    Definition:
+      entry.english.length
+        ? entry.english.reduce((acc, def) => acc.concat(def), " / ")
+        : "",
+  }
+}
 
 export {
   Vocabulary,
   compileVocabulary,
+  formatToVocab,
+  getNextWord,
   getRandomChar,
   getVocabulary,
   removeWordFromVocab,
   searchUsersGuess,
-  selectChar,
   selectWord,
 }
 
 export const Test = {
+  getWordStartingWith,
   isValid,
   startsWithLastChar,
   validateQuery,

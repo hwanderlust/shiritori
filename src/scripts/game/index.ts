@@ -19,17 +19,21 @@ export default function InitGame() {
   return {
     addListeners: function () {
 
-      playBtnListener = playBtn.addEventListener("click", _ => {
-        gameInstance.initPlay();
-        clockInstance.countdown();
-        scoreInstance.init();
-        playBtn.removeEventListener("click", playBtnListener);
+      playBtnListener = playBtn.addEventListener("click", async _ => {
+        await gameInstance.initPlay()
+          .then(_ => {
+            clockInstance.countdown();
+            scoreInstance.init();
+            playBtn.removeEventListener("click", playBtnListener);
+          });
       });
 
-      playAgainBtn.addEventListener("click", _ => {
-        gameInstance.initPlayAgain();
-        clockInstance.reset();
-        scoreInstance.reset();
+      playAgainBtn.addEventListener("click", async _ => {
+        await gameInstance.initPlayAgain()
+          .then(_ => {
+            clockInstance.reset();
+            scoreInstance.reset();
+          });
       });
 
       formListener = guessForm.addEventListener("submit", event => {

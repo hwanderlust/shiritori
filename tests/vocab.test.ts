@@ -1,4 +1,5 @@
 import Vocab from "../src/scripts/game/vocabulary";
+import * as basicHelpers from "../src/scripts/helpers";
 import * as helpers from "../src/scripts/game/vocabulary/helpers";
 import * as helperAtoms from "../src/scripts/game/vocabulary/helper_atoms";
 const vocab = require("../vocab-n5.json");
@@ -6,11 +7,12 @@ const vocab = require("../vocab-n5.json");
 const { calcRandomNum, convertSmallChars, ensureHiragana, } = helperAtoms;
 const {
   compileVocabulary,
+  getNextWord,
   removeWordFromVocab,
-  selectChar,
   selectWord,
 } = helpers;
 const {
+  getWordStartingWith,
   isValid,
   startsWithLastChar,
   validateQuery,
@@ -28,6 +30,20 @@ describe("Vocab tests", () => {
       beforeAll(() => {
         vocabInstance = Vocab();
         vocabInstance.Test.setVocab(vocab);
+
+        const origWindow = { ...window };
+        const windowSpy = jest.spyOn(global, "window", "get");
+        // @ts-ignore: Mock Type
+        windowSpy.mockImplementation(() => {
+          return {
+            ...origWindow,
+            sessionStorage: {
+              ...origWindow.sessionStorage,
+              getItem: () => JSON.stringify(vocab),
+              setItem: () => { }
+            }
+          };
+        });
       });
 
       describe("init()", () => {
@@ -39,51 +55,44 @@ describe("Vocab tests", () => {
       });
 
       describe("start()", () => {
-        it("initiates the first word", () => {
+        it("initiates the first word", async () => {
           const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
           const nextWord = jest.spyOn(vocabInstance, "nextWord");
-          const origWindow = { ...window };
-          const spy = jest.spyOn(global, "window", "get");
-          // @ts-ignore: Mock Type
-          spy.mockImplementation(() => {
-            return {
-              ...origWindow,
-              sessionStorage: {
-                ...origWindow.sessionStorage,
-                getItem: () => JSON.stringify(vocab),
-              }
-            };
-          });
-          vocabInstance.start();
 
+          await vocabInstance.start();
           expect(calcRandomNum).toHaveBeenCalled();
           expect(nextWord).toHaveBeenCalled();
         });
       });
 
       describe("nextWord()", () => {
-        it("retrieves a character to base finding a word with", () => {
+
+        beforeEach(() => {
+          vocabInstance.Test.setNextFirst("は");
+        });
+
+        it("retrieves a character to base finding a word with", async () => {
           const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
-          vocabInstance.nextWord();
+          await vocabInstance.nextWord();
           expect(calcRandomNum).toHaveBeenCalled();
         });
 
-        it("converts any possible Katakana to Hiragana to avoid reference errors", () => {
+        it("converts any possible Katakana to Hiragana to avoid reference errors", async () => {
           const ensureHiragana = jest.spyOn(helperAtoms, "ensureHiragana");
-          vocabInstance.nextWord();
+          await vocabInstance.nextWord();
           expect(ensureHiragana).toHaveBeenCalled();
         });
 
-        it("retrieves another character to base finding the next word with bc choices are unavailable", () => {
-          const calcRandomNum = jest.spyOn(helperAtoms, "calcRandomNum");
+        it("retrieves another word from Joshi via backend", async () => {
+          const getNextWord = jest.spyOn(helpers, "getNextWord");
           vocabInstance.Test.setNextFirst("る");
-          vocabInstance.nextWord();
-          expect(calcRandomNum).toHaveBeenCalled();
+          await vocabInstance.nextWord();
+          expect(getNextWord).toHaveBeenCalled();
         });
 
-        it("chooses a word from a list of available options", () => {
+        it("chooses a word from a list of available options", async () => {
           const selectWord = jest.spyOn(helpers, "selectWord");
-          vocabInstance.nextWord();
+          await vocabInstance.nextWord();
           expect(selectWord).toHaveBeenCalled();
         });
       });
@@ -121,14 +130,6 @@ describe("Vocab tests", () => {
           ],
           "い": [{ Kana: "いま" }],
         });
-      });
-    });
-
-    describe("selectChar()", () => {
-      it("calls ensureHiragana()", () => {
-        const spy = jest.spyOn(helperAtoms, "ensureHiragana");
-        selectChar(vocab, "か");
-        expect(spy).toHaveBeenCalled();
       });
     });
 
@@ -528,6 +529,38 @@ describe("Vocab tests", () => {
       it("returns 'vocab' without any changes", () => {
         const result = removeWordFromVocab(word1, vocab);
         expect(result.valueOf()).toEqual(vocab.valueOf());
+      });
+    });
+
+    describe("getNextWord()", () => {
+      let vocabInstance;
+      let history;
+
+      beforeAll(() => {
+        vocabInstance = Vocab();
+        vocabInstance.Test.setVocab(vocab);
+        history = vocabInstance.Test.getHistory();
+      });
+
+      it("calls 'apiRequest' to the backend via 'getWordStartingWith'", async () => {
+        const spy = jest.spyOn(basicHelpers, "apiRequest");
+        await getNextWord("は", history);
+        expect(spy).toBeCalled();
+      });
+
+      it("will call itself again upon failing history check", async () => {
+        const spy = jest.spyOn(history, "check");
+        await getNextWord("は", history);
+        expect(spy).toBeCalled();
+      });
+    });
+
+    describe("getWordStartingWith()", () => {
+      it("calls 'apiRequest' to the backend", async () => {
+        const spy = jest.spyOn(basicHelpers, "apiRequest");
+        const char = "は";
+        await getWordStartingWith(char);
+        expect(spy).toBeCalledWith(`/words-starting-with/${encodeURI(char)}`, { method: "GET" })
       });
     });
   });
