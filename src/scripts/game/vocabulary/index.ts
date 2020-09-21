@@ -2,14 +2,15 @@ import History from "./history";
 import {
   Vocabulary,
   compileVocabulary,
+  formatToVocab,
   getRandomChar,
   getVocabulary,
+  getWordStartingWith,
   removeWordFromVocab,
   searchUsersGuess,
-  selectChar,
   selectWord,
 } from "./helpers";
-import { convertSmallChars } from "./helper_atoms";
+import { convertSmallChars, ensureHiragana } from "./helper_atoms";
 
 export default function Vocab() {
   let vocab: JSON = null;
@@ -56,23 +57,38 @@ export default function Vocab() {
         });
     },
 
-    start: function () {
+    start: async function () {
       vocab = JSON.parse(window.sessionStorage.getItem("vocab"));
       console.log(`vocab start`);
       nextFirst = getRandomChar();
-      return this.nextWord();
+      return await this.nextWord();
     },
 
-    nextWord: function (): Vocabulary {
+    nextWord: async function (): Promise<Vocabulary> {
       console.log(`nextWord start ${nextFirst}`);
 
-      nextFirst = selectChar(vocab, nextFirst);
+      nextFirst = ensureHiragana(nextFirst);
       console.log(`nextFirst`, nextFirst);
       const selectedObj = selectWord(vocab[nextFirst]);
 
       if (!selectedObj) {
-        console.warn(`There are no words starting with ${nextFirst} at this time. Another word will be supplied.`);
-        return this.start();
+        let fetchedWord = await getWordStartingWith(nextFirst);
+
+        if (!fetchedWord) {
+          console.log(`An error occurred and a word starting with ${nextFirst} couldn't be found at this time. Another word with another beginning character will be supplied.`);
+          return await this.start();
+        }
+
+        // TODO: see if user guessed the word yet 
+        // if (!history.check(fetchedWord)) {
+        //   fetchedWord = await getWordStartingWith(nextFirst);
+        // }
+
+        history.add(fetchedWord);
+        const formattedWord = formatToVocab(fetchedWord);
+        currentWord = formattedWord.Kana;
+        console.log(`selected`, formattedWord);
+        return formattedWord;
       }
 
       currentWord = selectedObj.Kana;

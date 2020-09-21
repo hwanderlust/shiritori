@@ -45,7 +45,7 @@ export default function Game() {
     }
   }
 
-  function showCorrectUI(): void {
+  async function showCorrectUI(): Promise<void> {
     resultOverlay.classList.add("correct");
     inputEl.classList.add("game-ui__input--correct");
 
@@ -53,17 +53,17 @@ export default function Game() {
     emojiContainer.classList.add("emoji--slideleft");
     emojiHappy.classList.remove("hide");
 
+    await displayWord("next");
     emphasizeWord();
     resetInput();
-    displayWord("next");
     activateTransitions();
   }
 
-  function emphasizeWord() {
+  function emphasizeWord(): void {
     prevWord.classList.add("focus");
     inputEl.parentElement.parentElement.classList.add("hide");
   }
-  function resetWordEmphasis(timeout: number) {
+  function resetWordEmphasis(timeout: number): void {
     if (window.innerWidth < 1024) {
       inputEl.parentElement.parentElement.classList.remove("hide");
       prevWord.classList.remove("focus");
@@ -82,13 +82,13 @@ export default function Game() {
     }, timeout);
   }
 
-  function displayWord(type: "start" | "next") {
-    const nextVocab = type === "start" ? vocabInstance.start() : vocabInstance.nextWord();
+  async function displayWord(type: "start" | "next"): Promise<void> {
+    const nextVocab = type === "start" ? await vocabInstance.start() : await vocabInstance.nextWord();
     prevPrimary.innerText = nextVocab?.Kanji || nextVocab?.Kana;
     prevSecondary.innerText = nextVocab.Kanji ? nextVocab.Kana : "";
   }
 
-  function activateTransitions() {
+  function activateTransitions(): void {
     setTimeout(() => {
       document.body.style.overflowX = "";
       emojiContainer.classList.add("emoji--vanish");
@@ -105,12 +105,12 @@ export default function Game() {
   }
 
   return {
-    initPlay: function () {
+    initPlay: async function (): Promise<void> {
       landingPic.classList.add("fade-out");
       playBtn.classList.add("fade-out");
 
+      await displayWord("start")
       emphasizeWord();
-      displayWord("start")
 
       setTimeout(() => {
         landingPic.remove();
@@ -119,7 +119,7 @@ export default function Game() {
       }, 500);
     },
 
-    initPlayAgain: function () {
+    initPlayAgain: async function (): Promise<void> {
       resultOverlay.classList.remove("wrong");
       underlay.classList.remove("gameover");
       resetInput();
@@ -127,12 +127,12 @@ export default function Game() {
       playAgainBtn.parentElement.classList.remove("play-again--show");
       emojiSad.classList.add("hide");
 
+      await displayWord("start");
       emphasizeWord();
-      displayWord("start");
       resetWordEmphasis(1300);
     },
 
-    searchUsersGuess: async function () {
+    searchUsersGuess: function (): Promise<void> {
       inputEl.disabled = true;
       return vocabInstance.searchUsersGuess(inputEl.value)
         .then(_ => {
@@ -144,7 +144,7 @@ export default function Game() {
         });
     },
 
-    gameover: function () {
+    gameover: function (): void {
       showWrongUI();
     }
   }

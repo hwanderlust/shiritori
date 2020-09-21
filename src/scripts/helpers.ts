@@ -7,11 +7,15 @@ function get(el): HTMLElement {
 }
 
 function apiRequest(path: string, options): Promise<any> {
-  return fetch(`/api${path}`, {
+  return fetch(`http://localhost:8080/api${path}`, {
     headers: { "Content-Type": "application/json" },
     ...options,
   })
-    .then(res => res.json());
+    .then(res => res.json())
+    .catch(err => {
+      console.error(err);
+      return err;
+    });
 }
 
 function debug(mode: DebugMode = "normal", params: Array<any>) {

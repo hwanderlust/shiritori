@@ -30,6 +30,35 @@ app.get("/api/vocabulary/:level", function (req, res) {
         console.error("error:", error);
     }
 });
+app.get("/api/words-starting-with/:character", function (req, res) {
+    var _a;
+    var character = (_a = req.params) === null || _a === void 0 ? void 0 : _a.character;
+    var decodedChar = decodeURI(character);
+    console.log("character: " + decodedChar);
+    node_fetch_1["default"](baseURL + "/words?keyword=" + encodeURI(decodedChar) + "*", {
+        method: "GET",
+        headers: {
+            "Accept": "application/json"
+        }
+    })
+        .then(function (r) { return r.json(); })
+        .then(function (r) {
+        console.log(r);
+        if (r.data.length === 0) {
+            console.log("no data");
+            res.send({ found: false, msg: "No data" });
+            return;
+        }
+        var word = helpers_1.selectWord(r.data);
+        if (!word) {
+            console.log("no word");
+            res.send({ found: false, response: r });
+            return;
+        }
+        console.log("found word", word);
+        res.send({ found: true, entry: helpers_1.formatToEntry(word) });
+    });
+});
 app.post("/api/search", function (req, res) {
     var query = req.body.query || "";
     console.log("query: " + query);
@@ -49,7 +78,6 @@ app.post("/api/search", function (req, res) {
         if (!helpers_1.findAndSendMatch(query, r, res)) {
             res.send({ found: false, response: r });
         }
-        console.log("nothing found");
         res.end();
     });
 });
