@@ -9,6 +9,7 @@ import {
   ensureHiragana,
 } from "./helper_atoms";
 import { DebugMode, apiRequest, debug, } from "../../helpers";
+import { HistoryInstance } from "./history";
 
 function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode): Promise<Entry> {
   debug(mode, [`guess`, query]);
@@ -201,6 +202,20 @@ function removeWordFromVocab(selectedWord: Vocabulary, vocab: JSON): JSON {
   return vocab;
 }
 
+async function getNextWord(char: string, history: HistoryInstance): Promise<Entry> {
+  const nextWord = await getWordStartingWith(char);
+
+  if (!nextWord) {
+    return null;
+  }
+
+  if (!history.check(nextWord)) {
+    return await getNextWord(char, history);
+  }
+
+  return nextWord;
+}
+
 async function getWordStartingWith(char: string): Promise<Entry> {
   const response = await apiRequest(`/words-starting-with/${encodeURI(char)}`, { method: "GET" });
 
@@ -228,15 +243,16 @@ export {
   Vocabulary,
   compileVocabulary,
   formatToVocab,
+  getNextWord,
   getRandomChar,
   getVocabulary,
-  getWordStartingWith,
   removeWordFromVocab,
   searchUsersGuess,
   selectWord,
 }
 
 export const Test = {
+  getWordStartingWith,
   isValid,
   startsWithLastChar,
   validateQuery,

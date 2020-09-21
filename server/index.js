@@ -43,7 +43,6 @@ app.get("/api/words-starting-with/:character", function (req, res) {
     })
         .then(function (r) { return r.json(); })
         .then(function (r) {
-        console.log(r);
         if (r.data.length === 0) {
             console.log("no data");
             res.send({ found: false, msg: "No data" });
@@ -57,6 +56,9 @@ app.get("/api/words-starting-with/:character", function (req, res) {
         }
         console.log("found word", word);
         res.send({ found: true, entry: helpers_1.formatToEntry(word) });
+    })["catch"](function (error) {
+        console.error(error);
+        res.end();
     });
 });
 app.post("/api/search", function (req, res) {
@@ -79,6 +81,8 @@ app.post("/api/search", function (req, res) {
             res.send({ found: false, response: r });
         }
         res.end();
+    })["catch"](function (error) {
+        console.error(error);
     });
 });
 app.listen(PORT, function () {

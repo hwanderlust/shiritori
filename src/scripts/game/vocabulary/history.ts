@@ -1,10 +1,20 @@
 import { DebugMode, debug } from "../../helpers";
 import { Entry } from "./helper_atoms";
 
+export interface HistoryInstance {
+  check: (entry: Entry) => boolean;
+  add: (entry: Entry) => void;
+  clear: () => void;
+  test: Test;
+}
+interface Test {
+  getEntries: () => Array<[string, any]>;
+}
+
 /**
  * Tracks successful user guesses to prevent duplicates
  */
-export default function History(mode?: DebugMode) {
+export default function History(mode?: DebugMode): HistoryInstance {
   let cache = {};
 
   return {

@@ -55,8 +55,6 @@ app.get("/api/words-starting-with/:character", (req: Request, res: Response) => 
   })
     .then(r => r.json())
     .then(r => {
-      console.log(r);
-
       if (r.data.length === 0) {
         console.log(`no data`);
         res.send({ found: false, msg: "No data" });

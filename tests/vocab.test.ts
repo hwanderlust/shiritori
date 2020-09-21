@@ -1,4 +1,5 @@
 import Vocab from "../src/scripts/game/vocabulary";
+import * as basicHelpers from "../src/scripts/helpers";
 import * as helpers from "../src/scripts/game/vocabulary/helpers";
 import * as helperAtoms from "../src/scripts/game/vocabulary/helper_atoms";
 const vocab = require("../vocab-n5.json");
@@ -6,10 +7,12 @@ const vocab = require("../vocab-n5.json");
 const { calcRandomNum, convertSmallChars, ensureHiragana, } = helperAtoms;
 const {
   compileVocabulary,
+  getNextWord,
   removeWordFromVocab,
   selectWord,
 } = helpers;
 const {
+  getWordStartingWith,
   isValid,
   startsWithLastChar,
   validateQuery,
@@ -81,10 +84,10 @@ describe("Vocab tests", () => {
         });
 
         it("retrieves another word from Joshi via backend", async () => {
-          const getWordStartingWith = jest.spyOn(helpers, "getWordStartingWith");
+          const getNextWord = jest.spyOn(helpers, "getNextWord");
           vocabInstance.Test.setNextFirst("る");
           await vocabInstance.nextWord();
-          expect(getWordStartingWith).toHaveBeenCalled();
+          expect(getNextWord).toHaveBeenCalled();
         });
 
         it("chooses a word from a list of available options", async () => {
@@ -526,6 +529,38 @@ describe("Vocab tests", () => {
       it("returns 'vocab' without any changes", () => {
         const result = removeWordFromVocab(word1, vocab);
         expect(result.valueOf()).toEqual(vocab.valueOf());
+      });
+    });
+
+    describe("getNextWord()", () => {
+      let vocabInstance;
+      let history;
+
+      beforeAll(() => {
+        vocabInstance = Vocab();
+        vocabInstance.Test.setVocab(vocab);
+        history = vocabInstance.Test.getHistory();
+      });
+
+      it("calls 'apiRequest' to the backend via 'getWordStartingWith'", async () => {
+        const spy = jest.spyOn(basicHelpers, "apiRequest");
+        await getNextWord("は", history);
+        expect(spy).toBeCalled();
+      });
+
+      it("will call itself again upon failing history check", async () => {
+        const spy = jest.spyOn(history, "check");
+        await getNextWord("は", history);
+        expect(spy).toBeCalled();
+      });
+    });
+
+    describe("getWordStartingWith()", () => {
+      it("calls 'apiRequest' to the backend", async () => {
+        const spy = jest.spyOn(basicHelpers, "apiRequest");
+        const char = "は";
+        await getWordStartingWith(char);
+        expect(spy).toBeCalledWith(`/words-starting-with/${encodeURI(char)}`, { method: "GET" })
       });
     });
   });

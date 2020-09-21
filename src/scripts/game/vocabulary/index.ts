@@ -1,11 +1,11 @@
-import History from "./history";
+import History, { HistoryInstance } from "./history";
 import {
   Vocabulary,
   compileVocabulary,
   formatToVocab,
+  getNextWord,
   getRandomChar,
   getVocabulary,
-  getWordStartingWith,
   removeWordFromVocab,
   searchUsersGuess,
   selectWord,
@@ -72,17 +72,12 @@ export default function Vocab() {
       const selectedObj = selectWord(vocab[nextFirst]);
 
       if (!selectedObj) {
-        let fetchedWord = await getWordStartingWith(nextFirst);
+        const fetchedWord = await getNextWord(nextFirst, history);
 
         if (!fetchedWord) {
           console.log(`An error occurred and a word starting with ${nextFirst} couldn't be found at this time. Another word with another beginning character will be supplied.`);
           return await this.start();
         }
-
-        // TODO: see if user guessed the word yet 
-        // if (!history.check(fetchedWord)) {
-        //   fetchedWord = await getWordStartingWith(nextFirst);
-        // }
 
         history.add(fetchedWord);
         const formattedWord = formatToVocab(fetchedWord);
@@ -98,6 +93,9 @@ export default function Vocab() {
       return selectedObj;
     },
     Test: {
+      getHistory: function (): HistoryInstance {
+        return history;
+      },
       setVocab: function (vocabulary): void {
         vocab = vocabulary;
       },
