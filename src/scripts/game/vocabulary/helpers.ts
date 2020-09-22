@@ -24,7 +24,7 @@ function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode):
     })
       .then(r => r.json())
       .then((r: Response) => {
-        debug(mode, [r]);
+        console.debug(r);
 
         if (!r.found) {
           return Promise.reject(Error("No exact matches in the Joshi dictionary"));

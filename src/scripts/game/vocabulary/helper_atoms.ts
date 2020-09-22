@@ -42,8 +42,8 @@ interface Entry {
   english: Array<string>;
 }
 interface Japanese {
-  reading: string;
-  word: string;
+  reading?: string;
+  word?: string;
 }
 
 interface Vocabulary {
@@ -148,7 +148,15 @@ function formatDefinition(entry: Entry): string {
   if (entry.english.length === 1) {
     return entry.english[0];
   }
-  return entry.english.reduce((acc, def) => !!def ? acc.concat(` / ${def}`) : acc, "");
+  return entry.english.reduce((acc, def, index) => {
+    if (index === 0) {
+      return acc.concat(def);
+    }
+    if (!def) {
+      return acc;
+    }
+    return acc.concat(` / ${def}`);
+  }, "");
 }
 
 function hasPunctuation(word: string): boolean {

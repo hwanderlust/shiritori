@@ -52,7 +52,7 @@ export default function Vocab() {
           return Promise.resolve(entry);
         })
         .then(entry => {
-          console.log(`user guess`, entry);
+          console.debug(`user guess`, entry);
           nextFirst = convertSmallChars(entry?.japanese?.reading || "");
           history.add(entry);
           return Promise.resolve();
@@ -66,13 +66,13 @@ export default function Vocab() {
 
     start: async function () {
       vocab = JSON.parse(window.sessionStorage.getItem("vocab"));
-      console.log(`vocab start`);
+      console.debug(`vocab start`);
       nextFirst = getRandomChar();
       return await this.nextWord();
     },
 
     nextWord: async function nextWord(): Promise<Vocabulary> {
-      console.log(`nextWord start ${nextFirst}`);
+      console.debug(`nextWord start ${nextFirst}`);
       nextFirst = ensureHiragana(nextFirst);
       const selectedObj = selectWord(vocab[nextFirst]);
 
@@ -87,18 +87,18 @@ export default function Vocab() {
         history.add(fetchedWord);
         const formattedWord = formatToVocab(fetchedWord);
         currentWord = formattedWord.Kana;
-        console.log(`selected`, formattedWord);
+        console.debug(`selected`, formattedWord);
         return formattedWord;
       }
 
-      if (!history.confirm(selectedObj)) {
+      if (!history.check(selectedObj)) {
         vocab = removeWordFromVocab(selectedObj, vocab);
         return await nextWord();
       }
 
       history.add(selectedObj);
       currentWord = selectedObj.Kana;
-      console.log(`selected`, selectedObj);
+      console.debug(`selected`, selectedObj);
 
       vocab = removeWordFromVocab(selectedObj, vocab);
       return selectedObj;
