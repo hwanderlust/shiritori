@@ -117,12 +117,70 @@ function convertSmallChars(word: string, mode: DebugMode = "normal"): string {
   return lastChar;
 }
 
+function compileVocabulary(res: JSON, vocab: null | JSON): JSON {
+  if (!vocab) {
+    vocab = res;
+    return vocab;
+  }
+
+  Object.keys(res).forEach(key => {
+    if (Object.keys(vocab).includes(key)) {
+      vocab[key] = vocab[key].concat(res[key]);
+    } else {
+      vocab[key] = res[key];
+    }
+  });
+  return vocab;
+}
+
+function formatToVocab(entry: Entry): Vocabulary {
+  return {
+    ID: entry.slug,
+    Kana: entry.japanese.reading, // backend enforces the availability of this
+    Kanji: entry.japanese?.word,
+    Definition:
+      entry.english.length
+        ? entry.english.reduce((acc, def) => acc.concat(def), " / ")
+        : "",
+  }
+}
+
+function hasPunctuation(word: string): boolean {
+  return word.includes("！") ||
+    word.includes("？") ||
+    word.includes("。") ||
+    word.includes("…") ||
+    word.includes("．") ||
+    word.includes("、") ||
+    word.includes("・") ||
+    word.includes("＝") ||
+    word.includes("‘");
+}
+
+function hasSymbol(word: string): boolean {
+  return word.includes("ー") ||
+    word.includes("～") ||
+    word.includes("「") ||
+    word.includes("」") ||
+    word.includes("＠") ||
+    word.includes("＃") ||
+    word.includes("％") ||
+    word.includes("＊") ||
+    word.includes("（") ||
+    word.includes("）") ||
+    word.includes("￥");
+}
+
 export {
   Entry,
   Response,
   Vocabulary,
   kanaGroups,
   calcRandomNum,
+  compileVocabulary,
   convertSmallChars,
   ensureHiragana,
+  formatToVocab,
+  hasSymbol,
+  hasPunctuation,
 }

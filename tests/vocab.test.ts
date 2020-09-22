@@ -4,9 +4,8 @@ import * as helpers from "../src/scripts/game/vocabulary/helpers";
 import * as helperAtoms from "../src/scripts/game/vocabulary/helper_atoms";
 const vocab = require("../vocab-n5.json");
 
-const { calcRandomNum, convertSmallChars, ensureHiragana, } = helperAtoms;
+const { calcRandomNum, compileVocabulary, convertSmallChars, ensureHiragana, } = helperAtoms;
 const {
-  compileVocabulary,
   getNextWord,
   removeWordFromVocab,
   selectWord,
