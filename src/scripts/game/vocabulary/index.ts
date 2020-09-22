@@ -49,7 +49,9 @@ export default function Vocab() {
             history.clear();
             return Promise.reject(Error("This word was already used this round"));
           }
-
+          return Promise.resolve(entry);
+        })
+        .then(entry => {
           nextFirst = convertSmallChars(entry?.japanese?.reading || "");
           history.add(entry);
           return Promise.resolve();
@@ -89,6 +91,8 @@ export default function Vocab() {
         console.log(`selected`, formattedWord);
         return formattedWord;
       }
+
+      // history.check() see if next word was already used by user guess
 
       currentWord = selectedObj.Kana;
       console.log(`selected`, selectedObj);
