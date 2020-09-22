@@ -158,8 +158,7 @@ function hasPunctuation(word: string): boolean {
 }
 
 function hasSymbol(word: string): boolean {
-  return word.includes("ー") ||
-    word.includes("～") ||
+  return word.includes("～") ||
     word.includes("「") ||
     word.includes("」") ||
     word.includes("＠") ||
