@@ -46,6 +46,7 @@ export default function Vocab() {
       return searchUsersGuess(currentWord, query)
         .then(entry => {
           if (!history.check(entry)) {
+            history.clear();
             return Promise.reject(Error("This word was already used this round"));
           }
 
