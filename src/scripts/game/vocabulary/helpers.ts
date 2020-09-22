@@ -26,9 +26,13 @@ function searchUsersGuess(currentWord: string, query: string, mode?: DebugMode):
       .then((r: Response) => {
         debug(mode, [r]);
 
-        return validateResponse(r, currentWord)
-          .then(_ => Promise.resolve(r.entry));
+        if (!r.found) {
+          return Promise.reject(Error("No exact matches in the Joshi dictionary"));
+        }
+
+        return Promise.resolve(r.entry);
       })
+      .then(entry => validateEntry(entry, currentWord))
     );
 }
 
@@ -41,7 +45,7 @@ function validateQuery(currentWord: string, query: string, mode?: DebugMode): Pr
   }
 
   if (!isValid(query)) {
-    return Promise.reject(Error("Last character is unacceptable"));
+    return Promise.reject(Error("Last character is unacceptable, or word contains unacceptable characters"));
   }
 
   if (!startsWithLastChar(currentWord, query)) {
@@ -52,23 +56,16 @@ function validateQuery(currentWord: string, query: string, mode?: DebugMode): Pr
   return Promise.resolve("No issues");
 }
 
-/**
- * Post HTTP-request validations - bc we cannot validate kanji inputs
- */
-function validateResponse(response: Response, currentWord: string): Promise<string> {
-  if (!response.found) {
-    return Promise.reject(Error("No exact matches in the Joshi dictionary"));
+function validateEntry(entry: Entry, currentWord: string): Promise<Entry> {
+  if (!isValid(entry?.japanese?.reading)) {
+    return Promise.reject(Error("User's kanji input ends with unacceptable character, or word contains unacceptable characters"));
   }
 
-  if (!isValid(response.entry?.japanese?.reading)) {
-    return Promise.reject(Error("User's kanji input ends with unacceptable character"));
-  }
-
-  if (!startsWithLastChar(currentWord, response.entry?.japanese?.reading)) {
+  if (!startsWithLastChar(currentWord, entry?.japanese?.reading)) {
     return Promise.reject(Error("User's kanji input's first character doesn't match given word's last character"));
   }
 
-  return Promise.resolve("No issues");
+  return Promise.resolve(entry);
 }
 
 /**
@@ -231,6 +228,6 @@ export const Test = {
   getWordStartingWith,
   isValid,
   startsWithLastChar,
+  validateEntry,
   validateQuery,
-  validateResponse,
 }
