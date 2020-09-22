@@ -1,5 +1,6 @@
 import { get } from "../helpers";
 import Vocab from "./vocabulary";
+import { Vocabulary } from "./vocabulary/helpers";
 
 const vocabInstance = Vocab();
 vocabInstance.init()
@@ -12,9 +13,8 @@ export default function Game() {
   const inputEl = get("guessInput") as HTMLInputElement;
   const resultOverlay = get("overlay");
   const underlay = get("underlay");
-  const prevWord = get("prevWord");
-  const prevPrimary = prevWord.firstElementChild as HTMLElement;
-  const prevSecondary = prevWord.lastElementChild as HTMLElement;
+  const prevWordEl = get("prevWord");
+  const [prevPrimary, prevSecondary, prevDefinition] = Array.from(prevWordEl.children) as Array<HTMLElement>;
   const emojiSad = emojiContainer.firstElementChild as HTMLElement;
   const emojiHappy = emojiContainer.lastElementChild as HTMLElement;
 
@@ -60,32 +60,33 @@ export default function Game() {
   }
 
   function emphasizeWord(): void {
-    prevWord.classList.add("focus");
+    prevWordEl.classList.add("focus");
     inputEl.parentElement.parentElement.classList.add("hide");
   }
   function resetWordEmphasis(timeout: number): void {
     if (window.innerWidth < 1024) {
       inputEl.parentElement.parentElement.classList.remove("hide");
-      prevWord.classList.remove("focus");
+      prevWordEl.classList.remove("focus");
       inputEl.focus();
 
       setTimeout(() => {
-        prevWord.classList.remove("slide");
+        prevWordEl.classList.remove("slide");
       }, timeout);
       return;
     }
 
     setTimeout(() => {
-      prevWord.classList.remove("focus", "slide");
+      prevWordEl.classList.remove("focus", "slide");
       inputEl.parentElement.parentElement.classList.remove("hide");
       inputEl.focus();
     }, timeout);
   }
 
   async function displayWord(type: "start" | "next"): Promise<void> {
-    const nextVocab = type === "start" ? await vocabInstance.start() : await vocabInstance.nextWord();
+    const nextVocab: Vocabulary = type === "start" ? await vocabInstance.start() : await vocabInstance.nextWord();
     prevPrimary.innerText = nextVocab?.Kanji || nextVocab?.Kana;
     prevSecondary.innerText = nextVocab.Kanji ? nextVocab.Kana : "";
+    prevDefinition.innerText = nextVocab.Definition;
   }
 
   function activateTransitions(): void {
@@ -98,7 +99,7 @@ export default function Game() {
 
       setTimeout(() => {
         emojiContainer.classList.remove("emoji--vanish");
-        prevWord.classList.add("slide");
+        prevWordEl.classList.add("slide");
         resetWordEmphasis(100);
       }, 200);
     }, 1000);

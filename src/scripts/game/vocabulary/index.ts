@@ -1,8 +1,6 @@
 import History, { HistoryInstance } from "./history";
 import {
   Vocabulary,
-  compileVocabulary,
-  formatToVocab,
   getNextWord,
   getRandomChar,
   getVocabulary,
@@ -10,7 +8,12 @@ import {
   searchUsersGuess,
   selectWord,
 } from "./helpers";
-import { convertSmallChars, ensureHiragana } from "./helper_atoms";
+import {
+  compileVocabulary,
+  convertSmallChars,
+  ensureHiragana,
+  formatToVocab,
+} from "./helper_atoms";
 
 export default function Vocab() {
   let vocab: JSON = null;
@@ -43,6 +46,7 @@ export default function Vocab() {
       return searchUsersGuess(currentWord, query)
         .then(entry => {
           if (!history.check(entry)) {
+            history.clear();
             return Promise.reject(Error("This word was already used this round"));
           }
 

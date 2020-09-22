@@ -7,6 +7,8 @@ import {
   calcRandomNum,
   convertSmallChars,
   ensureHiragana,
+  hasSymbol,
+  hasPunctuation,
 } from "./helper_atoms";
 import { DebugMode, apiRequest, debug, } from "../../helpers";
 import { HistoryInstance } from "./history";
@@ -85,6 +87,10 @@ function isValid(word: string, mode?: DebugMode): boolean {
   if (wanakana.isKanji(word.substr(0, 1)) || wanakana.isKanji(wanakana.stripOkurigana(word).substr(0, 1))) {
     debug(mode, [`isValid isKanji`]);
     return true;
+  }
+
+  if (hasPunctuation(word) || hasSymbol(word)) {
+    return false;
   }
 
   let lastChar = word.substr(-1);
@@ -172,22 +178,6 @@ function getVocabulary(level: number): Promise<JSON> {
     .then(JSON.parse);
 }
 
-function compileVocabulary(res: JSON, vocab: null | JSON): JSON {
-  if (!vocab) {
-    vocab = res;
-    return vocab;
-  }
-
-  Object.keys(res).forEach(key => {
-    if (Object.keys(vocab).includes(key)) {
-      vocab[key] = vocab[key].concat(res[key]);
-    } else {
-      vocab[key] = res[key];
-    }
-  });
-  return vocab;
-}
-
 function removeWordFromVocab(selectedWord: Vocabulary, vocab: JSON): JSON {
   const selectedInitial = ensureHiragana(selectedWord.Kana.substring(0, 1));
   const selectedIndex = (vocab[selectedInitial] as Array<Vocabulary>).findIndex(el => el.ID.localeCompare(selectedWord.ID) === 0);
@@ -227,22 +217,8 @@ async function getWordStartingWith(char: string): Promise<Entry> {
   return response.entry;
 }
 
-function formatToVocab(entry: Entry): Vocabulary {
-  return {
-    ID: entry.slug,
-    Kana: entry.japanese.reading, // backend enforces the availability of this
-    Kanji: entry.japanese?.word,
-    Definition:
-      entry.english.length
-        ? entry.english.reduce((acc, def) => acc.concat(def), " / ")
-        : "",
-  }
-}
-
 export {
   Vocabulary,
-  compileVocabulary,
-  formatToVocab,
   getNextWord,
   getRandomChar,
   getVocabulary,

@@ -106,6 +106,14 @@
 
       .game-ui__prev {
         color: white;
+
+        & h1 {
+          color: black;
+        }
+
+        & p:last-of-type {
+          color: black; 
+        }
       }
 
       .focus {
