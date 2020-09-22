@@ -42,8 +42,8 @@ interface Entry {
   english: Array<string>;
 }
 interface Japanese {
-  reading: string;
-  word: string;
+  reading?: string;
+  word?: string;
 }
 
 interface Vocabulary {
@@ -138,11 +138,25 @@ function formatToVocab(entry: Entry): Vocabulary {
     ID: entry.slug,
     Kana: entry.japanese.reading, // backend enforces the availability of this
     Kanji: entry.japanese?.word,
-    Definition:
-      entry.english.length
-        ? entry.english.reduce((acc, def) => acc.concat(def), " / ")
-        : "",
+    Definition: formatDefinition(entry),
   }
+}
+function formatDefinition(entry: Entry): string {
+  if (!entry.english.length) {
+    return "";
+  }
+  if (entry.english.length === 1) {
+    return entry.english[0];
+  }
+  return entry.english.reduce((acc, def, index) => {
+    if (index === 0) {
+      return acc.concat(def);
+    }
+    if (!def) {
+      return acc;
+    }
+    return acc.concat(` / ${def}`);
+  }, "");
 }
 
 function hasPunctuation(word: string): boolean {
