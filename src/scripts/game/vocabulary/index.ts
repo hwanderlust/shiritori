@@ -52,6 +52,7 @@ export default function Vocab() {
           return Promise.resolve(entry);
         })
         .then(entry => {
+          console.log(`user guess`, entry);
           nextFirst = convertSmallChars(entry?.japanese?.reading || "");
           history.add(entry);
           return Promise.resolve();
@@ -70,11 +71,9 @@ export default function Vocab() {
       return await this.nextWord();
     },
 
-    nextWord: async function (): Promise<Vocabulary> {
+    nextWord: async function nextWord(): Promise<Vocabulary> {
       console.log(`nextWord start ${nextFirst}`);
-
       nextFirst = ensureHiragana(nextFirst);
-      console.log(`nextFirst`, nextFirst);
       const selectedObj = selectWord(vocab[nextFirst]);
 
       if (!selectedObj) {
@@ -92,8 +91,12 @@ export default function Vocab() {
         return formattedWord;
       }
 
-      // history.check() see if next word was already used by user guess
+      if (!history.confirm(selectedObj)) {
+        vocab = removeWordFromVocab(selectedObj, vocab);
+        return await nextWord();
+      }
 
+      history.add(selectedObj);
       currentWord = selectedObj.Kana;
       console.log(`selected`, selectedObj);
 
