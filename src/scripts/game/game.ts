@@ -33,6 +33,10 @@ export default function Game() {
     playAgainBtn.focus();
   }
 
+  function gameover(): void {
+    showWrongUI();
+  }
+
   function resetInput(): void {
     inputEl.value = ""
     inputEl.disabled = false;
@@ -141,12 +145,10 @@ export default function Game() {
         })
         .catch(err => {
           console.log(err);
-          showWrongUI();
+          gameover();
         });
     },
 
-    gameover: function (): void {
-      showWrongUI();
-    }
+    gameover
   }
 }

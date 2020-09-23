@@ -188,6 +188,10 @@
   transition: opacity 150ms;
 }
 
+.emoji--congrats {
+  z-index: 3;
+}
+
 .hide {
   display: none;
 }
@@ -217,6 +221,13 @@
   transition: opacity 150ms;
 }
 
+.congrats {
+  background-color: $purple;
+  opacity: 0.5;
+  z-index: 3;
+  transition: opacity 150ms;
+}
+
 .play-again-btn {
   display: none;
   position: absolute;
@@ -233,4 +244,37 @@
 .gameover {
   display: block;
   z-index: 1;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  .modal__container {
+    width: 650px;
+    height: 400px;
+    background-image: url("../images/highscore-pic-comp95.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-lg;
+  }
+
+  .modal__contents {
+
+    .modal__contents__title {
+      font-family: $primary-font;
+    }
+  }
 }
