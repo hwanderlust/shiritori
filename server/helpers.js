@@ -1,6 +1,24 @@
 "use strict";
 exports.__esModule = true;
-exports.selectWord = exports.logger = exports.formatToEntry = exports.findAndSendMatch = void 0;
+exports.selectWord = exports.logger = exports.formatToEntry = exports.findAndSendMatch = exports.filterByChar = void 0;
+var katakanaToHiragana = {
+    "ア": "あ", "イ": "い", "ウ": "う", "エ": "え", "オ": "お",
+    "カ": "か", "キ": "き", "ク": "く", "ケ": "け", "コ": "こ",
+    "ガ": "が", "ギ": "ぎ", "グ": "ぐ", "ゲ": "げ", "ゴ": "ご",
+    "サ": "さ", "シ": "し", "ス": "す", "セ": "せ", "ソ": "そ",
+    "ザ": "ざ", "ジ": "じ", "ズ": "ず", "ゼ": "ぜ", "ゾ": "ぞ",
+    "タ": "た", "チ": "ち", "ツ": "つ", "テ": "て", "ト": "と",
+    "ダ": "だ", "ヂ": "ぢ", "デ": "で", "ド": "ど",
+    "ナ": "な", "ニ": "に", "ヌ": "ぬ", "ネ": "ね", "ノ": "の",
+    "ハ": "は", "ヒ": "ひ", "フ": "ふ", "ヘ": "へ", "ホ": "ほ",
+    "バ": "ば", "ビ": "び", "ブ": "ぶ", "ベ": "べ", "ボ": "ぼ",
+    "パ": "ぱ", "ピ": "ぴ", "プ": "ぷ", "ペ": "ぺ", "ポ": "ぽ",
+    "マ": "ま", "ミ": "み", "ム": "む", "メ": "め", "モ": "も",
+    "ラ": "ら", "リ": "り", "ル": "る", "レ": "れ", "ロ": "ろ",
+    "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を",
+    "ッ": "っ", "ャ": "ゃ", "ュ": "ゅ", "ョ": "ょ", "ン": "ん",
+    "ァ": "ぁ", "ィ": "ぃ", "ゥ": "ぅ", "ェ": "ぇ", "ォ": "ぉ"
+};
 function findAndSendMatch(query, receivedResp, res) {
     for (var i in receivedResp.data) {
         var searchResult = findWord(query, receivedResp.data[i]);
@@ -78,6 +96,21 @@ function formatToEntry(element) {
     return entry;
 }
 exports.formatToEntry = formatToEntry;
+function filterByChar(char, results) {
+    return results.filter(function (el) {
+        var _a, _b;
+        var elFirstChar = (_b = (_a = el.japanese[0]) === null || _a === void 0 ? void 0 : _a.reading) === null || _b === void 0 ? void 0 : _b.substr(0, 1);
+        if (!elFirstChar)
+            return false;
+        var firstCharKana = katakanaToHiragana[elFirstChar];
+        var charKana = katakanaToHiragana[char];
+        if (!firstCharKana) {
+            return elFirstChar.localeCompare(charKana || char) === 0;
+        }
+        return firstCharKana.localeCompare(charKana || char) === 0;
+    });
+}
+exports.filterByChar = filterByChar;
 function logger(req, _, next) {
     if (req.method !== "POST" && req.url !== "/search") {
         console.log(req.method, req.url, req.body);

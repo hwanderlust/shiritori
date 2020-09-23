@@ -48,7 +48,7 @@ app.get("/api/words-starting-with/:character", function (req, res) {
             res.send({ found: false, msg: "No data" });
             return;
         }
-        var word = helpers_1.selectWord(r.data);
+        var word = helpers_1.selectWord(helpers_1.filterByChar(decodedChar, r.data));
         if (!word) {
             console.log("no word");
             res.send({ found: false, response: r });

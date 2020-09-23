@@ -6,6 +6,7 @@ const express = require('express');
 const fs = require("fs");
 
 import {
+  filterByChar,
   findAndSendMatch,
   formatToEntry,
   logger,
@@ -60,8 +61,10 @@ app.get("/api/words-starting-with/:character", (req: Request, res: Response) => 
         res.send({ found: false, msg: "No data" });
         return;
       }
-      // TODO: filter 'results' to ensure they actually start with the right character
-      const word = selectWord(r.data)
+
+      const word = selectWord(
+        filterByChar(decodedChar, r.data)
+      );
       if (!word) {
         console.log(`no word`);
         res.send({ found: false, response: r });
