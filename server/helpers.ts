@@ -14,7 +14,7 @@ interface JapaneseEntry {
 }
 interface Sense {
   english_definitions: Array<string>;
-  sentences: Array<string>;
+  sentences?: Array<string>;
 }
 
 interface ApiResponse {
@@ -25,6 +25,25 @@ interface ApiEntry {
   slug: string;
   japanese: JapaneseEntry;
   english: Array<string>;
+}
+
+const katakanaToHiragana = {
+  "ア": "あ", "イ": "い", "ウ": "う", "エ": "え", "オ": "お",
+  "カ": "か", "キ": "き", "ク": "く", "ケ": "け", "コ": "こ",
+  "ガ": "が", "ギ": "ぎ", "グ": "ぐ", "ゲ": "げ", "ゴ": "ご",
+  "サ": "さ", "シ": "し", "ス": "す", "セ": "せ", "ソ": "そ",
+  "ザ": "ざ", "ジ": "じ", "ズ": "ず", "ゼ": "ぜ", "ゾ": "ぞ",
+  "タ": "た", "チ": "ち", "ツ": "つ", "テ": "て", "ト": "と",
+  "ダ": "だ", "ヂ": "ぢ", "デ": "で", "ド": "ど",
+  "ナ": "な", "ニ": "に", "ヌ": "ぬ", "ネ": "ね", "ノ": "の",
+  "ハ": "は", "ヒ": "ひ", "フ": "ふ", "ヘ": "へ", "ホ": "ほ",
+  "バ": "ば", "ビ": "び", "ブ": "ぶ", "ベ": "べ", "ボ": "ぼ",
+  "パ": "ぱ", "ピ": "ぴ", "プ": "ぷ", "ペ": "ぺ", "ポ": "ぽ",
+  "マ": "ま", "ミ": "み", "ム": "む", "メ": "め", "モ": "も",
+  "ラ": "ら", "リ": "り", "ル": "る", "レ": "れ", "ロ": "ろ",
+  "ヤ": "や", "ユ": "ゆ", "ヨ": "よ", "ワ": "わ", "ヲ": "を",
+  "ッ": "っ", "ャ": "ゃ", "ュ": "ゅ", "ョ": "ょ", "ン": "ん",
+  "ァ": "ぁ", "ィ": "ぃ", "ゥ": "ぅ", "ェ": "ぇ", "ォ": "ぉ",
 }
 
 function findAndSendMatch(query: string, receivedResp: JoshiResponse, res: Response): boolean {
@@ -118,6 +137,21 @@ function formatToEntry(element: JoshiElement): ApiEntry {
   return entry;
 }
 
+function filterByChar(char: string, results: Array<JoshiElement>): Array<JoshiElement> {
+  return results.filter(el => {
+    const elFirstChar = el.japanese[0]?.reading?.substr(0, 1);
+    if (!elFirstChar) return false;
+
+    const firstCharKana = katakanaToHiragana[elFirstChar];
+    const charKana = katakanaToHiragana[char];
+
+    if (!firstCharKana) {
+      return elFirstChar.localeCompare(charKana || char) === 0;
+    }
+    return firstCharKana.localeCompare(charKana || char) === 0;
+  });
+}
+
 function logger(req: Request, _, next: Next) {
   if (req.method !== "POST" && req.url !== "/search") {
     console.log(req.method, req.url, req.body);
@@ -130,6 +164,7 @@ function logger(req: Request, _, next: Next) {
 }
 
 export {
+  filterByChar,
   findAndSendMatch,
   formatToEntry,
   logger,
