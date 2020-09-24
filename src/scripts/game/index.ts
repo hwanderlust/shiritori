@@ -2,24 +2,16 @@ import { get } from "../helpers";
 
 import Clock from "./clock";
 import Game from "./game";
-import Highscore from "./highscore";
 import Score from "./score";
 
 export default function InitGame() {
 
-  function gameover() {
-    gameInstance.gameover();
-
-    if (highscoreInstance.isNewRecord(scoreInstance.getScore())) {
-      highscoreInstance.showModal();
-    }
-  }
-
   const gameInstance = Game();
   const clockInstance = Clock();
-  const highscoreInstance = Highscore();
   const scoreInstance = Score();
-  clockInstance.init(gameover);
+  clockInstance.init(
+    () => gameInstance.gameover(scoreInstance.getScore())
+  );
 
   let playBtnListener;
   let formListener;
@@ -56,8 +48,10 @@ export default function InitGame() {
             clockInstance.reset();
             scoreInstance.update(1);
           })
-          .catch(_ => {
+          .catch(err => {
+            console.log(`game index`, err);
             clockInstance.stop();
+            gameInstance.gameover(scoreInstance.getScore());
           });
       })
     },

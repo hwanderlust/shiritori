@@ -1,9 +1,12 @@
 import { get } from "../helpers";
+import Highscore from "./highscore";
 import Vocab from "./vocabulary";
 import { Vocabulary } from "./vocabulary/helpers";
 
 const vocabInstance = Vocab();
 vocabInstance.init()
+
+const highscoreInstance = Highscore();
 
 export default function Game() {
   const landingPic = get("landingPic");
@@ -30,11 +33,17 @@ export default function Game() {
     emojiSad.classList.remove("hide");
 
     playAgainBtn.parentElement.classList.add("play-again--show");
-    playAgainBtn.focus();
   }
 
-  function gameover(): void {
+  function gameover(score: number): void {
     showWrongUI();
+
+    if (!highscoreInstance.isNewRecord(score)) {
+      playAgainBtn.focus();
+      return;
+    }
+
+    highscoreInstance.showModal();
   }
 
   function resetInput(): void {
@@ -143,10 +152,6 @@ export default function Game() {
         .then(_ => {
           showCorrectUI();
         })
-        .catch(err => {
-          console.log(err);
-          gameover();
-        });
     },
 
     gameover

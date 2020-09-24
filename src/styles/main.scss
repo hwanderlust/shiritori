@@ -40,6 +40,16 @@
     }
 }
 
+.disabled {
+  background-color: rgba(175, 100, 100, 0.8);
+  color: rgba(200, 200, 200, 1);
+  
+  &:hover {
+    background-color: rgba(175, 100, 100, 0.8);
+    color: rgba(200, 200, 200, 1);
+  }
+}
+
 .game-bg-pic {
   background-image: url("../images/chureito-fuji-bg-comp95.jpg");
   background-size: cover;
@@ -108,13 +118,6 @@
       width: 34%;
   
       & input {
-        background-color: rgba(255, 255, 255, 0.1);
-        height: 2rem;
-        line-height: 1.5rem;
-        text-align: center;
-        border: none;
-        padding: 2px 10px;
-        font-size: 18px;
         font-family: $japanese-font;
       }
   
@@ -246,6 +249,16 @@
   z-index: 1;
 }
 
+.text-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border: none;
+  padding: 2px 10px;
+  font-size: 18px;
+}
+
 .modal {
   position: absolute;
   top: 0;
@@ -272,9 +285,35 @@
   }
 
   .modal__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
 
     .modal__contents__title {
       font-family: $primary-font;
+      margin: 0;
+    }
+
+    .modal__contents__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal__contents__scoreboard {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 100px;
+      width: 500px;
+      position: relative;
+      right: 50px;
+
+      .scoreboard__record {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+      }
     }
   }
 }
