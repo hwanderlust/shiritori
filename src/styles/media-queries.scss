@@ -139,7 +139,6 @@
       }
     }
 
-
     .game-ui__clock {
       position: absolute;
       bottom: calc(67px - 5vmin);
@@ -161,7 +160,30 @@
     background-color: rgba(255, 255, 255, 0.4);
     height: calc(67px - 5vmin);
   }
+
+  .modal {
+    .modal__container {
+      width: calc(100vw - 100px);
+    }
+    
+    .modal__contents {
+      height: 100%;
+  
+      .modal__contents__scoreboard {
+        display: flex;
+        flex-direction: column;
+        width: unset;
+        position: unset;
+        right: unset;
+  
+        .scoreboard__record {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 1023px) and (orientation: landscape) {
   .game-ui {

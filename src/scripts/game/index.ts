@@ -1,5 +1,6 @@
-import Clock from "./clock";
 import { get } from "../helpers";
+
+import Clock from "./clock";
 import Game from "./game";
 import Score from "./score";
 
@@ -8,7 +9,9 @@ export default function InitGame() {
   const gameInstance = Game();
   const clockInstance = Clock();
   const scoreInstance = Score();
-  clockInstance.init(gameInstance.gameover);
+  clockInstance.init(
+    () => gameInstance.gameover(scoreInstance.getScore())
+  );
 
   let playBtnListener;
   let formListener;
@@ -47,6 +50,7 @@ export default function InitGame() {
           })
           .catch(_ => {
             clockInstance.stop();
+            gameInstance.gameover(scoreInstance.getScore());
           });
       })
     },

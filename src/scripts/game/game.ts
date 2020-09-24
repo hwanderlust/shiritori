@@ -1,14 +1,17 @@
 import { get } from "../helpers";
+import Highscore from "./highscore";
 import Vocab from "./vocabulary";
 import { Vocabulary } from "./vocabulary/helpers";
 
 const vocabInstance = Vocab();
 vocabInstance.init()
 
+const highscoreInstance = Highscore();
+
 export default function Game() {
   const landingPic = get("landingPic");
   const playBtn = get("playBtn");
-  const playAgainBtn = get("playAgainBtn");
+  const playAgainBtn = get("playAgainBtn") as HTMLButtonElement;
   const emojiContainer = get("emoji");;
   const inputEl = get("guessInput") as HTMLInputElement;
   const resultOverlay = get("overlay");
@@ -30,7 +33,19 @@ export default function Game() {
     emojiSad.classList.remove("hide");
 
     playAgainBtn.parentElement.classList.add("play-again--show");
-    playAgainBtn.focus();
+  }
+
+  function gameover(score: number): void {
+    showWrongUI();
+
+    if (!highscoreInstance.isNewRecord(score)) {
+      playAgainBtn.focus();
+      return;
+    }
+
+    playAgainBtn.disabled = true;
+    playAgainBtn.classList.add("disabled");
+    highscoreInstance.showModal();
   }
 
   function resetInput(): void {
@@ -139,14 +154,8 @@ export default function Game() {
         .then(_ => {
           showCorrectUI();
         })
-        .catch(err => {
-          console.log(err);
-          showWrongUI();
-        });
     },
 
-    gameover: function (): void {
-      showWrongUI();
-    }
+    gameover
   }
 }
