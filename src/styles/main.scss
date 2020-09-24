@@ -269,6 +269,7 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
+  opacity: 0;
 
   .modal__container {
     width: 650px;
@@ -289,7 +290,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
+    height: 100%;
 
     .modal__contents__title {
       font-family: $primary-font;
@@ -302,18 +303,41 @@
     }
 
     .modal__contents__scoreboard {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-column-gap: 100px;
-      width: 500px;
-      position: relative;
-      right: 50px;
+      display: flex;
+      flex-direction: column;
 
       .scoreboard__record {
         display: flex;
         justify-content: space-between;
         width: 250px;
       }
+
+      .just-added {
+        color: $green;
+      }
+    }
+
+    .scoreboard--grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 100px;
+      width: 500px;
+      position: relative;
+      right: 50px;
     }
   }
+
+  .contents--grid {
+    height: 250px;
+  }
+}
+
+.modal--fadein {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.modal--fadeout {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
 }

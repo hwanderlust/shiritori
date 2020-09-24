@@ -7,12 +7,11 @@ export default function Highscore(): HighscoreInstance {
   const emoji = get("emoji").firstElementChild as HTMLElement;
 
   const scoreboard: Scoreboard = new Array(10)
-    .fill(newRecord("enter username", 0));
+    .fill(newRecord("", 0));
   let recentUsername = "";
   let recentScore = 0;
 
   function update(): void {
-    // remove arguments from tests
     const index = scoreboard.findIndex(record => record.score < recentScore);
     const record = newRecord(recentUsername, recentScore);
     scoreboard.splice(index, 0, record);
@@ -31,22 +30,44 @@ export default function Highscore(): HighscoreInstance {
     const scoreboardEl = document.createElement("div");
     scoreboardEl.classList.add("modal__contents__scoreboard");
 
-    scoreboard.forEach((record: Record, index) => {
-      const container = document.createElement("p");
-      container.classList.add("scoreboard__record");
-      if (window.innerWidth >= 1024) {
-        container.style.order = gridOrder[index];
+    const scoreboardDisplay = scoreboard.reduce((acc, record) => {
+      if (!!record.username) {
+        return acc.concat(record);
+      }
+      return acc;
+    }, [] as Array<Record>);
+
+    if (Array.isArray(scoreboardDisplay)) {
+      if (scoreboardDisplay.length > 5) {
+        contents.classList.add("contents--grid");
+        scoreboardEl.classList.add("scoreboard--grid");
       }
 
-      const usernameEl = document.createElement("span");
-      usernameEl.innerText = record.username;
-      const scoreEl = document.createElement("span");
-      scoreEl.innerText = `${record.score}`;
+      scoreboardDisplay.forEach((record, index) => {
+        const container = document.createElement("p");
+        container.classList.add("scoreboard__record");
 
-      container.appendChild(usernameEl);
-      container.appendChild(scoreEl);
-      scoreboardEl.appendChild(container);
-    });
+        if (scoreboardDisplay.length > 5) {
+          if (window.innerWidth >= 1024) {
+            container.style.order = gridOrder[scoreboardDisplay.length][index];
+          }
+        }
+
+        const usernameEl = document.createElement("span");
+        usernameEl.innerText = record.username;
+        const scoreEl = document.createElement("span");
+        scoreEl.innerText = `${record.score}`;
+
+        if (record.username.localeCompare(recentUsername) === 0 && record.score === recentScore) {
+          container.classList.add("just-added");
+        }
+
+        container.appendChild(usernameEl);
+        container.appendChild(scoreEl);
+        scoreboardEl.appendChild(container);
+      });
+    }
+
     contents.appendChild(scoreboardEl);
 
     await createAndAddButton("Close");
@@ -64,14 +85,22 @@ export default function Highscore(): HighscoreInstance {
   }
 
   function onClosePress(): void {
+    const modal = get("hsModal");
+    modal.classList.remove("modal--fadein");
+    modal.classList.add("modal--fadeout");
+
     overlay.classList.remove("congrats");
     emoji.innerText = "( ﾟДﾟ)";
     emoji.parentElement.classList.remove("emoji--congrats");
-    const modal = get("hsModal");
-    modal.remove();
 
-    const playAgainBtn = get("playAgainBtn");
+    const playAgainBtn = get("playAgainBtn") as HTMLButtonElement;
+    playAgainBtn.disabled = false;
+    playAgainBtn.classList.remove("disabled");
     playAgainBtn.focus();
+
+    setTimeout(() => {
+      modal.remove();
+    }, 500);
   }
 
   return {
@@ -91,47 +120,99 @@ export default function Highscore(): HighscoreInstance {
         overlay.classList.add("congrats");
         emoji.innerText = "＼(^_^)／";
         emoji.parentElement.classList.add("emoji--congrats");
-
         await createModal(recentUsername);
         addEventListeners(onAddPress);
+      }, 500);
+
+      setTimeout(() => {
+        get("hsModal").classList.add("modal--fadein");
         const input = get("hsModalInput") as HTMLInputElement;
         input.focus();
         input.select();
-
-      }, 1000);
+      }, 750);
     },
     onAddPress,
     onClosePress,
+    Test: {
+      setVariables: (username, score) => {
+        recentUsername = username;
+        recentScore = score;
+      },
+    }
   }
 }
 
+type Scoreboard = Array<Record>;
 interface Record {
   score: number;
   username: string;
 }
-type Scoreboard = Array<Record>;
 
 interface HighscoreInstance {
   getBoard: () => Scoreboard;
-  update: (score: number, username: string) => void;
+  update: () => void;
   isNewRecord: (score: number) => boolean;
   display: () => void;
   showModal: () => void;
   onAddPress: (username: string) => void;
   onClosePress: () => void;
+  Test: Test;
+}
+interface Test {
+  setVariables: (username: string, score: number) => void;
 }
 
 const gridOrder = {
-  0: 1,
-  1: 3,
-  2: 5,
-  3: 7,
-  4: 9,
-  5: 2,
-  6: 4,
-  7: 6,
-  8: 8,
-  9: 10,
+  6: {
+    0: 1,
+    1: 3,
+    2: 5,
+    3: 2,
+    4: 4,
+    5: 6,
+  },
+  7: {
+    0: 1,
+    1: 3,
+    2: 5,
+    3: 7,
+    4: 2,
+    5: 4,
+    6: 6
+  },
+  8: {
+    0: 1,
+    1: 3,
+    2: 5,
+    3: 7,
+    4: 2,
+    5: 4,
+    6: 6,
+    7: 8,
+  },
+  9: {
+    0: 1,
+    1: 3,
+    2: 5,
+    3: 7,
+    4: 9,
+    5: 2,
+    6: 4,
+    7: 6,
+    8: 8
+  },
+  10: {
+    0: 1,
+    1: 3,
+    2: 5,
+    3: 7,
+    4: 9,
+    5: 2,
+    6: 4,
+    7: 6,
+    8: 8,
+    9: 10,
+  }
 };
 
 function newRecord(username: string, score: number): Record {
@@ -168,11 +249,11 @@ function createAndAddModal() {
 
 function createAndAddTitle() {
   const contents = get("hsModalContents");
-  const title = document.createElement("h1");
-  title.id = "hsModalTitle";
-  title.innerText = "New High Score";
-  title.classList.add("modal__contents__title");
-  contents.appendChild(title);
+  contents.innerHTML += `
+    <h1 id="hsModalTitle" class="modal__contents__title">
+      New High Score
+    </h1>
+  `;
 }
 
 function createAndAddForm(recentUsername: string) {
@@ -184,15 +265,17 @@ function createAndAddForm(recentUsername: string) {
   label.setAttribute("for", "username");
   label.innerText = "Username";
   form.appendChild(label);
-  const input = document.createElement("input");
-  input.id = "hsModalInput";
-  input.type = "text";
-  input.classList.add("text-input");
-  input.name = "username";
-  input.required = true;
-  input.minLength = 3;
-  input.value = recentUsername;
-  form.appendChild(input);
+  form.innerHTML += `
+    <input 
+      id="hsModalInput"  
+      type="text"
+      class="text-input"
+      name="username"
+      required
+      minLength="3"
+      value="${recentUsername}"
+    />
+    `;
   contents.appendChild(form);
 }
 

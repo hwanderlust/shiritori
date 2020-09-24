@@ -48,8 +48,7 @@ export default function InitGame() {
             clockInstance.reset();
             scoreInstance.update(1);
           })
-          .catch(err => {
-            console.log(`game index`, err);
+          .catch(_ => {
             clockInstance.stop();
             gameInstance.gameover(scoreInstance.getScore());
           });

@@ -11,7 +11,7 @@ const highscoreInstance = Highscore();
 export default function Game() {
   const landingPic = get("landingPic");
   const playBtn = get("playBtn");
-  const playAgainBtn = get("playAgainBtn");
+  const playAgainBtn = get("playAgainBtn") as HTMLButtonElement;
   const emojiContainer = get("emoji");;
   const inputEl = get("guessInput") as HTMLInputElement;
   const resultOverlay = get("overlay");
@@ -43,6 +43,8 @@ export default function Game() {
       return;
     }
 
+    playAgainBtn.disabled = true;
+    playAgainBtn.classList.add("disabled");
     highscoreInstance.showModal();
   }
 
