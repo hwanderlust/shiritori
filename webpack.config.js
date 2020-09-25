@@ -24,17 +24,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|mp3)$/i,
         loader: 'file-loader',
         options: {
+          name: "[name].[ext]",
           publicPath: 'assets', // Reference location (doesn't work when only using 'outputPath')
           outputPath: 'assets', // Export location
         },
       },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader',
-      },
+      { test: /\.html$/i, loader: 'html-loader', },
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
       { test: /\.js$/, loader: "source-map-loader" },
       {

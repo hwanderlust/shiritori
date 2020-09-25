@@ -1,27 +1,28 @@
 import { get } from "./helpers";
-type SubmenuElement = "rules" | "about" | "contact";
+type SubmenuElement = "rules" | "about" | "contact" | "settings";
 
 export default function Submenu() {
 
-  let SUBMENU: Array<HTMLElement>;
-  let rulesBtn: HTMLElement;
-  let aboutBtn: HTMLElement;
-  let contactBtn: HTMLElement;
-  let rulesListener;
-  let aboutListener;
-  let contactListener;
-  let rulesSubmenu: HTMLElement;
-  let aboutSubmenu: HTMLElement;
-  let contactSubmenu: HTMLElement;
-  let submenuWindow: HTMLElement;
-  let menuWindow: HTMLElement;
-  let modalUnderlay: HTMLElement;
+  const rulesBtn = get("rulesBtn") as HTMLButtonElement;
+  const aboutBtn = get("aboutBtn") as HTMLButtonElement;
+  const contactBtn = get("contactBtn") as HTMLButtonElement;
+  const settingsBtn = get("settingsBtn") as HTMLButtonElement;
+  const rulesSubmenu = get("submenuRules");
+  const aboutSubmenu = get("submenuAbout");
+  const contactSubmenu = get("submenuContact");
+  const settingsSubmenu = get("submenuSettings");
+  const submenuWindow = get("submenu");
+  const menuWindow = get("menu");
+  const modalUnderlay = get("underlay");
+  const SUBMENU = [rulesSubmenu, aboutSubmenu, contactSubmenu, settingsSubmenu];
+  const musicSlider = get("musicSlider") as HTMLInputElement;
 
   function toggleContent(el: SubmenuElement): void {
     const elMap = {
       "rules": rulesSubmenu,
       "about": aboutSubmenu,
-      "contact": contactSubmenu
+      "contact": contactSubmenu,
+      "settings": settingsSubmenu,
     };
 
     toggleClasses({
@@ -31,37 +32,52 @@ export default function Submenu() {
     });
 
     handleMobileMenuStyle({ menuWindow, modalUnderlay })
-
     showSubmenu(submenuWindow);
   }
 
   return {
     addListeners: function () {
-      rulesBtn = get("rulesBtn");
-      aboutBtn = get("aboutBtn");
-      contactBtn = get("contactBtn");
-      rulesSubmenu = get("submenuRules");
-      aboutSubmenu = get("submenuAbout");
-      contactSubmenu = get("submenuContact");
-      submenuWindow = get("submenu");
-      menuWindow = get("menu");
-      modalUnderlay = get("underlay");
-      SUBMENU = [rulesSubmenu, aboutSubmenu, contactSubmenu];
-
-      rulesListener = rulesBtn.addEventListener("click", _ => {
+      rulesBtn.addEventListener("click", _ => {
         toggleContent("rules");
       });
-      aboutListener = aboutBtn.addEventListener("click", _ => {
+      aboutBtn.addEventListener("click", _ => {
         toggleContent("about");
       });
-      contactListener = contactBtn.addEventListener("click", _ => {
+      contactBtn.addEventListener("click", _ => {
         toggleContent("contact");
       });
-    },
-    removeListeners: function () {
-      rulesBtn.removeEventListener("click", rulesListener);
-      aboutBtn.removeEventListener("click", aboutListener);
-      contactBtn.removeEventListener("click", contactListener);
+      settingsBtn.addEventListener("click", _ => {
+        toggleContent("settings");
+      });
+
+      musicSlider.addEventListener("click", _ => {
+        const input = musicSlider.previousElementSibling as HTMLInputElement;
+        const playerParentEl = get("musicPlayer").parentElement;
+
+        // let default input trigger 'checked' status
+        if (input.checked === true) {
+          // actually when input.checked is FALSE
+          playerParentEl.style.display = "none";
+          playerParentEl.parentElement.style.justifyContent = "flex-end";
+          return;
+        }
+
+        if (!input.checked && playerParentEl.style.display === "none") {
+          // actually when input.checked is TRUE
+          playerParentEl.style.display = "unset";
+          playerParentEl.parentElement.style.justifyContent = "space-between";
+        }
+      });
+
+      get("radio10").addEventListener("click", _ => {
+        window.sessionStorage.setItem("time", `10`);
+      });
+      get("radio15").addEventListener("click", _ => {
+        window.sessionStorage.setItem("time", `15`);
+      });
+      get("radio20").addEventListener("click", _ => {
+        window.sessionStorage.setItem("time", `20`);
+      });
     },
     hideSubmenu: function () {
       if (isOpen(submenuWindow)) {
