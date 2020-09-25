@@ -1,10 +1,11 @@
 import { get } from "../helpers"
 
-const allowedTime = 30;
+const defaultTime = 10;
 
 export default function Clock() {
+  window.sessionStorage.setItem("time", `${defaultTime}`);
   const clockEl: HTMLElement = get("clock");
-  let currentTime = allowedTime;
+  let currentTime = defaultTime;
   let interval;
   let callBuzzer: () => void;
 
@@ -36,6 +37,7 @@ export default function Clock() {
     },
 
     reset: function (): void {
+      const allowedTime = Number(window.sessionStorage.getItem("time"));
       currentTime = allowedTime;
       this.stop();
       setTimeout(() => {

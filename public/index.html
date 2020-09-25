@@ -25,6 +25,9 @@
       <button id="aboutBtn" class="nav__item">About</button>
       <button id="contactBtn" class="nav__item">Contact</button>
     </nav>
+    <button id="settingsBtn" class="settings-btn">
+      <img src="../src//images/shuriken.png" alt="Custom made shuriken icon for settings">
+    </button>
   </div>
 
   <div id="submenu" class="submenu">
@@ -65,6 +68,39 @@
           any inquiries.</p>
         <p>You can also check out <a href="https://github.com/hwanderlust">my GitHub profile</a> at
           the bottom of the page in the footer.</p>
+      </section>
+      <section id="submenuSettings" class="submenu__settings">
+        <header>
+          <img src="../src//images/shuriken.png" alt="Custom made shuriken icon for settings">
+          <h1>Settings</h1>
+        </header>
+        <div class="settings__clock">
+          <h2>Clock</h2>
+          <div id="clockRadios" class="clock__radios">
+            <div class="radio-btn">
+              <label for="radio">10s</label>
+              <input id="radio10" type="radio" checked name="radio">
+              <span class="checkmark"></span>
+            </div>
+            <div class="radio-btn">
+              <label for="radio">15s</label>
+              <input id="radio15" type="radio" name="radio">
+              <span class="checkmark"></span>
+            </div>
+            <div class="radio-btn">
+              <label for="radio">20s</label>
+              <input id="radio20" type="radio" name="radio">
+              <span class="checkmark"></span>
+            </div>
+          </div>
+        </div>
+        <div class="settings__music">
+          <h2>Music</h2>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span id="musicSlider" class="slider"></span>
+          </label>
+        </div>
       </section>
     </div>
   </div>
@@ -107,7 +143,7 @@
         </div>
 
         <div class="game-ui__clock">
-          <span id="clock">0:30</span>
+          <span id="clock">0:00</span>
         </div>
       </section>
     </div>
@@ -123,6 +159,16 @@
   </main>
 
   <footer>
+    <div class="music-player">
+      <audio id="musicPlayer"></audio>
+      <button id="musicPlayBtn" class="play-pause-btn control">
+        <img src="../src/images/music-play.png" alt="play button icon">
+      </button>
+      <span id="musicTitle"></span>
+      <button id="musicNextBtn" class="next-btn control">
+        <img src="../src/images/music-next.png" alt="next song button icon">
+      </button>
+    </div>
     <a href="https://github.com/hwanderlust">@hwanderlustdev</a>
   </footer>
 

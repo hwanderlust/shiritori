@@ -60,7 +60,6 @@
   }
 }
 
-
 .menu--opened {
   width: calc(200px - 1vw);
   transition: width ease-out 150ms;
@@ -112,6 +111,26 @@
       transform: translateX(150%);
     }
   }
+
+  .settings-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: calc(90vh - (67px - 5vmin));
+    left: calc(75px - 1vw);
+
+    &:hover {
+      transform: rotate(180deg);
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:active, :focus {
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
 }
 
 nav {
@@ -124,6 +143,10 @@ nav {
     color: white;
     font-family: $secondary-font;
   }
+}
+
+.settings-btn {
+  display: none;
 }
 
 .menu__underlay {
