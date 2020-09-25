@@ -1,8 +1,7 @@
-import { get } from "../helpers"
+import { addDarkUnderlay, get, removeDarkUnderlay } from "../helpers"
 
 export default function Highscore(): HighscoreInstance {
 
-  const underlay = get("underlay");
   const overlay = get("overlay");
   const emoji = get("emoji").firstElementChild as HTMLElement;
 
@@ -85,6 +84,8 @@ export default function Highscore(): HighscoreInstance {
   }
 
   function onClosePress(): void {
+    removeDarkUnderlay();
+
     const modal = get("hsModal");
     modal.classList.remove("modal--fadein");
     modal.classList.add("modal--fadeout");
@@ -115,8 +116,9 @@ export default function Highscore(): HighscoreInstance {
     },
     display,
     showModal: function (): void {
+      addDarkUnderlay();
+
       setTimeout(async () => {
-        underlay.classList.add("gameover");
         overlay.classList.add("congrats");
         emoji.innerText = "＼(^_^)／";
         emoji.parentElement.classList.add("emoji--congrats");

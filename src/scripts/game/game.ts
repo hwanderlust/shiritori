@@ -1,4 +1,4 @@
-import { get } from "../helpers";
+import { addDarkUnderlay, get, removeDarkUnderlay } from "../helpers";
 import Highscore from "./highscore";
 import Vocab from "./vocabulary";
 import { Vocabulary } from "./vocabulary/helpers";
@@ -15,15 +15,14 @@ export default function Game() {
   const emojiContainer = get("emoji");;
   const inputEl = get("guessInput") as HTMLInputElement;
   const resultOverlay = get("overlay");
-  const underlay = get("underlay");
   const prevWordEl = get("prevWord");
   const [prevPrimary, prevSecondary, prevDefinition] = Array.from(prevWordEl.children) as Array<HTMLElement>;
   const emojiSad = emojiContainer.firstElementChild as HTMLElement;
   const emojiHappy = emojiContainer.lastElementChild as HTMLElement;
 
   function showWrongUI(): void {
+    addDarkUnderlay();
     resultOverlay.classList.add("wrong");
-    underlay.classList.add("gameover");
 
     inputEl.classList.add("game-ui__input--wrong");
     inputEl.disabled = true;
@@ -136,8 +135,8 @@ export default function Game() {
     },
 
     initPlayAgain: async function (): Promise<void> {
+      removeDarkUnderlay();
       resultOverlay.classList.remove("wrong");
-      underlay.classList.remove("gameover");
       resetInput();
 
       playAgainBtn.parentElement.classList.remove("play-again--show");

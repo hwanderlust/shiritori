@@ -17,7 +17,6 @@ describe("Highscore", () => {
 
   beforeAll(() => {
     document.body.innerHTML = `
-      <div id="underlay"></div>
       <div id="overlay"></div>
       <div id="emoji">
         <div></div>
