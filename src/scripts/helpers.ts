@@ -24,9 +24,28 @@ function debug(mode: DebugMode = "normal", params: Array<any>) {
   }
 }
 
+function addDarkUnderlay() {
+  const underlay = document.createElement("div");
+  underlay.id = "darkUnderlay";
+  underlay.style.position = "absolute";
+  underlay.style.top = "0";
+  underlay.style.bottom = "0";
+  underlay.style.left = "0";
+  underlay.style.right = "0";
+  underlay.style.zIndex = "1";
+  underlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  document.body.appendChild(underlay);
+}
+
+function removeDarkUnderlay() {
+  get("darkUnderlay").remove();
+}
+
 export {
   DebugMode,
+  addDarkUnderlay,
   apiRequest,
   debug,
   get,
+  removeDarkUnderlay,
 }
