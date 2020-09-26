@@ -9,10 +9,12 @@ export default function Highscore(): HighscoreInstance {
     .fill(newRecord("", 0));
   let recentUsername = "";
   let recentScore = 0;
+  let recentRecord: Record;
 
   function update(): void {
     const index = scoreboard.findIndex(record => record.score < recentScore);
     const record = newRecord(recentUsername, recentScore);
+    recentRecord = record;
     scoreboard.splice(index, 0, record);
     scoreboard.pop();
     console.debug(`record added`, record);
@@ -54,10 +56,13 @@ export default function Highscore(): HighscoreInstance {
 
         const usernameEl = document.createElement("span");
         usernameEl.innerText = record.username;
+        usernameEl.style.textOverflow = "ellipsis";
+        usernameEl.style.maxWidth = "200px";
+        usernameEl.style.overflow = "hidden";
         const scoreEl = document.createElement("span");
         scoreEl.innerText = `${record.score}`;
 
-        if (record.username.localeCompare(recentUsername) === 0 && record.score === recentScore) {
+        if (record.id === recentRecord.id) {
           container.classList.add("just-added");
         }
 
@@ -146,6 +151,7 @@ export default function Highscore(): HighscoreInstance {
 
 type Scoreboard = Array<Record>;
 interface Record {
+  id: number;
   score: number;
   username: string;
 }
@@ -218,7 +224,7 @@ const gridOrder = {
 };
 
 function newRecord(username: string, score: number): Record {
-  return { username, score };
+  return { id: Date.now(), username, score };
 }
 
 async function createModal(recentUsername: string): Promise<void> {
@@ -275,6 +281,7 @@ function createAndAddForm(recentUsername: string) {
       name="username"
       required
       minLength="3"
+      maxLength="30"
       value="${recentUsername}"
     />
     `;
