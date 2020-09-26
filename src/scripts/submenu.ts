@@ -12,8 +12,6 @@ export default function Submenu() {
   const contactSubmenu = get("submenuContact");
   const settingsSubmenu = get("submenuSettings");
   const submenuWindow = get("submenu");
-  const menuWindow = get("menu");
-  const modalUnderlay = get("underlay");
   const SUBMENU = [rulesSubmenu, aboutSubmenu, contactSubmenu, settingsSubmenu];
   const musicSlider = get("musicSlider") as HTMLInputElement;
 
@@ -31,7 +29,7 @@ export default function Submenu() {
       enabledClass: "submenu--show",
     });
 
-    handleMobileMenuStyle({ menuWindow, modalUnderlay })
+    handleMobileMenuStyle();
     showSubmenu(submenuWindow);
   }
 
@@ -82,6 +80,11 @@ export default function Submenu() {
     hideSubmenu: function () {
       if (isOpen(submenuWindow)) {
         hideSubmenu(submenuWindow);
+
+        const menuBtn = get("menuBtn");
+        if (menuBtn.classList.contains("menu--submenu-is-open")) {
+          menuBtn.classList.remove("menu--submenu-is-open");
+        }
       }
     }
   }
@@ -121,16 +124,16 @@ function hideSubmenu(submenuWindow: HTMLElement): void {
   submenuWindow.classList.remove("submenu--opened");
 }
 
-
-interface HandleMobileMenuStyle {
-  menuWindow: HTMLElement;
-  modalUnderlay: HTMLElement;
-}
 /**
  * Manages the mobile wireframe by maximizing window space for text by closing the menu when selecting a menu option and toggles (off) the underlay
  */
-function handleMobileMenuStyle({ menuWindow, modalUnderlay }: HandleMobileMenuStyle): void {
+function handleMobileMenuStyle(): void {
   if (window.innerWidth <= 1023) {
+    const menuBtn = get("menuBtn");
+    const menuWindow = get("menu");
+    const modalUnderlay = get("underlay");
+
+    menuBtn.classList.add("menu--submenu-is-open");
     menuWindow.classList.remove("menu--opened");
     modalUnderlay.classList.remove("menu__underlay--show");
   }

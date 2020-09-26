@@ -8,8 +8,6 @@ export default function Menu() {
   let menuBtn: HTMLElement;
   let menu: HTMLElement;
   let modalUnderlay: HTMLElement;
-  let menuListener;
-  let underlayListener;
 
   function toggleMenu(): void {
     toggleClasses({
@@ -31,19 +29,15 @@ export default function Menu() {
       menu = get("menu");
       modalUnderlay = get("underlay");
 
-      menuListener = menuBtn.addEventListener("click", _ => {
+      menuBtn.addEventListener("click", _ => {
         toggleMenu();
       });
 
-      underlayListener = modalUnderlay.addEventListener("click", _ => {
+      modalUnderlay.addEventListener("click", _ => {
         toggleMenu();
       });
 
       submenuInstance.addListeners();
-    },
-    removeListeners: function (): void {
-      menuBtn.removeEventListener("click", menuListener);
-      modalUnderlay.removeEventListener("click", underlayListener);
     }
   }
 }
