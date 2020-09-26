@@ -110,25 +110,21 @@
       top: 150%;
       transform: translateX(150%);
     }
-  }
 
-  .settings-btn {
-    display: block;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    top: calc(90vh - (67px - 5vmin));
-    left: calc(75px - 1vw);
-
-    &:hover {
-      transform: rotate(180deg);
-      transition: transform 250ms ease-in-out;
-    }
-
-    &:active, :focus {
-      border: 1px solid white;
-      border-radius: 50%;
+    .settings-btn {
+      display: block;
+      background-color: transparent;
+      border: none;
+      outline: none;
+  
+      &:hover {
+        transform: rotate(180deg);
+        transition: transform 250ms ease-in-out;
+      }
+  
+      &:active, :focus {
+        outline: 1px solid white;
+      }
     }
   }
 }
@@ -143,10 +139,10 @@ nav {
     color: white;
     font-family: $secondary-font;
   }
-}
 
-.settings-btn {
-  display: none;
+  .settings-btn {
+    display: none;
+  }
 }
 
 .menu__underlay {
